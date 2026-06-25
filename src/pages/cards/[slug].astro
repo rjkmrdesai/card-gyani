@@ -1,0 +1,28 @@
+---
+import Base from '../../layouts/Base.astro';
+import { loadData } from '../../data/cards.js';
+import * as core from '../../lib/core.js';
+
+export async function getStaticPaths() {
+  const { cards, banks } = await loadData();
+  return cards.map(c => ({ params: { slug: c.slug }, props: { slug: c.slug, cards, banks } }));
+}
+
+const { slug, cards, banks } = Astro.props;
+core.configure(cards, banks);
+const appHtml = core.renderRoute({ route: 'detail', detailSlug: slug });
+
+const c = cards.find(x => x.slug === slug);
+const title = `${c.name} by ${c.bank} — fees, rewards & review | Card Gyani`;
+const description = `${c.name} (${c.bank}, ${c.network}): annual fee ${c.fee === 0 ? 'lifetime free' : '₹' + c.fee.toLocaleString('en-IN')}, ${c.reward}. Lounge: ${c.lounge}.`;
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: `${c.name} by ${c.bank}`,
+  category: 'Credit Card',
+  brand: { '@type': 'Brand', name: c.bank },
+  description: c.reward,
+  url: Astro.site ? new URL(`/cards/${c.slug}`, Astro.site).href : `/cards/${c.slug}`,
+};
+---
+<Base {title} {description} {appHtml} {cards} {banks} init={{ route: 'detail', slug }} {jsonLd} />

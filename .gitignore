@@ -1,0 +1,12 @@
+# build output
+dist/
+.astro/
+
+# deps
+node_modules/
+
+# env (contains your Supabase keys)
+.env
+
+# os
+.DS_Store

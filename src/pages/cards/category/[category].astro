@@ -1,0 +1,39 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { loadData } from '../../../data/cards.js';
+import * as core from '../../../lib/core.js';
+
+export async function getStaticPaths() {
+  const { cards, banks } = await loadData();
+  const present = core.CAT_ORDER.filter(k => cards.some(c => c.cat === k));
+  return present.map(key => ({
+    params: { category: key.replace(/_/g, '-') },
+    props: { key, cards, banks },
+  }));
+}
+
+const { key, cards, banks } = Astro.props;
+core.configure(cards, banks);
+
+const S = core.defaultState({ route: 'list', catPage: key });
+S.f.cat.add(key);
+core.setState(S);
+const appHtml = core.viewFor();
+
+const label = core.I18N.en[key] || key;
+const count = cards.filter(c => c.cat === key).length;
+const title = `${label} credit cards — compare ${count} cards | Card Gyani`;
+const description = `Compare ${count} ${label.toLowerCase()} credit cards by fees, rewards, lounge access and forex markup.`;
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: `${label} credit cards`,
+  itemListElement: cards.filter(c => c.cat === key).map((c, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: `${c.name} by ${c.bank}`,
+    url: Astro.site ? new URL(`/cards/${c.slug}`, Astro.site).href : `/cards/${c.slug}`,
+  })),
+};
+---
+<Base {title} {description} {appHtml} {cards} {banks} init={{ route: 'list', catPage: key }} {jsonLd} />

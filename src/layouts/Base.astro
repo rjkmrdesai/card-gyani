@@ -1,0 +1,54 @@
+---
+import '../styles/global.css';
+
+const {
+  title = 'Card Gyani — Compare credit cards',
+  description = 'Compare Indian credit cards by fees, rewards, lounge access and forex — no forms, no spam calls.',
+  appHtml = '',
+  cards = [],
+  banks = [],
+  init = { route: 'home' },
+  jsonLd = null,
+} = Astro.props;
+
+const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : Astro.url.pathname;
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Card Gyani" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta name="twitter:card" content="summary" />
+  <!-- Fonts (the prototype's families) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Mono:wght@500;600&display=swap" rel="stylesheet" />
+  {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+</head>
+<body>
+  <div id="app" set:html={appHtml}></div>
+  <div class="backdrop" id="backdrop"></div>
+  <div class="drawer" id="drawer"></div>
+  <div class="tray" id="tray"></div>
+  <div class="toast" id="toast"></div>
+
+  <script is:inline define:vars={{ cards, banks, init }}>
+    window.__CARDS__ = cards;
+    window.__BANKS__ = banks;
+    window.__INIT__ = init;
+  </script>
+  <script>
+    import '../lib/client.js';
+  </script>
+</body>
+</html>

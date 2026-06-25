@@ -1,0 +1,23 @@
+---
+import Base from '../../layouts/Base.astro';
+import { loadData } from '../../data/cards.js';
+import * as core from '../../lib/core.js';
+
+const { cards, banks } = await loadData();
+core.configure(cards, banks);
+const appHtml = core.renderRoute({ route: 'list' });
+
+const title = 'All credit cards — filter & compare | Card Gyani';
+const description = `Filter ${cards.length} credit cards by category, annual fee, network and benefits. Compare up to 4 side by side.`;
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  itemListElement: cards.map((c, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: `${c.name} by ${c.bank}`,
+    url: Astro.site ? new URL(`/cards/${c.slug}`, Astro.site).href : `/cards/${c.slug}`,
+  })),
+};
+---
+<Base {title} {description} {appHtml} {cards} {banks} init={{ route: 'list' }} {jsonLd} />

@@ -1,0 +1,16 @@
+{
+  "name": "cardgyani-site",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.2.1",
+    "@supabase/supabase-js": "^2.45.4",
+    "astro": "^5.6.0"
+  }
+}

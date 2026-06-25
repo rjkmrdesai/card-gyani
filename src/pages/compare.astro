@@ -1,0 +1,15 @@
+---
+import Base from '../layouts/Base.astro';
+import { loadData } from '../data/cards.js';
+import * as core from '../lib/core.js';
+
+const { cards, banks } = await loadData();
+core.configure(cards, banks);
+// Server renders the empty-compare shell; the client fills it from the
+// visitor's saved selection (localStorage) on load.
+const appHtml = core.renderRoute({ route: 'compare' });
+
+const title = 'Compare credit cards side by side | Card Gyani';
+const description = 'Compare up to 4 credit cards side by side — fees, rewards, lounge access, forex and charges, line by line.';
+---
+<Base {title} {description} {appHtml} {cards} {banks} init={{ route: 'compare' }} />
