@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import Analytics from '@vercel/analytics/astro';
 
 const {
   title = 'Card Gyani — Compare credit cards',
@@ -57,5 +58,6 @@ const ogImageUrl = Astro.site ? new URL(ogImage, Astro.site).href : ogImage;
   <script>
     import '../lib/client.js';
   </script>
+  <Analytics />
 </body>
 </html>
