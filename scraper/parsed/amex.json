@@ -1,0 +1,33 @@
+{
+  "id": "amex",
+  "bank": "American Express",
+  "source_url": "https://www.americanexpress.com/content/dam/amex/in/legal/mitc/charge-english-mitc.pdf",
+  "cards": [
+    {
+      "name": "American Express® Platinum Card",
+      "annual_fee": 66000,
+      "renewal_fee": 66000,
+      "fee_waiver": null,
+      "source_section": "Section (a)(ii) Annual Membership Fee table, American Express® Platinum Card row: 'First Year Fee: ₹66,000 Second Year onwards ₹66,000'"
+    },
+    {
+      "name": "American Express® Gold Card",
+      "annual_fee": 1000,
+      "renewal_fee": 4500,
+      "fee_waiver": null,
+      "source_section": "Section (a)(ii) Annual Membership Fee table, American Express® Gold Card row: 'First Year Fee: ₹1000 Second Year onwards: ₹4500'"
+    }
+  ],
+  "bank_defaults": {
+    "forex": 3.5,
+    "forex_exceptions": null,
+    "finance_pm_unsecured": null,
+    "finance_pa_unsecured": null,
+    "finance_pm_secured": null,
+    "finance_pa_secured": null,
+    "cash_advance": "A Transaction Fee of 3.5% of the Cash Advance amount, subject to a minimum of ₹250",
+    "late_fee_tiers": "Delinquency Fee: 5% on the unpaid balance, with a minimum monthly Delinquency Fee of ₹300",
+    "interest_free_days": "up to maximum of 48 days",
+    "source_section": "Section (a)(iii) Cash Advance Fee; Section (a)(iv) Foreign Currency Transactions 'Currency Conversion Factor Assessment - 3.50%' / Section (c)(viii) 'foreign currency conversion mark up of 3.5%'; Section (a)(vi) Finance Charges ('no Finance Charges applicable' on Charge Cards); Section (a)(vii) Interest Free Grace Period ('up to maximum of 48 days'); Section (a)(ix) Delinquency Fee"
+  }
+}

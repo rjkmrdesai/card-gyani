@@ -1,0 +1,96 @@
+{
+  "id": "indusind",
+  "bank": "IndusInd",
+  "source_url": "https://www.indusind.bank.in/content/dam/indusind-platform-images/home/pdf/MITC-Premium-15-6-2016.pdf",
+  "cards": [
+    {
+      "name": "Chelsea FC",
+      "annual_fee": 1099,
+      "renewal_fee": 500,
+      "fee_waiver": null,
+      "source_section": "FEES AND CHARGES, Schedule of Charges table p.2, 'Chelsea FC' row (Joining Fee 1099, Annual Fee 500)"
+    },
+    {
+      "name": "Platinum Aura",
+      "annual_fee": 5999,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "FEES AND CHARGES, Schedule of Charges table p.2, 'Platinum Aura' row (Joining Fee 5999, Annual Fee Nil)"
+    },
+    {
+      "name": "Platinum Select",
+      "annual_fee": 5999,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "FEES AND CHARGES, Schedule of Charges table p.2, 'Platinum Select' row (Joining Fee 5999, Annual Fee Nil)"
+    },
+    {
+      "name": "Platinum",
+      "annual_fee": 17999,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "FEES AND CHARGES, Schedule of Charges table p.2, 'Platinum' row (Joining Fee 17999, Annual Fee Nil)"
+    },
+    {
+      "name": "Iconia",
+      "annual_fee": 17999,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "FEES AND CHARGES, Schedule of Charges table p.2, 'Iconia' row (Joining Fee 17999, Annual Fee Nil)"
+    },
+    {
+      "name": "Signature",
+      "annual_fee": 50000,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "FEES AND CHARGES, Schedule of Charges table p.2, 'Signature' row (Joining Fee 50000, Annual Fee Nil)"
+    },
+    {
+      "name": "Pinnacle",
+      "annual_fee": 100000,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "FEES AND CHARGES, Schedule of Charges table p.2, 'Pinnacle' row (Joining Fee 100000, Annual Fee Nil)"
+    },
+    {
+      "name": "Worldmiles Platinum",
+      "annual_fee": 5000,
+      "renewal_fee": 1500,
+      "fee_waiver": null,
+      "source_section": "FEES AND CHARGES, Schedule of Charges table p.2, 'Worldmiles Platinum' row (Joining Fee 5000, Annual Fee 1500)"
+    },
+    {
+      "name": "Worldmiles Signature",
+      "annual_fee": 7500,
+      "renewal_fee": 2500,
+      "fee_waiver": null,
+      "source_section": "FEES AND CHARGES, Schedule of Charges table p.2, 'Worldmiles Signature' row (Joining Fee 7500, Annual Fee 2500)"
+    },
+    {
+      "name": "Jet Airways IndusInd Bank Odyssey Credit Card",
+      "annual_fee": 10000,
+      "renewal_fee": 4000,
+      "fee_waiver": null,
+      "source_section": "FEES AND CHARGES, Schedule of Charges table p.2, 'Jet Airways IndusInd Bank Odyssey Credit Card' row (Joining Fee 10000, Annual Fee 4000)"
+    },
+    {
+      "name": "Jet Airways IndusInd Bank Voyage Credit Card",
+      "annual_fee": 4000,
+      "renewal_fee": 2000,
+      "fee_waiver": null,
+      "source_section": "FEES AND CHARGES, Schedule of Charges table p.2, 'Jet Airways IndusInd Bank Voyage Credit Card' row (Joining Fee 4000, Annual Fee 2000)"
+    }
+  ],
+  "bank_defaults": {
+    "forex": 3.5,
+    "forex_exceptions": null,
+    "finance_pm_unsecured": 3.83,
+    "finance_pa_unsecured": 46,
+    "finance_pm_secured": null,
+    "finance_pa_secured": null,
+    "cash_advance": "2.5% of the advance amount subject to a minimum of Rs.300",
+    "late_fee_tiers": "Up to Rs.100 - Nil; Rs.101-Rs.500 - Rs.100; Rs.501-Rs.1000 - Rs.350; Rs.1001-Rs.10000 - Rs.550; Above Rs.10000 - Rs.700 (w.e.f. 1st Dec 2012)",
+    "interest_free_days": "Up to 50 days; Interest-free period is not applicable if Total Amount Due is not paid in full",
+    "source_section": "OTHER FINANCIAL CHARGES table p.2 (Interest Charge 'For All Cards' 3.83% monthly / 46% annual; Interest-free Period; Late Payment Charges; Cash Advance Charges; Foreign Currency Mark-up 3.5%)"
+  }
+}

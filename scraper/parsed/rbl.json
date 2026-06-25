@@ -1,0 +1,498 @@
+{
+  "id": "rbl",
+  "bank": "RBL Bank",
+  "source_url": "https://webassets.rbl.bank.in/document/Credit%20Cards/RBL-MITC-final.pdf",
+  "cards": [
+    {
+      "name": "Lumière",
+      "annual_fee": 50000,
+      "renewal_fee": 50000,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.5, Lumière row"
+    },
+    {
+      "name": "Nova",
+      "annual_fee": 12500,
+      "renewal_fee": 12500,
+      "fee_waiver": "NIL on eligible annual spends of INR 10 Lakh or more",
+      "source_section": "A.i Annual membership fees table p.5, Nova row"
+    },
+    {
+      "name": "Insignia Preferred Banking",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": "NIL (Insignia Preferred Banking Customer)",
+      "source_section": "A.i Annual membership fees table p.5, Insignia Preferred Banking row"
+    },
+    {
+      "name": null,
+      "annual_fee": 7000,
+      "renewal_fee": 7000,
+      "fee_waiver": "NIL on eligible annual spends of INR 10 lakh or more",
+      "source_section": "A.i Annual membership fees table p.6, unlabelled INR 7,000 row (no card name printed)"
+    },
+    {
+      "name": "QuickPay",
+      "annual_fee": 99,
+      "renewal_fee": 99,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.6, QuickPay row"
+    },
+    {
+      "name": "iGlobe",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": "NIL (Insignia Preferred Banking Customer)",
+      "source_section": "A.i Annual membership fees table p.6, iGlobe row"
+    },
+    {
+      "name": null,
+      "annual_fee": 3000,
+      "renewal_fee": 3000,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.6, unlabelled INR 3,000 row (no card name printed)"
+    },
+    {
+      "name": "Icon",
+      "annual_fee": 5000,
+      "renewal_fee": 5000,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.6, Icon row"
+    },
+    {
+      "name": "World Safari",
+      "annual_fee": 3000,
+      "renewal_fee": 3000,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.6, World Safari row"
+    },
+    {
+      "name": "World Safari Lite",
+      "annual_fee": 1000,
+      "renewal_fee": 1000,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.6, World Safari Lite row"
+    },
+    {
+      "name": "World Safari Plus",
+      "annual_fee": 6000,
+      "renewal_fee": 6000,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.6, World Safari Plus row"
+    },
+    {
+      "name": "RBL Bank Black Credit Card (erstwhile RBL Bank MoneyTap Black Credit Card)",
+      "annual_fee": 3000,
+      "renewal_fee": 3000,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.6, RBL Bank Black Credit Card row"
+    },
+    {
+      "name": "RBL Bank Blockbuster Credit Card",
+      "annual_fee": 3000,
+      "renewal_fee": 3000,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.6, RBL Bank Blockbuster Credit Card row"
+    },
+    {
+      "name": "Platinum Maxima Plus",
+      "annual_fee": 2500,
+      "renewal_fee": 2500,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.6, Platinum Maxima Plus row"
+    },
+    {
+      "name": "Platinum Maxima",
+      "annual_fee": 2000,
+      "renewal_fee": 2000,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.6, Platinum Maxima row"
+    },
+    {
+      "name": "Platinum Delight",
+      "annual_fee": 1000,
+      "renewal_fee": 1000,
+      "fee_waiver": "NIL on eligible annual spends of INR 2 lakh or more",
+      "source_section": "A.i Annual membership fees table p.6, Platinum Delight row"
+    },
+    {
+      "name": "RBL Bank Popcorn Credit Card",
+      "annual_fee": 1000,
+      "renewal_fee": 1000,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.6, RBL Bank Popcorn Credit Card row"
+    },
+    {
+      "name": "RBL Bank Movies & More Credit Card",
+      "annual_fee": 1000,
+      "renewal_fee": 1000,
+      "fee_waiver": "NIL on eligible annual spends of INR 1.5 lakh or more",
+      "source_section": "A.i Annual membership fees table p.7, RBL Bank Movies & More Credit Card row"
+    },
+    {
+      "name": "Titanium Delight",
+      "annual_fee": 750,
+      "renewal_fee": 750,
+      "fee_waiver": "NIL on eligible annual spends of INR 1.5 lakh or more",
+      "source_section": "A.i Annual membership fees table p.7, Titanium Delight row"
+    },
+    {
+      "name": "Shoprite",
+      "annual_fee": 500,
+      "renewal_fee": 500,
+      "fee_waiver": "NIL on eligible annual spends of INR 1.5 lakh or more",
+      "source_section": "A.i Annual membership fees table p.7, Shoprite row"
+    },
+    {
+      "name": "RBL Bank Play Credit Card",
+      "annual_fee": 500,
+      "renewal_fee": 500,
+      "fee_waiver": "NIL on eligible annual spends of INR 1.5 lakh or more",
+      "source_section": "A.i Annual membership fees table p.7, RBL Bank Play Credit Card row"
+    },
+    {
+      "name": "RBL Bank Paisabazaar Duet Plus Credit Card",
+      "annual_fee": 1499,
+      "renewal_fee": 1499,
+      "fee_waiver": "NIL on eligible annual spends of INR 4 lakh or more",
+      "source_section": "A.i Annual membership fees table p.7, RBL Bank Paisabazaar Duet Plus Credit Card row"
+    },
+    {
+      "name": "Apex",
+      "annual_fee": 1000,
+      "renewal_fee": 1000,
+      "fee_waiver": "NIL for customers who open New Saving account with the Bank",
+      "source_section": "A.i Annual membership fees table p.7, Apex row"
+    },
+    {
+      "name": "Signature Banking",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": "NIL (Signature Banking Customer)",
+      "source_section": "A.i Annual membership fees table p.7, Signature Banking row"
+    },
+    {
+      "name": "Aspire Banking",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": "NIL (Aspire Banking Customer)",
+      "source_section": "A.i Annual membership fees table p.7, Aspire Banking row"
+    },
+    {
+      "name": "RBL Bank Paisabazaar Duet Credit Card. (earlier known as 'RBL Bank Paisa on Demand') on-boarded before 1st September, 2021",
+      "annual_fee": 500,
+      "renewal_fee": 500,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.8, RBL Bank Paisabazaar Duet Credit Card (onboarded before 1 Sep 2021) row"
+    },
+    {
+      "name": "RBL Bank Paisabazaar Duet Credit Card (onboarded after 1st September, 2021)",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.8, RBL Bank Paisabazaar Duet Credit Card (onboarded after 1 Sep 2021) row"
+    },
+    {
+      "name": "RBL Bank Fun+ Credit Card",
+      "annual_fee": 499,
+      "renewal_fee": 499,
+      "fee_waiver": "NIL on eligible annual spends of INR 1.5 lakh or more",
+      "source_section": "A.i Annual membership fees table p.8, RBL Bank Fun+ Credit Card row"
+    },
+    {
+      "name": "RBL Bank Credit Card (erstwhile RBL Bank MoneyTap Credit Card)",
+      "annual_fee": 499,
+      "renewal_fee": 499,
+      "fee_waiver": "NIL on eligible annual spends of INR 2 lakh or more",
+      "source_section": "A.i Annual membership fees table p.8, RBL Bank Credit Card (erstwhile MoneyTap) row"
+    },
+    {
+      "name": "RBL Bank Lazypay Credit Card",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.8, RBL Bank Lazypay Credit Card row"
+    },
+    {
+      "name": "RBL Bank Bank Bazaar SaveMax Pro Credit Card",
+      "annual_fee": 1499,
+      "renewal_fee": 1499,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.8, RBL Bank Bank Bazaar SaveMax Pro Credit Card row"
+    },
+    {
+      "name": "RBL Bank Bank Bazaar SaveMax Credit Card",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.8, RBL Bank Bank Bazaar SaveMax Credit Card row"
+    },
+    {
+      "name": "YOUnique (customisable)",
+      "annual_fee": null,
+      "renewal_fee": null,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.8, YOUnique row (fee stated as 'Custom Fee')"
+    },
+    {
+      "name": "Cookies (for cards issued before May 10, 2021)",
+      "annual_fee": 500,
+      "renewal_fee": 500,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.9, Cookies (issued before May 10 2021) row"
+    },
+    {
+      "name": "Platinum LifeEasy",
+      "annual_fee": 1999,
+      "renewal_fee": 1999,
+      "fee_waiver": "NIL on eligible annual spends of INR 3.5 lakh or more",
+      "source_section": "A.i Annual membership fees table p.9, Platinum LifeEasy row"
+    },
+    {
+      "name": "Platinum Choice",
+      "annual_fee": 499,
+      "renewal_fee": 499,
+      "fee_waiver": "NIL on eligible annual spends of INR 50,000 or more",
+      "source_section": "A.i Annual membership fees table p.9, Platinum Choice row"
+    },
+    {
+      "name": "Platinum Classic",
+      "annual_fee": 499,
+      "renewal_fee": 499,
+      "fee_waiver": "NIL on eligible annual spends of INR 50,000 or more",
+      "source_section": "A.i Annual membership fees table p.9, Platinum Classic row"
+    },
+    {
+      "name": "Platinum Advantage",
+      "annual_fee": 499,
+      "renewal_fee": 499,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.9, Platinum Advantage row"
+    },
+    {
+      "name": "Platinum ShopSmart",
+      "annual_fee": 499,
+      "renewal_fee": 499,
+      "fee_waiver": "NIL on eligible annual spends of INR 50,000 or more",
+      "source_section": "A.i Annual membership fees table p.9, Platinum ShopSmart row"
+    },
+    {
+      "name": "Platinum ShopDaily",
+      "annual_fee": 499,
+      "renewal_fee": 499,
+      "fee_waiver": "NIL on eligible annual spends of INR 50,000 or more",
+      "source_section": "A.i Annual membership fees table p.9, Platinum ShopDaily row"
+    },
+    {
+      "name": "Platinum Plus",
+      "annual_fee": 999,
+      "renewal_fee": 999,
+      "fee_waiver": "NIL on eligible annual spends of INR 1 lakh or more",
+      "source_section": "A.i Annual membership fees table p.9, Platinum Plus row"
+    },
+    {
+      "name": "Platinum Bonus",
+      "annual_fee": 999,
+      "renewal_fee": 999,
+      "fee_waiver": "NIL on eligible annual spends of INR 1 lakh or more",
+      "source_section": "A.i Annual membership fees table p.10, Platinum Bonus row"
+    },
+    {
+      "name": "Platinum ShopGain",
+      "annual_fee": 1499,
+      "renewal_fee": 1499,
+      "fee_waiver": "NIL on eligible annual spends of INR 1.5 lakh or more",
+      "source_section": "A.i Annual membership fees table p.10, Platinum ShopGain row"
+    },
+    {
+      "name": "Platinum TravelEasy",
+      "annual_fee": 999,
+      "renewal_fee": 999,
+      "fee_waiver": "NIL on eligible annual spends of INR 1 lakh or more",
+      "source_section": "A.i Annual membership fees table p.10, Platinum TravelEasy row"
+    },
+    {
+      "name": "Platinum Prime",
+      "annual_fee": 999,
+      "renewal_fee": 999,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.10, Platinum Prime row"
+    },
+    {
+      "name": "Platinum Max",
+      "annual_fee": 999,
+      "renewal_fee": 999,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.10, Platinum Max row"
+    },
+    {
+      "name": "Platinum Edge",
+      "annual_fee": 1999,
+      "renewal_fee": 1999,
+      "fee_waiver": "NIL on eligible annual spends of INR 2 lakh or more",
+      "source_section": "A.i Annual membership fees table p.10, Platinum Edge row"
+    },
+    {
+      "name": "RBL Bank Binge Credit Card",
+      "annual_fee": 999,
+      "renewal_fee": 999,
+      "fee_waiver": "NIL on eligible annual spends of INR 1 lakh or more",
+      "source_section": "A.i Annual membership fees table p.10, RBL Bank Binge Credit Card row"
+    },
+    {
+      "name": "World Prime",
+      "annual_fee": 2999,
+      "renewal_fee": 2999,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.10, World Prime row"
+    },
+    {
+      "name": "World Max",
+      "annual_fee": 2999,
+      "renewal_fee": 2999,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.10, World Max row"
+    },
+    {
+      "name": "World Plus",
+      "annual_fee": 4999,
+      "renewal_fee": 4999,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.10, World Plus row"
+    },
+    {
+      "name": "EasySaver",
+      "annual_fee": 499,
+      "renewal_fee": 499,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.10, EasySaver row"
+    },
+    {
+      "name": "MyFirst",
+      "annual_fee": 999,
+      "renewal_fee": 999,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.10, MyFirst row"
+    },
+    {
+      "name": "Platinum ValuePlus",
+      "annual_fee": 499,
+      "renewal_fee": 499,
+      "fee_waiver": "NIL on eligible annual spends of INR 50,000 or more",
+      "source_section": "A.i Annual membership fees table p.10, Platinum ValuePlus row"
+    },
+    {
+      "name": "World Xclusive",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.11, World Xclusive row (Nil)"
+    },
+    {
+      "name": "RBL Bank Patanjali Swarn Credit Card",
+      "annual_fee": 1499,
+      "renewal_fee": 1499,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.11, RBL Bank Patanjali Swarn Credit Card row"
+    },
+    {
+      "name": "RBL Bank Patanjali Vishisht Credit Card",
+      "annual_fee": 499,
+      "renewal_fee": 499,
+      "fee_waiver": "NIL on eligible annual spends of INR 1.5 lakh",
+      "source_section": "A.i Annual membership fees table p.11, RBL Bank Patanjali Vishisht Credit Card row"
+    },
+    {
+      "name": "RBL Bank IRCTC Credit Card",
+      "annual_fee": 500,
+      "renewal_fee": 500,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.11, RBL Bank IRCTC Credit Card row"
+    },
+    {
+      "name": "RBL Bank DMI Finance Credit Card",
+      "annual_fee": 499,
+      "renewal_fee": 499,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.11, RBL Bank DMI Finance Credit Card row"
+    },
+    {
+      "name": "RBL Bank IndianOil Credit Card",
+      "annual_fee": 500,
+      "renewal_fee": 500,
+      "fee_waiver": "NIL on eligible annual spends of INR 1.75 lakh",
+      "source_section": "A.i Annual membership fees table p.11, RBL Bank IndianOil Credit Card row"
+    },
+    {
+      "name": "RBL Bank IndianOil XTRA Credit Card",
+      "annual_fee": 1500,
+      "renewal_fee": 1500,
+      "fee_waiver": "NIL on eligible annual spends of INR 2.75 lakh",
+      "source_section": "A.i Annual membership fees table p.11, RBL Bank IndianOil XTRA Credit Card row"
+    },
+    {
+      "name": "RBL Bank SalarySe UP credit Card",
+      "annual_fee": 499,
+      "renewal_fee": 499,
+      "fee_waiver": "NIL on eligible annual spends of INR 2 Lacs in previous year",
+      "source_section": "A.i Annual membership fees table p.11, RBL Bank SalarySe UP credit Card row"
+    },
+    {
+      "name": "RBL Bank TVS Gold Credit Card",
+      "annual_fee": 1500,
+      "renewal_fee": 1500,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.11, RBL Bank TVS Gold Credit Card row"
+    },
+    {
+      "name": "RBL Bank TVS Credit Card",
+      "annual_fee": 500,
+      "renewal_fee": 500,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.11, RBL Bank TVS Credit Card row"
+    },
+    {
+      "name": "Jalsa",
+      "annual_fee": 999,
+      "renewal_fee": 999,
+      "fee_waiver": null,
+      "source_section": "A.i Annual membership fees table p.11, Jalsa row"
+    },
+    {
+      "name": "Cookies (for Cards issued after May 10, 2021)",
+      "annual_fee": 100,
+      "renewal_fee": 100,
+      "fee_waiver": "NIL on monthly spends of INR 5,000 or more in the Previous month",
+      "source_section": "A.ii Monthly fees table p.10, Cookies (issued after May 10 2021) row (monthly fee)"
+    },
+    {
+      "name": "Monthly Treats",
+      "annual_fee": 100,
+      "renewal_fee": 100,
+      "fee_waiver": "NIL on eligible monthly spends of INR 5000 or more in the previous month",
+      "source_section": "A.ii Monthly fees table p.10, Monthly Treats row (monthly fee)"
+    }
+  ],
+  "bank_defaults": {
+    "forex": 3.5,
+    "forex_exceptions": {
+      "Nova": 2,
+      "Insignia": 1.5,
+      "Insignia Prime": 1.5,
+      "World Xclusive": 1.5,
+      "iGlobe": 1.5,
+      "World Safari": 0,
+      "World Safari Lite": 0,
+      "World Safari Plus": 0,
+      "Lumière": 0
+    },
+    "finance_pm_unsecured": 3.99,
+    "finance_pa_unsecured": 47.88,
+    "finance_pm_secured": 2.5,
+    "finance_pa_secured": 30,
+    "cash_advance": "2.5% of the cash amount withdrawn (Minimum INR 500)",
+    "late_fee_tiers": "12.5% of Total Outstanding Amount, Min INR 5 / Max INR 1,300",
+    "interest_free_days": "Up to 50 days",
+    "source_section": "A.iii Other Fees and Charges (Foreign Currency Markup) p.13; A.iv Applicable Finance Charges table p.17; A.iii.a Cash advance fees p.15; A.v Late Payment Charges p.20; KFS Interest Free (grace) Period p.1"
+  }
+}

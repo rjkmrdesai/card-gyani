@@ -1,0 +1,285 @@
+{
+  "id": "icici",
+  "bank": "ICICI",
+  "source_url": "https://www.icici.bank.in/managed-assets/docs/personal/cards/mitc_cc.pdf",
+  "cards": [
+    {
+      "name": "Times Black ICICI Bank Credit Card",
+      "annual_fee": 20000,
+      "renewal_fee": 20000,
+      "fee_waiver": "Minimum Spends for Annual fee reversal: Rs.25,00,000",
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.1, Times Black ICICI Bank Credit Card row"
+    },
+    {
+      "name": "ICICI Bank Emeralde Private Metal Credit Card",
+      "annual_fee": 12499,
+      "renewal_fee": 12499,
+      "fee_waiver": "Minimum Spends for Annual fee reversal: Rs.10,00,000",
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.1, ICICI Bank Emeralde Private Metal Credit Card row (w.e.f. Jan 15, 2026)"
+    },
+    {
+      "name": "ICICI Bank Emeralde Private Credit Card",
+      "annual_fee": 12000,
+      "renewal_fee": 12000,
+      "fee_waiver": "Minimum Spends for Annual fee reversal: Rs.10,00,000",
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.1, ICICI Bank Emeralde Private Credit Card row"
+    },
+    {
+      "name": "ICICI Bank Emeralde Credit Card",
+      "annual_fee": 12000,
+      "renewal_fee": 12000,
+      "fee_waiver": "Minimum Spends for Annual fee reversal: Rs.10,00,000",
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.1, ICICI Bank Emeralde Credit Card row"
+    },
+    {
+      "name": "ICICI Bank Sapphiro Credit Card",
+      "annual_fee": 6500,
+      "renewal_fee": 3500,
+      "fee_waiver": "Minimum Spends for Annual fee reversal: Rs.6,00,000",
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.1, ICICI Bank Sapphiro Credit Card row"
+    },
+    {
+      "name": "ICICI Bank Rubyx Credit Card",
+      "annual_fee": 3000,
+      "renewal_fee": 2000,
+      "fee_waiver": "Minimum Spends for Annual fee reversal: Rs.3,00,000",
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.1, ICICI Bank Rubyx Credit Card row"
+    },
+    {
+      "name": "ICICI Bank Coral Credit Card",
+      "annual_fee": 500,
+      "renewal_fee": 500,
+      "fee_waiver": "Minimum Spends for Annual fee reversal: Rs.1,50,000",
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.1, ICICI Bank Coral Credit Card row"
+    },
+    {
+      "name": "ICICI Bank Platinum Chip Credit Card",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.2, ICICI Bank Platinum Chip Credit Card row"
+    },
+    {
+      "name": "ICICI Bank Signature Credit Card",
+      "annual_fee": 25000,
+      "renewal_fee": 2000,
+      "fee_waiver": null,
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.2, ICICI Bank Signature Credit Card row"
+    },
+    {
+      "name": "ICICI Bank Ascent American Express (R) Credit Card",
+      "annual_fee": 4000,
+      "renewal_fee": 1000,
+      "fee_waiver": null,
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.2, ICICI Bank Ascent American Express (R) Credit Card row"
+    },
+    {
+      "name": "ICICI Bank Platinum Identity Credit Card",
+      "annual_fee": 2000,
+      "renewal_fee": 750,
+      "fee_waiver": null,
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.2, ICICI Bank Platinum Identity Credit Card row"
+    },
+    {
+      "name": "ICICI Bank HPCL Platinum Credit Card / ICICI Bank HPCL Titanium Credit Card / ICICI Bank HPCL Coral Credit Card",
+      "annual_fee": 199,
+      "renewal_fee": 199,
+      "fee_waiver": "Minimum Spends for Annual fee reversal: Rs.50,000",
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.2, ICICI Bank HPCL Platinum/Titanium/Coral Credit Card row"
+    },
+    {
+      "name": "ICICI Bank HPCL Super Saver Credit Card",
+      "annual_fee": 500,
+      "renewal_fee": 500,
+      "fee_waiver": "Minimum Spends for Annual fee reversal: Rs.1,50,000",
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.2, ICICI Bank HPCL Super Saver Credit Card row"
+    },
+    {
+      "name": "Manchester United Signature Credit Card",
+      "annual_fee": 2499,
+      "renewal_fee": 2499,
+      "fee_waiver": "Minimum Spends for Annual fee reversal: Rs.2,50,000",
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.2, Manchester United Signature Credit Card row"
+    },
+    {
+      "name": "Manchester United Platinum Credit Card",
+      "annual_fee": 499,
+      "renewal_fee": 499,
+      "fee_waiver": "Minimum Spends for Annual fee reversal: Rs.1,25,000",
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.2, Manchester United Platinum Credit Card row"
+    },
+    {
+      "name": "Chennai Super Kings ICICI Bank Credit Card",
+      "annual_fee": 500,
+      "renewal_fee": 500,
+      "fee_waiver": "Minimum Spends for Annual fee reversal: Rs.1,50,000",
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.2, Chennai Super Kings ICICI Bank Credit Card row"
+    },
+    {
+      "name": "Adani One ICICI Bank Signature Credit Card",
+      "annual_fee": 5000,
+      "renewal_fee": 5000,
+      "fee_waiver": "Minimum Spends for Annual fee reversal: Rs.6,00,000",
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.2, Adani One ICICI Bank Signature Credit Card row"
+    },
+    {
+      "name": "Adani One ICICI Bank Platinum Credit Card",
+      "annual_fee": 750,
+      "renewal_fee": 750,
+      "fee_waiver": "Minimum Spends for Annual fee reversal: Rs.3,00,000",
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.2, Adani One ICICI Bank Platinum Credit Card row"
+    },
+    {
+      "name": "MakeMyTrip ICICI Bank Credit Card",
+      "annual_fee": 999,
+      "renewal_fee": 999,
+      "fee_waiver": "Minimum Spends for Annual fee reversal: Rs.3,00,000",
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.3, MakeMyTrip ICICI Bank Credit Card row"
+    },
+    {
+      "name": "ICICI Bank Unifare Credit Card",
+      "annual_fee": 299,
+      "renewal_fee": 299,
+      "fee_waiver": "Minimum Spends for Annual fee reversal: Rs.50,000",
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.3, ICICI Bank Unifare Credit Card row"
+    },
+    {
+      "name": "ICICI Bank Coral Credit Card against Fixed Deposit",
+      "annual_fee": 500,
+      "renewal_fee": 500,
+      "fee_waiver": "Minimum Spends for Annual fee reversal: Rs.1,50,000",
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.3, ICICI Bank Coral Credit Card against Fixed Deposit row"
+    },
+    {
+      "name": "ICICI Bank Instant Platinum Credit Card",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.3, ICICI Bank Instant Platinum Credit Card row"
+    },
+    {
+      "name": "Accelero ICICI Bank Credit Card",
+      "annual_fee": 499,
+      "renewal_fee": 499,
+      "fee_waiver": "Minimum Spends for Annual fee reversal: Rs.1,25,000",
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.3, Accelero ICICI Bank Credit Card row"
+    },
+    {
+      "name": "MakeMyTrip ICICI Bank Platinum Credit Card",
+      "annual_fee": 500,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.3, MakeMyTrip ICICI Bank Platinum Credit Card row"
+    },
+    {
+      "name": "MakeMyTrip ICICI Bank Signature Credit Card",
+      "annual_fee": 2500,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.3, MakeMyTrip ICICI Bank Signature Credit Card row"
+    },
+    {
+      "name": "ICICI Bank Parakram Credit Card",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.3, ICICI Bank Parakram Credit Card row"
+    },
+    {
+      "name": "ICICI Bank Parakram Select Credit Card",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.3, ICICI Bank Parakram Select Credit Card row"
+    },
+    {
+      "name": "Emirates Skywards ICICI Bank Emerald Credit Card",
+      "annual_fee": 10000,
+      "renewal_fee": 10000,
+      "fee_waiver": null,
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.3, Emirates Skywards ICICI Bank Emerald Credit Card row"
+    },
+    {
+      "name": "Emirates Skywards ICICI Bank Sapphiro Credit Card",
+      "annual_fee": 5000,
+      "renewal_fee": 5000,
+      "fee_waiver": null,
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.3, Emirates Skywards ICICI Bank Sapphiro Credit Card row"
+    },
+    {
+      "name": "Emirates Skywards ICICI Bank Rubyx Credit Card",
+      "annual_fee": 1000,
+      "renewal_fee": 1000,
+      "fee_waiver": null,
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.4, Emirates Skywards ICICI Bank Rubyx Credit Card row"
+    },
+    {
+      "name": "ICICI Bank Expressions Credit Card",
+      "annual_fee": 499,
+      "renewal_fee": 499,
+      "fee_waiver": "Minimum Spends for Annual fee reversal: Rs.1,50,000",
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.4, ICICI Bank Expressions Credit Card row"
+    },
+    {
+      "name": "Amazon Pay ICICI Bank Credit Card",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.4, Amazon Pay ICICI Bank Credit Card row"
+    },
+    {
+      "name": "ICICI Bank NRI Coral Credit Card",
+      "annual_fee": 1000,
+      "renewal_fee": 500,
+      "fee_waiver": "Minimum Spends for Annual fee reversal: Rs.1,50,000",
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.4, ICICI Bank NRI Coral Credit Card row"
+    },
+    {
+      "name": "ICICI Bank NRI Sapphiro Credit Card",
+      "annual_fee": 6500,
+      "renewal_fee": 3500,
+      "fee_waiver": "Minimum Spends for Annual fee reversal: Rs.6,00,000",
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.4, ICICI Bank NRI Sapphiro Credit Card row"
+    },
+    {
+      "name": "ICICI Bank Rubyx Credit Card against Fixed Deposit",
+      "annual_fee": 3000,
+      "renewal_fee": 2000,
+      "fee_waiver": "Minimum Spends for Annual fee reversal: Rs.3,00,000",
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.4, ICICI Bank Rubyx Credit Card against Fixed Deposit row"
+    },
+    {
+      "name": "ICICI Bank Diamant World Mastercard Credit Card",
+      "annual_fee": 125000,
+      "renewal_fee": 10000,
+      "fee_waiver": "Minimum Spends for Annual fee reversal: Rs.25,00,000",
+      "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.4, ICICI Bank Diamant World Mastercard Credit Card row"
+    },
+    {
+      "name": "Mine Credit Card by ICICI Bank",
+      "annual_fee": null,
+      "renewal_fee": null,
+      "fee_waiver": "Monthly plans: Starter Free Plan Nil; Pro 49 Plan Rs.49/month (reversed on spends of Rs.10,000 in plan cycle); Premium 149 Plan Rs.149/month (reversed on spends of Rs.20,000 in plan cycle). Charged monthly, not annually.",
+      "source_section": "Section I a)1. Mine Credit Card by ICICI Bank monthly plan table p.5"
+    }
+  ],
+  "bank_defaults": {
+    "forex": 3.5,
+    "forex_exceptions": {
+      "ICICI Bank Emeralde Private Metal Credit Card": 2,
+      "ICICI Bank Emeralde Private Credit Card": 2,
+      "ICICI Bank Emeralde Credit Card": 2,
+      "MakeMyTrip ICICI Bank Credit Card": 0.99,
+      "Times Black ICICI Bank Credit Card": 1.49,
+      "Amazon Pay ICICI Bank Credit Card": 1.99
+    },
+    "finance_pm_unsecured": 3.75,
+    "finance_pa_unsecured": 45,
+    "finance_pm_secured": null,
+    "finance_pa_secured": null,
+    "cash_advance": "On all cards - 2.5% on advanced amount, subject to minimum transaction fee of Rs.500. Exception: ICICI Bank Emeralde Private Metal Credit Card - Nil, ICICI Bank Emeralde Credit Card - Nil, ICICI Bank Emeralde Private Credit Card - Nil, Times Black ICICI Bank Credit Card - Nil",
+    "late_fee_tiers": "Less than Rs.100: None; Between Rs.100-Rs.500: Rs.100; Between Rs.501-Rs.1,000: Rs.500; Between Rs.1,001-Rs.5,000: Rs.600; Between Rs.5,001-Rs.10,000: Rs.750; Between Rs.10,001-Rs.25,000: Rs.900; Between Rs.25,001-Rs.50,000: Rs.1,100; More than Rs.50,000: Rs.1,300 (excluding ICICI Bank Emeralde Private Metal Credit Card)",
+    "interest_free_days": "18 to 48 days",
+    "source_section": "Section I a) 2. Finance Charges (p.7); 3. Other Service Charges and Fees - Foreign currency transactions (p.8) & Cash advance (p.9); 5. Penal Charges and Fees - Late payment charges (p.18); 7. Interest-Free Period and Grace Period (p.21)"
+  }
+}

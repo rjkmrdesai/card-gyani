@@ -1,0 +1,450 @@
+{
+  "id": "hdfc",
+  "bank": "HDFC",
+  "source_url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/personal-mitc/mitc-in-english.pdf",
+  "cards": [
+    {
+      "name": "Infinia (Metal Edition)",
+      "annual_fee": 12500,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.10 Lakh / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.2, Infinia (Metal Edition) row"
+    },
+    {
+      "name": "Infinia",
+      "annual_fee": 10000,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.8 Lakh / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.2, Infinia row"
+    },
+    {
+      "name": "Diners Black Metal Edition",
+      "annual_fee": null,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.8 Lakh / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.2, Diners Black Metal Edition row (joining fee cell blank in source)"
+    },
+    {
+      "name": "Diners Black",
+      "annual_fee": null,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.5 Lakh / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.2, Diners Black row (joining fee cell blank in source)"
+    },
+    {
+      "name": "BizBlack Metal Card",
+      "annual_fee": null,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.7.5 Lakh / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.2, BizBlack Metal Card row (joining fee cell blank in source)"
+    },
+    {
+      "name": "Regalia Gold",
+      "annual_fee": 2500,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.4 Lakh / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.2, Regalia Gold row"
+    },
+    {
+      "name": "BizPower",
+      "annual_fee": null,
+      "renewal_fee": null,
+      "fee_waiver": null,
+      "source_section": "Joining fees and Annual membership fees table p.2, BizPower row (joining fee cell blank in source)"
+    },
+    {
+      "name": "Tata Neu Infinity HDFC Bank",
+      "annual_fee": 1499,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.3 Lakh / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.2, Tata Neu Infinity HDFC Bank row"
+    },
+    {
+      "name": "6E Rewards Indigo XL",
+      "annual_fee": 1500,
+      "renewal_fee": null,
+      "fee_waiver": null,
+      "source_section": "Joining fees and Annual membership fees table p.3, 6E Rewards Indigo XL row (waiver NA)"
+    },
+    {
+      "name": "Regalia First, Business Regalia First",
+      "annual_fee": 1000,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.1 Lakh / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.3, Regalia First / Business Regalia First row"
+    },
+    {
+      "name": "Diners Club Rewardz",
+      "annual_fee": null,
+      "renewal_fee": null,
+      "fee_waiver": null,
+      "source_section": "Joining fees and Annual membership fees table p.3, Diners Club Rewardz row (joining fee cell blank in source)"
+    },
+    {
+      "name": "Diners Club Miles",
+      "annual_fee": null,
+      "renewal_fee": null,
+      "fee_waiver": null,
+      "source_section": "Joining fees and Annual membership fees table p.3, Diners Club Miles row (joining fee cell blank in source)"
+    },
+    {
+      "name": "Diners Privilege",
+      "annual_fee": 1000,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.3 Lakh / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.3, Diners Privilege row"
+    },
+    {
+      "name": "Regalia, Regalia Activ, Business Regalia, Diners Club Premium, Doctor's Regalia",
+      "annual_fee": 2500,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.3 Lakh / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.3, Regalia / Regalia Activ / Business / Diners Club Premium / Doctor's Regalia row"
+    },
+    {
+      "name": "6E Rewards Indigo",
+      "annual_fee": 500,
+      "renewal_fee": null,
+      "fee_waiver": null,
+      "source_section": "Joining fees and Annual membership fees table p.3, 6E Rewards Indigo row (waiver NA)"
+    },
+    {
+      "name": "HDFC Bank UPI RuPay / HDFC Bank UPI RuPay Biz / HDFC Bank UPI RuPay Mega Saver Credit Card",
+      "annual_fee": 99,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.25,000 / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.3, HDFC Bank UPI RuPay row"
+    },
+    {
+      "name": "Easy EMI",
+      "annual_fee": 500,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.50,000 / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.3, Easy EMI row"
+    },
+    {
+      "name": "Business Platinum",
+      "annual_fee": 0,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.30,000 / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.3, Business Platinum row (fee = Free)"
+    },
+    {
+      "name": "Times Platinum / Times Card Credit Platinum",
+      "annual_fee": 1000,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.2.5 lakh / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.3, Times Platinum / Times Card Credit Platinum row"
+    },
+    {
+      "name": "Equitas Elegance",
+      "annual_fee": null,
+      "renewal_fee": null,
+      "fee_waiver": null,
+      "source_section": "Joining fees and Annual membership fees table p.3, Equitas Elegance row (joining fee cell blank in source)"
+    },
+    {
+      "name": "Millennia",
+      "annual_fee": null,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.1 Lakh / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.4, Millennia row (joining fee cell blank in source)"
+    },
+    {
+      "name": "Equitas Excite",
+      "annual_fee": 500,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.1 Lakh / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.4, Equitas Excite row"
+    },
+    {
+      "name": "BizGrow",
+      "annual_fee": null,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.1 Lakh / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.4, BizGrow row (joining fee cell blank in source)"
+    },
+    {
+      "name": "BizFirst",
+      "annual_fee": null,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.50,000 / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.4, BizFirst row (joining fee cell blank in source)"
+    },
+    {
+      "name": "Micro Enterprise card",
+      "annual_fee": null,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.1 Lakh / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.4, Micro Enterprise card row (joining fee cell blank in source)"
+    },
+    {
+      "name": "GIGA Business",
+      "annual_fee": null,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.50,000 / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.4, GIGA Business row (joining fee cell blank in source)"
+    },
+    {
+      "name": "MoneyBack, MoneyBack+, Business Moneyback, Freedom, Best Price Save Smart, Indian Oil HDFC Bank",
+      "annual_fee": null,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.50,000 / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.4, MoneyBack / MoneyBack+ / Business Moneyback / Freedom / Best Price Save Smart / Indian Oil row (joining fee cell blank in source)"
+    },
+    {
+      "name": "Small Business Moneyback",
+      "annual_fee": 250,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.25,000 / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.4, Small Business Moneyback row"
+    },
+    {
+      "name": "TimesTitanium / Times Card Credit",
+      "annual_fee": 500,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.1.5 lakh / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.4, TimesTitanium / Times Card Credit row"
+    },
+    {
+      "name": "Shoppers Stop Black HDFC Bank",
+      "annual_fee": 4500,
+      "renewal_fee": null,
+      "fee_waiver": null,
+      "source_section": "Joining fees and Annual membership fees table p.4, Shoppers Stop Black HDFC Bank row (waiver NA)"
+    },
+    {
+      "name": "Superia",
+      "annual_fee": 1000,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.1 lakh / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.4, Superia row"
+    },
+    {
+      "name": "Paytm HDFC Bank Select",
+      "annual_fee": null,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.50,000 within 90 days for 1st year membership fee and Rs.1.5 Lakh / Annum for annual fee",
+      "source_section": "Joining fees and Annual membership fees table p.4, Paytm HDFC Bank Select row (joining fee cell blank in source)"
+    },
+    {
+      "name": "AllMiles",
+      "annual_fee": null,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.1 lakh / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.4, AllMiles row (joining fee cell blank in source)"
+    },
+    {
+      "name": "Doctors Superia",
+      "annual_fee": null,
+      "renewal_fee": null,
+      "fee_waiver": null,
+      "source_section": "Joining fees and Annual membership fees table p.4, Doctors Superia row (joining fee cell blank in source)"
+    },
+    {
+      "name": "Paytm HDFC Bank Select Business",
+      "annual_fee": null,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.60,000 within 90 days for 1st year membership fee and Rs.1 Lakh / Annum for annual fee",
+      "source_section": "Joining fees and Annual membership fees table p.5, Paytm HDFC Bank Select Business row (joining fee cell blank in source)"
+    },
+    {
+      "name": "Best Price Save Max",
+      "annual_fee": null,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.75,000 / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.5, Best Price Save Max row (joining fee cell blank in source)"
+    },
+    {
+      "name": "Pine Labs HDFC Bank Pro",
+      "annual_fee": null,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.75,000 within 90 days for 1st year membership fee and Rs.1,00,000 / Annum for renewal fee",
+      "source_section": "Joining fees and Annual membership fees table p.5, Pine Labs HDFC Bank Pro row (joining fee cell blank in source)"
+    },
+    {
+      "name": "Paytm HDFC Bank Business",
+      "annual_fee": 500,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.30,000 within 90 days for 1st year membership fee and Rs.50,000 / Annum for annual fee",
+      "source_section": "Joining fees and Annual membership fees table p.5, Paytm HDFC Bank Business row"
+    },
+    {
+      "name": "Pharmeasy HDFC Bank",
+      "annual_fee": null,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.150 within 90 days for 1st year membership fee and Rs.70,000 / Annum for renewal fee",
+      "source_section": "Joining fees and Annual membership fees table p.5, Pharmeasy HDFC Bank row (joining fee cell blank in source)"
+    },
+    {
+      "name": "IRCTC HDFC Bank Credit Card",
+      "annual_fee": null,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.1.5 lakh / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.5, IRCTC HDFC Bank Credit Card row (joining fee cell blank in source)"
+    },
+    {
+      "name": "Snapdeal HDFC Bank",
+      "annual_fee": null,
+      "renewal_fee": null,
+      "fee_waiver": null,
+      "source_section": "Joining fees and Annual membership fees table p.5, Snapdeal HDFC Bank row (joining fee cell blank in source)"
+    },
+    {
+      "name": "Bharat CashBack / Teacher's Platinum / Solitaire",
+      "annual_fee": null,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.50,000 / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.5, Bharat CashBack / Teacher's Platinum / Solitaire row (joining fee cell blank in source)"
+    },
+    {
+      "name": "Business Freedom Card / Business Bharat CashBack",
+      "annual_fee": null,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.20,000 / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.5, Business Freedom Card / Business Bharat CashBack row (joining fee cell blank in source)"
+    },
+    {
+      "name": "Paytm HDFC Bank",
+      "annual_fee": 500,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.30,000 within 90 days for 1st year membership fee and Rs.50,000 / Annum for renewal fee",
+      "source_section": "Joining fees and Annual membership fees table p.5, Paytm HDFC Bank row"
+    },
+    {
+      "name": "Paytm HDFC Bank Digital Credit Card",
+      "annual_fee": 149,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.1,000 within 30 days for 1st year membership fee and Rs.25,000 / Annum for renewal fee",
+      "source_section": "Joining fees and Annual membership fees table p.5, Paytm HDFC Bank Digital Credit Card row (Rs.149 per annum)"
+    },
+    {
+      "name": "Pine Labs HDFC Bank",
+      "annual_fee": 499,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.45,000 within 90 days for 1st year membership fee and Rs.50,000 / Annum for renewal fee",
+      "source_section": "Joining fees and Annual membership fees table p.6, Pine Labs HDFC Bank row"
+    },
+    {
+      "name": "Retailio HDFC Bank",
+      "annual_fee": null,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.50,000 / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.6, Retailio HDFC Bank row (joining fee cell blank in source)"
+    },
+    {
+      "name": "Flipkart Wholesale",
+      "annual_fee": null,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.3 lakh / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.6, Flipkart Wholesale row (joining fee cell blank in source)"
+    },
+    {
+      "name": "Tata Neu Plus HDFC Bank",
+      "annual_fee": null,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.1 lakh / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.6, Tata Neu Plus HDFC Bank row (joining fee cell blank in source)"
+    },
+    {
+      "name": "Shoppers Stop HDFC Bank",
+      "annual_fee": 299,
+      "renewal_fee": null,
+      "fee_waiver": null,
+      "source_section": "Joining fees and Annual membership fees table p.6, Shoppers Stop HDFC Bank row"
+    },
+    {
+      "name": "Platinum Edge",
+      "annual_fee": 599,
+      "renewal_fee": null,
+      "fee_waiver": null,
+      "source_section": "Joining fees and Annual membership fees table p.6, Platinum Edge row (waiver NA)"
+    },
+    {
+      "name": "Business Program",
+      "annual_fee": 500,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.20,000 within 90 days for 1st year membership fee and Rs.1,00,000 / Annum for renewal fee",
+      "source_section": "Joining fees and Annual membership fees table p.6, Business Program row"
+    },
+    {
+      "name": "Swiggy HDFC Bank Credit Card",
+      "annual_fee": 500,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.2 lakh / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.6, Swiggy HDFC Bank Credit Card row"
+    },
+    {
+      "name": "Swiggy Ornge HDFC Bank Credit Card",
+      "annual_fee": 500,
+      "renewal_fee": null,
+      "fee_waiver": "Annual Fee starting second Year waived off on spending Rs.1.5 lakh / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.6, Swiggy Ornge HDFC Bank Credit Card row"
+    },
+    {
+      "name": "Swiggy BLCK HDFC Bank Credit Card",
+      "annual_fee": 1000,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.1000 joining Fees Waived off on spending Rs.75,000 within 90 Days of Card issuance. Annual Fee starting second Year waived off on spending Rs.2 Lakh / Annum",
+      "source_section": "Joining fees and Annual membership fees table p.6, Swiggy BLCK HDFC Bank Credit Card row"
+    },
+    {
+      "name": "Marriott Bonvoy HDFC Bank Credit Card",
+      "annual_fee": 3000,
+      "renewal_fee": null,
+      "fee_waiver": null,
+      "source_section": "Joining fees and Annual membership fees table p.6, Marriott Bonvoy HDFC Bank Credit Card row (waiver NA)"
+    },
+    {
+      "name": "PhonePe HDFC Bank Ultimo Credit Card",
+      "annual_fee": 999,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.2 lakh per annum for waiver of renewal fee (spends exclusions given below). No waiver on Joining Fee.",
+      "source_section": "Joining fees and Annual membership fees table p.6, PhonePe HDFC Bank Ultimo Credit Card row (Rs.999 + Applicable Taxes)"
+    },
+    {
+      "name": "PhonePe HDFC Bank Uno Credit Card",
+      "annual_fee": 499,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.1 lakh per annum for waiver of renewal fee (spends exclusions given below). No waiver on Joining Fee.",
+      "source_section": "Joining fees and Annual membership fees table p.6, PhonePe HDFC Bank Uno Credit Card row (Rs.499 + Applicable taxes)"
+    },
+    {
+      "name": "PIXEL Go",
+      "annual_fee": 250,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.10,000 in 90 days for joining fee waiver; Rs.50,000 per annum for renewal fee waiver",
+      "source_section": "Section I Key Fact Sheet, PIXEL fee table p.34, PIXEL Go row"
+    },
+    {
+      "name": "PIXEL Play",
+      "annual_fee": 500,
+      "renewal_fee": null,
+      "fee_waiver": "Rs.20,000 in 90 days for joining fee waiver; Rs.1,00,000 per annum for renewal fee waiver",
+      "source_section": "Section I Key Fact Sheet, PIXEL fee table p.34, PIXEL Play row"
+    }
+  ],
+  "bank_defaults": {
+    "forex": null,
+    "forex_exceptions": {
+      "Infinia (Metal Edition)": 2,
+      "Infinia": 2,
+      "6E Rewards Indigo XL": 2.5,
+      "Regalia First, Business Regalia First": 3.5,
+      "Diners Club Miles": 3.5,
+      "PhonePe HDFC Bank Ultimo Credit Card": 3.5,
+      "PhonePe HDFC Bank Uno Credit Card": 3.5,
+      "TimesTitanium / Times Card Credit": 3.5,
+      "PIXEL Go": 3.5,
+      "PIXEL Play": 3.5
+    },
+    "finance_pm_unsecured": 3.75,
+    "finance_pa_unsecured": 45.0,
+    "finance_pm_secured": 3.75,
+    "finance_pa_secured": 45.0,
+    "cash_advance": "2.5% (Excluding Infinia, Infinia Metal Edition) or Rs.500 whichever is higher",
+    "late_fee_tiers": "Outstanding Balance -> Late Payment Charges (Excl. GST): Less than equal to Rs.100: Nil; Rs.101 to Rs.500: Rs.100; Rs.501 to Rs.1,000: Rs.500; Rs.1,001 to Rs.5,000: Rs.600; Rs.5,001 to Rs.10,000: Rs.750; Rs.10,001 to Rs.25,000: Rs.900; Rs.25,001 to Rs.50,000: Rs.1100; More than Rs.50,000: Rs.1300",
+    "interest_free_days": "20 to 50 days (BizBlack Metal Card, BizPower, BizGrow, BizFirst, GIGA, Micro Enterprise Card: 25 to 55 days)",
+    "source_section": "Sections ii Cash advance fee (p.7), v Finance charges for both revolving credit and cash advances (p.10), iv Interest free (grace Period) (p.10), and Late Payment Charges table (p.11)"
+  }
+}

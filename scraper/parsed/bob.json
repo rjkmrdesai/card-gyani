@@ -1,0 +1,206 @@
+{
+  "id": "bob",
+  "bank": "Bank of Baroda",
+  "source_url": "https://online.bobcard.co.in/assets/BOBCARD_MITS.pdf",
+  "cards": [
+    {
+      "name": "Easy",
+      "annual_fee": 500,
+      "renewal_fee": 500,
+      "fee_waiver": "Joining: Rs.6,000 in first 60 days; Annual: Rs.35,000 in a anniversary year",
+      "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, Easy row; and ii. Annual Fees table, Easy row"
+    },
+    {
+      "name": "Select",
+      "annual_fee": 700,
+      "renewal_fee": 700,
+      "fee_waiver": "Joining: Rs.7,500 in first 60 days; Annual: Rs.70,000 in a anniversary year",
+      "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, Select row; and ii. Annual Fees table, Select row"
+    },
+    {
+      "name": "Premier",
+      "annual_fee": 1000,
+      "renewal_fee": 1000,
+      "fee_waiver": "Joining: Rs.10,000 in first 60 days; Annual: Rs.1,20,000 in a anniversary year",
+      "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, Premier row; and ii. Annual Fees table, Premier row"
+    },
+    {
+      "name": "Eterna/Eterna (FD Backed)",
+      "annual_fee": 2499,
+      "renewal_fee": 2499,
+      "fee_waiver": "Joining: Rs.25,000 in first 60 days; Annual: Rs.2,50,000 in a anniversary year",
+      "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, Eterna/Eterna (FD Backed) row; and ii. Annual Fees table, Eterna/Eterna (FD Backed) row"
+    },
+    {
+      "name": "Tiara",
+      "annual_fee": 2499,
+      "renewal_fee": 2499,
+      "fee_waiver": "Joining: Rs.25,000 in first 60 days; Annual: Rs.2,50,000 in a anniversary year",
+      "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, Tiara row; and ii. Annual Fees table, Tiara row"
+    },
+    {
+      "name": "Swavlamban",
+      "annual_fee": 250,
+      "renewal_fee": 250,
+      "fee_waiver": "Joining: Rs.2,500 in first 60 days; Annual: Rs.12,000 in a anniversary Year",
+      "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, Swavlamban row; and ii. Annual Fees table, Swavlamban row"
+    },
+    {
+      "name": "Easy/Select/Premier (FD Backed)",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, Easy/Select/Premier (FD Backed) row; and ii. Annual Fees table, Easy/Select/Premier (FD Backed) row"
+    },
+    {
+      "name": "ConQR",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, ConQR row; and ii. Annual Fees table, ConQR row"
+    },
+    {
+      "name": "Empower Business Card",
+      "annual_fee": 0,
+      "renewal_fee": 500,
+      "fee_waiver": "Annual: Rs.50,000 in anniversary year",
+      "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, Empower Business Card row (NIL); and ii. Annual Fees table, Empower Business Card row (Rs.500)"
+    },
+    {
+      "name": "Corporate Global",
+      "annual_fee": 0,
+      "renewal_fee": 1000,
+      "fee_waiver": "Annual: Rs.100,000 in anniversary year",
+      "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, Corporate Global row (NIL); and ii. Annual Fees table, Corporate Global row (Rs.1000)"
+    },
+    {
+      "name": "PRAGATI",
+      "annual_fee": 0,
+      "renewal_fee": 250,
+      "fee_waiver": "Annual: Rs.25,000 in a anniversary year",
+      "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, PRAGATI row (NIL); and ii. Annual Fees table, PRAGATI row (Rs.250)"
+    },
+    {
+      "name": "Renaissance",
+      "annual_fee": 0,
+      "renewal_fee": 250,
+      "fee_waiver": "Annual: Rs.25,000 in a anniversary year",
+      "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, Renaissance row (NIL); and ii. Annual Fees table, Renaissance row (Rs.250)"
+    },
+    {
+      "name": "IRCTC",
+      "annual_fee": 500,
+      "renewal_fee": 350,
+      "fee_waiver": null,
+      "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, IRCTC row (Rs.500); and ii. Annual Fees table, IRCTC row (Rs.350)"
+    },
+    {
+      "name": "HPCL Energie",
+      "annual_fee": 499,
+      "renewal_fee": 499,
+      "fee_waiver": "Annual: Rs.50,000 in anniversary year",
+      "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, HPCL Energie row (Rs.499, NIL waiver); and ii. Annual Fees table, HPCL Energie row (Rs.499)"
+    },
+    {
+      "name": "Snapdeal",
+      "annual_fee": 249,
+      "renewal_fee": 249,
+      "fee_waiver": null,
+      "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, Snapdeal row (Rs.249); and ii. Annual Fees table, Snapdeal row (Rs.249)"
+    },
+    {
+      "name": "ICMAI One",
+      "annual_fee": 1,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, ICMAI One row (Rs.1); and ii. Annual Fees table, ICMAI One row (NIL)"
+    },
+    {
+      "name": "ICSI Dimond",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, ICSI Dimond row; and ii. Annual Fees table, ICSI Dimond row"
+    },
+    {
+      "name": "ICAI Exclusive",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "Joining Fee intro table (ICAI Exclusive, NIL); and TARIFF OF CHARGES ii. Annual Fees table, ICAI Exclusive row (NIL)"
+    },
+    {
+      "name": "Yoddha",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "Joining Fee intro table (Yoddha, NIL); and TARIFF OF CHARGES ii. Annual Fees table, Yoddha row (NIL)"
+    },
+    {
+      "name": "The Sentinel",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "Joining Fee intro table (The Sentinel, NIL); and TARIFF OF CHARGES ii. Annual Fees table, The Sentinel row (NIL)"
+    },
+    {
+      "name": "Rakshamah",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "Joining Fee intro table (Rakshamah, NIL); and TARIFF OF CHARGES ii. Annual Fees table, Rakshamah row (NIL)"
+    },
+    {
+      "name": "Vikram",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "Joining Fee intro table (Vikram, NIL); and TARIFF OF CHARGES ii. Annual Fees table, Vikram row (NIL)"
+    },
+    {
+      "name": "Varunah Premium",
+      "annual_fee": 2499,
+      "renewal_fee": 2499,
+      "fee_waiver": "Joining: Rs.25,000 in 180 days; Annual: Rs.150,000 in anniversary year",
+      "source_section": "Joining Fee intro table (Varunah Premium, Rs.2,499, Rs.25,000 in 180 days); and TARIFF OF CHARGES ii. Annual Fees table, Varunah Premium row (Rs.2,499, Rs.150,000 in anniversary year)"
+    },
+    {
+      "name": "Varunah Plus",
+      "annual_fee": 1499,
+      "renewal_fee": 1499,
+      "fee_waiver": "Joining: Rs.15,000 in 180 days; Annual: Rs.150,000 in anniversary year",
+      "source_section": "Joining Fee intro table (Varunah Plus, Rs.1,499, Rs.15,000 in 180 days); and TARIFF OF CHARGES ii. Annual Fees table, Varunah Plus row (Rs.1,499, Rs.150,000 in anniversary year)"
+    },
+    {
+      "name": "Varunah",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "Joining Fee intro table (Varunah, NIL); and TARIFF OF CHARGES ii. Annual Fees table, Varunah row (NIL)"
+    }
+  ],
+  "bank_defaults": {
+    "forex": 3.5,
+    "forex_exceptions": {
+      "Eterna": 2,
+      "Tiara": 2,
+      "Varunah Premium": 2,
+      "ICAI": 2,
+      "ICSI": 2,
+      "CMA": 2,
+      "Varunah Plus": 2.5,
+      "Yoddha": 3.0,
+      "The Sentinel": 3.0,
+      "Rakshamah": 3.0,
+      "Vikram": 3.0
+    },
+    "finance_pm_unsecured": 3.75,
+    "finance_pa_unsecured": 45,
+    "finance_pm_secured": null,
+    "finance_pa_secured": null,
+    "cash_advance": "2.50% of the withdrawn amount or Rs.500 whichever is higher",
+    "late_fee_tiers": "Less than Rs.100: NIL; Rs.100 to Rs.500: Rs.100; Rs.501 to Rs.1,000: Rs.400; Rs.1,001 to Rs.10,000: Rs.750; Rs.10,001 to Rs.25,000: Rs.950; Rs.25,001 to Rs.50,000: Rs.1100; More than Rs.50,000: Rs.1300",
+    "interest_free_days": "20 to 50 Days",
+    "source_section": "TARIFF OF CHARGES: Finance Charges (Eterna, Tiara: 3.25% per month i.e. 39% per annum; All other Credit Cards: 3.75% per month i.e. 45% per annum), Cash Withdrawal Charges, Foreign Currency Transaction Fee, Late Payment Charges (Statement Balance / Charges table), and Interest Free Period 20 to 50 Days rows"
+  }
+}
