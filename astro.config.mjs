@@ -1,9 +1,10 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
-// Change `site` to your real production domain — it drives the sitemap + canonical URLs.
+// `site` is the real production domain — it drives the sitemap, canonical
+// tags and Open Graph URLs across every page.
 export default defineConfig({
-  site: 'https://cardgyani.example.com',
+  site: 'https://cardgyani.com',
   output: 'static',
   integrations: [sitemap()],
 });

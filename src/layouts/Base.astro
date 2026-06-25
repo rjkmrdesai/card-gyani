@@ -12,6 +12,9 @@ const {
 } = Astro.props;
 
 const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : Astro.url.pathname;
+// Absolute social-share image on the real domain (override per-page via the `ogImage` prop).
+const { ogImage = '/favicon.svg' } = Astro.props;
+const ogImageUrl = Astro.site ? new URL(ogImage, Astro.site).href : ogImage;
 ---
 <!doctype html>
 <html lang="en">
@@ -28,7 +31,11 @@ const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : As
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:url" content={canonical} />
+  <meta property="og:image" content={ogImageUrl} />
   <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={ogImageUrl} />
   <!-- Fonts (the prototype's families) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

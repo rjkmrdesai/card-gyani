@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cardgyani.example.com/sitemap-index.xml
+Sitemap: https://cardgyani.com/sitemap-index.xml
