@@ -1,0 +1,145 @@
+{
+  "_meta": {
+    "description": "Source manifest for the Card Gyani MITC scraper. One entry per issuer. The scraper reads this file, downloads each MITC, extracts text/tables, and parses cards + bank-wide fee defaults. See scraper/README.md for the full spec.",
+    "last_updated": "2026-06-25",
+    "important_notes": [
+      "MITCs reliably give: card NAMES + annual/renewal fee + waiver condition, plus bank-wide terms (forex, finance %, cash advance, late-fee tiers).",
+      "MITCs usually DO NOT contain: rewards rate, lounge access, welcome benefits, category. Those come from the enrichment stage (product pages).",
+      "'format' tells the fetcher how to download. 'likely_scanned' is only a hint - the scraper must AUTO-DETECT scanned PDFs (if extracted text is near-empty, OCR it) regardless of this flag.",
+      "'product_listing_url' values are best-effort starting points for the enrichment stage and MUST be verified to resolve before use; if one 404s, have Claude Code search for the bank's current credit-cards page.",
+      "'card_coverage' describes how many cards the MITC enumerates: 'fee_table_all' = a big table listing many cards (richest), 'segment' = covers a product family, 'single_or_generic' = one card or generic terms only."
+    ]
+  },
+  "banks": [
+    {
+      "id": "hdfc",
+      "bank": "HDFC",
+      "mitc_url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/personal-mitc/mitc-in-english.pdf",
+      "format": "pdf",
+      "likely_scanned": false,
+      "card_coverage": "fee_table_all",
+      "product_listing_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards",
+      "notes": "Large multi-page text PDF. Look for the fee schedule/annexure that lists card variants with annual + renewal fees."
+    },
+    {
+      "id": "icici",
+      "bank": "ICICI",
+      "mitc_url": "https://www.icici.bank.in/managed-assets/docs/personal/cards/mitc_cc.pdf",
+      "format": "pdf",
+      "likely_scanned": false,
+      "card_coverage": "fee_table_all",
+      "product_listing_url": "https://www.icicibank.com/personal-banking/cards/credit-card",
+      "notes": "Text PDF. Card-wise fee table expected."
+    },
+    {
+      "id": "sbi",
+      "bank": "SBI",
+      "mitc_url": "https://www.sbicard.com/en/most-important-terms-and-conditions.page",
+      "format": "html",
+      "likely_scanned": false,
+      "card_coverage": "fee_table_all",
+      "product_listing_url": "https://www.sbicard.com/en/personal/credit-cards.html",
+      "notes": "HTML page (NOT a PDF). Contains a single fee table listing ~90 card variants with annual + renewal fee + waiver. Parse the HTML table directly. Bank-wide terms: finance up to 3.75%/mo unsecured (2.75%/mo secured), forex 3.5% (with named exceptions), late-fee tiers, cash advance 2.5% (min Rs.500)."
+    },
+    {
+      "id": "axis",
+      "bank": "Axis",
+      "mitc_url": "https://www.axis.bank.in/docs/default-source/default-document-library/mitc-credit-cards.pdf",
+      "format": "pdf",
+      "likely_scanned": false,
+      "card_coverage": "fee_table_all",
+      "product_listing_url": "https://www.axisbank.com/retail/cards/credit-card",
+      "notes": "Text PDF. Card-wise fee table expected."
+    },
+    {
+      "id": "kotak",
+      "bank": "Kotak",
+      "mitc_url": "https://www.kotak.bank.in/content/dam/Kotak/files/english-rcas.pdf",
+      "format": "pdf",
+      "likely_scanned": false,
+      "card_coverage": "fee_table_all",
+      "product_listing_url": "https://www.kotak.com/en/personal-banking/cards/credit-cards.html",
+      "notes": "Filename 'rcas' = Rates, Charges And Schedules. Likely the consolidated fee schedule across cards."
+    },
+    {
+      "id": "idfc",
+      "bank": "IDFC FIRST",
+      "mitc_url": "https://www.idfcfirst.bank.in/content/dam/idfcfirstbank/pdf/credit-card/MITC-Document-Customer.pdf",
+      "format": "pdf",
+      "likely_scanned": false,
+      "card_coverage": "segment",
+      "product_listing_url": "https://www.idfcfirstbank.com/credit-card",
+      "notes": "Text PDF. May state generic terms + per-card variations; confirm whether all variants are listed."
+    },
+    {
+      "id": "indusind",
+      "bank": "IndusInd",
+      "mitc_url": "https://www.indusind.bank.in/content/dam/indusind-platform-images/home/pdf/MITC-Premium-15-6-2016.pdf",
+      "format": "pdf",
+      "likely_scanned": true,
+      "card_coverage": "segment",
+      "product_listing_url": "https://www.indusind.com/in/en/personal/cards/credit-card.html",
+      "notes": "Dated 2016 ('Premium' segment) - OLD and may be image-based/scanned. AUTO-DETECT and OCR if text extraction is sparse. Also flag for review: this MITC may be stale; check the bank site for a newer consolidated MITC during enrichment."
+    },
+    {
+      "id": "bob",
+      "bank": "Bank of Baroda",
+      "mitc_url": "https://online.bobcard.co.in/assets/BOBCARD_MITS.pdf",
+      "format": "pdf",
+      "likely_scanned": false,
+      "card_coverage": "fee_table_all",
+      "product_listing_url": "https://www.bobcard.co.in/credit-card",
+      "notes": "BOBCARD (the BoB card subsidiary) calls it MITS, not MITC. Text PDF expected with card-wise fees."
+    },
+    {
+      "id": "amex",
+      "bank": "American Express",
+      "mitc_url": "https://www.americanexpress.com/content/dam/amex/in/legal/mitc/charge-english-mitc.pdf",
+      "format": "pdf",
+      "likely_scanned": false,
+      "card_coverage": "segment",
+      "product_listing_url": "https://www.americanexpress.com/en-in/credit-cards/",
+      "notes": "This URL is the CHARGE-card MITC only. Amex also has credit cards with a separate MITC. During enrichment, look for the credit-card MITC too (e.g. .../mitc/credit-english-mitc.pdf) and add it as a second Amex source if found."
+    },
+    {
+      "id": "federal",
+      "bank": "Federal Bank",
+      "mitc_url": "https://www.federal.bank.in/credit-cards-mitc",
+      "format": "html",
+      "likely_scanned": false,
+      "card_coverage": "single_or_generic",
+      "product_listing_url": "https://www.federalbank.co.in/credit-card",
+      "notes": "HTML landing page. It may link out to per-card MITC PDFs rather than holding the data inline - if so, follow those links and add them as child sources."
+    },
+    {
+      "id": "yes",
+      "bank": "YES Bank",
+      "mitc_url": "https://www.yes.bank.in/pdf?name=ybl_mitc_pdf.pdf",
+      "format": "pdf",
+      "likely_scanned": false,
+      "card_coverage": "fee_table_all",
+      "product_listing_url": "https://www.yesbank.in/personal-banking/yes-individual/cards/credit-cards",
+      "notes": "PDF served via a query-string endpoint (?name=...). The fetcher must follow redirects and may need a browser-like User-Agent; save the response as a .pdf."
+    },
+    {
+      "id": "rbl",
+      "bank": "RBL Bank",
+      "mitc_url": "https://webassets.rbl.bank.in/document/Credit%20Cards/RBL-MITC-final.pdf",
+      "format": "pdf",
+      "likely_scanned": false,
+      "card_coverage": "fee_table_all",
+      "product_listing_url": "https://www.rblbank.com/category/credit-cards",
+      "notes": "Text PDF (URL has %20-encoded spaces). Card-wise fee table expected."
+    },
+    {
+      "id": "sbm",
+      "bank": "SBM Bank",
+      "mitc_url": "https://www.sbm.bank.in/pdf/terms-conditions/SBM-Secured-Credit-Card-T&C.pdf",
+      "format": "pdf",
+      "likely_scanned": false,
+      "card_coverage": "single_or_generic",
+      "product_listing_url": "https://www.sbmbank.co.in/personal/cards/credit-cards.aspx",
+      "notes": "This is a T&C for SBM's SECURED (FD-linked) credit card - likely 1-2 cards only. Tag any card from here as type='secured' (FD-linked). URL contains an '&' that must be URL-encoded when fetching."
+    }
+  ]
+}

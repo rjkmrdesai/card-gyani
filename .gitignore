@@ -10,3 +10,10 @@ node_modules/
 
 # os
 .DS_Store
+
+# scraper: cached raw downloads + extracted text are large/derived (spec §2)
+scraper/sources/
+scraper/extracted/
+scraper/.venv/
+scraper/__pycache__/
+scraper/**/__pycache__/
