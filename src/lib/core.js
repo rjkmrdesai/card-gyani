@@ -177,11 +177,21 @@ function lateFeeMini(text){
   return `<div class="tiers">${header}${rows}</div>`;
 }
 
-function bankTile(bank,size){
+// Small chip (home grid, headers, trust strip). Logo (banks.logo_url) on a
+// white tile when available, else the colored initials fallback.
+function bankTile(bank,size,logoUrl){
+  const px=size||40;
+  if(logoUrl)return `<span class="blogo" style="width:${px}px;height:${px}px"><img src="${esc(logoUrl)}" alt="${esc(bank)}" loading="lazy"></span>`;
   const m=BANKMETA[bank]||[String(bank).slice(0,5).toUpperCase(),'#0e0f0c'];
   const st=size?`height:${size}px;font-size:${Math.round(size*0.3)}px`:'';
   return `<span class="bmono" style="background:${m[1]};${st}">${m[0]}</span>`;
 }
+// Large 64px square used in the list row + detail header.
+function bankBig(bank,logoUrl){
+  return logoUrl?`<div class="logo logo-img"><img src="${esc(logoUrl)}" alt="${esc(bank)}" loading="lazy"></div>`:`<div class="logo">${esc((bank||'')[0]||'')}</div>`;
+}
+// name → logo_url, derived from the loaded cards (for the names-only trust strip)
+function bankLogoMap(){const m={};CARDS.forEach(c=>{if(c.bankLogo)m[c.bank]=c.bankLogo;});return m;}
 function catsPresent(){ return CAT_ORDER.filter(k=>CARDS.some(c=>c.cat===k)); }
 function applyLink(c, cls){
   const url = c.apply_url ? esc(c.apply_url) : '#';
@@ -230,7 +240,7 @@ function cardRow(c){
   const waiver=c.waiver?`${t('waived_at')} ${lakh(c.waiver)} ${t('spend')}`:t('no_fee_waiver');
   return `<div class="card ${picked?'picked':''}" data-card="${c.id}">
     <div class="crow">
-      <div class="logo">${esc(c.bank[0])}</div>
+      ${bankBig(c.bank,c.bankLogo)}
       <div class="cmid">
         <div class="cname">${esc(c.name)} <span>by ${esc(c.bank)}</span></div>
         <div class="tags">${tags.join('')}</div>
@@ -292,7 +302,7 @@ export function detailView(slug){
   return header()+`<div class="detail">
     <a class="back" href="/cards">← ${t('back_to_cards')}</a>
     <div class="dhero">
-      <div class="logo">${esc(c.bank[0])}</div>
+      ${bankBig(c.bank,c.bankLogo)}
       <div>
         <h1>${esc(c.name)}</h1>
         <div class="sub">by ${esc(c.bank)} · ${esc(c.network)} · <a href="/cards/category/${esc(c.cat).replace(/_/g,'-')}">${t(c.cat)}</a> · ${t(c.type)}</div>
@@ -370,7 +380,7 @@ export function compareView(){
       <div class="corner"></div>
       ${cards.map(c=>`<div class="hcell">
         <button class="rmx" title="${t('remove')}" onclick="toggleCompare('${c.id}')">✕</button>
-        ${bankTile(c.bank,40)}
+        ${bankTile(c.bank,40,c.bankLogo)}
         <div><div class="hissuer">${esc(c.bank)}</div><div class="hname">${esc(c.name)}</div></div>
         ${c.type==='secured'?`<span class="tag fd">🔒 ${t('fd_linked')}</span>`:(c.badge?`<span class="badge">★ ${esc(c.badge)}</span>`:'')}
         ${applyLink(c,'apply')}
@@ -398,7 +408,7 @@ function homeCats(){
 function cardTile(c){
   const picked=S.compare.includes(c.id);
   return `<div class="tile ${picked?'picked':''}" data-card="${c.id}">
-    <div class="tile-top">${bankTile(c.bank)}${c.badge?`<span class="badge">★ ${esc(c.badge)}</span>`:''}</div>
+    <div class="tile-top">${bankTile(c.bank,48,c.bankLogo)}${c.badge?`<span class="badge">★ ${esc(c.badge)}</span>`:''}</div>
     <div class="tname">${esc(c.name)}</div>
     <div class="tissuer">by ${esc(c.bank)} · ${esc(c.network)}</div>
     ${c.type==='secured'?`<span class="tag fd" style="align-self:flex-start">🔒 ${t('fd_linked')}</span>`:''}
@@ -460,7 +470,7 @@ export function homeView(){
       ${list.length?`<div class="grid">${list.map(cardTile).join('')}</div>`:`<div class="empty" style="max-width:520px;margin:0 auto"><b>${t('none_match')}</b>${t('none_hint')}</div>`}
     </section>
   </div>
-  <section class="trust"><span class="trust-l">${t('partnered')}</span>${banks.map(b=>bankTile(b,34)).join('')}</section>
+  <section class="trust"><span class="trust-l">${t('partnered')}</span>${(()=>{const lm=bankLogoMap();return banks.map(b=>bankTile(b,34,lm[b])).join('');})()}</section>
   <section class="promo-wrap"><div class="promo">
     <div class="promo-l">
       <h2>${t('elig_h1')}</h2>

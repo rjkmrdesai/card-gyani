@@ -231,6 +231,11 @@ aside.filters{position:sticky;top:80px;background:var(--surface);border:1px soli
 .tile.picked{border-color:var(--cta);box-shadow:0 0 0 2px var(--cta) inset,var(--shadow-sm)}
 .tile-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:2px}
 .bmono{display:inline-flex;align-items:center;justify-content:center;height:36px;padding:0 10px;min-width:36px;border-radius:9px;color:#fff;font-weight:800;font-size:12px;letter-spacing:.02em;flex:none}
+/* bank logo on a white tile (PNGs already carry white bg + padding) */
+.blogo{display:inline-flex;border-radius:9px;overflow:hidden;border:1px solid var(--line);background:#fff;flex:none}
+.blogo img{width:100%;height:100%;object-fit:cover;display:block}
+.logo-img{background:#fff;padding:0;overflow:hidden}
+.logo-img img{width:100%;height:100%;object-fit:cover;display:block}
 .tname{font-size:17px;font-weight:700;letter-spacing:-.01em;line-height:1.2}
 .tissuer{font-size:13px;color:var(--muted);font-weight:500;margin-top:-4px}
 .tstats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:6px 0 2px;border-top:1px solid var(--line);padding-top:12px}

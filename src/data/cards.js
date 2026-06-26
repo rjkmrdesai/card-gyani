@@ -31,7 +31,7 @@ const normCat = v => CAT_MAP[String(v || '').toLowerCase()] || 'entry';
 
 const num = v => (v === null || v === undefined || v === '') ? 0 : Number(v);
 
-function mapRow(r) {
+function mapRow(r, logoByBank = {}) {
   const fee = r.is_lifetime_free ? 0 : num(r.annual_fee);
   const networks = String(r.network || '')
     .split('/').map(s => s.trim()).filter(Boolean);
@@ -39,6 +39,7 @@ function mapRow(r) {
     id: r.slug,                       // slug doubles as stable id
     slug: r.slug,
     bank: r.bank_name,
+    bankLogo: logoByBank[r.bank_name] || '',   // from banks.logo_url (Supabase Storage)
     name: r.card_name,
     network: r.network || '',
     networks,                         // for the network filter (multi-network strings)
@@ -73,14 +74,17 @@ export async function loadData() {
 
   const [{ data: cards, error: cErr }, { data: banks, error: bErr }] = await Promise.all([
     supabase.from('cards').select('*'),
-    supabase.from('banks').select('name').order('name'),
+    supabase.from('banks').select('name, logo_url').order('name'),
   ]);
   if (cErr) throw new Error('Supabase cards read failed: ' + cErr.message);
   if (bErr) throw new Error('Supabase banks read failed: ' + bErr.message);
 
+  const logoByBank = {};
+  (banks || []).forEach(b => { if (b.logo_url) logoByBank[b.name] = b.logo_url; });
+
   const mapped = (cards || [])
     .filter(r => r.slug)            // only rows with a slug get a URL
-    .map(mapRow)
+    .map(r => mapRow(r, logoByBank))
     .sort((a, b) => b.fee - a.fee); // default order: annual fee high -> low
 
   _cache = { cards: mapped, banks: (banks || []).map(b => b.name) };

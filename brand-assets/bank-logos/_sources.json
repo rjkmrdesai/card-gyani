@@ -1,0 +1,106 @@
+[
+ {
+  "bank": "SBI",
+  "slug": "sbi",
+  "file": "State Bank of India.svg",
+  "bytes": 24625,
+  "path": "/tmp/cg_logos_raw/sbi.png",
+  "status": "ok"
+ },
+ {
+  "bank": "HDFC",
+  "slug": "hdfc",
+  "file": "HDFC Bank Logo.svg",
+  "bytes": 11594,
+  "path": "/tmp/cg_logos_raw/hdfc.png",
+  "status": "ok"
+ },
+ {
+  "bank": "RBL Bank",
+  "slug": "rbl-bank",
+  "file": "RBL Bank SVG Logo.svg",
+  "bytes": 20779,
+  "path": "/tmp/cg_logos_raw/rbl-bank.png",
+  "status": "ok"
+ },
+ {
+  "bank": "Axis",
+  "slug": "axis",
+  "file": "AXISBank Logo.svg",
+  "bytes": 18308,
+  "path": "/tmp/cg_logos_raw/axis.png",
+  "status": "ok"
+ },
+ {
+  "bank": "ICICI",
+  "slug": "icici",
+  "file": "ICICI Bank Logo.svg",
+  "bytes": 28074,
+  "path": "/tmp/cg_logos_raw/icici.png",
+  "status": "ok"
+ },
+ {
+  "bank": "Kotak",
+  "slug": "kotak",
+  "file": "Kotak Mahindra Bank logo.svg",
+  "bytes": 36230,
+  "path": "/tmp/cg_logos_raw/kotak.png",
+  "status": "ok"
+ },
+ {
+  "bank": "YES Bank",
+  "slug": "yes-bank",
+  "file": "Yes Bank logo.svg",
+  "bytes": 16955,
+  "path": "/tmp/cg_logos_raw/yes-bank.png",
+  "status": "ok"
+ },
+ {
+  "bank": "Bank of Baroda",
+  "slug": "bank-of-baroda",
+  "file": "BankOfBarodaLogo.svg",
+  "bytes": 68833,
+  "path": "/tmp/cg_logos_raw/bank-of-baroda.png",
+  "status": "ok"
+ },
+ {
+  "bank": "IDFC FIRST",
+  "slug": "idfc-first",
+  "file": "Logo of IDFC First Bank.svg",
+  "bytes": 16504,
+  "path": "/tmp/cg_logos_raw/idfc-first.png",
+  "status": "ok"
+ },
+ {
+  "bank": "IndusInd",
+  "slug": "indusind",
+  "file": "IndusInd Bank SVG Logo.svg",
+  "bytes": 24256,
+  "path": "/tmp/cg_logos_raw/indusind.png",
+  "status": "ok"
+ },
+ {
+  "bank": "SBM Bank",
+  "slug": "sbm-bank",
+  "file": "State Bank of Mauritius Logo.jpg",
+  "bytes": 23962,
+  "path": "/tmp/cg_logos_raw/sbm-bank.png",
+  "status": "ok"
+ },
+ {
+  "bank": "Federal Bank",
+  "slug": "federal-bank",
+  "file": "Federal bank.logo.svg",
+  "bytes": 22494,
+  "path": "/tmp/cg_logos_raw/federal-bank.png",
+  "status": "ok"
+ },
+ {
+  "bank": "American Express",
+  "slug": "american-express",
+  "file": "American Express logo (2018).svg",
+  "bytes": 38006,
+  "path": "/tmp/cg_logos_raw/american-express.png",
+  "status": "ok"
+ }
+]
