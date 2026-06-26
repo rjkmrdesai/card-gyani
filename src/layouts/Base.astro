@@ -17,12 +17,25 @@ const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : As
 // Social scrapers require an absolute https URL — Astro.site supplies the domain.
 const { ogImage = '/og-image.png' } = Astro.props;
 const ogImageUrl = Astro.site ? new URL(ogImage, Astro.site).href : ogImage;
+const GA_ID = import.meta.env.PUBLIC_GA_ID;   // set in .env / Vercel env to enable GA4
 ---
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  {GA_ID && (
+    <>
+      <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
+      <script is:inline define:vars={{ GA_ID }}>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', GA_ID, { transport_type: 'beacon' });
+      </script>
+    </>
+  )}
   <title>{title}</title>
   <meta name="description" content={description} />
   <link rel="canonical" href={canonical} />
@@ -47,10 +60,6 @@ const ogImageUrl = Astro.site ? new URL(ogImage, Astro.site).href : ogImage;
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={ogImageUrl} />
-  <!-- Fonts (the prototype's families) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Mono:wght@500;600&display=swap" rel="stylesheet" />
   {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
 </head>
 <body>
