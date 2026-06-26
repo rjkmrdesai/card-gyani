@@ -178,6 +178,60 @@ const KEYWORD_MAP = {
   fd:['fd','fixed deposit','secured'],
 };
 
+// Derive every applicable tag for a card from its stored attributes.
+// The primary badge (c.badge, stored in Supabase) is the single most
+// important tag shown on the homepage tile. cardTags() returns ALL tags
+// applicable to the card and is used on list rows, detail pages, compare.
+function cardTags(c){
+  const nm=c.name||'';
+  const nml=nm.toLowerCase();
+  const rw=(c.reward||'').toLowerCase();
+  const b=c.badge||'';
+  const tags=[];
+  // — Tier (one slot; most specific wins) —
+  if(b==='invite only') tags.push('invite only');
+  else if(c.cat==='super_premium') tags.push('super premium');
+  else if(nml.includes('metal')||b==='metal card') tags.push('metal card');
+  else if(c.cat==='premium') tags.push('premium');
+  else if(c.cat==='mid_tier') tags.push('mid tier');
+  // — Travel — badge OR name contains travel brand/keyword OR reward text mentions miles —
+  const TRAVEL_NM=/miles|allmiles|worldmiles|atlas|horizon|safari|voyager|air india|indigo|vistara|makemytrip|krisflyer|marriott|accor|\btaj\b|irctc|etihad|emirates|skywards/i;
+  const TRAVEL_RW=/\b(air miles?|airmiles|travel points?|fly.*rewards?|earn.*miles|miles.*earn)\b/i;
+  if(b==='travel'||TRAVEL_NM.test(nm)||TRAVEL_RW.test(rw)) tags.push('travel');
+  // — Lounge —
+  if(hasLounge(c)) tags.push('lounge access');
+  // — Fuel —
+  const FUEL_NM=/indianoil|indian oil|\biocl\b|bpcl|hpcl|first power/i;
+  if(b==='fuel surcharge waiver'||FUEL_NM.test(nm)||(c.fuelWaiver&&c.fuelWaiver.length>3)) tags.push('fuel surcharge waiver');
+  // — Cashback —
+  const CASH_NM=/cashback|cash back|moneyback|money back|amazon pay/i;
+  const CASH_RW=/\d+\s*%\s*cash\s*back|unlimited cashback|flat.*cashback/i;
+  if(b==='cashback card'||CASH_NM.test(nm)||CASH_RW.test(rw)) tags.push('cashback card');
+  // — Lifetime free —
+  if(isLtf(c)) tags.push('lifetime free');
+  // — Low forex: forex > 0 (excludes null→0) AND < 3; or badge-assigned 0% cards —
+  if((c.forex>0&&c.forex<3)||(c.forex===0&&(b==='low forex markup'||/safari/i.test(nm)))) tags.push('low forex');
+  // — UPI —
+  if(isUpi(c)) tags.push('UPI');
+  // — FD-linked / secured —
+  if(c.type==='secured'||b==='FD-linked') tags.push('FD-linked');
+  return [...new Set(tags)];
+}
+
+// Render a single tag chip. Reuses existing CSS colour classes; new ones
+// (inv, fuel, cbk, lng, ltf, upi) are added in global.css.
+function tagChip(tag){
+  const CLS={
+    'invite only':'inv','super premium':'superp','super-premium':'superp',
+    'metal card':'metal','premium':'premium','mid tier':'',
+    'travel':'travel','fuel surcharge waiver':'fuel','cashback card':'cbk',
+    'lounge access':'lng','lifetime free':'ltf',
+    'low forex':'lowforex','UPI':'upi','FD-linked':'fd',
+  };
+  const cls=Object.prototype.hasOwnProperty.call(CLS,tag)?CLS[tag]:'';
+  return `<span class="tag${cls?' '+cls:''}">${esc(tag)}</span>`;
+}
+
 function feeBucket(c){
   if(isLtf(c))return'ltf'; if(c.fee<500)return'u500';
   if(c.fee<=2000)return'b1'; if(c.fee<=5000)return'b2'; return'b3';
@@ -300,7 +354,8 @@ function cardStage(c){
 }
 function catsPresent(){ return CAT_ORDER.filter(k=>CARDS.some(c=>c.cat===k)); }
 function applyLink(c, cls){
-  const url = c.apply_url ? esc(c.apply_url) : '#';
+  const href = c.affiliate_url || c.apply_url;   // affiliate link wins when present
+  const url = href ? esc(href) : '#';
   return `<a class="${cls}" href="${url}" target="_blank" rel="noopener noreferrer nofollow">${t('apply_now')} →</a>`;
 }
 
@@ -340,8 +395,7 @@ function filterBody(){
 /* ---------- card row (list) ---------- */
 function cardRow(c){
   const picked=S.compare.includes(c.id);
-  const tags=[];
-  if(c.type==='secured')tags.push(`<span class="tag fd">🔒 ${t('fd_linked')}</span>`);
+  const tags=cardTags(c).map(tagChip);
   tags.push(`<span class="tag net">${esc(c.network)}</span>`);
   const waiver=c.waiver?`${t('waived_at')} ${lakh(c.waiver)} ${t('spend')}`:t('no_fee_waiver');
   return `<div class="card ${picked?'picked':''}" data-card="${c.id}">
@@ -412,10 +466,7 @@ export function detailView(slug){
       <div>
         <h1>${esc(c.name)}</h1>
         <div class="sub">by ${esc(c.bank)} · ${esc(c.network)} · <a href="/cards/category/${esc(c.cat).replace(/_/g,'-')}">${t(c.cat)}</a> · ${t(c.type)}</div>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px;align-items:center">
-          ${c.badge?`<div class="badge">★ ${esc(c.badge)}</div>`:''}
-          ${c.type==='secured'?`<span class="tag fd">🔒 ${t('fd_linked')}</span>`:''}
-        </div>
+        <div class="dtags">${cardTags(c).map(tagChip).join('')}</div>
       </div>
       <div class="acts">
         ${applyLink(c,'apply')}
@@ -488,7 +539,7 @@ export function compareView(){
         <button class="rmx" title="${t('remove')}" onclick="toggleCompare('${c.id}')">✕</button>
         ${bankTile(c.bank,40,c.bankLogo)}
         <div><div class="hissuer">${esc(c.bank)}</div><div class="hname">${esc(c.name)}</div></div>
-        ${c.type==='secured'?`<span class="tag fd">🔒 ${t('fd_linked')}</span>`:(c.badge?`<span class="badge">★ ${esc(c.badge)}</span>`:'')}
+        <div class="ctags">${cardTags(c).map(tagChip).join('')}</div>
         ${applyLink(c,'apply')}
       </div>`).join('')}
       <div class="band">${t('fees_charges')}</div>

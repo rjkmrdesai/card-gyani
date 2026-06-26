@@ -61,6 +61,7 @@ function mapRow(r, logoByBank = {}) {
     cash: r.cash_advance_fee || 'As per schedule of charges',
     late: r.late_payment_fee || '—',
     apply_url: r.apply_url || '',
+    affiliate_url: r.affiliate_url || '',   // monetized link; preferred for Apply Now
     ltf: !!r.is_lifetime_free,
     fuelWaiver: r.fuel_surcharge_waiver || '',
     welcome: r.welcome_benefit || '',
