@@ -13,8 +13,7 @@ export const I18N = {
  en:{compare:'Compare',all_cards:'All cards',filter_cards:'Filter cards',category:'Category',
    super_premium:'Super Premium',premium:'Premium',mid_tier:'Mid-tier',entry:'Entry',travel:'Travel',fuel:'Fuel',
    annual_fee:'Annual fee',lifetime_free:'Lifetime free',u500:'Under ₹500',b1:'₹500–₹2,000',b2:'₹2,000–₹5,000',b3:'₹5,000+',
-   benefits:'Benefits',lounge_access:'Lounge access',low_forex:'Low forex (<3%)',upi_card:'UPI credit card',cobranded:'Co-branded',
-   network:'Network',showing:'Showing',cards_word:'cards',fee_waiver:'Fee waiver',forex_markup:'Forex markup',finance_charge:'Finance charge',
+   benefits:'Benefits',lounge_access:'Lounge access',low_forex:'Low forex (<3%)',upi_card:'UPI credit card',   network:'Network',showing:'Showing',cards_word:'cards',fee_waiver:'Fee waiver',forex_markup:'Forex markup',finance_charge:'Finance charge',
    apply_now:'Apply Now',view_details:'View details',no_fee_waiver:'No fee waiver',waived_at:'Waived at',spend:'spend',
    add_to_compare:'Add to compare',compare_now:'Compare now',clear_all:'Clear all',selected:'selected',back_to_cards:'Back to cards',
    fees_charges:'Fees & charges',joining_fee:'Joining fee',interest_rate:'Interest rate',cash_advance:'Cash advance fee',late_payment:'Late payment fee',
@@ -26,8 +25,7 @@ export const I18N = {
  hi:{compare:'तुलना करें',all_cards:'सभी कार्ड',filter_cards:'कार्ड फ़िल्टर करें',category:'श्रेणी',
    super_premium:'सुपर प्रीमियम',premium:'प्रीमियम',mid_tier:'मिड-टियर',entry:'एंट्री',travel:'ट्रैवल',fuel:'फ्यूल',
    annual_fee:'वार्षिक शुल्क',lifetime_free:'लाइफटाइम फ्री',u500:'₹500 से कम',b1:'₹500–₹2,000',b2:'₹2,000–₹5,000',b3:'₹5,000+',
-   benefits:'लाभ',lounge_access:'लाउंज एक्सेस',low_forex:'कम फॉरेक्स (<3%)',upi_card:'UPI क्रेडिट कार्ड',cobranded:'को-ब्रांडेड',
-   network:'नेटवर्क',showing:'दिखा रहे हैं',cards_word:'कार्ड',fee_waiver:'शुल्क छूट',forex_markup:'फॉरेक्स मार्कअप',finance_charge:'वित्त शुल्क',
+   benefits:'लाभ',lounge_access:'लाउंज एक्सेस',low_forex:'कम फॉरेक्स (<3%)',upi_card:'UPI क्रेडिट कार्ड',   network:'नेटवर्क',showing:'दिखा रहे हैं',cards_word:'कार्ड',fee_waiver:'शुल्क छूट',forex_markup:'फॉरेक्स मार्कअप',finance_charge:'वित्त शुल्क',
    apply_now:'अभी आवेदन करें',view_details:'विवरण देखें',no_fee_waiver:'कोई छूट नहीं',waived_at:'छूट',spend:'खर्च पर',
    add_to_compare:'तुलना में जोड़ें',compare_now:'अभी तुलना करें',clear_all:'सभी हटाएं',selected:'चयनित',back_to_cards:'कार्ड पर वापस',
    fees_charges:'शुल्क और चार्ज',joining_fee:'जॉइनिंग शुल्क',interest_rate:'ब्याज दर',cash_advance:'कैश एडवांस शुल्क',late_payment:'विलंब शुल्क',
@@ -39,8 +37,7 @@ export const I18N = {
  ta:{compare:'ஒப்பிடு',all_cards:'அனைத்து கார்டுகள்',filter_cards:'கார்டுகளை வடிகட்டு',category:'வகை',
    super_premium:'சூப்பர் பிரீமியம்',premium:'பிரீமியம்',mid_tier:'மிட்-டியர்',entry:'என்ட்ரி',travel:'டிராவல்',fuel:'எரிபொருள்',
    annual_fee:'ஆண்டுக் கட்டணம்',lifetime_free:'வாழ்நாள் இலவசம்',u500:'₹500-க்கு கீழ்',b1:'₹500–₹2,000',b2:'₹2,000–₹5,000',b3:'₹5,000+',
-   benefits:'சலுகைகள்',lounge_access:'லவுஞ்ச் அணுகல்',low_forex:'குறைந்த ஃபாரெக்ஸ் (<3%)',upi_card:'UPI கிரெடிட் கார்டு',cobranded:'கோ-பிராண்டட்',
-   network:'நெட்வொர்க்',showing:'காட்டுகிறது',cards_word:'கார்டுகள்',fee_waiver:'கட்டண விலக்கு',forex_markup:'ஃபாரெக்ஸ் மார்க்அப்',finance_charge:'நிதிக் கட்டணம்',
+   benefits:'சலுகைகள்',lounge_access:'லவுஞ்ச் அணுகல்',low_forex:'குறைந்த ஃபாரெக்ஸ் (<3%)',upi_card:'UPI கிரெடிட் கார்டு',   network:'நெட்வொர்க்',showing:'காட்டுகிறது',cards_word:'கார்டுகள்',fee_waiver:'கட்டண விலக்கு',forex_markup:'ஃபாரெக்ஸ் மார்க்அப்',finance_charge:'நிதிக் கட்டணம்',
    apply_now:'விண்ணப்பிக்கவும்',view_details:'விவரங்களைக் காண்க',no_fee_waiver:'விலக்கு இல்லை',waived_at:'விலக்கு',spend:'செலவில்',
    add_to_compare:'ஒப்பீட்டில் சேர்',compare_now:'இப்போது ஒப்பிடு',clear_all:'அனைத்தையும் அழி',selected:'தேர்ந்தெடுக்கப்பட்டது',back_to_cards:'கார்டுகளுக்குத் திரும்பு',
    fees_charges:'கட்டணங்கள் & சார்ஜ்',joining_fee:'சேர்க்கைக் கட்டணம்',interest_rate:'வட்டி விகிதம்',cash_advance:'கேஷ் அட்வான்ஸ் கட்டணம்',late_payment:'தாமதக் கட்டணம்',
@@ -52,8 +49,7 @@ export const I18N = {
  te:{compare:'పోల్చండి',all_cards:'అన్ని కార్డులు',filter_cards:'కార్డులను ఫిల్టర్ చేయండి',category:'వర్గం',
    super_premium:'సూపర్ ప్రీమియం',premium:'ప్రీమియం',mid_tier:'మిడ్-టైర్',entry:'ఎంట్రీ',travel:'ట్రావెల్',fuel:'ఫ్యూయల్',
    annual_fee:'వార్షిక రుసుము',lifetime_free:'లైఫ్‌టైమ్ ఫ్రీ',u500:'₹500 లోపు',b1:'₹500–₹2,000',b2:'₹2,000–₹5,000',b3:'₹5,000+',
-   benefits:'ప్రయోజనాలు',lounge_access:'లాంజ్ యాక్సెస్',low_forex:'తక్కువ ఫారెక్స్ (<3%)',upi_card:'UPI క్రెడిట్ కార్డు',cobranded:'కో-బ్రాండెడ్',
-   network:'నెట్‌వర్క్',showing:'చూపిస్తోంది',cards_word:'కార్డులు',fee_waiver:'రుసుము మినహాయింపు',forex_markup:'ఫారెక్స్ మార్కప్',finance_charge:'ఫైనాన్స్ ఛార్జ్',
+   benefits:'ప్రయోజనాలు',lounge_access:'లాంజ్ యాక్సెస్',low_forex:'తక్కువ ఫారెక్స్ (<3%)',upi_card:'UPI క్రెడిట్ కార్డు',   network:'నెట్‌వర్క్',showing:'చూపిస్తోంది',cards_word:'కార్డులు',fee_waiver:'రుసుము మినహాయింపు',forex_markup:'ఫారెక్స్ మార్కప్',finance_charge:'ఫైనాన్స్ ఛార్జ్',
    apply_now:'దరఖాస్తు చేయండి',view_details:'వివరాలు చూడండి',no_fee_waiver:'మినహాయింపు లేదు',waived_at:'మినహాయింపు',spend:'ఖర్చుపై',
    add_to_compare:'పోలికకు జోడించండి',compare_now:'ఇప్పుడే పోల్చండి',clear_all:'అన్నీ తీసివేయండి',selected:'ఎంచుకున్నవి',back_to_cards:'కార్డులకు తిరిగి',
    fees_charges:'రుసుములు & ఛార్జీలు',joining_fee:'జాయినింగ్ రుసుము',interest_rate:'వడ్డీ రేటు',cash_advance:'క్యాష్ అడ్వాన్స్ రుసుము',late_payment:'ఆలస్య రుసుము',
@@ -94,21 +90,32 @@ const inr = n => n===0 ? t('lifetime_free') : '₹'+Number(n).toLocaleString('en
 const lakh = n => n>=100000 ? '₹'+(n/100000).toFixed(n%100000?1:0)+'L' : '₹'+Number(n).toLocaleString('en-IN');
 const esc = s => String(s ?? '').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
+// Card-attribute detectors. The Supabase `benefits` array is unpopulated
+// (3/450), so lounge/UPI are derived from the columns that carry the signal;
+// co-brand isn't stored on card_type at all, so detect it from the card name.
+const LOUNGE_NA=/^(not applicable|n\/?a|none|—|-|)$/i;
+function hasLounge(c){const l=(c.lounge||'').trim();return !!l && !LOUNGE_NA.test(l);}
+function isUpi(c){return /\bupi\b|rupay/i.test((c.name||'')+' '+(c.network||''));}
+const COBRAND_RE=/flipkart|amazon|tata neu|\birctc\b|swiggy|zomato|indianoil|indian oil|\bbpcl\b|\bhpcl\b|vistara|\bindigo\b|\b6e\b|marriott|bonvoy|makemytrip|\bmmt\b|emirates|etihad|air india|krisflyer|miles ?(?:and|&) ?more|jet airways|\byatra\b|paytm|phonepe|snapdeal|shoppers stop|pharmeasy|patanjali|\bpvr\b|adani|reliance|bigbasket|myntra|nykaa|ajio|\buber\b|airtel|apollo|manchester united|chennai super kings|club vistara|\bkiwi\b|\bzet\b|mobikwik|paisabazaar|kredit\.?pe|times black|\btata\b|\bixigo\b|easemytrip|croma|\blic\b/i;
+function isCobrand(c){return COBRAND_RE.test(c.name||'');}
+// Lifetime-free: the is_lifetime_free flag drives fee→0 in mapRow, but stay
+// robust to any card whose fee resolves to 0 by other means.
+function isLtf(c){return !!c.ltf || Number(c.fee)===0;}
+
 function feeBucket(c){
-  if(c.fee===0)return'ltf'; if(c.fee<500)return'u500';
+  if(isLtf(c))return'ltf'; if(c.fee<500)return'u500';
   if(c.fee<=2000)return'b1'; if(c.fee<=5000)return'b2'; return'b3';
 }
 function passes(c){
   const f=S.f;
   if(f.cat.size && !f.cat.has(c.cat))return false;
   if(f.fee.size && !f.fee.has(feeBucket(c)))return false;
-  if(f.type.size && !f.type.has(c.type))return false;
+  if(f.type.size && !(f.type.has(c.type) || (f.type.has('cobrand') && isCobrand(c))))return false;
   if(f.net.size && !c.networks.some(n=>f.net.has(n)))return false;
   for(const b of f.ben){
-    if(b==='lounge_access' && !c.ben.includes('lounge'))return false;
+    if(b==='lounge_access' && !hasLounge(c))return false;
     if(b==='low_forex' && c.forex>=3)return false;
-    if(b==='upi_card' && !c.ben.includes('upi'))return false;
-    if(b==='cobranded' && c.type!=='cobrand')return false;
+    if(b==='upi_card' && !isUpi(c))return false;
   }
   return true;
 }
@@ -250,7 +257,7 @@ function filterBody(){
   return grp(t('category'),'cat',catsPresent().map(k=>[k,t(k)]))
     + grp(t('annual_fee'),'fee',[['ltf',t('lifetime_free')],['u500',t('u500')],['b1',t('b1')],['b2',t('b2')],['b3',t('b3')]])
     + grp(t('type'),'type',[['retail',t('retail')],['cobrand',t('cobrand')],['business',t('business')],['secured',t('secured')]])
-    + grp(t('benefits'),'ben',[['lounge_access',t('lounge_access')],['low_forex',t('low_forex')],['upi_card',t('upi_card')],['cobranded',t('cobranded')]])
+    + grp(t('benefits'),'ben',[['lounge_access',t('lounge_access')],['low_forex',t('low_forex')],['upi_card',t('upi_card')]])
     + grp(t('network'),'net',[['Visa','Visa'],['Mastercard','Mastercard'],['RuPay','RuPay'],['American Express','Amex'],['Diners Club','Diners Club']]);
 }
 
@@ -433,8 +440,8 @@ function trendingCats(){
    ['premium',  t('premium'),       '👑', c=>c.cat==='premium'||c.cat==='super_premium'],
    ['rewards',  t('rewards'),        '🎁', c=>/reward|points|\bpts\b|\brp\b|miles/i.test(c.reward||'')],
    ['cashback', t('cashback'),       '💰', c=>/cashback|cash back/i.test((c.reward||'')+' '+(c.badge||''))],
-   ['ltf',      t('lifetime_free'),  '💳', c=>c.fee===0],
-   ['lounge',   t('lounge_access'),  '✈️', c=>c.ben.includes('lounge')],
+   ['ltf',      t('lifetime_free'),  '💳', c=>isLtf(c)],
+   ['lounge',   t('lounge_access'),  '✈️', c=>hasLounge(c)],
    ['lowforex', t('low_forex'),      '🌐', c=>c.forex<3],
   ];
 }
@@ -469,8 +476,26 @@ export function homeView(){
   const meta=active==='all'?null:trendingCats().find(x=>x[0]===active);
   const q=(S.homeQ||'').trim().toLowerCase();
   let list=meta?CARDS.filter(meta[3]):CARDS.slice();
-  if(q){const toks=q.split(/\s+/).filter(Boolean);
-    list=list.filter(c=>{const tx=(c.name+' '+c.bank+' '+(c.reward||'')+' '+(c.badge||'')+' '+(c.network||'')).toLowerCase();return toks.every(tk=>tx.includes(tk));});}
+  if(q){
+    const toks=q.split(/\s+/).filter(Boolean);
+    // Order-independent: a card matches only if EVERY token appears somewhere.
+    // Score by where each token hits (name 100 > bank 50 > reward/badge/network 10),
+    // and lift exact / starts-with name matches to the top.
+    const scoreOf=c=>{
+      const name=(c.name||'').toLowerCase(), bank=(c.bank||'').toLowerCase();
+      const desc=((c.reward||'')+' '+(c.badge||'')+' '+(c.network||'')).toLowerCase();
+      let s=0;
+      for(const tk of toks){
+        if(name.includes(tk)) s+=100;
+        else if(bank.includes(tk)) s+=50;
+        else if(desc.includes(tk)) s+=10;
+        else return 0; // token not found anywhere → not a match
+      }
+      if(name===q) s+=1000; else if(name.startsWith(q)) s+=500;
+      return s;
+    };
+    list=list.map(c=>[c,scoreOf(c)]).filter(p=>p[1]>0).sort((a,b)=>b[1]-a[1]).map(p=>p[0]);
+  }
   const headLabel=q?('"'+esc(S.homeQ)+'"'):(meta?meta[1]:t('trending_now'));
   const banks=BANKS.length?BANKS:[...new Set(CARDS.map(c=>c.bank))];
   const BABA_SVG = `<svg class="cg-mark" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Gyani Baba mascot cycling through rupee, flight and rewards">
@@ -536,10 +561,12 @@ export function trayHTML(){
   if(S.route==='compare' || !S.compare.length)return {cls:'tray',html:''};
   const cards=S.compare.map(bySlug).filter(Boolean);
   return {cls:'tray show', html:`<div class="tray-in">
-    <div class="chips">${cards.map(c=>`<span class="chip">${esc(c.name)}<button onclick="toggleCompare('${c.id}')">✕</button></span>`).join('')}</div>
-    <span style="color:#cfd3cb;font-size:13px">${S.compare.length}/4 ${t('selected')}</span>
-    <button class="clr" onclick="clearCompare()">${t('clear_all')}</button>
-    <a class="go ${S.compare.length<2?'disabled':''}" href="/compare">${t('compare_now')} →</a>
+    <div class="chips">${cards.map(c=>`<span class="chip"><span class="chip-name">${esc(c.name)}</span><button onclick="toggleCompare('${c.id}')">✕</button></span>`).join('')}</div>
+    <div class="tray-actions">
+      <span class="tray-count">${S.compare.length}/4 ${t('selected')}</span>
+      <button class="clr" onclick="clearCompare()">${t('clear_all')}</button>
+      <a class="go ${S.compare.length<2?'disabled':''}" href="/compare">${t('compare_now')} →</a>
+    </div>
   </div>`};
 }
 export function drawerHTML(){

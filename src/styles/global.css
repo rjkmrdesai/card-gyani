@@ -45,7 +45,7 @@ header.app{position:sticky;top:0;z-index:var(--z-header);background:var(--ink);c
 
 /* ---------- Layout ---------- */
 .shell{max-width:1280px;margin:0 auto;padding:var(--gap) 20px 120px;display:grid;grid-template-columns:268px 1fr;gap:var(--gap);align-items:start}
-aside.filters{position:sticky;top:80px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:var(--pad);box-shadow:var(--shadow-sm)}
+aside.filters{position:sticky;top:80px;max-height:calc(100vh - 96px);overflow-y:auto;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:var(--pad);box-shadow:var(--shadow-sm)}
 .fhead{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
 .fhead h2{margin:0;font-size:17px;font-weight:700}
 .fhead button{font-size:12px;color:var(--accent);font-weight:700}
@@ -122,6 +122,9 @@ aside.filters{position:sticky;top:80px;background:var(--surface);border:1px soli
 .chip{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.16);padding:6px 8px 6px 12px;border-radius:var(--radius-pill);font-size:13px;font-weight:600}
 .chip button{color:#cfd3cb;font-size:16px;line-height:1;width:18px;height:18px;border-radius:50%}
 .chip button:hover{background:rgba(255,255,255,.18);color:#fff}
+.chip-name{display:block;min-width:0;max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tray-actions{display:flex;align-items:center;gap:14px;flex:none}
+.tray-count{color:#cfd3cb;font-size:13px;white-space:nowrap}
 .tray .go{background:var(--cta);color:var(--cta-ink);font-weight:800;padding:11px 22px;border-radius:var(--radius-pill);font-size:14px;display:inline-block}
 .tray .go.disabled{opacity:.45;cursor:not-allowed;pointer-events:none}
 .tray .clr{color:#cfd3cb;font-weight:600;font-size:13px;padding:8px}
@@ -275,6 +278,18 @@ aside.filters{position:sticky;top:80px;background:var(--surface);border:1px soli
 @media(max-width:880px){
   .shell{grid-template-columns:1fr}
   aside.filters{display:none}
+  /* compare tray: chips become one horizontal scroll strip; actions stay a
+     fixed, fully-visible row at the bottom (never overlapped). .tray-in is a
+     BLOCK so each child takes the fixed tray width — a flex column lets the
+     chips' nowrap content stretch the container and push the actions off-screen */
+  .tray-in{display:block;max-height:62vh;padding:12px 14px}
+  .chips{display:flex;flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;padding-bottom:2px;margin-bottom:10px}
+  .chip{flex:none;font-size:12px;padding:5px 6px 5px 10px}
+  .chip-name{max-width:120px}
+  .tray-actions{display:flex;gap:10px;justify-content:space-between;align-items:center}
+  .tray-count{flex:1}
+  .tray .clr{padding:8px 6px;white-space:nowrap}
+  .tray .go{padding:10px 16px;font-size:13px;white-space:nowrap}
   .mfilter{display:inline-flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--line);
     border-radius:var(--radius-pill);padding:9px 16px;font-weight:700;font-size:13.5px;box-shadow:var(--shadow-sm)}
   .nav{display:none}
