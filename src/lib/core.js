@@ -479,11 +479,16 @@ export function homeView(){
   if(q){
     const toks=q.split(/\s+/).filter(Boolean);
     // Order-independent: a card matches only if EVERY token appears somewhere.
-    // Score by where each token hits (name 100 > bank 50 > reward/badge/network 10),
+    // Score by where each token hits (name 100 > bank 50 > reward/badge/network/cat 10),
     // and lift exact / starts-with name matches to the top.
     const scoreOf=c=>{
       const name=(c.name||'').toLowerCase(), bank=(c.bank||'').toLowerCase();
-      const desc=((c.reward||'')+' '+(c.badge||'')+' '+(c.network||'')).toLowerCase();
+      // Expand desc with category keywords so "lifetime free", "lounge", "travel" etc. match.
+      const desc=[(c.reward||''),(c.badge||''),(c.network||''),(c.cat||'').replace(/_/g,' '),
+        isLtf(c)?'lifetime free ltf':'',hasLounge(c)?'lounge access lounge':'',
+        isUpi(c)?'upi rupay':'',isCobrand(c)?'cobrand co-brand':'',
+        c.type||'',
+      ].join(' ').toLowerCase();
       let s=0;
       for(const tk of toks){
         if(name.includes(tk)) s+=100;
@@ -496,7 +501,9 @@ export function homeView(){
     };
     list=list.map(c=>[c,scoreOf(c)]).filter(p=>p[1]>0).sort((a,b)=>b[1]-a[1]).map(p=>p[0]);
   }
+  // Only show count when the user has filtered/searched (not on the default "Trending now" heading)
   const headLabel=q?('"'+esc(S.homeQ)+'"'):(meta?meta[1]:t('trending_now'));
+  const showCount=!!(q||meta);
   const banks=BANKS.length?BANKS:[...new Set(CARDS.map(c=>c.bank))];
   const BABA_SVG = `<svg class="cg-mark" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Gyani Baba mascot cycling through rupee, flight and rewards">
   <defs><filter id="cgSoft" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0e0f0c" flood-opacity="0.20"/></filter></defs>
@@ -520,14 +527,14 @@ export function homeView(){
         <div class="baba-stage">${BABA_SVG}</div>
       </div>
     </section>
-    <section class="catwrap">
+    ${q.length>=3?'':(`<section class="catwrap">
       <div class="cats-head"><h2>${t('cats_h')}</h2></div>
       <p class="cats-sub">${t('cats_sub')}</p>
-      <div class="catrow">${TREND.map(([id,lab,ic,fn])=>`<a class="catitem ${active===id?'active':''}" href="/cards" onclick="setHomeCat('${id}');return false"><div class="cat-card">${ic}</div><span class="cat-l">${lab}</span></a>`).join('')}</div>
-    </section>
+      <div class="catrow">${TREND.map(([id,lab,ic])=>`<a class="catitem ${active===id?'active':''}" href="/cards" onclick="setHomeCat(S.homeCat==='${id}'?'all':'${id}');return false"><div class="cat-card">${ic}</div><span class="cat-l">${lab}</span></a>`).join('')}</div>
+    </section>`)}
     <section class="hgrid-wrap">
       <div class="hgrid-head">
-        <h2>${headLabel} <span>· ${list.length}</span></h2>
+        <h2>${headLabel}${showCount?` <span>· ${list.length}</span>`:''}</h2>
         <a class="seeall" href="/cards">${t('see_all')}</a>
       </div>
       ${list.length?`<div class="grid">${list.slice(0,6).map(cardTile).join('')}</div>`:`<div class="empty" style="max-width:520px;margin:0 auto"><b>${t('none_match')}</b>${t('none_hint')}</div>`}
