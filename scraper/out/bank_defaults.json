@@ -8,7 +8,10 @@
       "PhonePe HDFC Bank Ultimo Credit Card": 3.5,
       "PhonePe HDFC Bank Uno Credit Card": 3.5,
       "PIXEL Go": 3.5,
-      "PIXEL Play": 3.5
+      "PIXEL Play": 3.5,
+      "Infinia": 2,
+      "Diners Club Miles": 3.5,
+      "TimesTitanium / Times Card Credit": 3.5
     },
     "finance_pm_unsecured": 3.75,
     "finance_pa_unsecured": 45.0,
@@ -18,7 +21,7 @@
     "cash_interest": "All cash advances also carry a finance charge equal to charges on revolving credit (Refer schedule of charges) from the date of withdrawal until the date of full payment. Finance charges on cash advances are applicable from the date of transaction until the payment is made in full.",
     "late_fee_tiers": "<=₹100: Nil; ₹101 to ₹500: ₹100; ₹501 to ₹1,000: ₹500; ₹1,001 to ₹5,000: ₹600; ₹5,001 to ₹10,000: ₹750; ₹10,001 to ₹25,000: ₹900; ₹25,001 to ₹50,000: ₹1100; More than ₹50,000: ₹1300 (excl. GST, w.e.f 1st Oct 2025)",
     "interest_free_days": "The interest free credit period could range from 20 to 50 days (up to 50 days)",
-    "source_section": "Section: Fees and Charges - Cash advance fee (p.7), Finance charges for both revolving credit and cash advances (p.10), Interest free (grace Period) (p.10), Late Payment Charges table (p.13/p.38). Finance-charge variant table: Infinia, Infinia (Metal Edition), Diners Black Metal Edition, Diners Black, BizBlack Metal Card = 1.99% pm / 23.88% pa; All other variants = 3.75% pm / 45.0% pa; Micro Enterprise Card = 1.5% pm / 18% pa; FD-linked cards carry same rate as respective variant"
+    "source_section": "Section: Fees and Charges - Cash advance fee (p.7), Finance charges for both revolving credit and cash advances (p.10), Interest free (grace Period) (p.10), Late Payment Charges table (p.13/p.38). Finance-charge variant table: Infinia, Infinia (Metal Edition), Diners Black Metal Edition, Diners Black, BizBlack Metal Card = 1.99% pm / 23.88% pa; All other variants = 3.75% pm / 45.0% pa; Micro Enterprise Card = 1.5% pm / 18% pa; FD-linked cards carry same rate as respective variant | forex for Infinia (2%), Diners Club Miles (3.5%), TimesTitanium (3.5%) restored from prior MITC parse — the 24-Jun-26 MITC left these cells blank."
   },
   "icici": {
     "forex": 3.5,

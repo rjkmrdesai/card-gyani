@@ -50,6 +50,11 @@ COMPARE = [
     ("features", "features"), ("badge", "badge"), ("apply_url", "apply_url"),
 ]
 NUMERIC = {"annual_fee", "joining_fee", "forex", "finance_pm", "finance_pa"}
+# Free-text descriptions get re-worded on every LLM re-parse even when the value
+# is unchanged. By default we flag these only on a PRESENCE change (value <-> null),
+# not on re-wording. Pass --wording to surface every text edit too.
+TEXT_FIELDS = {"fee_waiver", "cash_advance", "cash_interest", "late_fee",
+               "rewards", "lounge", "welcome_benefit", "badge"}
 
 
 def norm(field, v):
@@ -119,7 +124,7 @@ def fetch_supabase():
     return r.json()
 
 
-def cmd_diff():
+def cmd_diff(wording=False):
     new_rows = json.loads(CARDS_JSON.read_text(encoding="utf-8"))
     new = {c["card_id"]: c for c in new_rows}
     try:
@@ -138,7 +143,12 @@ def cmd_diff():
         c = cur[cid]
         for key, col in COMPARE:
             o_raw, v_raw = c.get(col), n.get(key)
-            if norm(key, o_raw) != norm(key, v_raw):
+            o, v = norm(key, o_raw), norm(key, v_raw)
+            if key in TEXT_FIELDS and not wording:
+                differs = (o is None) != (v is None)   # presence change only
+            else:
+                differs = o != v
+            if differs:
                 changes.append([cid, n.get("bank"), n.get("name"), key, show(o_raw), show(v_raw), src_sec, src_url])
     for cid, c in cur.items():
         if cid not in new:
@@ -167,8 +177,9 @@ def cmd_diff():
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--fetch", action="store_true", help="re-fetch + re-extract; detect changed sources")
+    ap.add_argument("--wording", action="store_true", help="also flag re-worded free-text fields")
     args = ap.parse_args()
-    return cmd_fetch() if args.fetch else cmd_diff()
+    return cmd_fetch() if args.fetch else cmd_diff(wording=args.wording)
 
 
 if __name__ == "__main__":
