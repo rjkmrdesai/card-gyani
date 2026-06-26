@@ -123,6 +123,43 @@ function sorted(list){
 export const bySlug = slug => CARDS.find(c=>c.slug===slug);
 function activeCount(){return [...Object.values(S.f)].reduce((a,s)=>a+s.size,0);}
 
+/* ---------- tiered fee formatter ---------- */
+function lateFeeTable(text){
+  if(!text || typeof text !== 'string') return null;
+  const parts = text.split(';').map(s=>s.trim()).filter(Boolean);
+  if(parts.length < 3) return null;
+  // Require at least 3 segments after the first to confirm tiered structure
+  if(parts.slice(1).filter(p=>p.includes(':')).length < 2) return null;
+
+  // First part may contain an embedded header + first tier range
+  // Pattern: "Header text: range: value" (two colons in first part)
+  let headerText = '';
+  let tiers = [];
+  const first = parts[0];
+  const colonIdxs = [...first.matchAll(/:/g)].map(m=>m.index);
+  if(colonIdxs.length >= 2){
+    const hEnd = colonIdxs[colonIdxs.length - 2];
+    const vStart = colonIdxs[colonIdxs.length - 1];
+    headerText = first.slice(0, hEnd).trim();
+    tiers.push({range: first.slice(hEnd+1, vStart).trim(), val: first.slice(vStart+1).trim()});
+  } else if(colonIdxs.length === 1){
+    tiers.push({range: first.slice(0, colonIdxs[0]).trim(), val: first.slice(colonIdxs[0]+1).trim()});
+  } else {
+    tiers.push({range: first, val: ''});
+  }
+  for(const p of parts.slice(1)){
+    const ci = p.indexOf(':');
+    tiers.push(ci >= 0 ? {range: p.slice(0,ci).trim(), val: p.slice(ci+1).trim()} : {range: p, val: ''});
+  }
+
+  const rows = tiers.map(({range, val})=>
+    `<tr><td>${esc(range)}</td><td>${esc(val)}</td></tr>`).join('');
+  const header = headerText
+    ? `<p class="fee-hdr">${esc(headerText)}</p>`
+    : '';
+  return `${header}<table class="fee-table"><tbody>${rows}</tbody></table>`;
+}
+
 function bankTile(bank,size){
   const m=BANKMETA[bank]||[String(bank).slice(0,5).toUpperCase(),'#0e0f0c'];
   const st=size?`height:${size}px;font-size:${Math.round(size*0.3)}px`:'';
@@ -172,13 +209,7 @@ function cardRow(c){
   const picked=S.compare.includes(c.id);
   const tags=[];
   if(c.type==='secured')tags.push(`<span class="tag fd">🔒 ${t('fd_linked')}</span>`);
-  if(c.cat==='super_premium')tags.push(`<span class="tag superp">🏆 ${t('super_premium')}</span>`);
-  else if(c.cat==='premium')tags.push(`<span class="tag premium">${t('premium')}</span>`);
-  if(c.ben.includes('lounge'))tags.push(`<span class="tag travel">✈ ${t('travel')}</span>`);
   tags.push(`<span class="tag net">${esc(c.network)}</span>`);
-  if(c.ben.includes('lounge'))tags.push(`<span class="tag">🛋 ${t('lounge')}</span>`);
-  if(c.forex<3)tags.push(`<span class="tag lowforex">${t('low_forex')}</span>`);
-  if(c.ben.includes('metal'))tags.push(`<span class="tag metal">Metal</span>`);
   const waiver=c.waiver?`${t('waived_at')} ${lakh(c.waiver)} ${t('spend')}`:t('no_fee_waiver');
   return `<div class="card ${picked?'picked':''}" data-card="${c.id}">
     <div class="crow">
@@ -266,7 +297,7 @@ export function detailView(slug){
         ${kv(t('forex_markup'),c.forex+'%')}
         ${kv(t('finance_charge'),c.finM+'% '+t('pm')+' ('+c.finA+'% '+t('pa')+')')}
         ${kv(t('cash_advance'),esc(c.cash))}
-        ${kv(t('late_payment'),esc(c.late))}
+        ${(()=>{const lt=lateFeeTable(c.late);return lt?`<div class="kv kv-stack"><span>${t('late_payment')}</span>${lt}</div>`:kv(t('late_payment'),esc(c.late));})()}
       </div>
       <div class="dcol">
         <div class="panel"><h3>${t('rewards')} & ${t('lounge')}</h3>

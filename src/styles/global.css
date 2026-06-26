@@ -151,6 +151,14 @@ aside.filters{position:sticky;top:80px;background:var(--surface);border:1px soli
 .kv{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-top:1px solid var(--line);font-size:14.5px}
 .kv:first-of-type{border-top:0}
 .kv .vv{font-weight:700;text-align:right}
+.kv-stack{flex-direction:column;gap:6px}
+.kv-stack>span{font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:400}
+.fee-hdr{margin:0 0 4px;font-size:12.5px;color:var(--muted)}
+.fee-table{width:100%;border-collapse:collapse;font-size:13.5px}
+.fee-table td{padding:5px 10px;border:1px solid var(--line)}
+.fee-table tr:nth-child(odd) td{background:var(--bg)}
+.fee-table td:first-child{color:var(--muted)}
+.fee-table td:last-child{font-weight:600;text-align:right}
 .flist{margin:0;padding-left:18px}
 .flist li{padding:5px 0;font-size:14.5px}
 .addrow{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}

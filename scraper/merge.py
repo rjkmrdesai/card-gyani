@@ -31,6 +31,52 @@ OUT_DIR = ROOT / "out"
 TODAY = datetime.date.today().isoformat()
 BIZ = re.compile(r"\b(business|biz|corporate|vyapaar|merchant|commercial|udyam|gst|empower)\b", re.I)
 
+# Canonical badge tags — the ONLY values that may appear in the badge column.
+# One tag per card; pick the highest-priority match. All LLM-generated free text
+# is discarded so the site never shows marketing copy as a "feature badge".
+_CAT_NORM = {"super-premium": "super_premium", "super_premium": "super_premium",
+             "premium": "premium", "mid-tier": "mid_tier", "mid_tier": "mid_tier",
+             "entry": "entry", "travel": "travel", "fuel": "fuel"}
+
+
+def normalize_badge(badge, raw_category, name, forex):
+    """Map any free-text badge + card attributes → one pre-verified canonical tag (or None)."""
+    bl = (badge or "").lower()
+    nl = (name or "").lower()
+    cat = _CAT_NORM.get(str(raw_category or "").lower().replace("-", "_"), "")
+    if "invite" in bl:
+        return "invite only"
+    if "metal" in bl or "metal" in nl:
+        return "metal card"
+    if cat == "super_premium":
+        return "super-premium"
+    if cat == "premium":
+        return "premium"
+    if forex is not None:
+        try:
+            if float(forex) <= 1.5:
+                return "low forex markup"
+        except (TypeError, ValueError):
+            pass
+    return None
+
+
+def split_grouped_names(pc: dict, orig_idx: int) -> list[dict]:
+    """Expand a comma-joined card name into one dict per name variant.
+
+    HDFC MITCs list multiple variants on one fee row separated by commas
+    (e.g. 'Regalia, Regalia Activ, Business Regalia'). Safe guard: only split
+    when every comma segment is ≥3 chars and contains no digit (fee amounts like
+    '1,000' can't appear in a card name field).
+    """
+    name = pc.get("name") or ""
+    if "," not in name:
+        return [{**pc, "_orig_idx": orig_idx}]
+    parts = [s.strip() for s in name.split(",")]
+    if len(parts) < 2 or any(len(p) < 3 or re.search(r"\d", p) for p in parts):
+        return [{**pc, "_orig_idx": orig_idx}]
+    return [{**pc, "name": p, "_original_name": name, "_orig_idx": orig_idx} for p in parts]
+
 
 def kebab(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", (s or "").lower()).strip("-")
@@ -82,18 +128,28 @@ def load_bank(bid: str):
 def merge_bank(bid: str, display_bank: str, parsed: dict, enriched: dict, seen: set):
     bd = parsed.get("bank_defaults", {}) or {}
     source_url = parsed.get("source_url", "")
-    # enrichment lookups: by exact name, with a positional fallback
     enr_cards = enriched.get("cards", [])
     enr_by_name = {}
     for c in enr_cards:
         enr_by_name.setdefault(c.get("name"), c)
 
+    # Expand comma-grouped card names (e.g. HDFC 'Regalia, Regalia Activ, ...')
+    raw_cards = parsed.get("cards", [])
+    flat_cards = []
+    for i, pc in enumerate(raw_cards):
+        flat_cards.extend(split_grouped_names(pc, i))
+
     rows = []
-    for i, pc in enumerate(parsed.get("cards", [])):
+    for pc in flat_cards:
         name = pc.get("name")
+        orig_name = pc.get("_original_name") or name
+        orig_idx = pc.get("_orig_idx", 0)
+        # enrichment: exact name → original grouped name → positional (unsplit cards only)
         enr = enr_by_name.get(name)
-        if enr is None and len(enr_cards) == len(parsed.get("cards", [])):
-            enr = enr_cards[i]           # positional fallback (e.g. null-name rows)
+        if enr is None and orig_name != name:
+            enr = enr_by_name.get(orig_name)
+        if enr is None and "_original_name" not in pc and len(enr_cards) == len(raw_cards):
+            enr = enr_cards[orig_idx]    # positional fallback for null-name rows
         enr = enr or {}
 
         ctype = card_type(bid, name)
@@ -108,7 +164,7 @@ def merge_bank(bid: str, display_bank: str, parsed: dict, enriched: dict, seen: 
         late = pc.get("late_fee") or bd.get("late_fee_tiers")
 
         # stable card_id (dedupe key)
-        base = f"{bid}-{kebab(name)}" if name else f"{bid}-unnamed-{i+1}"
+        base = f"{bid}-{kebab(name)}" if name else f"{bid}-unnamed-{orig_idx+1}"
         cid = base
         n = 2
         while cid in seen:
@@ -117,6 +173,8 @@ def merge_bank(bid: str, display_bank: str, parsed: dict, enriched: dict, seen: 
 
         welcome = enr.get("welcome_benefit")
         features = [x for x in (enr.get("rewards"), enr.get("lounge"), welcome) if x]
+        raw_cat = enr.get("category")
+        badge = normalize_badge(enr.get("badge"), raw_cat, name, forex)
 
         rows.append({
             "card_id": cid,
@@ -124,7 +182,7 @@ def merge_bank(bid: str, display_bank: str, parsed: dict, enriched: dict, seen: 
             "name": name,
             "network": enr.get("network"),
             "network_confidence": enr.get("network_confidence"),
-            "category": enr.get("category"),
+            "category": raw_cat,
             "type": ctype,
             "annual_fee": pc.get("renewal_fee") if pc.get("renewal_fee") is not None else pc.get("annual_fee"),
             "joining_fee": pc.get("annual_fee"),
@@ -132,16 +190,15 @@ def merge_bank(bid: str, display_bank: str, parsed: dict, enriched: dict, seen: 
             "forex": forex,
             "finance_pm": pm,
             "finance_pa": pa,
-            "cash_advance": cash_adv,       # cash/ATM withdrawal fee (per-card if available)
-            "cash_interest": cash_int,      # interest on cash advances (per-card if available)
+            "cash_advance": cash_adv,
+            "cash_interest": cash_int,
             "late_fee": late,
             "rewards": enr.get("rewards"),
             "lounge": enr.get("lounge"),
             "welcome_benefit": welcome,
             "features": features,
-            "badge": enr.get("badge"),
+            "badge": badge,
             "apply_url": enr.get("apply_url"),
-            # provenance / QA (README §4b) — the public site can ignore these
             "source_url": source_url,
             "source_section": pc.get("source_section"),
             "enrich_source": enr.get("enrich_source"),
