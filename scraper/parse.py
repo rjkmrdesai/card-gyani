@@ -33,7 +33,9 @@ DEFAULT_FIELDS = {
     "forex", "forex_exceptions",
     "finance_pm_unsecured", "finance_pa_unsecured",
     "finance_pm_secured", "finance_pa_secured",
-    "cash_advance", "late_fee_tiers", "interest_free_days",
+    "cash_advance",        # cash/ATM withdrawal FEE
+    "cash_interest",       # interest on cash advances ("revolver"/"after free period")
+    "late_fee_tiers", "interest_free_days",
     "source_section",
 }
 

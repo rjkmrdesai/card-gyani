@@ -8,196 +8,196 @@
     {
       "name": "YES Private / YES Private for NRI",
       "match_status": "unmatched",
-      "network": null, "category": null,
+      "network": "Visa", "network_confidence": "medium", "category": null,
       "rewards": null, "lounge": null, "welcome_benefit": null,
       "badge": null, "apply_url": null, "enrich_source": null
     },
     {
       "name": "YES Private Prime",
       "match_status": "unmatched",
-      "network": null, "category": null,
+      "network": "Visa", "network_confidence": "medium", "category": null,
       "rewards": null, "lounge": null, "welcome_benefit": null,
       "badge": null, "apply_url": null, "enrich_source": null
     },
     {
       "name": "Marquee",
       "match_status": "unmatched",
-      "network": null, "category": null,
+      "network": "Visa", "network_confidence": "medium", "category": null,
       "rewards": null, "lounge": null, "welcome_benefit": null,
       "badge": null, "apply_url": null, "enrich_source": null
     },
     {
       "name": "Reserv / Reserv for NRI",
       "match_status": "unmatched",
-      "network": null, "category": null,
+      "network": "Visa", "network_confidence": "medium", "category": null,
       "rewards": null, "lounge": null, "welcome_benefit": null,
       "badge": null, "apply_url": null, "enrich_source": null
     },
     {
       "name": "Wellness Plus",
       "match_status": "unmatched",
-      "network": null, "category": null,
+      "network": "Mastercard", "network_confidence": "low", "category": null,
       "rewards": null, "lounge": null, "welcome_benefit": null,
       "badge": null, "apply_url": null, "enrich_source": null
     },
     {
       "name": "YES Prosperity Cashback Plus",
       "match_status": "unmatched",
-      "network": null, "category": null,
+      "network": "Mastercard", "network_confidence": "low", "category": null,
       "rewards": null, "lounge": null, "welcome_benefit": null,
       "badge": null, "apply_url": null, "enrich_source": null
     },
     {
       "name": "Elite+ / Elite+ issued against FD",
       "match_status": "unmatched",
-      "network": null, "category": null,
+      "network": "Visa", "network_confidence": "low", "category": null,
       "rewards": null, "lounge": null, "welcome_benefit": null,
       "badge": null, "apply_url": null, "enrich_source": null
     },
     {
       "name": "YES First Business",
       "match_status": "unmatched",
-      "network": null, "category": null,
+      "network": "Mastercard", "network_confidence": "low", "category": null,
       "rewards": null, "lounge": null, "welcome_benefit": null,
       "badge": null, "apply_url": null, "enrich_source": null
     },
     {
       "name": "YES Prosperity Cashback",
       "match_status": "unmatched",
-      "network": null, "category": null,
+      "network": "Mastercard", "network_confidence": "low", "category": null,
       "rewards": null, "lounge": null, "welcome_benefit": null,
       "badge": null, "apply_url": null, "enrich_source": null
     },
     {
       "name": "YES First Preferred / Preferred for NRI / Preferred issued against FD",
       "match_status": "unmatched",
-      "network": null, "category": null,
+      "network": "Mastercard", "network_confidence": "low", "category": null,
       "rewards": null, "lounge": null, "welcome_benefit": null,
       "badge": null, "apply_url": null, "enrich_source": null
     },
     {
       "name": "YES Essence",
       "match_status": "unmatched",
-      "network": null, "category": null,
+      "network": "Mastercard", "network_confidence": "low", "category": null,
       "rewards": null, "lounge": null, "welcome_benefit": null,
       "badge": null, "apply_url": null, "enrich_source": null
     },
     {
       "name": "Select / Select for NRI / Select issued against FD",
       "match_status": "unmatched",
-      "network": null, "category": null,
+      "network": "Mastercard", "network_confidence": "low", "category": null,
       "rewards": null, "lounge": null, "welcome_benefit": null,
       "badge": null, "apply_url": null, "enrich_source": null
     },
     {
       "name": "Ace / Ace issued against FD",
       "match_status": "unmatched",
-      "network": null, "category": null,
+      "network": "Mastercard", "network_confidence": "low", "category": null,
       "rewards": null, "lounge": null, "welcome_benefit": null,
       "badge": null, "apply_url": null, "enrich_source": null
     },
     {
       "name": "YES Prosperity Business",
       "match_status": "unmatched",
-      "network": null, "category": null,
+      "network": "Mastercard", "network_confidence": "low", "category": null,
       "rewards": null, "lounge": null, "welcome_benefit": null,
       "badge": null, "apply_url": null, "enrich_source": null
     },
     {
       "name": "Wellness",
       "match_status": "unmatched",
-      "network": null, "category": null,
+      "network": "Mastercard", "network_confidence": "low", "category": null,
       "rewards": null, "lounge": null, "welcome_benefit": null,
       "badge": null, "apply_url": null, "enrich_source": null
     },
     {
       "name": "EMI Card",
       "match_status": "unmatched",
-      "network": null, "category": null,
+      "network": "Mastercard", "network_confidence": "low", "category": null,
       "rewards": null, "lounge": null, "welcome_benefit": null,
       "badge": null, "apply_url": null, "enrich_source": null
     },
     {
       "name": "Anq Phi / Paisabazaar Paisasave",
       "match_status": "unmatched",
-      "network": null, "category": null,
+      "network": "RuPay", "network_confidence": "medium", "category": null,
       "rewards": null, "lounge": null, "welcome_benefit": null,
       "badge": null, "apply_url": null, "enrich_source": null
     },
     {
       "name": "Uni",
       "match_status": "unmatched",
-      "network": null, "category": null,
+      "network": "RuPay", "network_confidence": "high", "category": null,
       "rewards": null, "lounge": null, "welcome_benefit": null,
       "badge": null, "apply_url": null, "enrich_source": null
     },
     {
       "name": "YES Prosperity Rewards",
       "match_status": "unmatched",
-      "network": null, "category": null,
+      "network": "Mastercard", "network_confidence": "low", "category": null,
       "rewards": null, "lounge": null, "welcome_benefit": null,
       "badge": null, "apply_url": null, "enrich_source": null
     },
     {
       "name": "FREO",
       "match_status": "unmatched",
-      "network": null, "category": null,
+      "network": "Visa", "network_confidence": "low", "category": null,
       "rewards": null, "lounge": null, "welcome_benefit": null,
       "badge": null, "apply_url": null, "enrich_source": null
     },
     {
       "name": "POP-CLUB",
       "match_status": "unmatched",
-      "network": null, "category": null,
+      "network": "RuPay", "network_confidence": "high", "category": null,
       "rewards": null, "lounge": null, "welcome_benefit": null,
       "badge": null, "apply_url": null, "enrich_source": null
     },
     {
       "name": "RuPay Virtual Card / Klick / Zagg / Finbooster / Uni RuPay Virtual / Paisabazaar Paisasave RuPay Virtual / AI Inside / AI Inside RuPay Virtual / NIYO / Novio",
       "match_status": "unmatched",
-      "network": null, "category": null,
+      "network": "RuPay", "network_confidence": "high", "category": null,
       "rewards": null, "lounge": null, "welcome_benefit": null,
       "badge": null, "apply_url": null, "enrich_source": null
     },
     {
       "name": "BYOC Cashback (Regular Card)",
       "match_status": "unmatched",
-      "network": null, "category": null,
+      "network": "Visa", "network_confidence": "low", "category": null,
       "rewards": null, "lounge": null, "welcome_benefit": null,
       "badge": null, "apply_url": null, "enrich_source": null
     },
     {
       "name": "BYOC Cashback (Eco Friendly Card)",
       "match_status": "unmatched",
-      "network": null, "category": null,
+      "network": "Visa", "network_confidence": "low", "category": null,
       "rewards": null, "lounge": null, "welcome_benefit": null,
       "badge": null, "apply_url": null, "enrich_source": null
     },
     {
       "name": "BYOC Cashback (Metal Card)",
       "match_status": "unmatched",
-      "network": null, "category": null,
+      "network": "Visa", "network_confidence": "low", "category": null,
       "rewards": null, "lounge": null, "welcome_benefit": null,
       "badge": null, "apply_url": null, "enrich_source": null
     },
     {
       "name": "BYOC Rewards (Regular Card)",
       "match_status": "unmatched",
-      "network": null, "category": null,
+      "network": "Visa", "network_confidence": "low", "category": null,
       "rewards": null, "lounge": null, "welcome_benefit": null,
       "badge": null, "apply_url": null, "enrich_source": null
     },
     {
       "name": "BYOC Rewards (Eco Friendly Card)",
       "match_status": "unmatched",
-      "network": null, "category": null,
+      "network": "Visa", "network_confidence": "low", "category": null,
       "rewards": null, "lounge": null, "welcome_benefit": null,
       "badge": null, "apply_url": null, "enrich_source": null
     },
     {
       "name": "BYOC Rewards (Metal Card)",
       "match_status": "unmatched",
-      "network": null, "category": null,
+      "network": "Visa", "network_confidence": "low", "category": null,
       "rewards": null, "lounge": null, "welcome_benefit": null,
       "badge": null, "apply_url": null, "enrich_source": null
     }

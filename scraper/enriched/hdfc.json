@@ -14,7 +14,8 @@
       "welcome_benefit": "12,500 Reward Points on fee realisation and card activation",
       "badge": "By Invite Only",
       "apply_url": "https://www.hdfc.bank.in/credit-cards/infinia-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/credit-cards/infinia-credit-card"
+      "enrich_source": "https://www.hdfc.bank.in/credit-cards/infinia-credit-card",
+      "network_confidence": "high"
     },
     {
       "name": "Infinia",
@@ -26,7 +27,8 @@
       "welcome_benefit": "12,500 Reward Points on fee realisation and card activation",
       "badge": "By Invite Only",
       "apply_url": "https://www.hdfc.bank.in/credit-cards/infinia-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/credit-cards/infinia-credit-card"
+      "enrich_source": "https://www.hdfc.bank.in/credit-cards/infinia-credit-card",
+      "network_confidence": "high"
     },
     {
       "name": "Diners Black Metal Edition",
@@ -38,7 +40,8 @@
       "welcome_benefit": "Complimentary annual memberships of Club Marriott, Amazon Prime and Swiggy One on spending Rs.1.5 lakh within first 90 days",
       "badge": "If the world is where you belong, Welcome to the Club",
       "apply_url": "https://www.hdfc.bank.in/credit-cards/diners-club-black-metal-edition-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/credit-cards/diners-club-black-metal-edition-credit-card"
+      "enrich_source": "https://www.hdfc.bank.in/credit-cards/diners-club-black-metal-edition-credit-card",
+      "network_confidence": "high"
     },
     {
       "name": "Diners Black",
@@ -50,7 +53,8 @@
       "welcome_benefit": null,
       "badge": null,
       "apply_url": "https://www.hdfc.bank.in/credit-cards/diners-club-black-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/credit-cards/diners-club-black-credit-card"
+      "enrich_source": "https://www.hdfc.bank.in/credit-cards/diners-club-black-credit-card",
+      "network_confidence": "high"
     },
     {
       "name": "BizBlack Metal Card",
@@ -62,7 +66,8 @@
       "welcome_benefit": "Club Marriott membership and Rs.5,000 Taj Stay voucher on spending Rs.1.5 lakh within 90 days (first-time cardholders only)",
       "badge": "Made for Business. Made for Your Business.",
       "apply_url": "https://www.hdfc.bank.in/business-credit-cards/biz-black-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/business-credit-cards/biz-black-credit-card"
+      "enrich_source": "https://www.hdfc.bank.in/business-credit-cards/biz-black-credit-card",
+      "network_confidence": "high"
     },
     {
       "name": "Regalia Gold",
@@ -74,19 +79,21 @@
       "welcome_benefit": "Rs.2,500 gift voucher; complimentary Swiggy One and MMT Black Gold membership",
       "badge": "Best lifestyle & travel credit card",
       "apply_url": "https://www.hdfc.bank.in/credit-cards/regalia-gold-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/credit-cards/regalia-gold-credit-card"
+      "enrich_source": "https://www.hdfc.bank.in/credit-cards/regalia-gold-credit-card",
+      "network_confidence": "high"
     },
     {
       "name": "BizPower",
       "match_status": "matched",
-      "network": null,
+      "network": "Diners Club",
       "category": "premium",
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": "Made for Business. Made for Your Business.",
       "apply_url": "https://www.hdfc.bank.in/business-credit-cards/biz-power-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/business-credit-cards/biz-power-credit-card"
+      "enrich_source": "https://www.hdfc.bank.in/business-credit-cards/biz-power-credit-card",
+      "network_confidence": "low"
     },
     {
       "name": "Tata Neu Infinity HDFC Bank",
@@ -98,55 +105,60 @@
       "welcome_benefit": "1,499 NeuCoins on Tata Neu App as reversal of 1st year membership fee, on 1st transaction within 30 days",
       "badge": "Extraordinary Rewards. Ready for You.",
       "apply_url": "https://www.hdfc.bank.in/credit-cards/tata-neu-infinity-hdfc-bank-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/credit-cards/tata-neu-infinity-hdfc-bank-credit-card"
+      "enrich_source": "https://www.hdfc.bank.in/credit-cards/tata-neu-infinity-hdfc-bank-credit-card",
+      "network_confidence": "high"
     },
     {
       "name": "6E Rewards Indigo XL",
       "match_status": "unmatched",
-      "network": null,
+      "network": "Visa",
       "category": null,
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": null,
-      "enrich_source": null
+      "enrich_source": null,
+      "network_confidence": "medium"
     },
     {
       "name": "Regalia First, Business Regalia First",
       "match_status": "unmatched",
-      "network": null,
+      "network": "Visa/Mastercard",
       "category": null,
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": null,
-      "enrich_source": null
+      "enrich_source": null,
+      "network_confidence": "high"
     },
     {
       "name": "Diners Club Rewardz",
       "match_status": "unmatched",
-      "network": null,
+      "network": "Diners Club",
       "category": null,
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": null,
-      "enrich_source": null
+      "enrich_source": null,
+      "network_confidence": "high"
     },
     {
       "name": "Diners Club Miles",
       "match_status": "unmatched",
-      "network": null,
+      "network": "Diners Club",
       "category": null,
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": null,
-      "enrich_source": null
+      "enrich_source": null,
+      "network_confidence": "high"
     },
     {
       "name": "Diners Privilege",
@@ -158,31 +170,34 @@
       "welcome_benefit": "Complimentary annual memberships of Swiggy One and Times Prime on spending Rs.75,000 within first 90 days",
       "badge": "If the world is where you belong, Welcome to the Club",
       "apply_url": "https://www.hdfc.bank.in/credit-cards/diners-privilege-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/credit-cards/diners-privilege-credit-card"
+      "enrich_source": "https://www.hdfc.bank.in/credit-cards/diners-privilege-credit-card",
+      "network_confidence": "high"
     },
     {
       "name": "Regalia, Regalia Activ, Business Regalia, Diners Club Premium, Doctor's Regalia",
       "match_status": "low_confidence",
-      "network": null,
+      "network": "Visa/Mastercard/Diners Club",
       "category": "premium",
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": "https://www.hdfc.bank.in/credit-cards/regalia-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/credit-cards/regalia-credit-card"
+      "enrich_source": "https://www.hdfc.bank.in/credit-cards/regalia-credit-card",
+      "network_confidence": "medium"
     },
     {
       "name": "6E Rewards Indigo",
       "match_status": "unmatched",
-      "network": null,
+      "network": "Visa",
       "category": null,
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": null,
-      "enrich_source": null
+      "enrich_source": null,
+      "network_confidence": "medium"
     },
     {
       "name": "HDFC Bank UPI RuPay / HDFC Bank UPI RuPay Biz / HDFC Bank UPI RuPay Mega Saver Credit Card",
@@ -194,127 +209,138 @@
       "welcome_benefit": null,
       "badge": "Convenience of UPI & Credit Card benefits",
       "apply_url": "https://www.hdfc.bank.in/credit-cards/hdfc-bank-upi-rupay-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/credit-cards/hdfc-bank-upi-rupay-credit-card"
+      "enrich_source": "https://www.hdfc.bank.in/credit-cards/hdfc-bank-upi-rupay-credit-card",
+      "network_confidence": "high"
     },
     {
       "name": "Easy EMI",
       "match_status": "unmatched",
-      "network": null,
+      "network": "Visa/Mastercard",
       "category": null,
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": null,
-      "enrich_source": null
+      "enrich_source": null,
+      "network_confidence": "low"
     },
     {
       "name": "Business Platinum",
       "match_status": "unmatched",
-      "network": null,
+      "network": "Visa/Mastercard",
       "category": null,
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": null,
-      "enrich_source": null
+      "enrich_source": null,
+      "network_confidence": "low"
     },
     {
       "name": "Times Platinum / Times Card Credit Platinum",
       "match_status": "unmatched",
-      "network": null,
+      "network": "Visa/Mastercard",
       "category": null,
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": null,
-      "enrich_source": null
+      "enrich_source": null,
+      "network_confidence": "low"
     },
     {
       "name": "Equitas Elegance",
       "match_status": "unmatched",
-      "network": null,
+      "network": "RuPay",
       "category": null,
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": null,
-      "enrich_source": null
+      "enrich_source": null,
+      "network_confidence": "low"
     },
     {
       "name": "Millennia",
       "match_status": "matched",
-      "network": null,
+      "network": "Visa/Mastercard",
       "category": "mid_tier",
       "rewards": "5% cashback on select online merchants (Amazon, Flipkart, etc.); 1% cashback on all other spends; cashback as CashPoints redeemable against statement",
       "lounge": "Lounge access via Quarterly Spends Milestone program: gift voucher worth Rs.1,000 (redeemable for airport lounge access voucher) on spending Rs.1 lakh in a calendar quarter",
       "welcome_benefit": null,
       "badge": "The Best CashBack Credit Card",
       "apply_url": "https://www.hdfc.bank.in/credit-cards/millennia-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/credit-cards/millennia-credit-card"
+      "enrich_source": "https://www.hdfc.bank.in/credit-cards/millennia-credit-card",
+      "network_confidence": "high"
     },
     {
       "name": "Equitas Excite",
       "match_status": "unmatched",
-      "network": null,
+      "network": "RuPay",
       "category": null,
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": null,
-      "enrich_source": null
+      "enrich_source": null,
+      "network_confidence": "low"
     },
     {
       "name": "BizGrow",
       "match_status": "matched",
-      "network": null,
+      "network": "Visa/Mastercard",
       "category": "mid_tier",
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": "Made for Business. Made for Your Business.",
       "apply_url": "https://www.hdfc.bank.in/business-credit-cards/biz-grow-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/business-credit-cards/biz-grow-credit-card"
+      "enrich_source": "https://www.hdfc.bank.in/business-credit-cards/biz-grow-credit-card",
+      "network_confidence": "low"
     },
     {
       "name": "BizFirst",
       "match_status": "matched",
-      "network": null,
+      "network": "Visa/Mastercard",
       "category": "mid_tier",
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": "Made for Business. Made for Your Business.",
       "apply_url": "https://www.hdfc.bank.in/business-credit-cards/biz-first-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/business-credit-cards/biz-first-credit-card"
+      "enrich_source": "https://www.hdfc.bank.in/business-credit-cards/biz-first-credit-card",
+      "network_confidence": "low"
     },
     {
       "name": "Micro Enterprise card",
       "match_status": "unmatched",
-      "network": null,
+      "network": "RuPay",
       "category": null,
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": null,
-      "enrich_source": null
+      "enrich_source": null,
+      "network_confidence": "low"
     },
     {
       "name": "GIGA Business",
       "match_status": "matched",
-      "network": null,
+      "network": "Visa/Mastercard",
       "category": "mid_tier",
       "rewards": "2 CashPoints per Rs.150 on general business expenses; 6 CashPoints per Rs.150 on business digital spends, bill payments, income tax and GST payments; bonus 800 CashPoints on spending Rs.50,000 every month",
       "lounge": "2 complimentary domestic lounge accesses + 2 more on spending Rs.75,000 in previous quarter; 6 complimentary international lounge accesses per year via Priority Pass",
       "welcome_benefit": "Amazon voucher worth Rs.1,500 or Amazon Prime (annual) and Biz Prime (6 months) on making one online transaction within first 30 days",
       "badge": "Made for Business. Made for Your Business.",
       "apply_url": "https://www.hdfc.bank.in/business-credit-cards/giga-business-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/business-credit-cards/giga-business-credit-card"
+      "enrich_source": "https://www.hdfc.bank.in/business-credit-cards/giga-business-credit-card",
+      "network_confidence": "low"
     },
     {
       "name": "MoneyBack, MoneyBack+, Business Moneyback, Freedom, Best Price Save Smart, Indian Oil HDFC Bank",
@@ -326,151 +352,164 @@
       "welcome_benefit": "Freedom: 500 CashPoints on payment of joining membership fee",
       "badge": "Rewarding Credit Card For Everyday Spends",
       "apply_url": "https://www.hdfc.bank.in/credit-cards/moneyback-plus-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/credit-cards/moneyback-plus-credit-card"
+      "enrich_source": "https://www.hdfc.bank.in/credit-cards/moneyback-plus-credit-card",
+      "network_confidence": "high"
     },
     {
       "name": "Small Business Moneyback",
       "match_status": "unmatched",
-      "network": null,
+      "network": "Visa/Mastercard",
       "category": null,
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": null,
-      "enrich_source": null
+      "enrich_source": null,
+      "network_confidence": "low"
     },
     {
       "name": "TimesTitanium / Times Card Credit",
       "match_status": "unmatched",
-      "network": null,
+      "network": "Visa/Mastercard",
       "category": null,
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": null,
-      "enrich_source": null
+      "enrich_source": null,
+      "network_confidence": "low"
     },
     {
       "name": "Shoppers Stop Black HDFC Bank",
       "match_status": "unmatched",
-      "network": null,
+      "network": "Visa",
       "category": null,
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": null,
-      "enrich_source": null
+      "enrich_source": null,
+      "network_confidence": "medium"
     },
     {
       "name": "Superia",
       "match_status": "unmatched",
-      "network": null,
+      "network": "Visa/Mastercard",
       "category": null,
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": null,
-      "enrich_source": null
+      "enrich_source": null,
+      "network_confidence": "low"
     },
     {
       "name": "Paytm HDFC Bank Select",
       "match_status": "unmatched",
-      "network": null,
+      "network": "Visa/Mastercard",
       "category": null,
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": null,
-      "enrich_source": null
+      "enrich_source": null,
+      "network_confidence": "medium"
     },
     {
       "name": "AllMiles",
       "match_status": "unmatched",
-      "network": null,
+      "network": "Visa/Mastercard",
       "category": null,
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": null,
-      "enrich_source": null
+      "enrich_source": null,
+      "network_confidence": "low"
     },
     {
       "name": "Doctors Superia",
       "match_status": "unmatched",
-      "network": null,
+      "network": "Visa/Mastercard",
       "category": null,
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": null,
-      "enrich_source": null
+      "enrich_source": null,
+      "network_confidence": "low"
     },
     {
       "name": "Paytm HDFC Bank Select Business",
       "match_status": "low_confidence",
-      "network": null,
+      "network": "Visa/Mastercard",
       "category": "mid_tier",
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": "Access the Credit You Merit",
       "apply_url": "https://www.hdfc.bank.in/business-credit-cards/paytm-select-business-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/credit-cards"
+      "enrich_source": "https://www.hdfc.bank.in/credit-cards",
+      "network_confidence": "medium"
     },
     {
       "name": "Best Price Save Max",
       "match_status": "unmatched",
-      "network": null,
+      "network": "Visa/Mastercard",
       "category": null,
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": null,
-      "enrich_source": null
+      "enrich_source": null,
+      "network_confidence": "low"
     },
     {
       "name": "Pine Labs HDFC Bank Pro",
       "match_status": "unmatched",
-      "network": null,
+      "network": "Visa/Mastercard",
       "category": null,
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": null,
-      "enrich_source": null
+      "enrich_source": null,
+      "network_confidence": "low"
     },
     {
       "name": "Paytm HDFC Bank Business",
       "match_status": "matched",
-      "network": null,
+      "network": "Visa/Mastercard",
       "category": "entry",
       "rewards": "3% cashback on Paytm spends (Recharge, Utility, Movies, Mini App; max Rs.500/month); 2% on other select Paytm spends (max Rs.500/month); 1% on all other retail spends (max Rs.1,000/month)",
       "lounge": null,
       "welcome_benefit": null,
       "badge": "Get The Credit You Deserve!",
       "apply_url": "https://www.hdfc.bank.in/business-credit-cards/paytm-hdfc-bank-business-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/business-credit-cards/paytm-hdfc-bank-business-credit-card"
+      "enrich_source": "https://www.hdfc.bank.in/business-credit-cards/paytm-hdfc-bank-business-credit-card",
+      "network_confidence": "medium"
     },
     {
       "name": "Pharmeasy HDFC Bank",
       "match_status": "unmatched",
-      "network": null,
+      "network": "Visa/Mastercard",
       "category": null,
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": null,
-      "enrich_source": null
+      "enrich_source": null,
+      "network_confidence": "low"
     },
     {
       "name": "IRCTC HDFC Bank Credit Card",
@@ -482,91 +521,99 @@
       "welcome_benefit": "Welcome gift voucher worth Rs.500 on card activation (1 transaction within first 37 days)",
       "badge": "There's a train ride in every swipe",
       "apply_url": "https://www.hdfc.bank.in/credit-cards/irctc-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/credit-cards/irctc-credit-card"
+      "enrich_source": "https://www.hdfc.bank.in/credit-cards/irctc-credit-card",
+      "network_confidence": "high"
     },
     {
       "name": "Snapdeal HDFC Bank",
       "match_status": "unmatched",
-      "network": null,
+      "network": "Visa/Mastercard",
       "category": null,
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": null,
-      "enrich_source": null
+      "enrich_source": null,
+      "network_confidence": "low"
     },
     {
       "name": "Bharat CashBack / Teacher's Platinum / Solitaire",
       "match_status": "unmatched",
-      "network": null,
+      "network": "Visa/Mastercard",
       "category": null,
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": null,
-      "enrich_source": null
+      "enrich_source": null,
+      "network_confidence": "low"
     },
     {
       "name": "Business Freedom Card / Business Bharat CashBack",
       "match_status": "unmatched",
-      "network": null,
+      "network": "Visa/Mastercard",
       "category": null,
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": null,
-      "enrich_source": null
+      "enrich_source": null,
+      "network_confidence": "low"
     },
     {
       "name": "Paytm HDFC Bank",
       "match_status": "low_confidence",
-      "network": null,
+      "network": "Visa/Mastercard",
       "category": "entry",
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": "https://www.hdfc.bank.in/credit-cards/paytm-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/credit-cards/paytm-credit-card"
+      "enrich_source": "https://www.hdfc.bank.in/credit-cards/paytm-credit-card",
+      "network_confidence": "medium"
     },
     {
       "name": "Paytm HDFC Bank Digital Credit Card",
       "match_status": "unmatched",
-      "network": null,
+      "network": "Visa/Mastercard",
       "category": null,
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": null,
-      "enrich_source": null
+      "enrich_source": null,
+      "network_confidence": "medium"
     },
     {
       "name": "Pine Labs HDFC Bank",
       "match_status": "unmatched",
-      "network": null,
+      "network": "Visa/Mastercard",
       "category": null,
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": null,
-      "enrich_source": null
+      "enrich_source": null,
+      "network_confidence": "low"
     },
     {
       "name": "Retailio HDFC Bank",
       "match_status": "unmatched",
-      "network": null,
+      "network": "Visa/Mastercard",
       "category": null,
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": null,
-      "enrich_source": null
+      "enrich_source": null,
+      "network_confidence": "low"
     },
     {
       "name": "Flipkart Wholesale",
@@ -578,7 +625,8 @@
       "welcome_benefit": "Rs.1,500 worth of activation cashback (zero joining fee)",
       "badge": "Soaring Ambitions. Ready for you.",
       "apply_url": "https://www.hdfc.bank.in/business-credit-cards/flipkart-wholesale-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/business-credit-cards/flipkart-wholesale-credit-card"
+      "enrich_source": "https://www.hdfc.bank.in/business-credit-cards/flipkart-wholesale-credit-card",
+      "network_confidence": "high"
     },
     {
       "name": "Tata Neu Plus HDFC Bank",
@@ -590,43 +638,47 @@
       "welcome_benefit": "499 NeuCoins on Tata Neu App as reversal of 1st year membership fee, on 1st transaction within 30 days",
       "badge": "Extraordinary Rewards. Ready for You.",
       "apply_url": "https://www.hdfc.bank.in/credit-cards/tata-neu-plus-hdfc-bank-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/credit-cards/tata-neu-plus-hdfc-bank-credit-card"
+      "enrich_source": "https://www.hdfc.bank.in/credit-cards/tata-neu-plus-hdfc-bank-credit-card",
+      "network_confidence": "high"
     },
     {
       "name": "Shoppers Stop HDFC Bank",
       "match_status": "unmatched",
-      "network": null,
+      "network": "Visa",
       "category": null,
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": null,
-      "enrich_source": null
+      "enrich_source": null,
+      "network_confidence": "medium"
     },
     {
       "name": "Platinum Edge",
       "match_status": "unmatched",
-      "network": null,
+      "network": "Visa/Mastercard",
       "category": null,
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": null,
-      "enrich_source": null
+      "enrich_source": null,
+      "network_confidence": "low"
     },
     {
       "name": "Business Program",
       "match_status": "unmatched",
-      "network": null,
+      "network": "Visa/Mastercard",
       "category": null,
       "rewards": null,
       "lounge": null,
       "welcome_benefit": null,
       "badge": null,
       "apply_url": null,
-      "enrich_source": null
+      "enrich_source": null,
+      "network_confidence": "low"
     },
     {
       "name": "Swiggy HDFC Bank Credit Card",
@@ -638,7 +690,8 @@
       "welcome_benefit": "Complimentary 3-month Swiggy One membership on card activation",
       "badge": "Delightful Rewards. Ready For You",
       "apply_url": "https://www.hdfc.bank.in/credit-cards/swiggy-hdfc-bank-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/credit-cards/swiggy-hdfc-bank-credit-card"
+      "enrich_source": "https://www.hdfc.bank.in/credit-cards/swiggy-hdfc-bank-credit-card",
+      "network_confidence": "high"
     },
     {
       "name": "Swiggy Ornge HDFC Bank Credit Card",
@@ -650,7 +703,8 @@
       "welcome_benefit": "12-month complimentary Swiggy One membership on card activation",
       "badge": "Rewards that keep up with your appetite, everywhere",
       "apply_url": "https://www.hdfc.bank.in/credit-cards/swiggy-ornge-hdfc-bank-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/credit-cards/swiggy-ornge-hdfc-bank-credit-card"
+      "enrich_source": "https://www.hdfc.bank.in/credit-cards/swiggy-ornge-hdfc-bank-credit-card",
+      "network_confidence": "high"
     },
     {
       "name": "Swiggy BLCK HDFC Bank Credit Card",
@@ -662,7 +716,8 @@
       "welcome_benefit": "Complimentary 3-month Swiggy BLCK membership on card activation",
       "badge": "Final Convenience, served daily",
       "apply_url": "https://www.hdfc.bank.in/credit-cards/swiggy-blck-hdfc-bank-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/credit-cards/swiggy-blck-hdfc-bank-credit-card"
+      "enrich_source": "https://www.hdfc.bank.in/credit-cards/swiggy-blck-hdfc-bank-credit-card",
+      "network_confidence": "high"
     },
     {
       "name": "Marriott Bonvoy HDFC Bank Credit Card",
@@ -674,7 +729,8 @@
       "welcome_benefit": "One free night award (up to 15,000 Marriott Bonvoy Points, valid 12 months) on payment of joining/annual fee",
       "badge": "Unmatched Luxury. Ready for You.",
       "apply_url": "https://www.hdfc.bank.in/credit-cards/marriott-bonvoy-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/credit-cards/marriott-bonvoy-credit-card"
+      "enrich_source": "https://www.hdfc.bank.in/credit-cards/marriott-bonvoy-credit-card",
+      "network_confidence": "high"
     },
     {
       "name": "PhonePe HDFC Bank Ultimo Credit Card",
@@ -686,7 +742,8 @@
       "welcome_benefit": "Rs.499 gift voucher after first RuPay CC on UPI payment via PhonePe app",
       "badge": null,
       "apply_url": "https://www.hdfc.bank.in/credit-cards/phonepe-hdfc-bank-ultimo-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/credit-cards/phonepe-hdfc-bank-ultimo-credit-card"
+      "enrich_source": "https://www.hdfc.bank.in/credit-cards/phonepe-hdfc-bank-ultimo-credit-card",
+      "network_confidence": "high"
     },
     {
       "name": "PhonePe HDFC Bank Uno Credit Card",
@@ -698,7 +755,8 @@
       "welcome_benefit": "PhonePe gift card Rs.249 on first RuPay CC on UPI transaction; additional scratch cards worth Rs.25 each on next 10 RuPay CC on UPI transactions",
       "badge": null,
       "apply_url": "https://www.hdfc.bank.in/credit-cards/phonepe-hdfc-bank-uno-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/credit-cards/phonepe-hdfc-bank-uno-credit-card"
+      "enrich_source": "https://www.hdfc.bank.in/credit-cards/phonepe-hdfc-bank-uno-credit-card",
+      "network_confidence": "high"
     },
     {
       "name": "PIXEL Go",
@@ -710,7 +768,8 @@
       "welcome_benefit": null,
       "badge": "Not Your Usual Credit Card",
       "apply_url": "https://www.hdfc.bank.in/credit-cards/pixel-go-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/credit-cards/pixel-go-credit-card"
+      "enrich_source": "https://www.hdfc.bank.in/credit-cards/pixel-go-credit-card",
+      "network_confidence": "high"
     },
     {
       "name": "PIXEL Play",
@@ -722,7 +781,8 @@
       "welcome_benefit": null,
       "badge": "Not Your Usual Credit Card",
       "apply_url": "https://www.hdfc.bank.in/credit-cards/pixel-play-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/credit-cards/pixel-play-credit-card"
+      "enrich_source": "https://www.hdfc.bank.in/credit-cards/pixel-play-credit-card",
+      "network_confidence": "high"
     }
   ]
 }

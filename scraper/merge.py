@@ -115,6 +115,7 @@ def merge_bank(bid: str, display_bank: str, parsed: dict, enriched: dict, seen: 
             "bank": display_bank,
             "name": name,
             "network": enr.get("network"),
+            "network_confidence": enr.get("network_confidence"),
             "category": enr.get("category"),
             "type": ctype,
             "annual_fee": pc.get("renewal_fee") if pc.get("renewal_fee") is not None else pc.get("annual_fee"),
@@ -123,7 +124,8 @@ def merge_bank(bid: str, display_bank: str, parsed: dict, enriched: dict, seen: 
             "forex": forex_for(bd, name),
             "finance_pm": pm,
             "finance_pa": pa,
-            "cash_advance": bd.get("cash_advance"),
+            "cash_advance": bd.get("cash_advance"),       # cash/ATM withdrawal fee
+            "cash_interest": bd.get("cash_interest"),     # interest on cash advances
             "late_fee": bd.get("late_fee_tiers"),
             "rewards": enr.get("rewards"),
             "lounge": enr.get("lounge"),
@@ -143,7 +145,8 @@ def merge_bank(bid: str, display_bank: str, parsed: dict, enriched: dict, seen: 
 
 
 REVIEW_COLS = ["card_id", "bank", "name", "type", "category", "joining_fee", "annual_fee",
-               "fee_waiver", "forex", "finance_pm", "finance_pa", "network", "rewards",
+               "fee_waiver", "forex", "finance_pm", "finance_pa", "cash_advance",
+               "cash_interest", "late_fee", "network", "network_confidence", "rewards",
                "lounge", "badge", "apply_url", "match_status", "data_status",
                "source_section", "source_url"]
 

@@ -491,8 +491,9 @@
     "finance_pm_secured": 2.5,
     "finance_pa_secured": 30,
     "cash_advance": "2.5% of the cash amount withdrawn (Minimum INR 500)",
+    "cash_interest": "All cash withdrawal transactions carry a Finance Charge (Up to 3.99% per month or 47.88% per annum) from the date of withdrawal until the date of full and final payment; no interest-free period applies on cash withdrawals from an ATM",
     "late_fee_tiers": "12.5% of Total Outstanding Amount, Min INR 5 / Max INR 1,300",
     "interest_free_days": "Up to 50 days",
-    "source_section": "A.iii Other Fees and Charges (Foreign Currency Markup) p.13; A.iv Applicable Finance Charges table p.17; A.iii.a Cash advance fees p.15; A.v Late Payment Charges p.20; KFS Interest Free (grace) Period p.1"
+    "source_section": "A.iii Other Fees and Charges (Foreign Currency Markup) p.13; A.iv Applicable Finance Charges table p.17; A.iii.a Cash advance fees p.15; A.iii.b/c Cash Withdrawal Charges & Interest-Free (Grace) Period p.15-16 (cash_interest); A.v Late Payment Charges p.20; KFS Interest Free (grace) Period p.1"
   }
 }

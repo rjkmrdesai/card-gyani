@@ -21,13 +21,14 @@
   "bank_defaults": {
     "forex": 3.5,
     "forex_exceptions": null,
-    "finance_pm_unsecured": null,
-    "finance_pa_unsecured": null,
+    "finance_pm_unsecured": 3.5,
+    "finance_pa_unsecured": 42.0,
     "finance_pm_secured": null,
     "finance_pa_secured": null,
     "cash_advance": "A Transaction Fee of 3.5% of the Cash Advance amount, subject to a minimum of ₹250",
-    "late_fee_tiers": "Delinquency Fee: 5% on the unpaid balance, with a minimum monthly Delinquency Fee of ₹300",
+    "cash_interest": "3.5% p.m. on Cash Advances, levied from the very next day (the day after the transaction); no interest-free period applies to Cash Advances",
+    "late_fee_tiers": "Delinquency Fee: 5% on the unpaid balance, with a minimum monthly Delinquency Fee of ₹300; KFS 'Charges in case of default': 30% of Minimum Amount Due, subject to a minimum of ₹500 and maximum of ₹1,000, plus applicable taxes",
     "interest_free_days": "up to maximum of 48 days",
-    "source_section": "Section (a)(iii) Cash Advance Fee; Section (a)(iv) Foreign Currency Transactions 'Currency Conversion Factor Assessment - 3.50%' / Section (c)(viii) 'foreign currency conversion mark up of 3.5%'; Section (a)(vi) Finance Charges ('no Finance Charges applicable' on Charge Cards); Section (a)(vii) Interest Free Grace Period ('up to maximum of 48 days'); Section (a)(ix) Delinquency Fee"
+    "source_section": "Section (a)(iii) Cash Advance Fee; Section (a)(iv) Foreign Currency Transactions 'Currency Conversion Factor Assessment - 3.50%' / Section (c)(viii) 'foreign currency conversion mark up of 3.5%'; Section (a)(vi) Finance Charges ('no Finance Charges applicable' on Charge Cards); Section (a)(vii) Interest Free Grace Period ('up to maximum of 48 days'); Section (a)(ix) Delinquency Fee. Amex India Key Fact Statement (updated August 31, 2025): A(i) Standard Finance Charges table '3.5% P.M' (Goods & Services, Cash & Balance Transfer); A(iv) 'Finance (Interest) Charges for both Revolving credit and Cash Advances: Interest is payable at the monthly percentage rate on all Charges from the date the Cardmember incurs the transaction'; A(iv) FCY 'Currency Conversion Factor Assessment: 3.50%'; A(ii) 'Cash Advance Fee: 3.5% of the Cash Advance Amount, subject to a minimum of ₹250'; B(ii) 'Finance Charges on cash advances are levied from the very next day'; A(vi) 'Charges in case of default: 30% of Minimum Amount Due subject to minimum of ₹500 and maximum of ₹1,000, plus applicable taxes'"
   }
 }

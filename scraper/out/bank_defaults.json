@@ -18,6 +18,7 @@
     "finance_pm_secured": 3.75,
     "finance_pa_secured": 45.0,
     "cash_advance": "2.5% (Excluding Infinia, Infinia Metal Edition) or Rs.500 whichever is higher",
+    "cash_interest": "All cash advances carry a finance charge equal to charges on revolving credit (3.75% per month, i.e. 45% per annum) from the date of withdrawal until the date of full payment. There is no interest-free period on cash advances.",
     "late_fee_tiers": "Outstanding Balance -> Late Payment Charges (Excl. GST): Less than equal to Rs.100: Nil; Rs.101 to Rs.500: Rs.100; Rs.501 to Rs.1,000: Rs.500; Rs.1,001 to Rs.5,000: Rs.600; Rs.5,001 to Rs.10,000: Rs.750; Rs.10,001 to Rs.25,000: Rs.900; Rs.25,001 to Rs.50,000: Rs.1100; More than Rs.50,000: Rs.1300",
     "interest_free_days": "20 to 50 days (BizBlack Metal Card, BizPower, BizGrow, BizFirst, GIGA, Micro Enterprise Card: 25 to 55 days)",
     "source_section": "Sections ii Cash advance fee (p.7), v Finance charges for both revolving credit and cash advances (p.10), iv Interest free (grace Period) (p.10), and Late Payment Charges table (p.11)"
@@ -37,6 +38,7 @@
     "finance_pm_secured": null,
     "finance_pa_secured": null,
     "cash_advance": "On all cards - 2.5% on advanced amount, subject to minimum transaction fee of Rs.500. Exception: ICICI Bank Emeralde Private Metal Credit Card - Nil, ICICI Bank Emeralde Credit Card - Nil, ICICI Bank Emeralde Private Credit Card - Nil, Times Black ICICI Bank Credit Card - Nil",
+    "cash_interest": "Finance charges for the revolving credit facility on retail transactions and cash advances = 3.75% per month i.e., 45% per annum. Interest is levied on all cash advances from the date of the transaction until the date of payment (no interest-free period on cash advances). The rate may vary at ICICI Bank's discretion - as low as 1.25% per month (15% per annum) and, in case of default, up to a maximum of 3.75% per month (45% per annum).",
     "late_fee_tiers": "Less than Rs.100: None; Between Rs.100-Rs.500: Rs.100; Between Rs.501-Rs.1,000: Rs.500; Between Rs.1,001-Rs.5,000: Rs.600; Between Rs.5,001-Rs.10,000: Rs.750; Between Rs.10,001-Rs.25,000: Rs.900; Between Rs.25,001-Rs.50,000: Rs.1,100; More than Rs.50,000: Rs.1,300 (excluding ICICI Bank Emeralde Private Metal Credit Card)",
     "interest_free_days": "18 to 48 days",
     "source_section": "Section I a) 2. Finance Charges (p.7); 3. Other Service Charges and Fees - Foreign currency transactions (p.8) & Cash advance (p.9); 5. Penal Charges and Fees - Late payment charges (p.18); 7. Interest-Free Period and Grace Period (p.21)"
@@ -57,9 +59,10 @@
     "finance_pm_secured": 2.75,
     "finance_pa_secured": 33,
     "cash_advance": "2.5% of transaction amount (subject to a minimum of Rs.500) for both domestic and international ATMs",
+    "cash_interest": "All cash advances carry a finance charge equal to charges on revolving credit (up to 3.75% per month [45% per annum] from the transaction date) from the date of withdrawal until the date of full payment; Free Credit Period: Nil",
     "late_fee_tiers": "Nil for Rs.0-Rs.100; Rs.100 for >Rs.100 & up to Rs.500; Rs.500 for >Rs.500 & up to Rs.1,000; Rs.750 for >Rs.1,000 & up to Rs.10,000; Rs.950 for >Rs.10,000 & up to Rs.25,000; Rs.1,100 for >Rs.25,000 & up to Rs.50,000; Rs.1,300 for >Rs.50,000. Additional Rs.100 levied on missing MAD by due date for two consecutive cycles.",
     "interest_free_days": "20-50 days",
-    "source_section": "Section F Finance Charges (line 501), Section E Interest free credit period (line 497), Cash Advance Fees (lines 1222-1228), Late Payment charges (lines 766-774), Foreign Currency Transaction Fee (line 816), Schedule of Charges summary (lines 1211-1254)"
+    "source_section": "Section F Finance Charges (line 501), Section E Interest free credit period (line 497), Cash Advance interest (Section B line 489, line 502), Free Credit Period Nil (line 1218), Cash Advance Fees (lines 1222-1228), Late Payment charges (lines 766-774), Foreign Currency Transaction Fee (line 816), Schedule of Charges summary (lines 1211-1254)"
   },
   "axis": {
     "forex": 3.5,
@@ -77,6 +80,7 @@
     "finance_pm_secured": 3.4,
     "finance_pa_secured": 49.36,
     "cash_advance": "2.5% (Min. INR 500) of the cash amount; 2% (Min. INR 300) of the cash amount for OLYMPUS Credit Card",
+    "cash_interest": "Interest will be charged on all cash advances from the date of the withdrawal until the date of payment; for cash advances, interest is charged from the date of transaction until the date of payment (no interest-free period applies to cash advances). Levied at the applicable Finance / Interest Charge rate: 3.75% per month (55.55% per annum) for unsecured cards; 3.4% per month (49.36% per annum) for secured cards.",
     "late_fee_tiers": "All other Credit Cards: Nil if total payment due is up to INR 500; INR 500 if between INR 501 and INR 5,000; INR 750 if between INR 5,001 and INR 10,000; INR 1,200 if greater than INR 10,000. OLYMPUS Credit Card: INR 100 if total payment due is greater than INR 2,000. Waived for BURGUNDY PRIVATE Credit Card and PRIMUS Credit Card",
     "interest_free_days": "20 to 50 days",
     "source_section": "Schedule of Charges: FINANCE / INTEREST CHARGE table (Effective 20th Dec 2024, p.11-14); 2) OTHER FEES and CHARGES table (p.14-18) for Cash withdrawal Fees, Late Payment Fee and Foreign Currency Transaction Fee; section B) Interest-Free Credit Period (p.~37) for interest-free days"
@@ -98,6 +102,7 @@
     "finance_pm_secured": null,
     "finance_pa_secured": null,
     "cash_advance": "2.5% on advance amount, subject to minimum of ₹500 (All Other Credit Cards). 1% on advance amount for Kotak Solitaire Credit Card; ₹100 per instance for Dream Different / Kotak811 Super Money Credit Card; facility not available on Kotak UPI RuPay Virtual / Kotak Cashback+ / Kotak Cashback+ Prime Credit Cards",
+    "cash_interest": "Interest will be levied on all cash advances from the date of the transaction until the date of payment (excluding Kotak Solitaire Credit Card, Gold Fortune and Dream Different Cardholders, as they enjoy interest free period for all Cash Advances). Charged at the monthly finance rate per Table B: 3.75% per month (45.00% APR) for standard cards; 3.50% per month (42.00% APR) for White Reserve, Kotak Solitaire, Kotak Signature/Infinite, White Signature, Privy League Signature, Kotak Air+, Kotak811 Super Money and Kotak Air+ Prime Credit Cards. No interest-free period applies to cash advances.",
     "late_fee_tiers": "<=₹100: ₹0; >₹100-₹500: ₹100; >₹500-₹1000: ₹500; >₹1000-₹5000: ₹600; >₹5,000-₹10,000: ₹750; >₹10,000-₹25,000: ₹900; >₹25,000-₹50,000: ₹1,100; >₹50,000: ₹1,300",
     "interest_free_days": "up to 51 days (18-48 days or 21-51 days depending on Payment Due Date)",
     "source_section": "Interest Charges table p.5 (Monthly 3.75% / APR 45.00% for standard cards; 3.50% / 42.00% for White Reserve, Kotak Solitaire, Signature/Infinite, White Signature, Privy League Signature, Kotak Air+, Kotak811 Super Money, Kotak Air+ Prime); Cash Advance Fee table p.5; Late Payment Charges table p.6; Foreign Currency Transaction Mark up p.6; Interest Free Period section D p.5 (text line 465-469)"
@@ -123,6 +128,7 @@
     "finance_pm_secured": null,
     "finance_pa_secured": null,
     "cash_advance": "Rs.199 per transaction (cash advance not applicable for FIRST Digital RuPay Credit Card)",
+    "cash_interest": "Interest on cash advances is charged at the same finance (interest) rate as purchases and outstanding balances, applied from the date of transaction until paid in full (no separate interest-free period for cash advances). Monthly Rate 0.71%-3.85% / Annual Rate 8.5%-46.2% for all other IDFC FIRST Bank Credit Cards; FIRST Private Credit Card Monthly Rate 0.75% / Annual Rate 9%. Rates are dynamic and can change/increase up to 3.99% per month (47.88% Annualised) or decrease up to ~0.71% per month (8.50% Annualised) at the Bank's discretion.",
     "late_fee_tiers": "15% of Total Amount Due as of the previous statement minus any payments received before the due date (subject to a minimum of Rs.100 and a maximum of Rs.1,300). FIRST SWYP Credit Card: same 15% with maximum of Rs.6,000. FIRST Private Credit Card: Nil. FIRST Digital RuPay: as per Primary Credit Card. Illustration tiers: <100 None; 500 -> 100; 5,000 -> 750; 8,000 -> 1,200; 10,000 and above -> 1,300",
     "interest_free_days": "up to 45 days (grace period shall not exceed 45 days; not applicable if previous statement balance not cleared in full)",
     "source_section": "Sec 2 Finance Charges table p.2-3 (All other IDFC FIRST Bank Credit Cards: Monthly 0.71%-3.85% / Annual 8.5%-46.2%; FIRST Private 0.75%/9%); Sec 3 Other Fees and Charges p.3-4 (Cash advance, Late payment, Markup Charges on Foreign currency); Sec 3 Interest-Free Period p.11 (45 days)"
@@ -135,6 +141,7 @@
     "finance_pm_secured": null,
     "finance_pa_secured": null,
     "cash_advance": "2.5% of the advance amount subject to a minimum of Rs.300",
+    "cash_interest": "Interest rate of 3.83% per month (46% per annum) levied on the current outstanding balance on a daily basis if Total Amount Due is not paid off by due date; interest is also levied on all fee, charges, interest and service tax. On cash advances, interest is levied from the transaction date itself.",
     "late_fee_tiers": "Up to Rs.100 - Nil; Rs.101-Rs.500 - Rs.100; Rs.501-Rs.1000 - Rs.350; Rs.1001-Rs.10000 - Rs.550; Above Rs.10000 - Rs.700 (w.e.f. 1st Dec 2012)",
     "interest_free_days": "Up to 50 days; Interest-free period is not applicable if Total Amount Due is not paid in full",
     "source_section": "OTHER FINANCIAL CHARGES table p.2 (Interest Charge 'For All Cards' 3.83% monthly / 46% annual; Interest-free Period; Late Payment Charges; Cash Advance Charges; Foreign Currency Mark-up 3.5%)"
@@ -159,6 +166,7 @@
     "finance_pm_secured": null,
     "finance_pa_secured": null,
     "cash_advance": "2.50% of the withdrawn amount or Rs.500 whichever is higher",
+    "cash_interest": "Cash withdrawal transactions carry finance charge from the date of transaction till the date of full payment, at the applicable finance charge rate (Eterna, Tiara: 3.25% per month i.e. 39% per annum; All other Credit Cards: 3.75% per month i.e. 45% per annum). No interest-free period applies to cash advances.",
     "late_fee_tiers": "Less than Rs.100: NIL; Rs.100 to Rs.500: Rs.100; Rs.501 to Rs.1,000: Rs.400; Rs.1,001 to Rs.10,000: Rs.750; Rs.10,001 to Rs.25,000: Rs.950; Rs.25,001 to Rs.50,000: Rs.1100; More than Rs.50,000: Rs.1300",
     "interest_free_days": "20 to 50 Days",
     "source_section": "TARIFF OF CHARGES: Finance Charges (Eterna, Tiara: 3.25% per month i.e. 39% per annum; All other Credit Cards: 3.75% per month i.e. 45% per annum), Cash Withdrawal Charges, Foreign Currency Transaction Fee, Late Payment Charges (Statement Balance / Charges table), and Interest Free Period 20 to 50 Days rows"
@@ -166,14 +174,15 @@
   "amex": {
     "forex": 3.5,
     "forex_exceptions": null,
-    "finance_pm_unsecured": null,
-    "finance_pa_unsecured": null,
+    "finance_pm_unsecured": 3.5,
+    "finance_pa_unsecured": 42.0,
     "finance_pm_secured": null,
     "finance_pa_secured": null,
     "cash_advance": "A Transaction Fee of 3.5% of the Cash Advance amount, subject to a minimum of ₹250",
-    "late_fee_tiers": "Delinquency Fee: 5% on the unpaid balance, with a minimum monthly Delinquency Fee of ₹300",
+    "cash_interest": "3.5% p.m. on Cash Advances, levied from the very next day (the day after the transaction); no interest-free period applies to Cash Advances",
+    "late_fee_tiers": "Delinquency Fee: 5% on the unpaid balance, with a minimum monthly Delinquency Fee of ₹300; KFS 'Charges in case of default': 30% of Minimum Amount Due, subject to a minimum of ₹500 and maximum of ₹1,000, plus applicable taxes",
     "interest_free_days": "up to maximum of 48 days",
-    "source_section": "Section (a)(iii) Cash Advance Fee; Section (a)(iv) Foreign Currency Transactions 'Currency Conversion Factor Assessment - 3.50%' / Section (c)(viii) 'foreign currency conversion mark up of 3.5%'; Section (a)(vi) Finance Charges ('no Finance Charges applicable' on Charge Cards); Section (a)(vii) Interest Free Grace Period ('up to maximum of 48 days'); Section (a)(ix) Delinquency Fee"
+    "source_section": "Section (a)(iii) Cash Advance Fee; Section (a)(iv) Foreign Currency Transactions 'Currency Conversion Factor Assessment - 3.50%' / Section (c)(viii) 'foreign currency conversion mark up of 3.5%'; Section (a)(vi) Finance Charges ('no Finance Charges applicable' on Charge Cards); Section (a)(vii) Interest Free Grace Period ('up to maximum of 48 days'); Section (a)(ix) Delinquency Fee. Amex India Key Fact Statement (updated August 31, 2025): A(i) Standard Finance Charges table '3.5% P.M' (Goods & Services, Cash & Balance Transfer); A(iv) 'Finance (Interest) Charges for both Revolving credit and Cash Advances: Interest is payable at the monthly percentage rate on all Charges from the date the Cardmember incurs the transaction'; A(iv) FCY 'Currency Conversion Factor Assessment: 3.50%'; A(ii) 'Cash Advance Fee: 3.5% of the Cash Advance Amount, subject to a minimum of ₹250'; B(ii) 'Finance Charges on cash advances are levied from the very next day'; A(vi) 'Charges in case of default: 30% of Minimum Amount Due subject to minimum of ₹500 and maximum of ₹1,000, plus applicable taxes'"
   },
   "federal": {
     "forex": 3.5,
@@ -185,12 +194,13 @@
     "finance_pm_secured": null,
     "finance_pa_secured": null,
     "cash_advance": "2.5% of amount withdrawn or Rs. 500 whichever is higher (Not applicable for Wave Credit Card)",
+    "cash_interest": "All cash advances carry finance charges equal to the charges on revolving credit (Interest on Revolving Credit / APR, ranging from 23.88% i.e. 1.99% per month to 45.00% i.e. 3.75% per month based on Average Monthly Balance for last Quarter) from the date of withdrawal until paid. For cash advances, interest is charged from the date of the transaction until the date of payment; there is no interest free period for cash advances.",
     "late_fee_tiers": "Total Amount Due Rs. 0-250: Rs. 0; Rs. 251-1000: Rs. 250; Rs. 1001-5000: Rs. 500; Rs. 5001-25000: Rs. 1,000; Rs. 25001 & above: Rs. 1,250 (w.e.f. 20th August 2024)",
     "interest_free_days": "Up to 48 days",
     "source_section": "SCHEDULE OF CHARGES/TAXES table (Foreign Currency Markup Fee, Cash Advance Fee, Interest free period rows) + 'Other Charges (Common on all Cards)' Interest on Revolving Credit (APR) table and Late Payment Charges table"
   },
   "yes": {
-    "forex": null,
+    "forex": 3.5,
     "forex_exceptions": {
       "YES Private / YES Private Prime": 0.5,
       "Marquee": 1.0,
@@ -209,7 +219,8 @@
     "cash_advance": "Effective 15th June 2026: 2.5% or INR 650 whichever is higher (prior to 15th June 2026: 2.5% or INR 500 whichever is higher). Waived for YES Private and AI Inside Credit Card; not applicable for any Virtual Credit Card",
     "late_fee_tiers": "Up to INR 500 current outstanding (statement balance + unbilled): No late payment charges. Above INR 500: 10% of statement balance or INR 1350 whichever is lower, per statement. Waived for YES Private credit card",
     "interest_free_days": "up to 50 days",
-    "source_section": "Forex/DCC per-card table from Section A.3.q 'Charges pertaining to Foreign Currency' p.17 (Foreign currency conversion charges Effective 15th June 2026 column); finance charges from Section A.2 'Finance Charges (Interest)' p.4 (3.99%/47.88% Other cards, 2.49%/29.88% FD-linked & NRI variants, 2.99%/35.88% YES Private/Prime/Marquee/Reserv); cash advance from Section A.3.a p.6; late fee from Section A.3.b p.6; interest free period from Section A.2 'Interest Free period' p.5"
+    "cash_interest": "Cash advances carry a finance charge equal to the charge on revolving credit (unsecured cards: 3.99% per month / 47.88% p.a.) levied from the date of withdrawal until the date of full payment; no interest-free / credit-free period applies to cash advances. For revolving credit on retail purchases, finance charges apply from the transaction date when the Total Amount Due is not paid in full by the Payment Due Date.",
+    "source_section": "forex flat default (3.50%) reflects the portfolio-wide modal markup (range 0%-3.50% per card, no single bank-wide markup stated) cross-checked against https://www.yes.bank.in/rates-and-charges (JS-rendered, not directly fetchable on 2026-06-26; confirmed via Section A.3.q per-card forex table); per-card forex from Section A.3.q 'Charges pertaining to Foreign Currency' p.17 (Foreign currency conversion charges Effective 15th June 2026 column); finance charges from Section A.2 'Finance Charges (Interest)' p.4 (3.99%/47.88% Other cards, 2.49%/29.88% FD-linked & NRI variants, 2.99%/35.88% YES Private/Prime/Marquee/Reserv); cash advance fee from Section A.3.a p.6; cash_interest from Section A.2 'Finance Charges (Interest)' p.4-5 (cash advances accrue finance charge from withdrawal date, no interest-free period); late fee from Section A.3.b p.6; interest free period from Section A.2 'Interest Free period' p.5"
   },
   "rbl": {
     "forex": 3.5,
@@ -229,9 +240,10 @@
     "finance_pm_secured": 2.5,
     "finance_pa_secured": 30,
     "cash_advance": "2.5% of the cash amount withdrawn (Minimum INR 500)",
+    "cash_interest": "All cash withdrawal transactions carry a Finance Charge (Up to 3.99% per month or 47.88% per annum) from the date of withdrawal until the date of full and final payment; no interest-free period applies on cash withdrawals from an ATM",
     "late_fee_tiers": "12.5% of Total Outstanding Amount, Min INR 5 / Max INR 1,300",
     "interest_free_days": "Up to 50 days",
-    "source_section": "A.iii Other Fees and Charges (Foreign Currency Markup) p.13; A.iv Applicable Finance Charges table p.17; A.iii.a Cash advance fees p.15; A.v Late Payment Charges p.20; KFS Interest Free (grace) Period p.1"
+    "source_section": "A.iii Other Fees and Charges (Foreign Currency Markup) p.13; A.iv Applicable Finance Charges table p.17; A.iii.a Cash advance fees p.15; A.iii.b/c Cash Withdrawal Charges & Interest-Free (Grace) Period p.15-16 (cash_interest); A.v Late Payment Charges p.20; KFS Interest Free (grace) Period p.1"
   },
   "sbm": {
     "forex": null,
@@ -247,11 +259,12 @@
     },
     "finance_pm_unsecured": null,
     "finance_pa_unsecured": null,
-    "finance_pm_secured": null,
-    "finance_pa_secured": null,
+    "finance_pm_secured": 3.5,
+    "finance_pa_secured": 42,
+    "cash_interest": "Interest levied on all cash advances from the date of the transaction until the date of payment (no interest-free period); charged at the per-card 'Interest Rate for ATM Withdrawal' (Table 03, p.5): Mobikwik First 3.5%pm/42%pa; ZET 3.5%pm/42%pa; Kredit.Pe 3.5%pm/42%pa; novio 2.99%pm/35.88%pa; Magnet 3.3%pm/40%pa; Niyo Global 3%pm/36%pa; Paisabazaar Step Up 3%pm/36%pa; Paisabazaar Paisa + 3.5%pm/42%pa.",
     "cash_advance": "Per card (ATM Withdrawal Fee), p.4: Mobikwik First 2.5% or INR 250 (higher); ZET 3.5% or INR 300 (higher); Kredit.Pe 2.5% or INR 100 (higher); novio 2.5% or INR 299 (higher); Magnet 2.5% or INR 300 (higher); Niyo Global 2.5% or INR 423+GST (higher); Paisabazaar Step Up 2.5% or INR 250 (higher); Paisabazaar Paisa + 2.5%",
     "late_fee_tiers": "Per card (Late Payment Fees), p.8-9: Mobikwik First 2.5% of Total Outstanding or INR 200 (higher); ZET INR 299; Kredit.Pe 5% of outstanding (max Rs.1000); novio INR 499; Magnet INR 299; Niyo Global INR 150; Paisabazaar Step Up tiered (Upto 100=0, 100-1000=250, 1000-10000=500, >10000=750); Paisabazaar Paisa + tiered (<Rs100=None, Rs100-500=Rs100, Rs501-5000=Rs500, Rs5001-10000=Rs600, Rs10001-25000=Rs750, Rs25001-50000=Rs950, >50000=Rs1000)",
     "interest_free_days": "20 to 50 days (free credit period can range up to 48 days depending on Payment Due Date, incl. 3 days grace)",
-    "source_section": "Finance/interest rates per card p.5 ('Interest Rate for POS/ECOM after credit free period' & 'Interest Rate for ATM Withdrawal'): Mobikwik First 3.5%pm/42%pa; ZET 3.5%pm/42%pa; Kredit.Pe 3.5%pm/42%pa; novio 3.5%pm/42%pa (ATM 2.99%pm/35.88%pa); Magnet 2.5%pm/30%pa (ATM 3.3%pm/40%pa); Niyo Global 3%pm/36%pa; Paisabazaar Step Up 3%pm/36%pa; Paisabazaar Paisa + 3.5%pm/42%pa. Forex/Surcharge table p.6-7. Cash advance fee table p.4. Late payment fee tables p.8-9. Grace period p.6 (sec. v Interest free / Grace Period)."
+    "source_section": "All 8 cards are FD-secured so finance_pm/pa_secured is set (modal 3.5%pm/42%pa, applying to 5 of 8 cards: Mobikwik First, ZET, Kredit.Pe, novio POS, Paisa+). Rates vary per card; full per-card detail retained here. Finance/interest rates per card p.5 ('Interest Rate for POS/ECOM after credit free period' & 'Interest Rate for ATM Withdrawal'): Mobikwik First 3.5%pm/42%pa; ZET 3.5%pm/42%pa; Kredit.Pe 3.5%pm/42%pa; novio 3.5%pm/42%pa (ATM 2.99%pm/35.88%pa); Magnet 2.5%pm/30%pa (ATM 3.3%pm/40%pa); Niyo Global 3%pm/36%pa; Paisabazaar Step Up 3%pm/36%pa; Paisabazaar Paisa + 3.5%pm/42%pa. Forex/Surcharge table p.6-7. Cash advance fee table p.4. Late payment fee tables p.8-9. Grace period p.6 (sec. v Interest free / Grace Period)."
   }
 }

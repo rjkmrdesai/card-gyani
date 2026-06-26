@@ -31,7 +31,8 @@ PROMPTS_DIR = ENRICHED_DIR / "_prompts"
 
 ENRICH_FIELDS = {"network", "category", "rewards", "lounge",
                  "welcome_benefit", "badge", "apply_url"}
-CARD_FIELDS = ENRICH_FIELDS | {"name", "match_status", "enrich_source"}
+CARD_FIELDS = ENRICH_FIELDS | {"name", "match_status", "enrich_source",
+                               "network_confidence"}
 CATEGORIES = {"super_premium", "premium", "mid_tier", "entry"}
 
 # strip issuer noise so "SimplyCLICK SBI Card" ~ "simplyclick"

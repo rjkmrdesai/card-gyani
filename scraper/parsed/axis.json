@@ -377,6 +377,7 @@
     "finance_pm_secured": 3.4,
     "finance_pa_secured": 49.36,
     "cash_advance": "2.5% (Min. INR 500) of the cash amount; 2% (Min. INR 300) of the cash amount for OLYMPUS Credit Card",
+    "cash_interest": "Interest will be charged on all cash advances from the date of the withdrawal until the date of payment; for cash advances, interest is charged from the date of transaction until the date of payment (no interest-free period applies to cash advances). Levied at the applicable Finance / Interest Charge rate: 3.75% per month (55.55% per annum) for unsecured cards; 3.4% per month (49.36% per annum) for secured cards.",
     "late_fee_tiers": "All other Credit Cards: Nil if total payment due is up to INR 500; INR 500 if between INR 501 and INR 5,000; INR 750 if between INR 5,001 and INR 10,000; INR 1,200 if greater than INR 10,000. OLYMPUS Credit Card: INR 100 if total payment due is greater than INR 2,000. Waived for BURGUNDY PRIVATE Credit Card and PRIMUS Credit Card",
     "interest_free_days": "20 to 50 days",
     "source_section": "Schedule of Charges: FINANCE / INTEREST CHARGE table (Effective 20th Dec 2024, p.11-14); 2) OTHER FEES and CHARGES table (p.14-18) for Cash withdrawal Fees, Late Payment Fee and Foreign Currency Transaction Fee; section B) Interest-Free Credit Period (p.~37) for interest-free days"

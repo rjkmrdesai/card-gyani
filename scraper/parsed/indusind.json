@@ -89,6 +89,7 @@
     "finance_pm_secured": null,
     "finance_pa_secured": null,
     "cash_advance": "2.5% of the advance amount subject to a minimum of Rs.300",
+    "cash_interest": "Interest rate of 3.83% per month (46% per annum) levied on the current outstanding balance on a daily basis if Total Amount Due is not paid off by due date; interest is also levied on all fee, charges, interest and service tax. On cash advances, interest is levied from the transaction date itself.",
     "late_fee_tiers": "Up to Rs.100 - Nil; Rs.101-Rs.500 - Rs.100; Rs.501-Rs.1000 - Rs.350; Rs.1001-Rs.10000 - Rs.550; Above Rs.10000 - Rs.700 (w.e.f. 1st Dec 2012)",
     "interest_free_days": "Up to 50 days; Interest-free period is not applicable if Total Amount Due is not paid in full",
     "source_section": "OTHER FINANCIAL CHARGES table p.2 (Interest Charge 'For All Cards' 3.83% monthly / 46% annual; Interest-free Period; Late Payment Charges; Cash Advance Charges; Foreign Currency Mark-up 3.5%)"

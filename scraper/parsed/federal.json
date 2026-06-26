@@ -40,6 +40,7 @@
     "finance_pm_secured": null,
     "finance_pa_secured": null,
     "cash_advance": "2.5% of amount withdrawn or Rs. 500 whichever is higher (Not applicable for Wave Credit Card)",
+    "cash_interest": "All cash advances carry finance charges equal to the charges on revolving credit (Interest on Revolving Credit / APR, ranging from 23.88% i.e. 1.99% per month to 45.00% i.e. 3.75% per month based on Average Monthly Balance for last Quarter) from the date of withdrawal until paid. For cash advances, interest is charged from the date of the transaction until the date of payment; there is no interest free period for cash advances.",
     "late_fee_tiers": "Total Amount Due Rs. 0-250: Rs. 0; Rs. 251-1000: Rs. 250; Rs. 1001-5000: Rs. 500; Rs. 5001-25000: Rs. 1,000; Rs. 25001 & above: Rs. 1,250 (w.e.f. 20th August 2024)",
     "interest_free_days": "Up to 48 days",
     "source_section": "SCHEDULE OF CHARGES/TAXES table (Foreign Currency Markup Fee, Cash Advance Fee, Interest free period rows) + 'Other Charges (Common on all Cards)' Interest on Revolving Credit (APR) table and Late Payment Charges table"
