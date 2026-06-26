@@ -79,8 +79,14 @@ aside.filters{position:sticky;top:80px;background:var(--surface);border:1px soli
 .card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow-sm);transition:.15s}
 .card:hover{box-shadow:var(--shadow);border-color:#d8dcd2}
 .card.picked{border-color:var(--cta);box-shadow:0 0 0 2px var(--cta) inset,var(--shadow-sm)}
-.crow{display:grid;grid-template-columns:64px 1fr auto;gap:18px;align-items:start}
+.crow{display:grid;grid-template-columns:200px 1fr auto;gap:18px;align-items:start}
 .logo{width:64px;height:64px;border-radius:14px;background:linear-gradient(160deg,#eaf5d8,#dcefb0);display:grid;place-items:center;font-weight:800;color:var(--accent);font-size:22px;flex:none}
+/* list-row card-art stage — bigger card image, bank logo overlaid in the corner */
+.rcard{position:relative;width:200px;height:126px;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;align-items:center;justify-content:center;flex:none}
+.rcard-art{width:100%;height:100%;object-fit:contain;display:block}
+.rbankchip{position:absolute;top:6px;left:6px;width:32px;height:32px;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:7px;padding:3px;box-shadow:var(--shadow-sm)}
+.rcard-fb img{width:auto;height:auto;max-width:60%;max-height:58%}
+.rcard-i{font-weight:800;font-size:34px;color:var(--muted)}
 .cmid{min-width:0}
 .cname{font-size:18px;font-weight:700;letter-spacing:-.01em}
 .cname span{color:var(--muted);font-weight:500;font-size:14px;margin-left:6px}

@@ -193,14 +193,25 @@ function bankBig(bank,logoUrl){
 // name → logo_url, derived from the loaded cards (for the names-only trust strip)
 function bankLogoMap(){const m={};CARDS.forEach(c=>{if(c.bankLogo)m[c.bank]=c.bankLogo;});return m;}
 
-// Flagship cards with sourced art (PREVIEW: served from /card-images/<slug>.png;
-// moves to a card_image_url column on Supabase once approved).
-const CARD_IMG=new Set(['hdfc-infinia-metal-edition','axis-magnus-credit-card','amex-american-express-platinum-card','icici-times-black-icici-bank-credit-card','axis-axis-bank-atlas-credit-card','icici-emirates-skywards-icici-bank-sapphiro-credit-card','sbi-psb-sbi-card-elite','hdfc-regalia-gold','hdfc-tata-neu-infinity-hdfc-bank','amex-american-express-gold-card','sbi-cashback-sbi-card','hdfc-swiggy-hdfc-bank-credit-card','icici-amazon-pay-icici-bank-credit-card','sbi-simplyclick-sbi-card']);
-function cardImgSrc(c){return CARD_IMG.has(c.slug)?`/card-images/${c.slug}.png`:'';}
+// Card art comes from cards.card_image_url (Supabase Storage); '' when none.
+function cardImgSrc(c){return c.cardImage||'';}
+// Left visual for the list row: bigger card art with the bank logo overlaid in
+// the white-padded corner; falls back to the bank logo centered when no art.
+function rowStage(c){
+  const img=cardImgSrc(c);
+  if(img){
+    const chip=c.bankLogo?`<img class="rbankchip" src="${esc(c.bankLogo)}" alt="${esc(c.bank)}">`:'';
+    return `<div class="rcard"><img class="rcard-art" src="${img}" alt="${esc(c.name)}" loading="lazy">${chip}</div>`;
+  }
+  const fb=c.bankLogo?`<img src="${esc(c.bankLogo)}" alt="${esc(c.bank)}" loading="lazy">`:`<span class="rcard-i">${esc((c.bank||'')[0]||'')}</span>`;
+  return `<div class="rcard rcard-fb">${fb}</div>`;
+}
 // Card-art banner; falls back to the bank logo centered on the white stage.
 function cardStage(c){
   const img=cardImgSrc(c);
-  if(img)return `<div class="tcard"><img src="${img}" alt="${esc(c.name)}" loading="lazy"></div>`;
+  // Card art when available; if the art 404s (e.g. not yet deployed) fall back
+  // to the bank logo at runtime so the tile never shows a broken image.
+  if(img)return `<div class="tcard"><img src="${img}" alt="${esc(c.name)}" loading="lazy"${c.bankLogo?` onerror="this.onerror=null;this.src='${esc(c.bankLogo)}';this.closest('.tcard').classList.add('tcard-fb')"`:''}></div>`;
   if(c.bankLogo)return `<div class="tcard tcard-fb"><img src="${esc(c.bankLogo)}" alt="${esc(c.bank)}" loading="lazy"></div>`;
   return `<div class="tcard tcard-fb"><span class="tcard-i">${esc((c.bank||'')[0]||'')}</span></div>`;
 }
@@ -252,7 +263,7 @@ function cardRow(c){
   const waiver=c.waiver?`${t('waived_at')} ${lakh(c.waiver)} ${t('spend')}`:t('no_fee_waiver');
   return `<div class="card ${picked?'picked':''}" data-card="${c.id}">
     <div class="crow">
-      ${bankBig(c.bank,c.bankLogo)}
+      ${rowStage(c)}
       <div class="cmid">
         <div class="cname">${esc(c.name)} <span>by ${esc(c.bank)}</span></div>
         <div class="tags">${tags.join('')}</div>
@@ -512,7 +523,7 @@ export function homeView(){
   </section>
   <section class="marquee">
     <div class="marquee-head"><span class="k">${t('marquee_k')}</span><h2>${t('marquee_h')}</h2></div>
-    <div class="marquee-mask"><div class="marquee-track">${banks.map(b=>bankTile(b,40)).join('')}${banks.map(b=>bankTile(b,40)).join('')}</div></div>
+    <div class="marquee-mask"><div class="marquee-track">${(()=>{const lm=bankLogoMap();const row=banks.map(b=>bankTile(b,40,lm[b])).join('');return row+row;})()}</div></div>
   </section>
   <footer class="site-footer"><div class="sf-in">
     <div class="brand">${LOGO}Card <b>Gyani</b></div>

@@ -40,6 +40,7 @@ function mapRow(r, logoByBank = {}) {
     slug: r.slug,
     bank: r.bank_name,
     bankLogo: logoByBank[r.bank_name] || '',   // from banks.logo_url (Supabase Storage)
+    cardImage: r.card_image_url || '',         // from cards.card_image_url (Supabase Storage)
     name: r.card_name,
     network: r.network || '',
     networks,                         // for the network filter (multi-network strings)
