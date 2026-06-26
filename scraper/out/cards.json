@@ -30,7 +30,7 @@
     "source_section": "Fee table p.2, Infinia (Metal Edition) row",
     "enrich_source": "https://www.hdfc.bank.in/credit-cards/infinia-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -64,7 +64,7 @@
     "source_section": "Fee table p.2 prints only the ₹8 Lakh/Annum waiver — joining/renewal fee cell blank in MITC; ₹10,000 + GST from HDFC product fees-and-charges page (needs_review)",
     "enrich_source": "https://www.hdfc.bank.in/credit-cards/diners-club-black-metal-edition-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -98,7 +98,7 @@
     "source_section": "Fee table p.2 prints only the ₹7.5 Lakh/Annum waiver — joining/renewal fee cell blank in MITC; ₹10,000 + GST from HDFC business-card fees-and-charges page (needs_review)",
     "enrich_source": "https://www.hdfc.bank.in/business-credit-cards/biz-black-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -132,7 +132,7 @@
     "source_section": "Fee table p.2, Regalia Gold row",
     "enrich_source": "https://www.hdfc.bank.in/credit-cards/regalia-gold-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -162,7 +162,7 @@
     "source_section": "Fee table p.2, BizPower row",
     "enrich_source": "https://www.hdfc.bank.in/business-credit-cards/biz-power-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -196,7 +196,7 @@
     "source_section": "Fee table p.2, Tata Neu Infinity HDFC Bank row",
     "enrich_source": "https://www.hdfc.bank.in/credit-cards/tata-neu-infinity-hdfc-bank-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -226,7 +226,7 @@
     "source_section": "Fee table p.3, 6E Rewards Indigo XL row (waiver NA)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -256,7 +256,7 @@
     "source_section": "Fee table p.3, Regalia First, Business Regalia First row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -286,7 +286,7 @@
     "source_section": "Fee table p.3, Regalia First, Business Regalia First row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -316,7 +316,7 @@
     "source_section": "Fee table p.3, Diners Club Rewardz row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -346,7 +346,7 @@
     "source_section": "Fee table p.3, Diners Club Miles row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -380,7 +380,7 @@
     "source_section": "Fee table p.3, Diners Privilege row",
     "enrich_source": "https://www.hdfc.bank.in/credit-cards/diners-privilege-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -410,7 +410,7 @@
     "source_section": "Fee table p.3, Regalia / Regalia Activ / Business Regalia / Diners Club Premium / Doctor's Regalia row",
     "enrich_source": "https://www.hdfc.bank.in/credit-cards/regalia-credit-card",
     "match_status": "low_confidence",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -440,7 +440,7 @@
     "source_section": "Fee table p.3, Regalia / Regalia Activ / Business Regalia / Diners Club Premium / Doctor's Regalia row",
     "enrich_source": "https://www.hdfc.bank.in/credit-cards/regalia-credit-card",
     "match_status": "low_confidence",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -470,7 +470,7 @@
     "source_section": "Fee table p.3, Regalia / Regalia Activ / Business Regalia / Diners Club Premium / Doctor's Regalia row",
     "enrich_source": "https://www.hdfc.bank.in/credit-cards/regalia-credit-card",
     "match_status": "low_confidence",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -500,7 +500,7 @@
     "source_section": "Fee table p.3, Regalia / Regalia Activ / Business Regalia / Diners Club Premium / Doctor's Regalia row",
     "enrich_source": "https://www.hdfc.bank.in/credit-cards/regalia-credit-card",
     "match_status": "low_confidence",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -530,7 +530,7 @@
     "source_section": "Fee table p.3, Regalia / Regalia Activ / Business Regalia / Diners Club Premium / Doctor's Regalia row",
     "enrich_source": "https://www.hdfc.bank.in/credit-cards/regalia-credit-card",
     "match_status": "low_confidence",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -560,7 +560,7 @@
     "source_section": "Fee table p.3, 6E Rewards Indigo row (waiver NA)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -592,7 +592,7 @@
     "source_section": "Fee table p.3, HDFC Bank UPI RuPay / UPI RuPay Biz / UPI RuPay Mega Saver row",
     "enrich_source": "https://www.hdfc.bank.in/credit-cards/hdfc-bank-upi-rupay-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -622,7 +622,7 @@
     "source_section": "Fee table p.3, Easy EMI row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -652,7 +652,7 @@
     "source_section": "Fee table p.3, Business Platinum row (Free)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -682,7 +682,7 @@
     "source_section": "Fee table p.3, Times Platinum / Times Card Credit Platinum row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -712,7 +712,7 @@
     "source_section": "Fee table p.3, Equitas Elegance row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -745,7 +745,7 @@
     "source_section": "Fee table p.4, Millennia row",
     "enrich_source": "https://www.hdfc.bank.in/credit-cards/millennia-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -775,7 +775,7 @@
     "source_section": "Fee table p.4, Equitas Excite row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -805,7 +805,7 @@
     "source_section": "Fee table p.4, BizGrow row",
     "enrich_source": "https://www.hdfc.bank.in/business-credit-cards/biz-grow-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -835,7 +835,7 @@
     "source_section": "Fee table p.4, BizFirst row",
     "enrich_source": "https://www.hdfc.bank.in/business-credit-cards/biz-first-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -865,7 +865,7 @@
     "source_section": "Fee table p.4, Micro Enterprise card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -899,7 +899,7 @@
     "source_section": "Fee table p.4, GIGA Business row",
     "enrich_source": "https://www.hdfc.bank.in/business-credit-cards/giga-business-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -929,7 +929,7 @@
     "source_section": "Fee table p.4, MoneyBack / MoneyBack+ / Business Moneyback row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -959,7 +959,7 @@
     "source_section": "Fee table p.4, MoneyBack / MoneyBack+ / Business Moneyback row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -989,7 +989,7 @@
     "source_section": "Fee table p.4, MoneyBack / MoneyBack+ / Business Moneyback row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1019,7 +1019,7 @@
     "source_section": "Fee table p.4, Freedom row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1049,7 +1049,7 @@
     "source_section": "Fee table p.4, Best Price Save Smart row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1079,7 +1079,7 @@
     "source_section": "Fee table p.4, Indian Oil HDFC Bank row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1109,7 +1109,7 @@
     "source_section": "Fee table p.4, Small Business Moneyback row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1139,7 +1139,7 @@
     "source_section": "Fee table p.4, TimesTitanium / Times Card Credit row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1169,7 +1169,7 @@
     "source_section": "Fee table p.4, Shoppers Stop Black HDFC Bank row (waiver NA)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1199,7 +1199,7 @@
     "source_section": "Fee table p.4, Superia row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1229,7 +1229,7 @@
     "source_section": "Fee table p.4, Paytm HDFC Bank Select row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1253,13 +1253,13 @@
     "lounge": null,
     "welcome_benefit": null,
     "features": [],
-    "badge": null,
+    "badge": "travel",
     "apply_url": null,
     "source_url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/personal-mitc/mitc-in-english.pdf",
     "source_section": "Fee table p.4, AllMiles row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1289,7 +1289,7 @@
     "source_section": "Fee table p.4, Doctors Superia row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1319,7 +1319,7 @@
     "source_section": "Fee table p.5, Paytm HDFC Bank Select Business row",
     "enrich_source": "https://www.hdfc.bank.in/credit-cards",
     "match_status": "low_confidence",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1349,7 +1349,7 @@
     "source_section": "Fee table p.5, Best Price Save Max row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1379,7 +1379,7 @@
     "source_section": "Fee table p.5, Pine Labs HDFC Bank Pro row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1411,7 +1411,7 @@
     "source_section": "Fee table p.5, Paytm HDFC Bank Business row",
     "enrich_source": "https://www.hdfc.bank.in/business-credit-cards/paytm-hdfc-bank-business-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1441,7 +1441,7 @@
     "source_section": "Fee table p.5, Pharmeasy HDFC Bank row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1475,7 +1475,7 @@
     "source_section": "Fee table p.5, IRCTC HDFC Bank Credit Card row",
     "enrich_source": "https://www.hdfc.bank.in/credit-cards/irctc-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1505,7 +1505,7 @@
     "source_section": "Fee table p.5, Snapdeal HDFC Bank row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1535,7 +1535,7 @@
     "source_section": "Fee table p.5, Bharat CashBack / Teacher's Platinum / Solitaire row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1565,7 +1565,7 @@
     "source_section": "Fee table p.5, Business Freedom Card / Business Bharat CashBack row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1595,7 +1595,7 @@
     "source_section": "Fee table p.5, Paytm HDFC Bank row",
     "enrich_source": "https://www.hdfc.bank.in/credit-cards/paytm-credit-card",
     "match_status": "low_confidence",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1625,7 +1625,7 @@
     "source_section": "Fee table p.5, Paytm HDFC Bank Digital Credit Card row (Rs.149 per annum)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1655,7 +1655,7 @@
     "source_section": "Fee table p.6, Pine Labs HDFC Bank row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1685,7 +1685,7 @@
     "source_section": "Fee table p.6, Retailio HDFC Bank row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1719,7 +1719,7 @@
     "source_section": "Fee table p.6, Flipkart Wholesale row",
     "enrich_source": "https://www.hdfc.bank.in/business-credit-cards/flipkart-wholesale-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1753,7 +1753,7 @@
     "source_section": "Fee table p.6, Tata Neu Plus HDFC Bank row",
     "enrich_source": "https://www.hdfc.bank.in/credit-cards/tata-neu-plus-hdfc-bank-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1783,7 +1783,7 @@
     "source_section": "Fee table p.6, Shoppers Stop HDFC Bank row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1813,7 +1813,7 @@
     "source_section": "Fee table p.6, Platinum Edge row (waiver NA)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1843,7 +1843,7 @@
     "source_section": "Fee table p.6, Business Program row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1876,7 +1876,7 @@
     "source_section": "Fee table p.6, Swiggy HDFC Bank Credit Card row",
     "enrich_source": "https://www.hdfc.bank.in/credit-cards/swiggy-hdfc-bank-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1909,7 +1909,7 @@
     "source_section": "Fee table p.6, Swiggy Ornge HDFC Bank Credit Card row",
     "enrich_source": "https://www.hdfc.bank.in/credit-cards/swiggy-ornge-hdfc-bank-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1942,7 +1942,7 @@
     "source_section": "Fee table p.6, Swiggy BLCK HDFC Bank Credit Card row",
     "enrich_source": "https://www.hdfc.bank.in/credit-cards/swiggy-blck-hdfc-bank-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -1976,7 +1976,7 @@
     "source_section": "Fee table p.6, Marriott Bonvoy HDFC Bank Credit Card row (waiver NA)",
     "enrich_source": "https://www.hdfc.bank.in/credit-cards/marriott-bonvoy-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -2010,7 +2010,7 @@
     "source_section": "Fee table p.6, PhonePe HDFC Bank Ultimo Credit Card row (₹999 + Applicable Taxes)",
     "enrich_source": "https://www.hdfc.bank.in/credit-cards/phonepe-hdfc-bank-ultimo-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -2043,7 +2043,7 @@
     "source_section": "Fee table p.7, PhonePe HDFC Bank Uno Credit Card row (₹499 + Applicable taxes)",
     "enrich_source": "https://www.hdfc.bank.in/credit-cards/phonepe-hdfc-bank-uno-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -2075,7 +2075,7 @@
     "source_section": "PIXEL fee table p.34, PIXEL Go row",
     "enrich_source": "https://www.hdfc.bank.in/credit-cards/pixel-go-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -2107,7 +2107,7 @@
     "source_section": "PIXEL fee table p.34, PIXEL Play row",
     "enrich_source": "https://www.hdfc.bank.in/credit-cards/pixel-play-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -2141,7 +2141,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.1, Times Black ICICI Bank Credit Card row",
     "enrich_source": "https://www.icici.bank.in/personal-banking/cards/credit-card/times-black-icici-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -2175,7 +2175,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.1, ICICI Bank Emeralde Private Metal Credit Card row (w.e.f. Jan 15, 2026)",
     "enrich_source": "https://www.icici.bank.in/personal-banking/cards/credit-card/emeralde-private-metal-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -2205,7 +2205,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.1, ICICI Bank Emeralde Private Credit Card row",
     "enrich_source": null,
     "match_status": "low_confidence",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -2239,7 +2239,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.1, ICICI Bank Emeralde Credit Card row",
     "enrich_source": "https://www.icici.bank.in/personal-banking/cards/credit-card/emeralde-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -2273,7 +2273,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.1, ICICI Bank Sapphiro Credit Card row",
     "enrich_source": "https://www.icici.bank.in/personal-banking/cards/credit-card/sapphiro-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -2307,7 +2307,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.1, ICICI Bank Rubyx Credit Card row",
     "enrich_source": "https://www.icici.bank.in/personal-banking/cards/credit-card/rubyx-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -2341,7 +2341,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.1, ICICI Bank Coral Credit Card row",
     "enrich_source": "https://www.icici.bank.in/personal-banking/cards/credit-card/coral-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -2371,7 +2371,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.2, ICICI Bank Platinum Chip Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -2401,7 +2401,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.2, ICICI Bank Signature Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -2431,7 +2431,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.2, ICICI Bank Ascent American Express (R) Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -2461,7 +2461,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.2, ICICI Bank Platinum Identity Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -2491,7 +2491,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.2, ICICI Bank HPCL Platinum/Titanium/Coral Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -2525,7 +2525,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.2, ICICI Bank HPCL Super Saver Credit Card row",
     "enrich_source": "https://www.icici.bank.in/personal-banking/cards/credit-card/hpcl-super-saver",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -2559,7 +2559,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.2, Manchester United Signature Credit Card row",
     "enrich_source": "https://www.icici.bank.in/personal-banking/cards/credit-card/manchester-signature-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -2593,7 +2593,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.2, Manchester United Platinum Credit Card row",
     "enrich_source": "https://www.icici.bank.in/personal-banking/cards/credit-card/manchester-platinum-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -2623,7 +2623,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.2, Chennai Super Kings ICICI Bank Credit Card row",
     "enrich_source": "https://www.icici.bank.in/personal-banking/cards/credit-card/csk-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -2657,7 +2657,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.2, Adani One ICICI Bank Signature Credit Card row",
     "enrich_source": "https://www.icici.bank.in/personal-banking/cards/credit-card/adani-icici-credit-card/signature-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -2691,7 +2691,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.2, Adani One ICICI Bank Platinum Credit Card row",
     "enrich_source": "https://www.icici.bank.in/personal-banking/cards/credit-card/adani-icici-credit-card/platinum-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -2725,7 +2725,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.3, MakeMyTrip ICICI Bank Credit Card row",
     "enrich_source": "https://www.icici.bank.in/personal-banking/cards/credit-card/makemytrip/makemytrip-icici-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -2755,7 +2755,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.3, ICICI Bank Unifare Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -2785,7 +2785,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.3, ICICI Bank Coral Credit Card against Fixed Deposit row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -2815,7 +2815,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.3, ICICI Bank Instant Platinum Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -2845,7 +2845,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.3, Accelero ICICI Bank Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -2875,7 +2875,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.3, MakeMyTrip ICICI Bank Platinum Credit Card row",
     "enrich_source": "https://www.icici.bank.in/personal-banking/cards/credit-card/makemytrip/platinum-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -2905,7 +2905,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.3, MakeMyTrip ICICI Bank Signature Credit Card row",
     "enrich_source": "https://www.icici.bank.in/personal-banking/cards/credit-card/makemytrip/signature-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -2938,7 +2938,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.3, ICICI Bank Parakram Credit Card row",
     "enrich_source": "https://www.icici.bank.in/personal-banking/cards/credit-card/parakram-cards/parakram",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -2968,7 +2968,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.3, ICICI Bank Parakram Select Credit Card row",
     "enrich_source": "https://www.icici.bank.in/personal-banking/cards/credit-card/parakram-cards",
     "match_status": "low_confidence",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3002,7 +3002,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.3, Emirates Skywards ICICI Bank Emerald Credit Card row",
     "enrich_source": "https://www.icici.bank.in/personal-banking/cards/credit-card/emirates-skywards/emirates-emeralde",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3036,7 +3036,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.3, Emirates Skywards ICICI Bank Sapphiro Credit Card row",
     "enrich_source": "https://www.icici.bank.in/personal-banking/cards/credit-card/emirates-skywards/emirates-sapphiro",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3069,7 +3069,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.4, Emirates Skywards ICICI Bank Rubyx Credit Card row",
     "enrich_source": "https://www.icici.bank.in/personal-banking/cards/credit-card/emirates-skywards/emirates-rubyx",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3102,7 +3102,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.4, ICICI Bank Expressions Credit Card row",
     "enrich_source": "https://www.icici.bank.in/personal-banking/cards/credit-card/expressions-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3134,7 +3134,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.4, Amazon Pay ICICI Bank Credit Card row",
     "enrich_source": "https://www.icici.bank.in/personal-banking/cards/credit-card/amazon-pay-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3164,7 +3164,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.4, ICICI Bank NRI Coral Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3194,7 +3194,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.4, ICICI Bank NRI Sapphiro Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3224,7 +3224,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.4, ICICI Bank Rubyx Credit Card against Fixed Deposit row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3254,7 +3254,7 @@
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.4, ICICI Bank Diamant World Mastercard Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3284,7 +3284,7 @@
     "source_section": "Section I a)1. Mine Credit Card by ICICI Bank monthly plan table p.5",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3318,7 +3318,7 @@
     "source_section": "Fee table (table index 0), AURUM row",
     "enrich_source": "https://www.sbicard.com/sbi-card-en/assets/docs/pdf/who-we-are/news/2025/The-Economic-Times-20250709.pdf",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3352,7 +3352,7 @@
     "source_section": "Fee table (table index 0), SBI Card ELITE row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/lifestyle/sbi-card-elite.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3382,7 +3382,7 @@
     "source_section": "Fee table (table index 0), SBI Card ELITE Advantage row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3416,7 +3416,7 @@
     "source_section": "Fee table (table index 0), SBI Card PRIME row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/rewards/sbi-card-prime.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3446,7 +3446,7 @@
     "source_section": "Fee table (table index 0), SBI Card PRIME Advantage row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3479,7 +3479,7 @@
     "source_section": "Fee table (table index 0), Doctor's SBI Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/doctors-sbi-card.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3513,7 +3513,7 @@
     "source_section": "Fee table (table index 0), Shaurya Select SBI Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/defense/shaurya-select-sbi-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3546,7 +3546,7 @@
     "source_section": "Fee table (table index 0), Shaurya SBI Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/defense/shaurya-sbi-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3580,7 +3580,7 @@
     "source_section": "Fee table (table index 0), SBI Card PULSE row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/lifestyle/sbi-card-pulse.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3613,7 +3613,7 @@
     "source_section": "Fee table (table index 0), CASHBACK SBI Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/cashback-sbi-card.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3646,7 +3646,7 @@
     "source_section": "Fee table (table index 0), SimplyCLICK SBI Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/shopping/simplyclick-sbi-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3676,7 +3676,7 @@
     "source_section": "Fee table (table index 0), SimplyCLICK Advantage SBI Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3709,7 +3709,7 @@
     "source_section": "Fee table (table index 0), SimplySAVE SBI Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/shopping/simplysave-sbi-card-sprint.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3739,7 +3739,7 @@
     "source_section": "Fee table (table index 0), SimplySAVE Advantage SBI Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3771,7 +3771,7 @@
     "source_section": "Fee table (table index 0), SBI Card Unnati row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/shopping/sbi-card-unnati.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3801,7 +3801,7 @@
     "source_section": "Fee table (table index 0), Krishak Unnati SBI Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3831,7 +3831,7 @@
     "source_section": "Fee table (table index 0), SBI Card Vyapaar Unnati row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3863,7 +3863,7 @@
     "source_section": "Fee table (table index 0), Aditya Birla SBI Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/rewards/aditya-birla-sbi-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3895,7 +3895,7 @@
     "source_section": "Fee table (table index 0), Aditya Birla SBI Card SELECT row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/rewards/aditya-birla-sbi-card-select.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3929,7 +3929,7 @@
     "source_section": "Fee table (table index 0), Air India SBI Platinum Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/travel/air-india-sbi-platinum-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3962,7 +3962,7 @@
     "source_section": "Fee table (table index 0), Air India SBI Signature Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/air-india-sbi-signature-card.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -3994,7 +3994,7 @@
     "source_section": "Fee table (table index 0), Apollo SBI Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/rewards/apollo-sbi-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -4026,7 +4026,7 @@
     "source_section": "Fee table (table index 0), BPCL SBI Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/bpcl-sbi-card.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -4059,7 +4059,7 @@
     "source_section": "Fee table (table index 0), BPCL SBI Card Octane row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/travel/bpcl-sbi-card-octane.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -4093,7 +4093,7 @@
     "source_section": "Fee table (table index 0), Club Vistara SBI Card PRIME row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/travel/club-vistara-sbi-card-prime.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -4127,7 +4127,7 @@
     "source_section": "Fee table (table index 0), Club Vistara SBI Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/club-vistara-sbi-card.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -4160,7 +4160,7 @@
     "source_section": "Fee table (table index 0), Delhi Metro SBI Card row",
     "enrich_source": "https://www.paisabazaar.com/sbi-bank/delhi-metro-sbi-card/",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -4194,7 +4194,7 @@
     "source_section": "Fee table (table index 0), Etihad Guest SBI Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/etihad-guest-sbi-card.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -4228,7 +4228,7 @@
     "source_section": "Fee table (table index 0), Etihad Guest SBI Premier Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/travel/etihad-guest-sbi-premier-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -4260,7 +4260,7 @@
     "source_section": "Fee table (table index 0), Fabindia SBI Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/shopping/fab-india-sbi-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -4292,7 +4292,7 @@
     "source_section": "Fee table (table index 0), Fabindia SBI Card SELECT row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/shopping/fab-india-sbi-card-select.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -4324,7 +4324,7 @@
     "source_section": "Fee table (table index 0), Central SBI Select Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/shopping/central-sbi-select-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -4356,7 +4356,7 @@
     "source_section": "Fee table (table index 0), Central SBI Select+ Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/shopping/central-sbi-select-plus-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -4386,7 +4386,7 @@
     "source_section": "Fee table (table index 0), FBB SBI Styleup Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -4420,7 +4420,7 @@
     "source_section": "Fee table (table index 0), IRCTC SBI Platinum Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/travel/irctc-sbi-platinum-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -4453,7 +4453,7 @@
     "source_section": "Fee table (table index 0), IRCTC SBI card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/travel/irctc-rupay-sbi-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -4487,7 +4487,7 @@
     "source_section": "Fee table (table index 0), IRCTC SBI Card Premier row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/irctc-premier-card.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -4520,7 +4520,7 @@
     "source_section": "Fee table (table index 0), Landmark Rewards SBI Card row",
     "enrich_source": "https://www.paisabazaar.com/sbi-bank/landmark-rewards-sbi-credit-card/",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -4553,7 +4553,7 @@
     "source_section": "Fee table (table index 0), Landmark Rewards SBI Card PRIME row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/landmark-sbi-card-prime.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -4586,7 +4586,7 @@
     "source_section": "Fee table (table index 0), Landmark Rewards SBI Card SELECT row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/landmark-sbi-card-select.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -4619,7 +4619,7 @@
     "source_section": "Fee table (table index 0), OLA Money SBI Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/travel/ola-money-sbi-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -4652,7 +4652,7 @@
     "source_section": "Fee table (table index 0), Paytm SBI Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/travel/paytm-sbi-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -4686,7 +4686,7 @@
     "source_section": "Fee table (table index 0), Paytm SBI Card SELECT row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/travel/paytm-sbi-card-select.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -4720,7 +4720,7 @@
     "source_section": "Fee table (table index 0), Reliance SBI Card PRIME row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/shopping/reliance-sbi-card-prime.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -4753,7 +4753,7 @@
     "source_section": "Fee table (table index 0), Reliance SBI Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/shopping/reliance-sbi-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -4783,7 +4783,7 @@
     "source_section": "Fee table (table index 0), TATA Card row",
     "enrich_source": "https://www.paisabazaar.com/sbi-bank/tata-credit-cards/",
     "match_status": "low_confidence",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -4815,7 +4815,7 @@
     "source_section": "Fee table (table index 0), TATA Card SELECT row",
     "enrich_source": "https://www.paisabazaar.com/sbi-bank/tata-credit-cards/",
     "match_status": "low_confidence",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -4847,7 +4847,7 @@
     "source_section": "Fee table (table index 0), TATA Croma card row",
     "enrich_source": "https://www.paisabazaar.com/sbi-bank/tata-croma-credit-card/",
     "match_status": "low_confidence",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -4879,7 +4879,7 @@
     "source_section": "Fee table (table index 0), TATA Croma Card SELECT row",
     "enrich_source": "https://www.paisabazaar.com/sbi-bank/tata-croma-credit-card/",
     "match_status": "low_confidence",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -4911,7 +4911,7 @@
     "source_section": "Fee table (table index 0), TATA Star Card SELECT row",
     "enrich_source": "https://www.paisabazaar.com/sbi-bank/tata-star-credit-cards/",
     "match_status": "low_confidence",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -4943,7 +4943,7 @@
     "source_section": "Fee table (table index 0), TATA Star card row",
     "enrich_source": "https://www.paisabazaar.com/sbi-bank/tata-star-credit-cards/",
     "match_status": "low_confidence",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -4977,7 +4977,7 @@
     "source_section": "Fee table (table index 0), Yatra- SBI Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/travel/yatra-sbi-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -5011,7 +5011,7 @@
     "source_section": "Fee table (table index 0), Central Bank of India SBI Card PRIME row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/banking-partnership/central-bank-of-india-prime-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -5045,7 +5045,7 @@
     "source_section": "Fee table (table index 0), Central Bank of India SBI Card ELITE row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/banking-partnership/central-bank-of-india-elite-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -5077,7 +5077,7 @@
     "source_section": "Fee table (table index 0), Central Bank of India SimplySAVE SBI Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/banking-partnership/central-bank-of-india-simplysave-sbi-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -5111,7 +5111,7 @@
     "source_section": "Fee table (table index 0), City Union Bank SBI Card PRIME row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/banking-partnership/city-union-bank-sbi-card-prime.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -5143,7 +5143,7 @@
     "source_section": "Fee table (table index 0), City Union Bank SimplySAVE SBI Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/banking-partnership/city-union-bank-simplysave-sbi-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -5177,7 +5177,7 @@
     "source_section": "Fee table (table index 0), Karnataka Bank SBI Card PRIME row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/banking-partnership/karnataka-bank-sbi-card-prime.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -5209,7 +5209,7 @@
     "source_section": "Fee table (table index 0), Karnataka Bank SimplySAVE SBI Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/banking-partnership/karnataka-bank-simplysave-sbi-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -5243,7 +5243,7 @@
     "source_section": "Fee table (table index 0), PSB SBI Card PRIME row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/banking-partnership/psb-sbi-card-prime.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -5277,7 +5277,7 @@
     "source_section": "Fee table (table index 0), PSB SBI Card ELITE row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/banking-partnership/psb-sbi-card-elite.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -5309,7 +5309,7 @@
     "source_section": "Fee table (table index 0), PSB SimplySAVE SBI Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/banking-partnership/psb-simplysave-sbi-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -5341,7 +5341,7 @@
     "source_section": "Fee table (table index 0), UCO Bank SimplySAVE SBI Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/banking-partnership/uco-bank-simplysave-sbi-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -5375,7 +5375,7 @@
     "source_section": "Fee table (table index 0), UCO Bank SBI Card PRIME row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/banking-partnership/uco-bank-sbi-card-prime.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -5409,7 +5409,7 @@
     "source_section": "Fee table (table index 0), UCO Bank SBI Card ELITE row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/banking-partnership/uco-bank-sbi-card-elite.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -5439,7 +5439,7 @@
     "source_section": "Fee table (table index 0), South Indian Bank SBI Platinum Credit Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/banking-partnership/south-indian-bank-simplysave-sbi-card.page",
     "match_status": "low_confidence",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -5471,7 +5471,7 @@
     "source_section": "Fee table (table index 0), South Indian Bank SimplySAVE SBI Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/banking-partnership/south-indian-bank-simplysave-sbi-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -5504,7 +5504,7 @@
     "source_section": "Fee table (table index 0), KVB SBI Signature Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/banking-partnership/karur-vysya-bank-sbi-signature-credit-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -5537,7 +5537,7 @@
     "source_section": "Fee table (table index 0), Karur Vysya Bank SBI Platinum Credit Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/banking-partnership/karur-vysya-bank-sbi-platinum-credit-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -5569,7 +5569,7 @@
     "source_section": "Fee table (table index 0), Karur Vysya Bank - SBI Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/banking-partnership/karur-vysya-bank-sbi-card-gold.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -5603,7 +5603,7 @@
     "source_section": "Fee table (table index 0), KrisFlyer SBI Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/travel/krisflyer-sbi-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -5637,7 +5637,7 @@
     "source_section": "Fee table (table index 0), KrisFlyer SBI Card Apex row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/travel/krisflyer-sbi-card-apex.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -5670,7 +5670,7 @@
     "source_section": "Fee table (table index 0), SBI Card MILES ELITE row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/travel/sbi-card-miles-elite.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -5703,7 +5703,7 @@
     "source_section": "Fee table (table index 0), SBI Card MILES PRIME row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/travel/sbi-card-miles-prime.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -5736,7 +5736,7 @@
     "source_section": "Fee table (table index 0), SBI Card MILES row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/travel/sbi-card-miles.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -5766,7 +5766,7 @@
     "source_section": "Fee table (table index 0), SimplySAVE Merchant SBI Card row",
     "enrich_source": "https://www.sbicard.com/sbi-card-en/assets/docs/pdf/ekit-tncs/simplySAVE-merchant-tnc-booklet.pdf",
     "match_status": "low_confidence",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -5796,7 +5796,7 @@
     "source_section": "Fee table (table index 0), SimplySAVE UPI SBI Card row",
     "enrich_source": "https://cardinsider.com/sbi-card/sbi-simplysave-credit-card/",
     "match_status": "low_confidence",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -5826,7 +5826,7 @@
     "source_section": "Fee table (table index 0), SBI Card PRIME NRI Secured row",
     "enrich_source": "https://www.sbicard.com/sbi-card-en/assets/docs/pdf/key-fact-statement.pdf",
     "match_status": "low_confidence",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -5859,7 +5859,7 @@
     "source_section": "Fee table (table index 0), South Indian Bank SBI Card PRIME row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/banking-partnership/south-indian-bank-sbi-card-prime.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -5892,7 +5892,7 @@
     "source_section": "Fee table (table index 0), KVB SBI Card ELITE row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/banking-partnership/karur-vysya-bank-sbi-signature-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -5925,7 +5925,7 @@
     "source_section": "Fee table (table index 0), KVB SBI Card PRIME row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/banking-partnership/karur-vysya-bank-sbi-platinum-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -5957,7 +5957,7 @@
     "source_section": "Fee table (table index 0), KVB SimplySAVE SBI Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/banking-partnership/karur-vysya-bank-sbi-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -5991,7 +5991,7 @@
     "source_section": "Fee table (table index 0), Titan SBI Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/shopping/titan-sbi-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -6025,7 +6025,7 @@
     "source_section": "Fee table (table index 0), Tata Neu Infinity SBI Credit Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/lifestyle/tata-neu-infinity-sbi-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -6059,7 +6059,7 @@
     "source_section": "Fee table (table index 0), Tata Neu Plus SBI Credit Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/lifestyle/tata-neu-plus-sbi-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -6093,7 +6093,7 @@
     "source_section": "Fee table (table index 0), Apollo SBI Card SELECT row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/rewards/apollo-sbi-card-select.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -6126,7 +6126,7 @@
     "source_section": "Fee table (table index 0), PhonePe SBI Card PURPLE row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/rewards/phonepe-sbi-card-purple.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -6160,7 +6160,7 @@
     "source_section": "Fee table (table index 0), PhonePe SBI Card SELECT BLACK row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/rewards/phonepe-sbi-card-select-black.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -6190,7 +6190,7 @@
     "source_section": "Fee table (table index 0), Bank of Maharashtra SBI Card ELITE row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/banking-partnership/bom-simplysave-sbi-card.page",
     "match_status": "low_confidence",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -6220,7 +6220,7 @@
     "source_section": "Fee table (table index 0), Bank of Maharashtra SBI Card PRIME row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/banking-partnership/bom-simplysave-sbi-card.page",
     "match_status": "low_confidence",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -6252,7 +6252,7 @@
     "source_section": "Fee table (table index 0), Bank of Maharashtra SimplySAVE SBI Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/banking-partnership/bom-simplysave-sbi-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -6285,7 +6285,7 @@
     "source_section": "Fee table (table index 0), Flipkart SBI Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/flipkart-sbi-card.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -6319,7 +6319,7 @@
     "source_section": "Fee table (table index 0), IndiGo SBI Card ELITE row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/indigo-sbi-card-elite.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -6353,7 +6353,7 @@
     "source_section": "Fee table (table index 0), IndiGo SBI Card row",
     "enrich_source": "https://www.sbicard.com/en/personal/credit-cards/travel/indigo-sbi-card.page",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -6383,7 +6383,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.2), AXIS BANK INFINITE Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -6413,7 +6413,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.2), AXIS BANK BUZZ Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -6446,7 +6446,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.2), INDIAN OIL AXIS BANK Credit Card row",
     "enrich_source": "https://www.axis.bank.in/cards/credit-card/indianoil-axis-bank-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -6476,7 +6476,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.2), FLIPKART AXIS BANK SUPER ELITE Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -6510,7 +6510,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.2), FLIPKART AXIS BANK Credit Card row",
     "enrich_source": "https://www.axis.bank.in/cards/credit-card/flipkart-axisbank-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -6540,7 +6540,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.3), AXIS BANK FREECHARGE Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -6574,7 +6574,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.3), AIRTEL AXIS BANK Credit Card row",
     "enrich_source": "https://www.axisbank.com/retail/cards/credit-card/airtel-axis-bank-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -6604,7 +6604,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.3), Samsung Axis Bank SIGNATURE Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -6634,7 +6634,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.3), Samsung Axis Bank INFINITE Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -6664,7 +6664,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.3), AXIS BANK FREECHARGE PLUS Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -6697,7 +6697,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.3-4), ACE Credit Card row",
     "enrich_source": "https://www.axisbank.com/retail/cards/credit-card/axis-bank-ace-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -6727,7 +6727,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.4), SPICEJET AXIS BANK VOYAGE Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -6757,7 +6757,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.4), SPICEJET AXIS BANK VOYAGE BLACK Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -6791,7 +6791,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.4), SELECT Credit Card row",
     "enrich_source": "https://www.axis.bank.in/cards/credit-card/axis-bank-select-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -6825,7 +6825,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.4), AXIS BANK ATLAS Credit Card row",
     "enrich_source": "https://www.axis.bank.in/cards/credit-card/axis-bank-atlas-credit-card/rewards-benefits",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -6855,7 +6855,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.4-5), BURGUNDY PRIVATE - The One Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -6889,7 +6889,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.5), RESERVE Credit Card row",
     "enrich_source": "https://www.axisbank.com/retail/cards/credit-card/reserve-credit-card/index",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -6923,7 +6923,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.5), MAGNUS Credit Card row",
     "enrich_source": "https://www.axis.bank.in/cards/credit-card/axis-bank-magnus-card/travel-stay",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -6953,7 +6953,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.5), MAGNUS FOR BURGUNDY Credit Card# row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -6983,7 +6983,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.5), AXIS BANK VISTARA INFINITE Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7013,7 +7013,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.5-6), AXIS BANK VISTARA SIGNATURE Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7043,7 +7043,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.6), AXIS BANK VISTARA Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7077,7 +7077,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.6), PRIVILEGE Credit Card row",
     "enrich_source": "https://www.axis.bank.in/cards/credit-card/privilege-credit-card-with-unlimited-benefits",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7107,7 +7107,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.6), MILES and MORE Axis Bank World Select Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7137,7 +7137,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.6), MILES and MORE Axis Bank World Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7170,7 +7170,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.6), NEO Credit Card row",
     "enrich_source": "https://www.axis.bank.in/cards/credit-card/axis-bank-neo-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7200,7 +7200,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.6), AURA Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7230,7 +7230,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.6), LIC Credit Cards row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7260,7 +7260,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.6-7), SIGNATURE Credit Card with Travel Benefits row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7290,7 +7290,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.7), MY WINGS Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7320,7 +7320,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.7), MY CHOICE Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7354,7 +7354,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.7), MY ZONE Credit Card row",
     "enrich_source": "https://www.axis.bank.in/cards/credit-card/axis-bank-my-zone-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7384,7 +7384,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.7), PLATINUM Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7414,7 +7414,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.7), TITANIUM Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7444,7 +7444,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.7), PRIDE PLATINUM Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7474,7 +7474,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.8), PRIDE SIGNATURE Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7508,7 +7508,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.8), REWARDS Credit Card row",
     "enrich_source": "https://www.axis.bank.in/cards/credit-card/rewards-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7538,7 +7538,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.8), KWIK Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7568,7 +7568,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.8), FIBE Axis Bank Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7598,7 +7598,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.8), AXIS Bank Easy Gold - Salaried and Axis Bank Easy Gold Credit Card - Self Employed row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7628,7 +7628,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.9), Axis Bank SHOPPERS STOP Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7661,7 +7661,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.9), IndianOil Axis Bank Premium Credit Card row",
     "enrich_source": "https://www.axis.bank.in/cards/credit-card/indianoil-premium-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7695,7 +7695,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.9), Axis Bank HORIZON Credit Card row",
     "enrich_source": "https://www.axis.bank.in/cards/credit-card/axis-horizon-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7728,7 +7728,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.9), Axis Bank Cashback Credit Card row",
     "enrich_source": "https://www.axis.bank.in/cards/credit-card/cashback-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7758,7 +7758,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.9), IKEA Family Credit Card by Axis Bank row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7788,7 +7788,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.9), Axis Bank OLYMPUS Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7818,7 +7818,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.10), Axis Bank PRIMUS Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7848,7 +7848,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.10), Axis Bank SUPERMONEY RuPay Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7878,7 +7878,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.10), Google Pay Flex Axis Bank Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7912,7 +7912,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.10), IndiGo Axis Bank Credit Card row",
     "enrich_source": "https://www.axis.bank.in/cards/credit-card/indigo-axis-bank-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7945,7 +7945,7 @@
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.10), IndiGo Axis Bank Premium Credit Card row",
     "enrich_source": "https://www.axis.bank.in/cards/credit-card/indigo-axis-bank-premium-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -7978,7 +7978,7 @@
     "source_section": "Fee table p.3, Kotak Solitaire Credit Card row (Joining NIL / Annual ₹25,000)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards/kotak-solitaire-credit-card.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -8011,7 +8011,7 @@
     "source_section": "Fee table p.3, White Reserve row (Joining ₹12,500 / Annual ₹12,500)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards/white-reserve-credit-card.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -8044,7 +8044,7 @@
     "source_section": "Fee table p.3, White2 row (Joining ₹3,000 / Annual ₹3,000)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -8078,7 +8078,7 @@
     "source_section": "Fee table p.3, Kotak Air+ Credit Card row (Joining ₹3,000 / Annual ₹3,000)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -8112,7 +8112,7 @@
     "source_section": "Fee table p.3, Kotak Air+ Prime Credit Card row (Joining ₹3,000 / Annual ₹3,000)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -8145,7 +8145,7 @@
     "source_section": "Fee table p.3, IndiGo Kotak Premium Credit Card row (Joining ₹3,000 / Annual ₹3,000)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -8178,7 +8178,7 @@
     "source_section": "Fee table p.3, IndiGo Kotak Credit Card row (Joining ₹1,500 / Annual ₹1,500)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -8210,7 +8210,7 @@
     "source_section": "Fee table p.3, Zen row (Joining ₹1,500 / Annual ₹1,500)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -8243,7 +8243,7 @@
     "source_section": "Fee table p.3, Mojo row (Joining ₹1,000 / Annual ₹1,000; joining-fee waiver: minimum spend of ₹30,000 in 90 days of issuance)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -8277,7 +8277,7 @@
     "source_section": "Fee table p.3, Kotak Air Credit Card row (Joining ₹999 / Annual ₹999)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -8309,7 +8309,7 @@
     "source_section": "Fee table p.3, Kotak Cashback+ Credit Card row (Joining ₹750 / Annual ₹750)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -8341,7 +8341,7 @@
     "source_section": "Fee table p.3, Kotak Cashback+ Prime Credit Card row (Joining ₹750 / Annual ₹750)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -8373,7 +8373,7 @@
     "source_section": "Fee table p.3, League row (Joining ₹499 / NIL / Annual ₹499)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -8405,7 +8405,7 @@
     "source_section": "Fee table p.3, PVR INOX row (Joining NIL / Annual ₹499)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -8437,7 +8437,7 @@
     "source_section": "Fee table p.4, Kotak BIZ row (Joining ₹299 / Annual ₹499)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -8469,7 +8469,7 @@
     "source_section": "Fee table p.4, Kotak UPI RuPay Virtual Credit Card row (Joining NIL / Annual NIL)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -8501,7 +8501,7 @@
     "source_section": "Fee table p.4, Dream Different row (Joining ₹250 / NIL / ₹3500 for Metal Dream Different; Annual NIL)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -8531,7 +8531,7 @@
     "source_section": "Fee table p.4, Kotak811 Super Money Credit Card row (Joining ₹249 / NIL; Annual NIL)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -8563,7 +8563,7 @@
     "source_section": "Fee table p.4, Kotak Signature/Infinite row (Joining NIL / Annual NIL)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -8597,7 +8597,7 @@
     "source_section": "Fee table p.4, Privy League Signature (Fee Paying Variant) row (Joining NIL / Annual ₹2,500)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -8631,7 +8631,7 @@
     "source_section": "Fee table p.4, Privy League Signature (Free Variant) row (Joining NIL / Annual NIL)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -8664,7 +8664,7 @@
     "source_section": "Fee table p.4, Royale Signature row (Joining ₹1,499 / NIL; Annual ₹999)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -8696,7 +8696,7 @@
     "source_section": "Fee table p.4, NRI Royale Signature row (Joining NIL / Annual ₹1,000)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -8728,7 +8728,7 @@
     "source_section": "Fee table p.4, PVR Gold / PVR Platinum row (Joining NIL / Annual ₹499 / ₹999 — two variants, renewal differs by variant)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -8760,7 +8760,7 @@
     "source_section": "Fee table p.4, Kotak 811 Credit Card row (Joining ₹500 / Annual ₹500)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -8792,7 +8792,7 @@
     "source_section": "Fee table p.4, Urbane Gold row (Joining NIL / Annual ₹199)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -8824,7 +8824,7 @@
     "source_section": "Fee table p.4, Delight Platinum# row (Joining ₹1,999 / Annual ₹299)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards/delight-platinum-card.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -8857,7 +8857,7 @@
     "source_section": "Fee table p.4, 6E Rewards XL IndiGo Kotak Credit Card row (Joining ₹1,500 / Annual ₹1,500)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards/indigo-kotak-xl-credit-card/rewards-redemption.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -8889,7 +8889,7 @@
     "source_section": "Fee table p.4, Essentia Platinum row (Joining ₹1,499 / Annual ₹749)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards/essentia-platinum-credit-card.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -8921,7 +8921,7 @@
     "source_section": "Fee table p.4, 6E Rewards – IndiGo Kotak Credit Card row (Joining ₹700 / Annual ₹700)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards/indigo-kotak-credit-card/rewards-redemption.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -8951,7 +8951,7 @@
     "source_section": "Fee table p.4, Veer – Select row (Joining NIL / Annual ₹599)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -8983,7 +8983,7 @@
     "source_section": "Fee table p.4, Feast Gold1 row (Joining NIL / Annual ₹499)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards/feast-gold-card.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9013,7 +9013,7 @@
     "source_section": "Fee table p.4, Veer - Platinum row (Joining NIL / Annual ₹299)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards/veer-platinum-credit-card.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9045,7 +9045,7 @@
     "source_section": "Fee table p.4, Fortune Gold row (Joining NIL / Annual NIL)",
     "enrich_source": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards/fortune-gold-card.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9077,7 +9077,7 @@
     "source_section": "Sec 1 Joining Fees, Annual Fees and Add-on Card Fees table, p.2 (Nil/Nil row grouping Millennia/Classic/Select/Wealth/Employee)",
     "enrich_source": "https://www.idfcfirst.bank.in/credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9109,7 +9109,7 @@
     "source_section": "Sec 1 Joining Fees, Annual Fees and Add-on Card Fees table, p.2 (Nil/Nil row grouping Millennia/Classic/Select/Wealth/Employee)",
     "enrich_source": "https://www.idfcfirst.bank.in/credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9141,7 +9141,7 @@
     "source_section": "Sec 1 Joining Fees, Annual Fees and Add-on Card Fees table, p.2 (Nil/Nil row grouping Millennia/Classic/Select/Wealth/Employee)",
     "enrich_source": "https://www.idfcfirst.bank.in/credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9173,7 +9173,7 @@
     "source_section": "Sec 1 Joining Fees, Annual Fees and Add-on Card Fees table, p.2 (Nil/Nil row grouping Millennia/Classic/Select/Wealth/Employee)",
     "enrich_source": "https://www.idfcfirst.bank.in/credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9203,7 +9203,7 @@
     "source_section": "Sec 1 Joining Fees, Annual Fees and Add-on Card Fees table, p.2 (Nil/Nil row grouping Millennia/Classic/Select/Wealth/Employee)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9235,7 +9235,7 @@
     "source_section": "Sec 1 Joining Fees, Annual Fees and Add-on Card Fees table, p.2, FIRST WOW! row (Nil/Nil/NA)",
     "enrich_source": "https://www.idfcfirst.bank.in/credit-card/wow",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9267,7 +9267,7 @@
     "source_section": "Sec 1 Joining Fees, Annual Fees and Add-on Card Fees table, p.2, LIC Classic row (Nil/Nil/499)",
     "enrich_source": "https://www.idfcfirst.bank.in/credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9299,7 +9299,7 @@
     "source_section": "Sec 1 Joining Fees, Annual Fees and Add-on Card Fees table, p.2, LIC Select row (Nil/Nil/499)",
     "enrich_source": "https://www.idfcfirst.bank.in/credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9331,7 +9331,7 @@
     "source_section": "Sec 1 Joining Fees, Annual Fees and Add-on Card Fees table, p.2, FIRST Digital RuPay row (199/199/NA)",
     "enrich_source": "https://www.idfcfirst.bank.in/credit-card/rupay-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9363,7 +9363,7 @@
     "source_section": "Sec 1 Joining Fees, Annual Fees and Add-on Card Fees table, p.2, FIRST EA₹N row (499/499/NA)",
     "enrich_source": "https://www.idfcfirst.bank.in/credit-card/secured-rupay-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9395,7 +9395,7 @@
     "source_section": "Sec 1 Joining Fees, Annual Fees and Add-on Card Fees table, p.2, FIRST Power row (199/199/499)",
     "enrich_source": "https://www.idfcfirst.bank.in/credit-card/hpcl-power-fuel-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9427,7 +9427,7 @@
     "source_section": "Sec 1 Joining Fees, Annual Fees and Add-on Card Fees table, p.2, FIRST Power+ row (499/499/499)",
     "enrich_source": "https://www.idfcfirst.bank.in/credit-card/hpcl-power-fuel-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9459,7 +9459,7 @@
     "source_section": "Sec 1 Joining Fees, Annual Fees and Add-on Card Fees table, p.2, FIRST SWYP row (499/499/NA)",
     "enrich_source": "https://www.idfcfirst.bank.in/credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9491,7 +9491,7 @@
     "source_section": "Sec 1 Joining Fees, Annual Fees and Add-on Card Fees table, p.2, Ashva row (2,999/2,999; Add-on: Metal Joining 2,000 / Plastic Joining 1,500 / Annual 1,000)",
     "enrich_source": "https://www.idfcfirst.bank.in/credit-card/metal-credit-card/ashva",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9523,7 +9523,7 @@
     "source_section": "Sec 1 Joining Fees, Annual Fees and Add-on Card Fees table, p.2, Diamond Reserve row (3,000/3,000/499)",
     "enrich_source": "https://www.idfcfirst.bank.in/credit-card/diamond-reserve-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9553,7 +9553,7 @@
     "source_section": "Sec 1 Joining Fees, Annual Fees and Add-on Card Fees table, p.2, Club Vistara row (4,999/4,999/499)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9585,7 +9585,7 @@
     "source_section": "Sec 1 Joining Fees, Annual Fees and Add-on Card Fees table, p.2, IndiGo IDFC FIRST row (4,999/4,999/499); ** note: joining not applicable for FD-backed IndiGo Secured, Annual Fee 4,999 applies on FD-backed variant",
     "enrich_source": "https://www.idfcfirst.bank.in/credit-card/indigo-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9618,7 +9618,7 @@
     "source_section": "Sec 1 Joining Fees, Annual Fees and Add-on Card Fees table, p.2, Mayura row (5,999/5,999; Add-on: Metal Joining 4,000 / Plastic Joining 3,000 / Annual 2,000)",
     "enrich_source": "https://www.idfcfirst.bank.in/credit-card/metal-credit-card/mayura",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9650,7 +9650,7 @@
     "source_section": "Sec 1 Joining Fees, Annual Fees and Add-on Card Fees table, p.2, FIRST WOW! Black row (₹750/₹750/NA)",
     "enrich_source": "https://www.idfcfirst.bank.in/credit-card/wow-black-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9682,7 +9682,7 @@
     "source_section": "Sec 1 Joining Fees, Annual Fees and Add-on Card Fees table, p.2, Gaj: row (12,500/12,500; annual fee waiver on ₹10L eligible spends)",
     "enrich_source": "https://www.idfcfirst.bank.in/credit-card/metal-credit-card/gaj",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9716,7 +9716,7 @@
     "source_section": "Sec 1 Joining Fees, Annual Fees and Add-on Card Fees table, p.2, FIRST Private row (50,000/50,000)",
     "enrich_source": "https://www.idfcfirst.bank.in/credit-card/FIRSTPrivateCreditCard",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9746,7 +9746,7 @@
     "source_section": "FEES AND CHARGES, Schedule of Charges table p.2, 'Chelsea FC' row (Joining Fee 1099, Annual Fee 500)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9776,7 +9776,7 @@
     "source_section": "FEES AND CHARGES, Schedule of Charges table p.2, 'Platinum Aura' row (Joining Fee 5999, Annual Fee Nil)",
     "enrich_source": "https://www.indusind.bank.in/in/en/personal/cards/credit-card/platinum-aura-visa-and-mastercard-credit-card.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9806,7 +9806,7 @@
     "source_section": "FEES AND CHARGES, Schedule of Charges table p.2, 'Platinum Select' row (Joining Fee 5999, Annual Fee Nil)",
     "enrich_source": "https://www.indusind.bank.in/in/en/personal/cards/credit-card/platinum-select-credit-card.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9836,7 +9836,7 @@
     "source_section": "FEES AND CHARGES, Schedule of Charges table p.2, 'Platinum' row (Joining Fee 17999, Annual Fee Nil)",
     "enrich_source": "https://www.indusind.bank.in/in/en/personal/cards/credit-card.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9868,7 +9868,7 @@
     "source_section": "FEES AND CHARGES, Schedule of Charges table p.2, 'Iconia' row (Joining Fee 17999, Annual Fee Nil)",
     "enrich_source": "https://www.indusind.bank.in/in/en/personal/cards/credit-card/iconia-visa-credit-card.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9898,7 +9898,7 @@
     "source_section": "FEES AND CHARGES, Schedule of Charges table p.2, 'Signature' row (Joining Fee 50000, Annual Fee Nil)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9932,7 +9932,7 @@
     "source_section": "FEES AND CHARGES, Schedule of Charges table p.2, 'Pinnacle' row (Joining Fee 100000, Annual Fee Nil)",
     "enrich_source": "https://www.indusind.bank.in/in/en/personal/cards/credit-card/pinnacle-world-credit-card.html",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9956,13 +9956,13 @@
     "lounge": null,
     "welcome_benefit": null,
     "features": [],
-    "badge": null,
+    "badge": "travel",
     "apply_url": null,
     "source_url": "https://www.indusind.bank.in/content/dam/indusind-platform-images/home/pdf/MITC-Premium-15-6-2016.pdf",
     "source_section": "FEES AND CHARGES, Schedule of Charges table p.2, 'Worldmiles Platinum' row (Joining Fee 5000, Annual Fee 1500)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -9986,13 +9986,13 @@
     "lounge": null,
     "welcome_benefit": null,
     "features": [],
-    "badge": null,
+    "badge": "travel",
     "apply_url": null,
     "source_url": "https://www.indusind.bank.in/content/dam/indusind-platform-images/home/pdf/MITC-Premium-15-6-2016.pdf",
     "source_section": "FEES AND CHARGES, Schedule of Charges table p.2, 'Worldmiles Signature' row (Joining Fee 7500, Annual Fee 2500)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -10022,7 +10022,7 @@
     "source_section": "FEES AND CHARGES, Schedule of Charges table p.2, 'Jet Airways IndusInd Bank Odyssey Credit Card' row (Joining Fee 10000, Annual Fee 4000)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -10052,7 +10052,7 @@
     "source_section": "FEES AND CHARGES, Schedule of Charges table p.2, 'Jet Airways IndusInd Bank Voyage Credit Card' row (Joining Fee 4000, Annual Fee 2000)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -10085,7 +10085,7 @@
     "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, Easy row; and ii. Annual Fees table, Easy row",
     "enrich_source": "https://www.bobcard.co.in/credit-card-types/easy",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -10118,7 +10118,7 @@
     "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, Select row; and ii. Annual Fees table, Select row",
     "enrich_source": "https://www.bobcard.co.in/credit-card-types/select",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -10152,7 +10152,7 @@
     "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, Premier row; and ii. Annual Fees table, Premier row",
     "enrich_source": "https://www.bobcard.co.in/credit-card-types/premier",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -10186,7 +10186,7 @@
     "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, Eterna/Eterna (FD Backed) row; and ii. Annual Fees table, Eterna/Eterna (FD Backed) row",
     "enrich_source": "https://www.bobcard.co.in/credit-card-types/eterna",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -10219,7 +10219,7 @@
     "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, Tiara row; and ii. Annual Fees table, Tiara row",
     "enrich_source": "https://www.bobcard.co.in/credit-card-types/tiara",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -10249,7 +10249,7 @@
     "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, Swavlamban row; and ii. Annual Fees table, Swavlamban row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -10279,7 +10279,7 @@
     "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, Easy/Select/Premier (FD Backed) row; and ii. Annual Fees table, Easy/Select/Premier (FD Backed) row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -10309,7 +10309,7 @@
     "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, ConQR row; and ii. Annual Fees table, ConQR row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -10342,7 +10342,7 @@
     "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, Empower Business Card row (NIL); and ii. Annual Fees table, Empower Business Card row (Rs.500)",
     "enrich_source": "https://www.bobcard.co.in/credit-card-types/empower",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -10376,7 +10376,7 @@
     "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, Corporate Global row (NIL); and ii. Annual Fees table, Corporate Global row (Rs.1000)",
     "enrich_source": "https://www.bobcard.co.in/credit-card-types/corporate",
     "match_status": "low_confidence",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -10409,7 +10409,7 @@
     "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, PRAGATI row (NIL); and ii. Annual Fees table, PRAGATI row (Rs.250)",
     "enrich_source": "https://www.bobcard.co.in/credit-card-types/bupb-bggb-brkgb-pragati",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -10442,7 +10442,7 @@
     "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, Renaissance row (NIL); and ii. Annual Fees table, Renaissance row (Rs.250)",
     "enrich_source": "https://www.bobcard.co.in/credit-card-types/nainital-bank-renaissance",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -10476,7 +10476,7 @@
     "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, IRCTC row (Rs.500); and ii. Annual Fees table, IRCTC row (Rs.350)",
     "enrich_source": "https://www.bobcard.co.in/credit-card-types/irctc-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -10509,7 +10509,7 @@
     "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, HPCL Energie row (Rs.499, NIL waiver); and ii. Annual Fees table, HPCL Energie row (Rs.499)",
     "enrich_source": "https://www.bobcard.co.in/credit-card-types/hpcl-energie",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -10542,7 +10542,7 @@
     "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, Snapdeal row (Rs.249); and ii. Annual Fees table, Snapdeal row (Rs.249)",
     "enrich_source": "https://www.bobcard.co.in/credit-card-types/snapdeal-bobcard",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -10575,7 +10575,7 @@
     "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, ICMAI One row (Rs.1); and ii. Annual Fees table, ICMAI One row (NIL)",
     "enrich_source": "https://www.bobcard.co.in/credit-card-types/cma-one",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -10608,7 +10608,7 @@
     "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, ICSI Dimond row; and ii. Annual Fees table, ICSI Dimond row",
     "enrich_source": "https://www.bobcard.co.in/credit-card-types/icsi-diamond",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -10642,7 +10642,7 @@
     "source_section": "Joining Fee intro table (ICAI Exclusive, NIL); and TARIFF OF CHARGES ii. Annual Fees table, ICAI Exclusive row (NIL)",
     "enrich_source": "https://www.bobcard.co.in/credit-card-types/icai-exclusive-bobcard",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -10676,7 +10676,7 @@
     "source_section": "Joining Fee intro table (Yoddha, NIL); and TARIFF OF CHARGES ii. Annual Fees table, Yoddha row (NIL)",
     "enrich_source": "https://www.bobcard.co.in/credit-card-types/indian-army-yoddha",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -10710,7 +10710,7 @@
     "source_section": "Joining Fee intro table (The Sentinel, NIL); and TARIFF OF CHARGES ii. Annual Fees table, The Sentinel row (NIL)",
     "enrich_source": "https://www.bobcard.co.in/credit-card-types/assam-rifles-the-sentinel",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -10744,7 +10744,7 @@
     "source_section": "Joining Fee intro table (Rakshamah, NIL); and TARIFF OF CHARGES ii. Annual Fees table, Rakshamah row (NIL)",
     "enrich_source": "https://www.bobcard.co.in/credit-card-types/indian-coast-guard-rakshamah",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -10777,7 +10777,7 @@
     "source_section": "Joining Fee intro table (Vikram, NIL); and TARIFF OF CHARGES ii. Annual Fees table, Vikram row (NIL)",
     "enrich_source": "https://www.bobcard.co.in/credit-card-types/vikram",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -10811,7 +10811,7 @@
     "source_section": "Joining Fee intro table (Varunah Premium, Rs.2,499, Rs.25,000 in 180 days); and TARIFF OF CHARGES ii. Annual Fees table, Varunah Premium row (Rs.2,499, Rs.150,000 in anniversary year)",
     "enrich_source": "https://www.bobcard.co.in/credit-card-types/indian-navy-varunah",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -10845,7 +10845,7 @@
     "source_section": "Joining Fee intro table (Varunah Plus, Rs.1,499, Rs.15,000 in 180 days); and TARIFF OF CHARGES ii. Annual Fees table, Varunah Plus row (Rs.1,499, Rs.150,000 in anniversary year)",
     "enrich_source": "https://www.bobcard.co.in/credit-card-types/indian-navy-varunah",
     "match_status": "low_confidence",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -10878,7 +10878,7 @@
     "source_section": "Joining Fee intro table (Varunah, NIL); and TARIFF OF CHARGES ii. Annual Fees table, Varunah row (NIL)",
     "enrich_source": "https://www.bobcard.co.in/credit-card-types/indian-navy-varunah",
     "match_status": "low_confidence",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -10912,7 +10912,7 @@
     "source_section": "Section (a)(ii) Annual Membership Fee table, American Express® Platinum Card row: 'First Year Fee: ₹66,000 Second Year onwards ₹66,000'",
     "enrich_source": "https://www.americanexpress.com/in/charge-cards/platinum-card/",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -10945,7 +10945,7 @@
     "source_section": "Section (a)(ii) Annual Membership Fee table, American Express® Gold Card row: 'First Year Fee: ₹1000 Second Year onwards: ₹4500'",
     "enrich_source": "https://www.americanexpress.com/in/charge-cards/gold-card/",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -10979,7 +10979,7 @@
     "source_section": "SCHEDULE OF CHARGES/TAXES table, Joining Fee / Annual Membership fee rows, Signet column",
     "enrich_source": "https://www.federal.bank.in/visa-signet-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11013,7 +11013,7 @@
     "source_section": "SCHEDULE OF CHARGES/TAXES table, Joining Fee / Annual Membership fee rows, Imperio column",
     "enrich_source": "https://www.federal.bank.in/visa-imperio-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11047,7 +11047,7 @@
     "source_section": "SCHEDULE OF CHARGES/TAXES table, Joining Fee / Annual Membership fee rows, Celesta column",
     "enrich_source": "https://www.federal.bank.in/visa-celesta-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11080,7 +11080,7 @@
     "source_section": "SCHEDULE OF CHARGES/TAXES table, Joining Fee 'NIL (for virtual cards) Rs 199/- (if opted for physical card)' / Annual Membership fee '199/-', Wave Card column",
     "enrich_source": "https://www.federal.bank.in/rupay-wave-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11110,7 +11110,7 @@
     "source_section": "Section A.1 Joining and Annual membership fees table p.2, 'YES Private / YES Private for NRI' row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11140,7 +11140,7 @@
     "source_section": "Section A.1 Joining and Annual membership fees table p.2, 'YES Private Prime' row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11170,7 +11170,7 @@
     "source_section": "Section A.1 Joining and Annual membership fees table p.2, 'Marquee' row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11200,7 +11200,7 @@
     "source_section": "Section A.1 Joining and Annual membership fees table p.2, 'Reserv / Reserv for NRI' row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11230,7 +11230,7 @@
     "source_section": "Section A.1 Joining and Annual membership fees table p.2, 'Wellness Plus' row (Not Applicable for both waivers)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11260,7 +11260,7 @@
     "source_section": "Section A.1 Joining and Annual membership fees table p.2, 'YES Prosperity Cashback Plus' row (Not Applicable for both waivers)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11290,7 +11290,7 @@
     "source_section": "Section A.1 Joining and Annual membership fees table p.2, 'Elite+ / Elite+ issued against FD' row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11320,7 +11320,7 @@
     "source_section": "Section A.1 Joining and Annual membership fees table p.2, 'YES First Business' row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11350,7 +11350,7 @@
     "source_section": "Section A.1 Joining and Annual membership fees table p.2, 'YES Prosperity Cashback' row (Not Applicable for both waivers)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11380,7 +11380,7 @@
     "source_section": "Section A.1 Joining and Annual membership fees table p.2, 'YES First Preferred** / Preferred for NRI** / Preferred issued against FD**' row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11410,7 +11410,7 @@
     "source_section": "Section A.1 Joining and Annual membership fees table p.3, 'YES Essence' row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11440,7 +11440,7 @@
     "source_section": "Section A.1 Joining and Annual membership fees table p.3, 'Select / Select for NRI / Select issued against FD' row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11470,7 +11470,7 @@
     "source_section": "Section A.1 Joining and Annual membership fees table p.3, 'Ace / Ace issue against FD' row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11500,7 +11500,7 @@
     "source_section": "Section A.1 Joining and Annual membership fees table p.3, 'YES Prosperity Business' row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11530,7 +11530,7 @@
     "source_section": "Section A.1 Joining and Annual membership fees table p.3, 'Wellness' row (Not Applicable for both waivers)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11560,7 +11560,7 @@
     "source_section": "Section A.1 Joining and Annual membership fees table p.3, 'EMI Card' row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11590,7 +11590,7 @@
     "source_section": "Section A.1 Joining and Annual membership fees table p.3, 'Anq Phi / Paisabazaar Paisasave' row (Joining NIL, Annual INR 499)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11620,7 +11620,7 @@
     "source_section": "Section A.1 Joining and Annual membership fees table p.3, 'Uni' row (Joining NIL, Annual INR 499)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11650,7 +11650,7 @@
     "source_section": "Section A.1 Joining and Annual membership fees table p.3, 'YES Prosperity Rewards**' row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11680,7 +11680,7 @@
     "source_section": "Section A.1 Joining and Annual membership fees table p.3, 'FREO' row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11710,7 +11710,7 @@
     "source_section": "Section A.1 Joining and Annual membership fees table p.3, 'POP-CLUB' row (Joining NIL, Annual INR 399)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11740,7 +11740,7 @@
     "source_section": "Section A.1 Joining and Annual membership fees table p.3, lifetime free row (Joining NIL, Annual NIL); footnote: Zagg issued prior to 10 Jan'25 has annual fee INR 399 waived on annual spends INR 1,80,000",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11770,7 +11770,7 @@
     "source_section": "Section A.1 BYOC Cashback Membership fees table p.3, Regular Card column (One Time Card Fee NIL, Monthly Fee INR 99)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11800,7 +11800,7 @@
     "source_section": "Section A.1 BYOC Cashback Membership fees table p.3, Eco Friendly Card column (One Time Card Fee INR 249, Monthly Fee INR 99)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11830,7 +11830,7 @@
     "source_section": "Section A.1 BYOC Cashback Membership fees table p.3, Metal Card column (One Time Card Fee INR 3499, Monthly Fee INR 99)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11860,7 +11860,7 @@
     "source_section": "Section A.1 BYOC Rewards Membership fees table p.3, Regular Card column (One Time Card Fee NIL, Monthly Fee INR 49)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11890,7 +11890,7 @@
     "source_section": "Section A.1 BYOC Rewards Membership fees table p.3, Eco Friendly Card column (One Time Card Fee INR 249, Monthly Fee INR 49)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11920,7 +11920,7 @@
     "source_section": "Section A.1 BYOC Rewards Membership fees table p.3, Metal Card column (One Time Card Fee INR 3499, Monthly Fee INR 49)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11952,7 +11952,7 @@
     "source_section": "A.i Annual membership fees table p.5, Lumière row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/lumiere-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -11986,7 +11986,7 @@
     "source_section": "A.i Annual membership fees table p.5, Nova row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/nova-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12020,7 +12020,7 @@
     "source_section": "A.i Annual membership fees table p.5, Insignia Preferred Banking row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/insignia-preferred-banking-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12050,7 +12050,7 @@
     "source_section": "A.i Annual membership fees table p.6, unlabelled INR 7,000 row (no card name printed)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12080,7 +12080,7 @@
     "source_section": "A.i Annual membership fees table p.6, QuickPay row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12114,7 +12114,7 @@
     "source_section": "A.i Annual membership fees table p.6, iGlobe row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/iglobe-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12144,7 +12144,7 @@
     "source_section": "A.i Annual membership fees table p.6, unlabelled INR 3,000 row (no card name printed)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12178,7 +12178,7 @@
     "source_section": "A.i Annual membership fees table p.6, Icon row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/icon-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12212,7 +12212,7 @@
     "source_section": "A.i Annual membership fees table p.6, World Safari row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/world-safari-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12240,13 +12240,13 @@
       "1 complimentary domestic + 1 international visit quarterly (min INR 50K prior-quarter spend)",
       "Gift vouchers worth INR 1,000 incl. INR 599 Ixigo voucher and Swiggy One benefits"
     ],
-    "badge": "low forex markup",
+    "badge": "travel",
     "apply_url": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/world-safari-lite-credit-card",
     "source_url": "https://webassets.rbl.bank.in/document/Credit%20Cards/RBL-MITC-final.pdf",
     "source_section": "A.i Annual membership fees table p.6, World Safari Lite row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/world-safari-lite-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12270,13 +12270,13 @@
     "lounge": null,
     "welcome_benefit": null,
     "features": [],
-    "badge": "low forex markup",
+    "badge": "travel",
     "apply_url": null,
     "source_url": "https://webassets.rbl.bank.in/document/Credit%20Cards/RBL-MITC-final.pdf",
     "source_section": "A.i Annual membership fees table p.6, World Safari Plus row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12306,7 +12306,7 @@
     "source_section": "A.i Annual membership fees table p.6, RBL Bank Black Credit Card row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12340,7 +12340,7 @@
     "source_section": "A.i Annual membership fees table p.6, RBL Bank Blockbuster Credit Card row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/rbl-bank-blockbuster-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12374,7 +12374,7 @@
     "source_section": "A.i Annual membership fees table p.6, Platinum Maxima Plus row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/platinum-maxima-plus-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12404,7 +12404,7 @@
     "source_section": "A.i Annual membership fees table p.6, Platinum Maxima row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12434,7 +12434,7 @@
     "source_section": "A.i Annual membership fees table p.6, Platinum Delight row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12467,7 +12467,7 @@
     "source_section": "A.i Annual membership fees table p.6, RBL Bank Popcorn Credit Card row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/rbl-bank-popcorn-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12500,7 +12500,7 @@
     "source_section": "A.i Annual membership fees table p.7, RBL Bank Movies & More Credit Card row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/rbl-bank-movies-and-more-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12530,7 +12530,7 @@
     "source_section": "A.i Annual membership fees table p.7, Titanium Delight row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12563,7 +12563,7 @@
     "source_section": "A.i Annual membership fees table p.7, Shoprite row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/shoprite-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12596,7 +12596,7 @@
     "source_section": "A.i Annual membership fees table p.7, RBL Bank Play Credit Card row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/rbl-bank-play-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12626,7 +12626,7 @@
     "source_section": "A.i Annual membership fees table p.7, RBL Bank Paisabazaar Duet Plus Credit Card row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12656,7 +12656,7 @@
     "source_section": "A.i Annual membership fees table p.7, Apex row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12686,7 +12686,7 @@
     "source_section": "A.i Annual membership fees table p.7, Signature Banking row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12716,7 +12716,7 @@
     "source_section": "A.i Annual membership fees table p.7, Aspire Banking row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12746,7 +12746,7 @@
     "source_section": "A.i Annual membership fees table p.8, RBL Bank Paisabazaar Duet Credit Card (onboarded before 1 Sep 2021) row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12776,7 +12776,7 @@
     "source_section": "A.i Annual membership fees table p.8, RBL Bank Paisabazaar Duet Credit Card (onboarded after 1 Sep 2021) row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12806,7 +12806,7 @@
     "source_section": "A.i Annual membership fees table p.8, RBL Bank Fun+ Credit Card row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12836,7 +12836,7 @@
     "source_section": "A.i Annual membership fees table p.8, RBL Bank Credit Card (erstwhile MoneyTap) row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12866,7 +12866,7 @@
     "source_section": "A.i Annual membership fees table p.8, RBL Bank Lazypay Credit Card row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12896,7 +12896,7 @@
     "source_section": "A.i Annual membership fees table p.8, RBL Bank Bank Bazaar SaveMax Pro Credit Card row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12926,7 +12926,7 @@
     "source_section": "A.i Annual membership fees table p.8, RBL Bank Bank Bazaar SaveMax Credit Card row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12956,7 +12956,7 @@
     "source_section": "A.i Annual membership fees table p.8, YOUnique row (fee stated as 'Custom Fee')",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -12989,7 +12989,7 @@
     "source_section": "A.i Annual membership fees table p.9, Cookies (issued before May 10 2021) row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/cookies-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13019,7 +13019,7 @@
     "source_section": "A.i Annual membership fees table p.9, Platinum LifeEasy row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13049,7 +13049,7 @@
     "source_section": "A.i Annual membership fees table p.9, Platinum Choice row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13079,7 +13079,7 @@
     "source_section": "A.i Annual membership fees table p.9, Platinum Classic row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13109,7 +13109,7 @@
     "source_section": "A.i Annual membership fees table p.9, Platinum Advantage row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13139,7 +13139,7 @@
     "source_section": "A.i Annual membership fees table p.9, Platinum ShopSmart row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13169,7 +13169,7 @@
     "source_section": "A.i Annual membership fees table p.9, Platinum ShopDaily row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13199,7 +13199,7 @@
     "source_section": "A.i Annual membership fees table p.9, Platinum Plus row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13229,7 +13229,7 @@
     "source_section": "A.i Annual membership fees table p.10, Platinum Bonus row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13259,7 +13259,7 @@
     "source_section": "A.i Annual membership fees table p.10, Platinum ShopGain row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13289,7 +13289,7 @@
     "source_section": "A.i Annual membership fees table p.10, Platinum TravelEasy row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13319,7 +13319,7 @@
     "source_section": "A.i Annual membership fees table p.10, Platinum Prime row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13349,7 +13349,7 @@
     "source_section": "A.i Annual membership fees table p.10, Platinum Max row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13379,7 +13379,7 @@
     "source_section": "A.i Annual membership fees table p.10, Platinum Edge row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13413,7 +13413,7 @@
     "source_section": "A.i Annual membership fees table p.10, RBL Bank Binge Credit Card row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/binge-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13443,7 +13443,7 @@
     "source_section": "A.i Annual membership fees table p.10, World Prime row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13473,7 +13473,7 @@
     "source_section": "A.i Annual membership fees table p.10, World Max row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13507,7 +13507,7 @@
     "source_section": "A.i Annual membership fees table p.10, World Plus row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/world-plus-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13537,7 +13537,7 @@
     "source_section": "A.i Annual membership fees table p.10, EasySaver row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13567,7 +13567,7 @@
     "source_section": "A.i Annual membership fees table p.10, MyFirst row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13597,7 +13597,7 @@
     "source_section": "A.i Annual membership fees table p.10, Platinum ValuePlus row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13627,7 +13627,7 @@
     "source_section": "A.i Annual membership fees table p.11, World Xclusive row (Nil)",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13661,7 +13661,7 @@
     "source_section": "A.i Annual membership fees table p.11, RBL Bank Patanjali Swarn Credit Card row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/rbl-bank-patanjali-swarn-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13691,7 +13691,7 @@
     "source_section": "A.i Annual membership fees table p.11, RBL Bank Patanjali Vishisht Credit Card row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13725,7 +13725,7 @@
     "source_section": "A.i Annual membership fees table p.11, RBL Bank IRCTC Credit Card row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/irctc-rbl-bank-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13755,7 +13755,7 @@
     "source_section": "A.i Annual membership fees table p.11, RBL Bank DMI Finance Credit Card row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13788,7 +13788,7 @@
     "source_section": "A.i Annual membership fees table p.11, RBL Bank IndianOil Credit Card row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/indianoil-rbl-bank-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13821,7 +13821,7 @@
     "source_section": "A.i Annual membership fees table p.11, RBL Bank IndianOil XTRA Credit Card row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/indianoil-rbl-bank-xtra-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13851,7 +13851,7 @@
     "source_section": "A.i Annual membership fees table p.11, RBL Bank SalarySe UP credit Card row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13881,7 +13881,7 @@
     "source_section": "A.i Annual membership fees table p.11, RBL Bank TVS Gold Credit Card row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13911,7 +13911,7 @@
     "source_section": "A.i Annual membership fees table p.11, RBL Bank TVS Credit Card row",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/tvs-credit-rbl-bank-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13941,7 +13941,7 @@
     "source_section": "A.i Annual membership fees table p.11, Jalsa row",
     "enrich_source": null,
     "match_status": "unmatched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -13974,7 +13974,7 @@
     "source_section": "A.ii Monthly fees table p.10, Cookies (issued after May 10 2021) row (monthly fee)",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/cookies-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -14004,7 +14004,7 @@
     "source_section": "A.ii Monthly fees table p.10, Monthly Treats row (monthly fee)",
     "enrich_source": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/category",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -14034,7 +14034,7 @@
     "source_section": "Fee table p.4, 'Joining fees/Membership fees' & 'Annual Maintenance Fee', SBM Mobikwik First row (waiver criteria N/A)",
     "enrich_source": "https://www.mobikwik.com/products/first-fd-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -14066,7 +14066,7 @@
     "source_section": "Fee table p.4, SBM ZET row (Joining 0, AMC 0, waiver N/A)",
     "enrich_source": "https://www.zetapp.in/sbm-zet-credit-card",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -14099,7 +14099,7 @@
     "source_section": "Fee table p.4, SBM Kredit.Pe row (Joining 0, AMC 199 + GST, waiver 'Applicable for credit limit under ₹4,500')",
     "enrich_source": "https://www.kredit.pe/",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -14132,7 +14132,7 @@
     "source_section": "Fee table p.4, SBM novio row (Joining 0, AMC 0, waiver N/A)",
     "enrich_source": "https://www.novio.in/fixed-deposit-credit-card/sbm-rupay/",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -14165,7 +14165,7 @@
     "source_section": "Fee table p.4, SBM Magnet row (Joining 0, AMC 0, waiver N/A)",
     "enrich_source": "https://www.paisabazaar.com/sbm-bank/sbm-magnet-credit-card/",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -14198,7 +14198,7 @@
     "source_section": "Fee table p.4, SBM Niyo Global row (Joining 0, AMC 0, waiver N/A)",
     "enrich_source": "https://goniyo.com/sbm-scc/niyo-sbm-scc-vs-others",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -14230,7 +14230,7 @@
     "source_section": "Fee table p.4, SBM Paisabazaar Step Up row (Joining 0, AMC 0, waiver N/A)",
     "enrich_source": "https://www.paisabazaar.com/sbm-bank/paisabazaar-stepup-secured-credit-card/",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   },
   {
@@ -14262,7 +14262,7 @@
     "source_section": "Fee table p.4, SBM Paisabazaar Paisa + row (Joining 0, AMC 499 + GST, with spend-based waiver)",
     "enrich_source": "https://www.paisabazaar.com/sbm-bank/paisabazaar-paisa-plus-credit-card/",
     "match_status": "matched",
-    "mitc_last_checked": "2026-06-26",
+    "mitc_last_checked": "2026-06-27",
     "data_status": "needs_review"
   }
 ]

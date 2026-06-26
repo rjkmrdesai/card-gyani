@@ -53,7 +53,8 @@ _FUEL_RE = re.compile(r"indianoil|indian oil|\biocl\b|bpcl|hpcl|first power", re
 _TRAVEL_RE = re.compile(
     r"\bindigo\b|\b6e\b|vistara|air india|\bemirates\b|etihad|marriott|makemytrip|"
     r"\bmmt\b|miles ?(?:and|&) ?more|krisflyer|jet airways|\batlas\b|\bhorizon\b|"
-    r"\byatra\b|skywards|\bmiles\b|accor|\btaj\b|irctc", re.I)
+    r"\byatra\b|skywards|miles\b|allmiles|worldmiles|accor|\btaj\b|irctc|"
+    r"\bvoyager\b|\bglobe\b|world safari", re.I)
 _CASHBACK_NAME_RE = re.compile(r"cashback|cash back|moneyback|money back|amazon pay", re.I)
 _CASHBACK_REW_RE = re.compile(
     r"\d+\s*%?\s*cashback|unlimited cashback|flat[^.]{0,12}cashback|cash ?back on", re.I)

@@ -95,9 +95,18 @@ aside.filters{position:sticky;top:80px;max-height:calc(100vh - 96px);overflow-y:
 .tag.travel{background:#e8effe;color:var(--travel)}
 .tag.premium{background:#f1ebfd;color:var(--premium)}
 .tag.superp{background:#fdf2e3;color:var(--superp)}
+.tag.inv{background:#fdf2e3;color:var(--superp)}
 .tag.lowforex{background:#e7f7ee;color:#15803d}
+.tag.ltf{background:#f0fdf4;color:var(--accent)}
 .tag.metal{background:#eef1f5;color:var(--metal)}
+.tag.fuel{background:#fff7ed;color:#c2410c}
+.tag.cbk{background:#fef2f2;color:#b91c1c}
+.tag.lng{background:#e8effe;color:var(--travel)}
+.tag.upi{background:#f0ebfd;color:#6d28d9}
 .tag.net{background:#f1f3ec}
+/* multi-tag rows on detail + compare */
+.dtags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.ctags{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
 .specs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
 .spec .k{font-size:12px;color:var(--muted);margin-bottom:3px}
 .spec .v{font-size:15px;font-weight:600}
