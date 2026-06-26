@@ -22,7 +22,7 @@ import json
 import re
 import sys
 
-from common import ROOT, load_sources, write_json
+from common import ROOT, load_sources, write_json, sanitize
 
 PARSED_DIR = ROOT / "parsed"
 ENRICHED_DIR = ROOT / "enriched"
@@ -97,7 +97,15 @@ def merge_bank(bid: str, display_bank: str, parsed: dict, enriched: dict, seen: 
         enr = enr or {}
 
         ctype = card_type(bid, name)
-        pm, pa = finance_for(bd, ctype)
+        # per-card charge overrides (pc.*) win over bank_defaults
+        pm = pc.get("finance_pm")
+        pa = pc.get("finance_pa")
+        if pm is None and pa is None:
+            pm, pa = finance_for(bd, ctype)
+        forex = pc.get("forex") if pc.get("forex") is not None else forex_for(bd, name)
+        cash_adv = pc.get("cash_advance") or bd.get("cash_advance")
+        cash_int = pc.get("cash_interest") or bd.get("cash_interest")
+        late = pc.get("late_fee") or bd.get("late_fee_tiers")
 
         # stable card_id (dedupe key)
         base = f"{bid}-{kebab(name)}" if name else f"{bid}-unnamed-{i+1}"
@@ -121,12 +129,12 @@ def merge_bank(bid: str, display_bank: str, parsed: dict, enriched: dict, seen: 
             "annual_fee": pc.get("renewal_fee") if pc.get("renewal_fee") is not None else pc.get("annual_fee"),
             "joining_fee": pc.get("annual_fee"),
             "fee_waiver": pc.get("fee_waiver"),
-            "forex": forex_for(bd, name),
+            "forex": forex,
             "finance_pm": pm,
             "finance_pa": pa,
-            "cash_advance": bd.get("cash_advance"),       # cash/ATM withdrawal fee
-            "cash_interest": bd.get("cash_interest"),     # interest on cash advances
-            "late_fee": bd.get("late_fee_tiers"),
+            "cash_advance": cash_adv,       # cash/ATM withdrawal fee (per-card if available)
+            "cash_interest": cash_int,      # interest on cash advances (per-card if available)
+            "late_fee": late,
             "rewards": enr.get("rewards"),
             "lounge": enr.get("lounge"),
             "welcome_benefit": welcome,
@@ -170,6 +178,10 @@ def main() -> int:
         all_rows.extend(rows)
         m = sum(1 for r in rows if r["match_status"] == "matched")
         print(f"{bid:<10} {len(rows):>5} {m:>7}")
+
+    # sanitize every string (mojibake / stray U+FFFD) before it reaches a sheet or DB
+    all_rows = sanitize(all_rows)
+    defaults = sanitize(defaults)
 
     # write outputs
     write_json(OUT_DIR / "cards.json", all_rows)

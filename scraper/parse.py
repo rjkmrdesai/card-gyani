@@ -28,7 +28,10 @@ PROMPTS_DIR = PARSED_DIR / "_prompts"
 
 # ---------------------------------------------------------------- schema ----
 # A parsed file: { id, bank, source_url, cards[], bank_defaults{} }
-CARD_FIELDS = {"name", "annual_fee", "renewal_fee", "fee_waiver", "source_section"}
+CARD_FIELDS = {"name", "annual_fee", "renewal_fee", "fee_waiver", "source_section",
+               # optional per-card overrides (e.g. SBM, where each card has its own
+               # charges) — take precedence over bank_defaults at merge time
+               "forex", "finance_pm", "finance_pa", "cash_advance", "cash_interest", "late_fee"}
 DEFAULT_FIELDS = {
     "forex", "forex_exceptions",
     "finance_pm_unsecured", "finance_pa_unsecured",

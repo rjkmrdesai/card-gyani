@@ -1,8 +1,34 @@
 """Shared helpers for the Card Gyani MITC scraper (stages 1-2)."""
 from __future__ import annotations
 import json
+import re
+import unicodedata
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit, quote
+
+# Replacement char (U+FFFD) sitting before a number is almost always a rupee
+# sign that failed to decode during PDF extraction.
+_RUPEE_BEFORE_NUM = re.compile(r"�+\s*(?=\d)")
+
+
+def sanitize(value):
+    """Clean a value (recursively for dict/list) of mojibake before it goes into
+    a sheet or Supabase. Fixes the ₹-decoded-as-U+FFFD case, repairs common
+    UTF-8-as-Latin1 mojibake, strips stray replacement / zero-width chars, and
+    normalizes to NFC. Non-strings pass through unchanged."""
+    if isinstance(value, dict):
+        return {k: sanitize(v) for k, v in value.items()}
+    if isinstance(value, list):
+        return [sanitize(v) for v in value]
+    if not isinstance(value, str):
+        return value
+    s = unicodedata.normalize("NFC", value)
+    s = s.replace("â‚¹", "₹").replace("â‚¬", "€")     # UTF-8 read as Latin-1
+    s = _RUPEE_BEFORE_NUM.sub("₹", s)                 # � before a number -> ₹
+    s = s.replace("�", "")                       # any remaining replacement chars
+    s = s.replace("​", "").replace("﻿", "") # zero-width space / BOM
+    s = re.sub(r"[ \t]+", " ", s).strip()
+    return s
 
 ROOT = Path(__file__).resolve().parent
 SOURCES_JSON = ROOT / "sources.json"
