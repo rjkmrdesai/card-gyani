@@ -58,7 +58,7 @@
       "Unlimited airport lounge access to 1,300+ lounges in India and worldwide for primary and add-on members",
       "Complimentary annual memberships of Club Marriott, Amazon Prime and Swiggy One on spending Rs.1.5 lakh within first 90 days"
     ],
-    "badge": "metal card",
+    "badge": "super-premium",
     "apply_url": "https://www.hdfc.bank.in/credit-cards/diners-club-black-metal-edition-credit-card",
     "source_url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/personal-mitc/mitc-in-english.pdf",
     "source_section": "Fee table p.2 prints only the ₹8 Lakh/Annum waiver — joining/renewal fee cell blank in MITC; ₹10,000 + GST from HDFC product fees-and-charges page (needs_review)",
@@ -92,7 +92,7 @@
       "Unlimited airport lounge access to 1,000+ lounges globally for primary and add-on cardholders",
       "Club Marriott membership and Rs.5,000 Taj Stay voucher on spending Rs.1.5 lakh within 90 days (first-time cardholders only)"
     ],
-    "badge": "metal card",
+    "badge": "super-premium",
     "apply_url": "https://www.hdfc.bank.in/business-credit-cards/biz-black-credit-card",
     "source_url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/personal-mitc/mitc-in-english.pdf",
     "source_section": "Fee table p.2 prints only the ₹7.5 Lakh/Annum waiver — joining/renewal fee cell blank in MITC; ₹10,000 + GST from HDFC business-card fees-and-charges page (needs_review)",
@@ -220,7 +220,7 @@
     "lounge": null,
     "welcome_benefit": null,
     "features": [],
-    "badge": null,
+    "badge": "travel",
     "apply_url": null,
     "source_url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/personal-mitc/mitc-in-english.pdf",
     "source_section": "Fee table p.3, 6E Rewards Indigo XL row (waiver NA)",
@@ -340,7 +340,7 @@
     "lounge": null,
     "welcome_benefit": null,
     "features": [],
-    "badge": null,
+    "badge": "travel",
     "apply_url": null,
     "source_url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/personal-mitc/mitc-in-english.pdf",
     "source_section": "Fee table p.3, Diners Club Miles row",
@@ -554,7 +554,7 @@
     "lounge": null,
     "welcome_benefit": null,
     "features": [],
-    "badge": null,
+    "badge": "travel",
     "apply_url": null,
     "source_url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/personal-mitc/mitc-in-english.pdf",
     "source_section": "Fee table p.3, 6E Rewards Indigo row (waiver NA)",
@@ -739,7 +739,7 @@
       "5% cashback on select online merchants (Amazon, Flipkart, etc.); 1% cashback on all other spends; cashback as CashPoints redeemable against statement",
       "Lounge access via Quarterly Spends Milestone program: gift voucher worth Rs.1,000 (redeemable for airport lounge access voucher) on spending Rs.1 lakh in a calendar quarter"
     ],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": "https://www.hdfc.bank.in/credit-cards/millennia-credit-card",
     "source_url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/personal-mitc/mitc-in-english.pdf",
     "source_section": "Fee table p.4, Millennia row",
@@ -923,7 +923,7 @@
     "lounge": null,
     "welcome_benefit": null,
     "features": [],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": null,
     "source_url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/personal-mitc/mitc-in-english.pdf",
     "source_section": "Fee table p.4, MoneyBack / MoneyBack+ / Business Moneyback row",
@@ -953,7 +953,7 @@
     "lounge": null,
     "welcome_benefit": null,
     "features": [],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": null,
     "source_url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/personal-mitc/mitc-in-english.pdf",
     "source_section": "Fee table p.4, MoneyBack / MoneyBack+ / Business Moneyback row",
@@ -983,7 +983,7 @@
     "lounge": null,
     "welcome_benefit": null,
     "features": [],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": null,
     "source_url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/personal-mitc/mitc-in-english.pdf",
     "source_section": "Fee table p.4, MoneyBack / MoneyBack+ / Business Moneyback row",
@@ -1073,7 +1073,7 @@
     "lounge": null,
     "welcome_benefit": null,
     "features": [],
-    "badge": null,
+    "badge": "fuel surcharge waiver",
     "apply_url": null,
     "source_url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/personal-mitc/mitc-in-english.pdf",
     "source_section": "Fee table p.4, Indian Oil HDFC Bank row",
@@ -1103,7 +1103,7 @@
     "lounge": null,
     "welcome_benefit": null,
     "features": [],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": null,
     "source_url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/personal-mitc/mitc-in-english.pdf",
     "source_section": "Fee table p.4, Small Business Moneyback row",
@@ -1405,7 +1405,7 @@
     "features": [
       "3% cashback on Paytm spends (Recharge, Utility, Movies, Mini App; max Rs.500/month); 2% on other select Paytm spends (max Rs.500/month); 1% on all other retail spends (max Rs.1,000/month)"
     ],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": "https://www.hdfc.bank.in/business-credit-cards/paytm-hdfc-bank-business-credit-card",
     "source_url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/personal-mitc/mitc-in-english.pdf",
     "source_section": "Fee table p.5, Paytm HDFC Bank Business row",
@@ -1469,7 +1469,7 @@
       "8 complimentary accesses to select IRCTC executive lounges every year",
       "Welcome gift voucher worth Rs.500 on card activation (1 transaction within first 37 days)"
     ],
-    "badge": null,
+    "badge": "travel",
     "apply_url": "https://www.hdfc.bank.in/credit-cards/irctc-credit-card",
     "source_url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/personal-mitc/mitc-in-english.pdf",
     "source_section": "Fee table p.5, IRCTC HDFC Bank Credit Card row",
@@ -1529,7 +1529,7 @@
     "lounge": null,
     "welcome_benefit": null,
     "features": [],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": null,
     "source_url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/personal-mitc/mitc-in-english.pdf",
     "source_section": "Fee table p.5, Bharat CashBack / Teacher's Platinum / Solitaire row",
@@ -1559,7 +1559,7 @@
     "lounge": null,
     "welcome_benefit": null,
     "features": [],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": null,
     "source_url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/personal-mitc/mitc-in-english.pdf",
     "source_section": "Fee table p.5, Business Freedom Card / Business Bharat CashBack row",
@@ -1713,7 +1713,7 @@
       "Unlimited airport lounge access to 1,000+ lounges in India for primary and add-on members",
       "Rs.1,500 worth of activation cashback (zero joining fee)"
     ],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": "https://www.hdfc.bank.in/business-credit-cards/flipkart-wholesale-credit-card",
     "source_url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/personal-mitc/mitc-in-english.pdf",
     "source_section": "Fee table p.6, Flipkart Wholesale row",
@@ -1870,7 +1870,7 @@
       "10% cashback on eligible Swiggy app spends; 5% cashback on select online merchants and categories; 1% cashback on all other categories",
       "Complimentary 3-month Swiggy One membership on card activation"
     ],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": "https://www.hdfc.bank.in/credit-cards/swiggy-hdfc-bank-credit-card",
     "source_url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/personal-mitc/mitc-in-english.pdf",
     "source_section": "Fee table p.6, Swiggy HDFC Bank Credit Card row",
@@ -1903,7 +1903,7 @@
       "5% cashback on eligible Swiggy app spends; 5% cashback on select online merchants and categories; 1% cashback on all other categories",
       "12-month complimentary Swiggy One membership on card activation"
     ],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": "https://www.hdfc.bank.in/credit-cards/swiggy-ornge-hdfc-bank-credit-card",
     "source_url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/personal-mitc/mitc-in-english.pdf",
     "source_section": "Fee table p.6, Swiggy Ornge HDFC Bank Credit Card row",
@@ -2069,7 +2069,7 @@
     "features": [
       "1% unlimited cashback on transactions; 5% on SmartBuy; 1% on UPI spends (RuPay variant); cashback as PIXEL CashPoints in PayZapp"
     ],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": "https://www.hdfc.bank.in/credit-cards/pixel-go-credit-card",
     "source_url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/personal-mitc/mitc-in-english.pdf",
     "source_section": "PIXEL fee table p.34, PIXEL Go row",
@@ -2101,7 +2101,7 @@
     "features": [
       "5% cashback on selected brands; 3% cashback on choice of e-commerce platform; 1% cashback on all transactions; 5% on SmartBuy; 1% on UPI spends (RuPay variant); 5%/3% and UPI cashback capped at 500 points/month"
     ],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": "https://www.hdfc.bank.in/credit-cards/pixel-play-credit-card",
     "source_url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/personal-banking/discover-products/cards/credit-cards/personal-mitc/mitc-in-english.pdf",
     "source_section": "PIXEL fee table p.34, PIXEL Play row",
@@ -2169,7 +2169,7 @@
       "Unlimited international and domestic airport lounge access for both Primary and Plus card members",
       "Taj Epicure Plus Membership, EazyDiner Prime Membership and 12,500 Reward Points"
     ],
-    "badge": "metal card",
+    "badge": "super-premium",
     "apply_url": "https://www.icici.bank.in/personal-banking/cards/credit-card/emeralde-private-metal-credit-card",
     "source_url": "https://www.icici.bank.in/managed-assets/docs/personal/cards/mitc_cc.pdf",
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.1, ICICI Bank Emeralde Private Metal Credit Card row (w.e.f. Jan 15, 2026)",
@@ -2485,7 +2485,7 @@
     "lounge": null,
     "welcome_benefit": null,
     "features": [],
-    "badge": null,
+    "badge": "fuel surcharge waiver",
     "apply_url": null,
     "source_url": "https://www.icici.bank.in/managed-assets/docs/personal/cards/mitc_cc.pdf",
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.2, ICICI Bank HPCL Platinum/Titanium/Coral Credit Card row",
@@ -2519,7 +2519,7 @@
       "1 domestic airport lounge visit on completion of Rs.75,000 quarterly spend (primary cardholder)",
       "2,000 reward points"
     ],
-    "badge": null,
+    "badge": "fuel surcharge waiver",
     "apply_url": "https://www.icici.bank.in/personal-banking/cards/credit-card/hpcl-super-saver",
     "source_url": "https://www.icici.bank.in/managed-assets/docs/personal/cards/mitc_cc.pdf",
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.2, ICICI Bank HPCL Super Saver Credit Card row",
@@ -2719,7 +2719,7 @@
       "1 complimentary international lounge visit/year and 2 complimentary domestic lounge visits/quarter (primary cardholder)",
       "MakeMyTrip voucher (valid 1 year) on joining fee, plus a Rs.1,000 hotel voucher on annual fee payment"
     ],
-    "badge": "low forex markup",
+    "badge": "travel",
     "apply_url": "https://www.icici.bank.in/personal-banking/cards/credit-card/makemytrip/makemytrip-icici-credit-card",
     "source_url": "https://www.icici.bank.in/managed-assets/docs/personal/cards/mitc_cc.pdf",
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.3, MakeMyTrip ICICI Bank Credit Card row",
@@ -2869,7 +2869,7 @@
     "lounge": null,
     "welcome_benefit": null,
     "features": [],
-    "badge": null,
+    "badge": "travel",
     "apply_url": "https://www.icici.bank.in/personal-banking/cards/credit-card/makemytrip/platinum-credit-card",
     "source_url": "https://www.icici.bank.in/managed-assets/docs/personal/cards/mitc_cc.pdf",
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.3, MakeMyTrip ICICI Bank Platinum Credit Card row",
@@ -3063,7 +3063,7 @@
       "1 Emirates Skywards mile per Rs.100 on international and domestic spend",
       "1 domestic lounge visit/quarter on Rs.75,000+ spend in the previous quarter"
     ],
-    "badge": null,
+    "badge": "travel",
     "apply_url": "https://www.icici.bank.in/personal-banking/cards/credit-card/emirates-skywards/emirates-rubyx",
     "source_url": "https://www.icici.bank.in/managed-assets/docs/personal/cards/mitc_cc.pdf",
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.4, Emirates Skywards ICICI Bank Rubyx Credit Card row",
@@ -3128,7 +3128,7 @@
     "features": [
       "Up to 5% on Amazon for Prime members, 3% for non-Prime, 2% at 100+ Amazon Pay partner merchants, 1% on all other spends"
     ],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": "https://www.icici.bank.in/personal-banking/cards/credit-card/amazon-pay-credit-card",
     "source_url": "https://www.icici.bank.in/managed-assets/docs/personal/cards/mitc_cc.pdf",
     "source_section": "Section I a)1. Joining/Annual/Supplementary Card Fees table p.4, Amazon Pay ICICI Bank Credit Card row",
@@ -3312,7 +3312,7 @@
       "Access to 1,000+ airport lounges worldwide",
       "40,000 AURUM Reward Points worth Rs.10,000 on joining fee; one-year Club Marriott membership"
     ],
-    "badge": "metal card",
+    "badge": "super-premium",
     "apply_url": null,
     "source_url": "https://www.sbicard.com/en/most-important-terms-and-conditions.page",
     "source_section": "Fee table (table index 0), AURUM row",
@@ -3607,7 +3607,7 @@
       "5% cashback on online spends and 1% on offline spends (each capped at Rs.2,000/statement cycle); 1% fuel surcharge waiver (Rs.500-Rs.3,000)",
       "Airport lounge access"
     ],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": "https://www.sbicard.com/en/personal/credit-cards/cashback-sbi-card.html",
     "source_url": "https://www.sbicard.com/en/most-important-terms-and-conditions.page",
     "source_section": "Fee table (table index 0), CASHBACK SBI Card row",
@@ -3765,7 +3765,7 @@
     "features": [
       "1 Reward Point per Rs.100 spent; Rs.500 cashback on annual spends of Rs.50,000 or more"
     ],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": "https://www.sbicard.com/en/personal/credit-cards/shopping/sbi-card-unnati.page",
     "source_url": "https://www.sbicard.com/en/most-important-terms-and-conditions.page",
     "source_section": "Fee table (table index 0), SBI Card Unnati row",
@@ -3923,7 +3923,7 @@
       "8 complimentary domestic Visa lounge visits/year (max 2/quarter)",
       "5,000 reward points as welcome gift on joining fee payment"
     ],
-    "badge": null,
+    "badge": "travel",
     "apply_url": "https://www.sbicard.com/en/personal/credit-cards/travel/air-india-sbi-platinum-card.page",
     "source_url": "https://www.sbicard.com/en/most-important-terms-and-conditions.page",
     "source_section": "Fee table (table index 0), Air India SBI Platinum Card row",
@@ -4020,7 +4020,7 @@
     "features": [
       "13 Reward Points per Rs.100 on BPCL fuel (3.25% value back); 5 Reward Points per Rs.100 on groceries, departmental stores, dining and movies; 1% fuel surcharge waiver at BPCL outlets"
     ],
-    "badge": null,
+    "badge": "fuel surcharge waiver",
     "apply_url": "https://www.sbicard.com/en/personal/credit-cards/bpcl-sbi-card.html",
     "source_url": "https://www.sbicard.com/en/most-important-terms-and-conditions.page",
     "source_section": "Fee table (table index 0), BPCL SBI Card row",
@@ -4053,7 +4053,7 @@
       "25X reward points (7.25% value back incl. surcharge waiver) on BPCL fuel and lubricant spends; 10X reward points on groceries, departmental stores, movies and dining",
       "6,000 bonus reward points worth Rs.1,500 on annual membership payment"
     ],
-    "badge": null,
+    "badge": "fuel surcharge waiver",
     "apply_url": "https://www.sbicard.com/en/personal/credit-cards/travel/bpcl-sbi-card-octane.page",
     "source_url": "https://www.sbicard.com/en/most-important-terms-and-conditions.page",
     "source_section": "Fee table (table index 0), BPCL SBI Card Octane row",
@@ -4188,7 +4188,7 @@
       "Complimentary Priority Pass membership ($99 value)",
       "2,500 Etihad Guest Miles as welcome benefit"
     ],
-    "badge": null,
+    "badge": "travel",
     "apply_url": "https://www.sbicard.com/en/personal/credit-cards/etihad-guest-sbi-card.html",
     "source_url": "https://www.sbicard.com/en/most-important-terms-and-conditions.page",
     "source_section": "Fee table (table index 0), Etihad Guest SBI Card row",
@@ -4414,7 +4414,7 @@
       "4 complimentary railway lounge visits/year (max 1/quarter)",
       "350 activation bonus reward points on a single transaction of Rs.500+ within 45 days"
     ],
-    "badge": null,
+    "badge": "travel",
     "apply_url": "https://www.sbicard.com/en/personal/credit-cards/travel/irctc-sbi-platinum-card.page",
     "source_url": "https://www.sbicard.com/en/most-important-terms-and-conditions.page",
     "source_section": "Fee table (table index 0), IRCTC SBI Platinum Card row",
@@ -4447,7 +4447,7 @@
       "Reward Points on IRCTC train ticket bookings; transaction charge saving on railway tickets booked on irctc.co.in via RuPay; 1% fuel surcharge waiver",
       "Complimentary railway lounge access"
     ],
-    "badge": null,
+    "badge": "travel",
     "apply_url": "https://www.sbicard.com/en/personal/credit-cards/travel/irctc-rupay-sbi-card.page",
     "source_url": "https://www.sbicard.com/en/most-important-terms-and-conditions.page",
     "source_section": "Fee table (table index 0), IRCTC SBI card row",
@@ -4481,7 +4481,7 @@
       "4 complimentary railway lounge visits/year (max 1/quarter)",
       "1,500 reward points as welcome benefit; travel offers and insurance cover"
     ],
-    "badge": null,
+    "badge": "travel",
     "apply_url": "https://www.sbicard.com/en/personal/credit-cards/irctc-premier-card.html",
     "source_url": "https://www.sbicard.com/en/most-important-terms-and-conditions.page",
     "source_section": "Fee table (table index 0), IRCTC SBI Card Premier row",
@@ -4971,7 +4971,7 @@
       "Complimentary domestic airport lounge access",
       "Yatra.com vouchers worth Rs.8,250 on enrolment"
     ],
-    "badge": null,
+    "badge": "travel",
     "apply_url": "https://www.sbicard.com/en/personal/credit-cards/travel/yatra-sbi-card.page",
     "source_url": "https://www.sbicard.com/en/most-important-terms-and-conditions.page",
     "source_section": "Fee table (table index 0), Yatra- SBI Card row",
@@ -5730,7 +5730,7 @@
       "Travel Credits convertible to air miles/hotel points (1 Travel Credit = INR 1); 5,000 bonus Travel Credits on Rs.5 lakh annual spend",
       "4 complimentary domestic lounge visits/year; up to 8 international visits/year"
     ],
-    "badge": null,
+    "badge": "travel",
     "apply_url": "https://www.sbicard.com/en/personal/credit-cards/travel/sbi-card-miles.page",
     "source_url": "https://www.sbicard.com/en/most-important-terms-and-conditions.page",
     "source_section": "Fee table (table index 0), SBI Card MILES row",
@@ -5820,7 +5820,7 @@
     "lounge": null,
     "welcome_benefit": null,
     "features": [],
-    "badge": "FD-linked",
+    "badge": "premium",
     "apply_url": null,
     "source_url": "https://www.sbicard.com/en/most-important-terms-and-conditions.page",
     "source_section": "Fee table (table index 0), SBI Card PRIME NRI Secured row",
@@ -6279,7 +6279,7 @@
       "5% cashback across the Flipkart ecosystem; 7.5% cashback on Myntra; 1% fuel surcharge waiver",
       "Welcome benefits worth Rs.1,250"
     ],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": "https://www.sbicard.com/en/personal/credit-cards/flipkart-sbi-card.html",
     "source_url": "https://www.sbicard.com/en/most-important-terms-and-conditions.page",
     "source_section": "Fee table (table index 0), Flipkart SBI Card row",
@@ -6347,7 +6347,7 @@
       "4 complimentary domestic airport lounge visits/year (1 per quarter), subject to Rs.50,000 spend in preceding quarter",
       "2,500 IndiGo BluChips on fee payment and first transaction within 60 days"
     ],
-    "badge": null,
+    "badge": "travel",
     "apply_url": "https://www.sbicard.com/en/personal/credit-cards/travel/indigo-sbi-card.page",
     "source_url": "https://www.sbicard.com/en/most-important-terms-and-conditions.page",
     "source_section": "Fee table (table index 0), IndiGo SBI Card row",
@@ -6440,7 +6440,7 @@
       "20 EDGE Reward Points per INR 100 at IOCL fuel outlets (4% value back); 1% fuel surcharge waiver on IOCL transactions between INR 400 and INR 4,000 (max INR 50 per cycle)",
       "100% cashback up to INR 250 on first fuel transaction within 30 days of card issuance"
     ],
-    "badge": null,
+    "badge": "fuel surcharge waiver",
     "apply_url": "https://www.axis.bank.in/cards/credit-card/indianoil-axis-bank-credit-card",
     "source_url": "https://www.axis.bank.in/docs/default-source/default-document-library/mitc-credit-cards.pdf",
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.2), INDIAN OIL AXIS BANK Credit Card row",
@@ -6504,7 +6504,7 @@
       "No complimentary lounge access (effective 20th June 2025)",
       "Flipkart voucher worth INR 250 (paid cards); Swiggy 50% off up to INR 100 for first-time users; 15% cashback up to INR 500 on first Myntra transaction"
     ],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": "https://www.axis.bank.in/cards/credit-card/flipkart-axisbank-credit-card",
     "source_url": "https://www.axis.bank.in/docs/default-source/default-document-library/mitc-credit-cards.pdf",
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.2), FLIPKART AXIS BANK Credit Card row",
@@ -6568,7 +6568,7 @@
       "4 complimentary domestic airport lounge visits per calendar year (on min spends of INR 50,000 in previous 3 months)",
       "Amazon eVoucher worth INR 250 on first transaction within 30 days of card issuance"
     ],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": "https://www.axisbank.com/retail/cards/credit-card/airtel-axis-bank-credit-card",
     "source_url": "https://www.axis.bank.in/docs/default-source/default-document-library/mitc-credit-cards.pdf",
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.3), AIRTEL AXIS BANK Credit Card row",
@@ -6691,7 +6691,7 @@
       "Unlimited 5% cashback on bill payments and recharges via Google Pay; unlimited 4% cashback on Swiggy, Zomato and Ola; unlimited 2% cashback on all other spends; 1% fuel surcharge waiver (INR 400-4,000, max INR 500/statement)",
       "4 complimentary domestic airport lounge visits per calendar year"
     ],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": "https://www.axisbank.com/retail/cards/credit-card/axis-bank-ace-credit-card",
     "source_url": "https://www.axis.bank.in/docs/default-source/default-document-library/mitc-credit-cards.pdf",
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.3-4), ACE Credit Card row",
@@ -6977,7 +6977,7 @@
     "lounge": null,
     "welcome_benefit": null,
     "features": [],
-    "badge": null,
+    "badge": "travel",
     "apply_url": null,
     "source_url": "https://www.axis.bank.in/docs/default-source/default-document-library/mitc-credit-cards.pdf",
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.5), AXIS BANK VISTARA INFINITE Credit Card row",
@@ -7007,7 +7007,7 @@
     "lounge": null,
     "welcome_benefit": null,
     "features": [],
-    "badge": null,
+    "badge": "travel",
     "apply_url": null,
     "source_url": "https://www.axis.bank.in/docs/default-source/default-document-library/mitc-credit-cards.pdf",
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.5-6), AXIS BANK VISTARA SIGNATURE Credit Card row",
@@ -7037,7 +7037,7 @@
     "lounge": null,
     "welcome_benefit": null,
     "features": [],
-    "badge": null,
+    "badge": "travel",
     "apply_url": null,
     "source_url": "https://www.axis.bank.in/docs/default-source/default-document-library/mitc-credit-cards.pdf",
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.6), AXIS BANK VISTARA Credit Card row",
@@ -7101,7 +7101,7 @@
     "lounge": null,
     "welcome_benefit": null,
     "features": [],
-    "badge": null,
+    "badge": "travel",
     "apply_url": null,
     "source_url": "https://www.axis.bank.in/docs/default-source/default-document-library/mitc-credit-cards.pdf",
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.6), MILES and MORE Axis Bank World Select Credit Card row",
@@ -7131,7 +7131,7 @@
     "lounge": null,
     "welcome_benefit": null,
     "features": [],
-    "badge": null,
+    "badge": "travel",
     "apply_url": null,
     "source_url": "https://www.axis.bank.in/docs/default-source/default-document-library/mitc-credit-cards.pdf",
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.6), MILES and MORE Axis Bank World Credit Card row",
@@ -7655,7 +7655,7 @@
       "Reward points on IOCL fuel spends with a value chart; fuel surcharge waiver on IOCL outlet transactions",
       "2 complimentary lounge visits per quarter at select domestic airports"
     ],
-    "badge": null,
+    "badge": "fuel surcharge waiver",
     "apply_url": "https://www.axis.bank.in/cards/credit-card/indianoil-premium-credit-card",
     "source_url": "https://www.axis.bank.in/docs/default-source/default-document-library/mitc-credit-cards.pdf",
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.9), IndianOil Axis Bank Premium Credit Card row",
@@ -7722,7 +7722,7 @@
       "Up to 5% cashback on online spends (max INR 1,750 per statement); cashback credited before the next statement",
       "EDGE Reward Points worth INR 1,000 on first transaction within 30 days of card issuance"
     ],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": "https://www.axis.bank.in/cards/credit-card/cashback-credit-card",
     "source_url": "https://www.axis.bank.in/docs/default-source/default-document-library/mitc-credit-cards.pdf",
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.9), Axis Bank Cashback Credit Card row",
@@ -7906,7 +7906,7 @@
       "1 complimentary domestic airport lounge visit per quarter (on spends of INR 50,000 in preceding 3 months)",
       "Voucher worth 1,200 IndiGo BluChips on payment of joining fee"
     ],
-    "badge": null,
+    "badge": "travel",
     "apply_url": "https://www.axis.bank.in/cards/credit-card/indigo-axis-bank-credit-card",
     "source_url": "https://www.axis.bank.in/docs/default-source/default-document-library/mitc-credit-cards.pdf",
     "source_section": "Schedule of Charges, 1. JOINING, ANNUAL and ADD-ON CARD FEE table (p.10), IndiGo Axis Bank Credit Card row",
@@ -8005,7 +8005,7 @@
       "White Pass milestone-based rewards worth up to Rs.2.5 lakh annually, redeemable for premium brand vouchers, flights, hotels and cashback",
       "Unlimited lounge access at 1000+ airports worldwide for primary and add-on cardholders"
     ],
-    "badge": "metal card",
+    "badge": "super-premium",
     "apply_url": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards/white-reserve-credit-card.html",
     "source_url": "https://www.kotak.bank.in/content/dam/Kotak/files/english-rcas.pdf",
     "source_section": "Fee table p.3, White Reserve row (Joining ₹12,500 / Annual ₹12,500)",
@@ -8172,7 +8172,7 @@
       "Up to 19 IndiGo BluChips per Rs.100 on flight bookings",
       "2,500 IndiGo BluChips voucher"
     ],
-    "badge": null,
+    "badge": "travel",
     "apply_url": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards/indigo-credit-card-base-t.html",
     "source_url": "https://www.kotak.bank.in/content/dam/Kotak/files/english-rcas.pdf",
     "source_section": "Fee table p.3, IndiGo Kotak Credit Card row (Joining ₹1,500 / Annual ₹1,500)",
@@ -8303,7 +8303,7 @@
     "features": [
       "5% cashback on online food deliveries, groceries and entertainment; 3% cashback on fuel; 0.5% unlimited cashback on other eligible spends"
     ],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards/kotak-cashback-plus-credit-card.html",
     "source_url": "https://www.kotak.bank.in/content/dam/Kotak/files/english-rcas.pdf",
     "source_section": "Fee table p.3, Kotak Cashback+ Credit Card row (Joining ₹750 / Annual ₹750)",
@@ -8335,7 +8335,7 @@
     "features": [
       "5% cashback on online food deliveries, groceries and entertainment; 5% cashback on Auto Dealer merchant spends; 3% cashback on fuel"
     ],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards/kotak-cashback-plus-credit-card.html",
     "source_url": "https://www.kotak.bank.in/content/dam/Kotak/files/english-rcas.pdf",
     "source_section": "Fee table p.3, Kotak Cashback+ Prime Credit Card row (Joining ₹750 / Annual ₹750)",
@@ -8722,7 +8722,7 @@
     "features": [
       "PVR Gold: 1 free PVR ticket monthly on Rs.10,000 spend, 15% cashback on F&B. PVR Platinum: 2 free PVR tickets monthly on Rs.10,000 spend, 15% cashback on F&B, 5% cashback on movie tickets"
     ],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards/pvr-kotak-gold-credit-card.html",
     "source_url": "https://www.kotak.bank.in/content/dam/Kotak/files/english-rcas.pdf",
     "source_section": "Fee table p.4, PVR Gold / PVR Platinum row (Joining NIL / Annual ₹499 / ₹999 — two variants, renewal differs by variant)",
@@ -8818,7 +8818,7 @@
     "features": [
       "10% cashback on dining and movies"
     ],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards/delight-platinum-card.html",
     "source_url": "https://www.kotak.bank.in/content/dam/Kotak/files/english-rcas.pdf",
     "source_section": "Fee table p.4, Delight Platinum# row (Joining ₹1,999 / Annual ₹299)",
@@ -8915,7 +8915,7 @@
     "features": [
       "Up to 3% 6E Rewards on IndiGo spends; up to 2% on groceries, departmental stores and entertainment (co-branded 6E Rewards programme)"
     ],
-    "badge": null,
+    "badge": "travel",
     "apply_url": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards/indigo-kotak-credit-card/rewards-redemption.html",
     "source_url": "https://www.kotak.bank.in/content/dam/Kotak/files/english-rcas.pdf",
     "source_section": "Fee table p.4, 6E Rewards – IndiGo Kotak Credit Card row (Joining ₹700 / Annual ₹700)",
@@ -9039,7 +9039,7 @@
     "features": [
       "Milestone: Rs.1,50,000 annual spend earns 4 free PVR tickets or Rs.750 cashback; fuel surcharge waiver on transactions Rs.500-Rs.3,000"
     ],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": "https://www.kotak.bank.in/en/personal-banking/cards/credit-cards/fortune-gold-card.html",
     "source_url": "https://www.kotak.bank.in/content/dam/Kotak/files/english-rcas.pdf",
     "source_section": "Fee table p.4, Fortune Gold row (Joining NIL / Annual NIL)",
@@ -9357,7 +9357,7 @@
     "features": [
       "1% Cashback"
     ],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": "https://www.idfcfirst.bank.in/credit-card/secured-rupay-credit-card",
     "source_url": "https://www.idfcfirst.bank.in/content/dam/idfcfirstbank/pdf/credit-card/MITC-Document-Customer.pdf",
     "source_section": "Sec 1 Joining Fees, Annual Fees and Add-on Card Fees table, p.2, FIRST EA₹N row (499/499/NA)",
@@ -9389,7 +9389,7 @@
     "features": [
       "Rewards on fuel spends; UPI-ready"
     ],
-    "badge": null,
+    "badge": "fuel surcharge waiver",
     "apply_url": "https://www.idfcfirst.bank.in/credit-card/hpcl-power-fuel-credit-card",
     "source_url": "https://www.idfcfirst.bank.in/content/dam/idfcfirstbank/pdf/credit-card/MITC-Document-Customer.pdf",
     "source_section": "Sec 1 Joining Fees, Annual Fees and Add-on Card Fees table, p.2, FIRST Power row (199/199/499)",
@@ -9421,7 +9421,7 @@
     "features": [
       "Rewards on fuel spends; UPI-ready"
     ],
-    "badge": null,
+    "badge": "fuel surcharge waiver",
     "apply_url": "https://www.idfcfirst.bank.in/credit-card/hpcl-power-fuel-credit-card",
     "source_url": "https://www.idfcfirst.bank.in/content/dam/idfcfirstbank/pdf/credit-card/MITC-Document-Customer.pdf",
     "source_section": "Sec 1 Joining Fees, Annual Fees and Add-on Card Fees table, p.2, FIRST Power+ row (499/499/499)",
@@ -9547,7 +9547,7 @@
     "lounge": null,
     "welcome_benefit": null,
     "features": [],
-    "badge": null,
+    "badge": "travel",
     "apply_url": null,
     "source_url": "https://www.idfcfirst.bank.in/content/dam/idfcfirstbank/pdf/credit-card/MITC-Document-Customer.pdf",
     "source_section": "Sec 1 Joining Fees, Annual Fees and Add-on Card Fees table, p.2, Club Vistara row (4,999/4,999/499)",
@@ -9579,7 +9579,7 @@
     "features": [
       "Travel and lifestyle benefits (IndiGo co-branded)"
     ],
-    "badge": "low forex markup",
+    "badge": "travel",
     "apply_url": "https://www.idfcfirst.bank.in/credit-card/indigo-credit-card",
     "source_url": "https://www.idfcfirst.bank.in/content/dam/idfcfirstbank/pdf/credit-card/MITC-Document-Customer.pdf",
     "source_section": "Sec 1 Joining Fees, Annual Fees and Add-on Card Fees table, p.2, IndiGo IDFC FIRST row (4,999/4,999/499); ** note: joining not applicable for FD-backed IndiGo Secured, Annual Fee 4,999 applies on FD-backed variant",
@@ -9612,7 +9612,7 @@
       "Zero Forex; lifestyle benefits",
       "Airport lounge access (page states lounge access; specifics not listed)"
     ],
-    "badge": "metal card",
+    "badge": "super-premium",
     "apply_url": "https://www.idfcfirst.bank.in/credit-card/metal-credit-card/mayura",
     "source_url": "https://www.idfcfirst.bank.in/content/dam/idfcfirstbank/pdf/credit-card/MITC-Document-Customer.pdf",
     "source_section": "Sec 1 Joining Fees, Annual Fees and Add-on Card Fees table, p.2, Mayura row (5,999/5,999; Add-on: Metal Joining 4,000 / Plastic Joining 3,000 / Annual 2,000)",
@@ -9926,7 +9926,7 @@
       "1 complimentary domestic lounge visit per calendar quarter; 1 complimentary international Priority Pass lounge visit per calendar quarter",
       "Choice of one: Luxe gift card, complimentary night stay at Oberoi hotels, or gift vouchers (Hush Puppies, BATA, Titan, Pantaloons, Raymond, etc.)"
     ],
-    "badge": "metal card",
+    "badge": "super-premium",
     "apply_url": "https://www.indusind.bank.in/in/en/personal/cards/credit-card/pinnacle-world-credit-card.html",
     "source_url": "https://www.indusind.bank.in/content/dam/indusind-platform-images/home/pdf/MITC-Premium-15-6-2016.pdf",
     "source_section": "FEES AND CHARGES, Schedule of Charges table p.2, 'Pinnacle' row (Joining Fee 100000, Annual Fee Nil)",
@@ -10016,7 +10016,7 @@
     "lounge": null,
     "welcome_benefit": null,
     "features": [],
-    "badge": null,
+    "badge": "travel",
     "apply_url": null,
     "source_url": "https://www.indusind.bank.in/content/dam/indusind-platform-images/home/pdf/MITC-Premium-15-6-2016.pdf",
     "source_section": "FEES AND CHARGES, Schedule of Charges table p.2, 'Jet Airways IndusInd Bank Odyssey Credit Card' row (Joining Fee 10000, Annual Fee 4000)",
@@ -10046,7 +10046,7 @@
     "lounge": null,
     "welcome_benefit": null,
     "features": [],
-    "badge": null,
+    "badge": "travel",
     "apply_url": null,
     "source_url": "https://www.indusind.bank.in/content/dam/indusind-platform-images/home/pdf/MITC-Premium-15-6-2016.pdf",
     "source_section": "FEES AND CHARGES, Schedule of Charges table p.2, 'Jet Airways IndusInd Bank Voyage Credit Card' row (Joining Fee 4000, Annual Fee 2000)",
@@ -10180,7 +10180,7 @@
       "Unlimited complimentary access to domestic airport lounges (60+ lounges)",
       "Welcome perk valued at ₹15,000; plus BOGO movie tickets and partner benefits"
     ],
-    "badge": "FD-linked",
+    "badge": "super-premium",
     "apply_url": "https://www.bobcard.co.in/credit-card-types/eterna",
     "source_url": "https://online.bobcard.co.in/assets/BOBCARD_MITS.pdf",
     "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, Eterna/Eterna (FD Backed) row; and ii. Annual Fees table, Eterna/Eterna (FD Backed) row",
@@ -10336,7 +10336,7 @@
       "Unlimited cashback with 1 reward point for every ₹100 spent; redeemable as cashback; fuel surcharge waiver and Smart EMI benefits",
       "500 Reward Points on spend of ₹5,000 within 60 days of card issuance"
     ],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": "https://www.bobcard.co.in/credit-card-types/empower",
     "source_url": "https://online.bobcard.co.in/assets/BOBCARD_MITS.pdf",
     "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, Empower Business Card row (NIL); and ii. Annual Fees table, Empower Business Card row (Rs.500)",
@@ -10470,7 +10470,7 @@
       "1 complimentary railway lounge access per quarter at partner railway lounges",
       "500 joining bonus reward points on spend of ₹5,000 or more within 60 days"
     ],
-    "badge": null,
+    "badge": "travel",
     "apply_url": "https://www.bobcard.co.in/credit-card-types/irctc-credit-card",
     "source_url": "https://online.bobcard.co.in/assets/BOBCARD_MITS.pdf",
     "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, IRCTC row (Rs.500); and ii. Annual Fees table, IRCTC row (Rs.350)",
@@ -10503,7 +10503,7 @@
       "Up to 5% savings on fuel (24 Reward Points per ₹150 = 4% savings + 1% fuel surcharge waiver) at HPCL outlets",
       "4 complimentary domestic airport lounge access per year (1 per quarter) at partner lounges"
     ],
-    "badge": null,
+    "badge": "fuel surcharge waiver",
     "apply_url": "https://www.bobcard.co.in/credit-card-types/hpcl-energie",
     "source_url": "https://online.bobcard.co.in/assets/BOBCARD_MITS.pdf",
     "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, HPCL Energie row (Rs.499, NIL waiver); and ii. Annual Fees table, HPCL Energie row (Rs.499)",
@@ -10536,7 +10536,7 @@
       "5% unlimited cashback (20 reward points per ₹100) on Snapdeal website & mobile app; reward points capped at 2000 RP per statement",
       "500 bonus reward points on spends of Rs. 5,000 or more within 60 days of card issuance"
     ],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": "https://www.bobcard.co.in/credit-card-types/snapdeal-bobcard",
     "source_url": "https://online.bobcard.co.in/assets/BOBCARD_MITS.pdf",
     "source_section": "TARIFF OF CHARGES, i. Joining Fee / First Year Fee table, Snapdeal row (Rs.249); and ii. Annual Fees table, Snapdeal row (Rs.249)",
@@ -11074,7 +11074,7 @@
       "10% cashback on first 5 UPI transactions in first 30 days (capped at ₹200); 1 reward point per ₹200 spent; 1000 bonus reward points on ₹50,000 quarterly spend",
       "10% cashback on first 5 UPI transactions within first 30 days (capped at ₹200)"
     ],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": "https://creditcards.federalbank.co.in",
     "source_url": "https://www.federal.bank.in/credit-cards-mitc",
     "source_section": "SCHEDULE OF CHARGES/TAXES table, Joining Fee 'NIL (for virtual cards) Rs 199/- (if opted for physical card)' / Annual Membership fee '199/-', Wave Card column",
@@ -11254,7 +11254,7 @@
     "lounge": null,
     "welcome_benefit": null,
     "features": [],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": null,
     "source_url": "https://www.yes.bank.in/sites/web/content/published/api/v1.1/assets/CONTAA57595B2EF245259C4C623B1F7D33B3/native/ybl_mitc_pdf.pdf?download=false",
     "source_section": "Section A.1 Joining and Annual membership fees table p.2, 'YES Prosperity Cashback Plus' row (Not Applicable for both waivers)",
@@ -11344,7 +11344,7 @@
     "lounge": null,
     "welcome_benefit": null,
     "features": [],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": null,
     "source_url": "https://www.yes.bank.in/sites/web/content/published/api/v1.1/assets/CONTAA57595B2EF245259C4C623B1F7D33B3/native/ybl_mitc_pdf.pdf?download=false",
     "source_section": "Section A.1 Joining and Annual membership fees table p.2, 'YES Prosperity Cashback' row (Not Applicable for both waivers)",
@@ -11764,7 +11764,7 @@
     "lounge": null,
     "welcome_benefit": null,
     "features": [],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": null,
     "source_url": "https://www.yes.bank.in/sites/web/content/published/api/v1.1/assets/CONTAA57595B2EF245259C4C623B1F7D33B3/native/ybl_mitc_pdf.pdf?download=false",
     "source_section": "Section A.1 BYOC Cashback Membership fees table p.3, Regular Card column (One Time Card Fee NIL, Monthly Fee INR 99)",
@@ -11794,7 +11794,7 @@
     "lounge": null,
     "welcome_benefit": null,
     "features": [],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": null,
     "source_url": "https://www.yes.bank.in/sites/web/content/published/api/v1.1/assets/CONTAA57595B2EF245259C4C623B1F7D33B3/native/ybl_mitc_pdf.pdf?download=false",
     "source_section": "Section A.1 BYOC Cashback Membership fees table p.3, Eco Friendly Card column (One Time Card Fee INR 249, Monthly Fee INR 99)",
@@ -11946,7 +11946,7 @@
     "features": [
       "First three add-on cards complimentary"
     ],
-    "badge": "metal card",
+    "badge": "super-premium",
     "apply_url": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/lumiere-credit-card",
     "source_url": "https://webassets.rbl.bank.in/document/Credit%20Cards/RBL-MITC-final.pdf",
     "source_section": "A.i Annual membership fees table p.5, Lumière row",
@@ -12461,7 +12461,7 @@
       "INR 25 assured weekly cashback on INR 2,500 weekly spend; 2 free movie tickets on INR 5,000 spend in a billing month",
       "2,000 Reward Points"
     ],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/rbl-bank-popcorn-credit-card",
     "source_url": "https://webassets.rbl.bank.in/document/Credit%20Cards/RBL-MITC-final.pdf",
     "source_section": "A.i Annual membership fees table p.6, RBL Bank Popcorn Credit Card row",
@@ -13655,7 +13655,7 @@
       "4 domestic lounge visits annually (quarterly), for cardholders who spent INR 50,000 in the prior calendar quarter",
       "6,000 reward points on first spend of INR 1,000 or more within 30 days"
     ],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/rbl-bank-patanjali-swarn-credit-card",
     "source_url": "https://webassets.rbl.bank.in/document/Credit%20Cards/RBL-MITC-final.pdf",
     "source_section": "A.i Annual membership fees table p.11, RBL Bank Patanjali Swarn Credit Card row",
@@ -13719,7 +13719,7 @@
       "8 complimentary railway station lounge visits (2 per quarter)",
       "500 Reward Points on spending above INR 500 within 30 days"
     ],
-    "badge": null,
+    "badge": "travel",
     "apply_url": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/irctc-rbl-bank-credit-card",
     "source_url": "https://webassets.rbl.bank.in/document/Credit%20Cards/RBL-MITC-final.pdf",
     "source_section": "A.i Annual membership fees table p.11, RBL Bank IRCTC Credit Card row",
@@ -13782,7 +13782,7 @@
       "10 fuel points per INR 100 at IndianOil (max 1,000/month); 1 fuel point per INR 100 on other purchases; 1 FP = INR 0.5; 6% valueback at IndianOil",
       "1,000 Fuel Points on shopping above INR 500 within 30 days"
     ],
-    "badge": null,
+    "badge": "fuel surcharge waiver",
     "apply_url": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/indianoil-rbl-bank-credit-card",
     "source_url": "https://webassets.rbl.bank.in/document/Credit%20Cards/RBL-MITC-final.pdf",
     "source_section": "A.i Annual membership fees table p.11, RBL Bank IndianOil Credit Card row",
@@ -13815,7 +13815,7 @@
       "15 fuel points per INR 100 at IndianOil (max 2,000/month); 2 fuel points per INR 100 on other purchases; 1 FP = INR 0.5; 8.5% valueback at IndianOil",
       "3,000 Fuel Points on shopping above INR 500 within 30 days, plus 1,000 fuel points at INR 75,000 quarterly milestone"
     ],
-    "badge": null,
+    "badge": "fuel surcharge waiver",
     "apply_url": "https://www.rbl.bank.in/personal-banking/cards/credit-cards/indianoil-rbl-bank-xtra-credit-card",
     "source_url": "https://webassets.rbl.bank.in/document/Credit%20Cards/RBL-MITC-final.pdf",
     "source_section": "A.i Annual membership fees table p.11, RBL Bank IndianOil XTRA Credit Card row",
@@ -14060,7 +14060,7 @@
     "features": [
       "Flat 2% cashback with ZET UPI (ZET Plus); up to 20% off on Swiggy, Zomato, Instamart, BookMyShow; flat 5% cashback on Amazon Pay and Flipkart vouchers; up to 15% cashback on 80+ brand vouchers"
     ],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": "https://www.zetapp.in/sbm-zet-credit-card",
     "source_url": "https://www.sbm.bank.in/pdf/terms-conditions/SBM-Secured-Credit-Card-T&C.pdf",
     "source_section": "Fee table p.4, SBM ZET row (Joining 0, AMC 0, waiver N/A)",
@@ -14093,7 +14093,7 @@
       "3% cashback on Kredit.Pe UPI; redeemable as 5%/10%/15% off vouchers on popular platforms",
       "Rs.1000 cashback joining bonus"
     ],
-    "badge": null,
+    "badge": "cashback card",
     "apply_url": "https://www.kredit.pe/",
     "source_url": "https://www.sbm.bank.in/pdf/terms-conditions/SBM-Secured-Credit-Card-T&C.pdf",
     "source_section": "Fee table p.4, SBM Kredit.Pe row (Joining 0, AMC 199 + GST, waiver 'Applicable for credit limit under ₹4,500')",
@@ -14256,7 +14256,7 @@
     "features": [
       "Up to 1.5% cashback on online spends (FD above Rs.10,000); 1% cashback on offline spends and UPI transactions above Rs.2,000; credited as Cash Point (1 = Rs.1), capped 500/day and 3,000/month"
     ],
-    "badge": "low forex markup",
+    "badge": "cashback card",
     "apply_url": "https://www.sbm.bank.in/personal-banking/cards/secured-credit-card",
     "source_url": "https://www.sbm.bank.in/pdf/terms-conditions/SBM-Secured-Credit-Card-T&C.pdf",
     "source_section": "Fee table p.4, SBM Paisabazaar Paisa + row (Joining 0, AMC 499 + GST, with spend-based waiver)",

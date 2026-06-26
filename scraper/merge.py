@@ -47,28 +47,54 @@ _FD_KEYWORDS = re.compile(
     r"\b(against\s+fd|fd[\s-]backed|fixed\s+deposit|secured|nri\s+secured)\b", re.I
 )
 
+# Reward-type cobrand badges — matched on the card NAME (cobrand brand) so they're
+# high-confidence; cashback additionally matches a cashback reward currency.
+_FUEL_RE = re.compile(r"indianoil|indian oil|\biocl\b|bpcl|hpcl|first power", re.I)
+_TRAVEL_RE = re.compile(
+    r"\bindigo\b|\b6e\b|vistara|air india|\bemirates\b|etihad|marriott|makemytrip|"
+    r"\bmmt\b|miles ?(?:and|&) ?more|krisflyer|jet airways|\batlas\b|\bhorizon\b|"
+    r"\byatra\b|skywards|\bmiles\b|accor|\btaj\b|irctc", re.I)
+_CASHBACK_NAME_RE = re.compile(r"cashback|cash back|moneyback|money back|amazon pay", re.I)
+_CASHBACK_REW_RE = re.compile(
+    r"\d+\s*%?\s*cashback|unlimited cashback|flat[^.]{0,12}cashback|cash ?back on", re.I)
 
-def normalize_badge(badge, raw_category, name, forex):
-    """Map any free-text badge + card attributes → one pre-verified canonical tag (or None)."""
+
+def normalize_badge(badge, raw_category, name, forex, rewards=None):
+    """Map any free-text badge + card attributes → one pre-verified canonical tag (or None).
+
+    Priority: invite only > super-premium > metal card > premium >
+    travel > fuel surcharge waiver > cashback card > low forex markup > FD-linked.
+    Tier (super-premium/premium) outranks the reward-type cobrand badges, which
+    outrank low-forex; FD-linked is the fallback marker, used only when nothing
+    more specific applies.
+    """
     bl = (badge or "").lower()
-    nl = (name or "").lower()
+    nm = name or ""
+    nl = nm.lower()
+    rw = rewards or ""
     cat = _CAT_NORM.get(str(raw_category or "").lower().replace("-", "_"), "")
     if "invite" in bl:
         return "invite only"
-    if "metal" in bl or "metal" in nl:
-        return "metal card"
-    if _FD_KEYWORDS.search(name or ""):
-        return "FD-linked"
     if cat == "super_premium":
         return "super-premium"
+    if "metal" in bl or "metal" in nl:
+        return "metal card"
     if cat == "premium":
         return "premium"
+    if _TRAVEL_RE.search(nm):
+        return "travel"
+    if _FUEL_RE.search(nm):
+        return "fuel surcharge waiver"
+    if _CASHBACK_NAME_RE.search(nm) or _CASHBACK_REW_RE.search(rw):
+        return "cashback card"
     if forex is not None:
         try:
             if float(forex) <= 1.5:
                 return "low forex markup"
         except (TypeError, ValueError):
             pass
+    if _FD_KEYWORDS.search(nm):
+        return "FD-linked"
     return None
 
 
@@ -263,7 +289,7 @@ def merge_bank(bid: str, display_bank: str, parsed: dict, enriched: dict, seen: 
         welcome = enr.get("welcome_benefit")
         features = [x for x in (enr.get("rewards"), enr.get("lounge"), welcome) if x]
         raw_cat = enr.get("category")
-        badge = normalize_badge(enr.get("badge"), raw_cat, name, forex)
+        badge = normalize_badge(enr.get("badge"), raw_cat, name, forex, enr.get("rewards"))
 
         rows.append({
             "card_id": cid,
