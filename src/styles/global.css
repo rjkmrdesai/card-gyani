@@ -229,6 +229,12 @@ aside.filters{position:sticky;top:80px;background:var(--surface);border:1px soli
 .tile{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;gap:9px;transition:.15s}
 .tile:hover{box-shadow:var(--shadow);border-color:#d8dcd2}
 .tile.picked{border-color:var(--cta);box-shadow:0 0 0 2px var(--cta) inset,var(--shadow-sm)}
+/* card-art banner — full-bleed across the padded tile top */
+.tcard{margin:-20px -20px 12px;height:168px;background:#fff;border-bottom:1px solid var(--line);border-radius:var(--radius) var(--radius) 0 0;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.tcard img{width:100%;height:100%;object-fit:contain;display:block}
+.tcard-fb{background:linear-gradient(180deg,#fbfcf9,#f3f5ef)}
+.tcard-fb img{width:auto;height:auto;max-width:44%;max-height:52%}
+.tcard-i{font-weight:800;font-size:44px;color:var(--muted)}
 .tile-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:2px}
 .bmono{display:inline-flex;align-items:center;justify-content:center;height:36px;padding:0 10px;min-width:36px;border-radius:9px;color:#fff;font-weight:800;font-size:12px;letter-spacing:.02em;flex:none}
 /* bank logo on a white tile (PNGs already carry white bg + padding) */
@@ -249,17 +255,6 @@ aside.filters{position:sticky;top:80px;background:var(--surface);border:1px soli
 .tacts .apply{flex:1;text-align:center;padding:10px 14px}
 .tacts .viewbtn{padding:10px 14px}
 .tcmp{margin-top:4px}
-.trust{max-width:1160px;margin:0 auto;padding:8px 20px 24px;display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap}
-.trust-l{font-size:12.5px;color:var(--muted);font-weight:600;letter-spacing:.05em;text-transform:uppercase}
-.promo-wrap{max-width:1160px;margin:0 auto;padding:10px 20px 40px}
-.promo{background:var(--ink);border-radius:22px;padding:44px;display:grid;grid-template-columns:1.3fr 1fr;gap:36px;align-items:center}
-.promo-l h2{margin:0 0 14px;font-size:38px;line-height:1.05;letter-spacing:-.02em;color:var(--accent-bright)}
-.promo-l p{margin:0 0 24px;font-size:17px;line-height:1.5;color:rgba(255,255,255,.82);max-width:420px}
-.promo .elig{background:var(--cta);color:var(--cta-ink);font-weight:800;padding:14px 26px;border-radius:var(--radius-pill);font-size:15px;display:inline-block}
-.promo-r{display:flex;flex-direction:column;gap:12px}
-.promo-r .stat{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;background:rgba(163,230,53,.12);border-radius:14px}
-.promo-r .stat span{color:rgba(255,255,255,.82);font-size:14.5px}
-.promo-r .stat b{color:var(--accent-bright);font-size:22px;font-weight:800}
 .site-footer{border-top:1px solid var(--line);margin-top:10px;background:var(--surface)}
 .sf-in{max-width:1160px;margin:0 auto;padding:26px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .sf-in .brand{font-size:18px;font-weight:800}
@@ -288,9 +283,45 @@ aside.filters{position:sticky;top:80px;background:var(--surface);border:1px soli
   .hero p{font-size:17px}
   .grid{grid-template-columns:1fr}
   .dgrid{grid-template-columns:1fr}
-  .promo{grid-template-columns:1fr;padding:28px}
-  .promo-l h2{font-size:30px}
+  .catrow{grid-template-columns:repeat(3,1fr)}
+  .statband-in{grid-template-columns:repeat(2,1fr)}
+  .why-head h2{font-size:30px}
+  .statnum{font-size:36px}
+  .cats-head h2,.marquee-head h2{font-size:22px}
 }
 .toast{position:fixed;left:50%;bottom:96px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;
   padding:12px 20px;border-radius:var(--radius-pill);font-weight:600;font-size:14px;z-index:1100;opacity:0;transition:.25s;box-shadow:var(--shadow-lg)}
 .toast.show{opacity:1;transform:translateX(-50%)}
+/* top categories — icon card + label below */
+.catwrap{padding:40px 0 0;text-align:center}
+.cats-head h2{font-size:30px;letter-spacing:-.02em;display:inline-block;padding-bottom:10px;border-bottom:3px solid var(--accent-bright)}
+.cats-sub{margin:14px auto 26px;color:var(--ink-soft);font-size:16px;max-width:660px}
+.catrow{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.catitem{display:flex;flex-direction:column;align-items:center;gap:12px}
+.cat-card{width:100%;aspect-ratio:4/3;background:var(--surface);border:1px solid var(--line);border-radius:16px;display:grid;place-items:center;font-size:42px;box-shadow:var(--shadow-sm);transition:.15s}
+.catitem:hover .cat-card{box-shadow:var(--shadow);transform:translateY(-3px);border-color:var(--cta)}
+.catitem.active .cat-card{border-color:var(--ink);background:var(--ink)}
+.cat-l{font-weight:700;font-size:14.5px;color:var(--ink)}
+.catitem.active .cat-l{color:var(--accent)}
+/* why + count-up stat band */
+.whyband{max-width:1160px;margin:0 auto;padding:50px 20px 10px}
+.why-head{max-width:780px;margin-bottom:34px}
+.kpill{display:inline-block;background:#eef6e3;color:var(--accent);font-size:12.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:7px 14px;border-radius:var(--radius-pill)}
+.why-head h2{margin:16px 0 14px;font-size:46px;line-height:1.06;letter-spacing:-.03em;font-weight:800}
+.why-head h2 em{font-style:normal;color:var(--accent)}
+.why-head p{margin:0;color:var(--ink-soft);font-size:18px;line-height:1.5;max-width:640px}
+.statband-in{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.statcard{text-align:center;padding:28px 22px;background:var(--surface);border:1px solid var(--line);border-radius:18px}
+.statnum{font-size:46px;font-weight:800;letter-spacing:-.03em;color:var(--accent);line-height:1;font-variant-numeric:tabular-nums}
+.statlbl{margin-top:8px;font-size:14.5px;color:var(--ink-soft);font-weight:600}
+/* bank logo marquee */
+.marquee{padding:42px 0 30px;overflow:hidden}
+.marquee-head{text-align:center;margin-bottom:22px}
+.marquee-head .k{font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.marquee-head h2{margin:6px 0 0;font-size:26px;letter-spacing:-.02em}
+.marquee-mask{-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.marquee-track{display:flex;gap:40px;width:max-content;align-items:center;animation:cgscroll 30s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee-track .bmono{height:40px;font-size:13px}
+@keyframes cgscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.marquee-track{animation:none}}

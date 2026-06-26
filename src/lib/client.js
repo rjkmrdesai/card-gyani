@@ -53,6 +53,22 @@ function render() {
   saveCompare();
   try { localStorage.setItem(LS_LANG, S.lang); } catch {}
   document.documentElement.lang = S.lang;
+  if (S.route === 'home') initHomeFx();
+}
+
+let CG_STATS_DONE=false;
+export function initHomeFx(){
+  if(CG_STATS_DONE) return;
+  const band=document.getElementById('statband'); if(!band) return;
+  const reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce){CG_STATS_DONE=true;return;}
+  const nums=band.querySelectorAll('.statnum[data-target]');
+  nums.forEach(el=>{el.textContent='0'+(el.dataset.suffix||'');});
+  new IntersectionObserver((ents,obs)=>{ents.forEach(en=>{ if(!en.isIntersecting) return;
+    CG_STATS_DONE=true; obs.disconnect();
+    nums.forEach(el=>{const tg=+el.dataset.target,suf=el.dataset.suffix||'',t0=performance.now();
+      (function s(n){const p=Math.min(1,(n-t0)/1200),e=1-Math.pow(1-p,3);el.textContent=Math.round(tg*e)+suf;p<1?requestAnimationFrame(s):el.textContent=tg+suf;})(performance.now());});
+  });},{threshold:.4}).observe(band);
 }
 
 // ---- toast ----

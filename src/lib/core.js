@@ -22,7 +22,7 @@ export const I18N = {
    reset:'Reset',language:'Language',pm:'p.m.',pa:'p.a.',sort_high:'Annual fee: High to Low',sort_low:'Annual fee: Low to High',
    sort_rew:'Reward rate',sort_name:'Name (A–Z)',max4:'You can compare up to 4 cards',none_match:'No cards match these filters',
    none_hint:'Try removing a filter or two.',empty_cmp:'No cards to compare yet',empty_hint:'Tick “Compare” on any card to start.',
-   filters:'Filters',type:'Card type',retail:'Retail',business:'Business',secured:'Secured',cobrand:'Co-brand',fd_linked:'FD-linked',home:'Home',hero_h1:'Find the right card. Fast.',hero_sub:'Browse {n}+ credit cards by what you actually want — no forms, no spam calls.',see_all:'See all & filter →',partnered:'Partnered with',elig_h1:'Check your eligibility in 2 minutes.',elig_sub:'See your real approval odds across every lender — without a hard enquiry on your credit report.',elig_cta:'Check eligibility',approval_odds:'Approval odds',preapproved:'Pre-approved offers',lowest_apr:'Lowest APR found',footer_note:'Indicative figures from issuer MITC documents. Verify on the bank site before applying.',cmp_sub:'Every benefit, line by line.',rewards_band:'Rewards & benefits',search_ph:'Search cards, banks or benefits…',browse_cat:'Browse by category'},
+   filters:'Filters',type:'Card type',retail:'Retail',business:'Business',secured:'Secured',cobrand:'Co-brand',fd_linked:'FD-linked',home:'Home',hero_h1:'Find the right card. Fast.',hero_sub:'Browse {n}+ credit cards by what you actually want — no forms, no spam calls.',see_all:'See all & filter →',partnered:'Partnered with',footer_note:'Indicative figures from issuer MITC documents. Verify on the bank site before applying.',cmp_sub:'Every benefit, line by line.',rewards_band:'Rewards & benefits',search_ph:'Search cards, banks or benefits…',browse_cat:'Browse by category',cats_h:'Top categories',cats_sub:'Compare India\'s credit cards by what you actually want — pick a category to filter.',trending_now:'Trending now',rewards:'Rewards',cashback:'Cashback',why_k:'Why Card Gyani',conf_a:'Pick your card',conf_b:'with confidence,',conf_c:'not guesswork.',conf_sub:'Bank sites bury the numbers. Card Gyani surfaces what actually matters — fees, real rewards and who qualifies — so you compare once and decide.',stat_cards:'Credit cards',stat_banks:'Banks covered',stat_langs:'Languages',stat_verified:'MITC-verified',marquee_k:'Trusted across India',marquee_h:'Cards from every major bank'},
  hi:{compare:'तुलना करें',all_cards:'सभी कार्ड',filter_cards:'कार्ड फ़िल्टर करें',category:'श्रेणी',
    super_premium:'सुपर प्रीमियम',premium:'प्रीमियम',mid_tier:'मिड-टियर',entry:'एंट्री',travel:'ट्रैवल',fuel:'फ्यूल',
    annual_fee:'वार्षिक शुल्क',lifetime_free:'लाइफटाइम फ्री',u500:'₹500 से कम',b1:'₹500–₹2,000',b2:'₹2,000–₹5,000',b3:'₹5,000+',
@@ -35,7 +35,7 @@ export const I18N = {
    reset:'रीसेट',language:'भाषा',pm:'प्रति माह',pa:'प्रति वर्ष',sort_high:'वार्षिक शुल्क: अधिक से कम',sort_low:'वार्षिक शुल्क: कम से अधिक',
    sort_rew:'रिवॉर्ड दर',sort_name:'नाम (अ–ज्ञ)',max4:'आप अधिकतम 4 कार्ड की तुलना कर सकते हैं',none_match:'इन फ़िल्टर से कोई कार्ड नहीं मिला',
    none_hint:'एक-दो फ़िल्टर हटाकर देखें।',empty_cmp:'तुलना के लिए कोई कार्ड नहीं',empty_hint:'शुरू करने के लिए किसी कार्ड पर “तुलना करें” चुनें।',
-   filters:'फ़िल्टर',type:'कार्ड प्रकार',retail:'रिटेल',business:'बिज़नेस',secured:'सिक्योर्ड',cobrand:'को-ब्रांड',fd_linked:'FD से लिंक्ड',home:'होम',see_all:'सभी देखें और फ़िल्टर करें →',partnered:'पार्टनर बैंक',elig_cta:'पात्रता जांचें',rewards_band:'रिवॉर्ड और लाभ',search_ph:'कार्ड, बैंक या लाभ खोजें…',browse_cat:'श्रेणी के अनुसार देखें'},
+   filters:'फ़िल्टर',type:'कार्ड प्रकार',retail:'रिटेल',business:'बिज़नेस',secured:'सिक्योर्ड',cobrand:'को-ब्रांड',fd_linked:'FD से लिंक्ड',home:'होम',see_all:'सभी देखें और फ़िल्टर करें →',partnered:'पार्टनर बैंक',rewards_band:'रिवॉर्ड और लाभ',search_ph:'कार्ड, बैंक या लाभ खोजें…',browse_cat:'श्रेणी के अनुसार देखें'},
  ta:{compare:'ஒப்பிடு',all_cards:'அனைத்து கார்டுகள்',filter_cards:'கார்டுகளை வடிகட்டு',category:'வகை',
    super_premium:'சூப்பர் பிரீமியம்',premium:'பிரீமியம்',mid_tier:'மிட்-டியர்',entry:'என்ட்ரி',travel:'டிராவல்',fuel:'எரிபொருள்',
    annual_fee:'ஆண்டுக் கட்டணம்',lifetime_free:'வாழ்நாள் இலவசம்',u500:'₹500-க்கு கீழ்',b1:'₹500–₹2,000',b2:'₹2,000–₹5,000',b3:'₹5,000+',
@@ -48,7 +48,7 @@ export const I18N = {
    reset:'மீட்டமை',language:'மொழி',pm:'மாதம்',pa:'ஆண்டு',sort_high:'ஆண்டுக் கட்டணம்: அதிகம்→குறைவு',sort_low:'ஆண்டுக் கட்டணம்: குறைவு→அதிகம்',
    sort_rew:'ரிவார்டு விகிதம்',sort_name:'பெயர் (அ–ஃ)',max4:'அதிகபட்சம் 4 கார்டுகளை ஒப்பிடலாம்',none_match:'இந்த வடிகட்டிகளுக்கு கார்டுகள் இல்லை',
    none_hint:'ஓரிரு வடிகட்டிகளை அகற்றிப் பாருங்கள்.',empty_cmp:'ஒப்பிட கார்டுகள் இல்லை',empty_hint:'தொடங்க எந்த கார்டிலும் “ஒப்பிடு” தேர்ந்தெடுக்கவும்.',
-   filters:'வடிகட்டிகள்',type:'கார்டு வகை',retail:'ரீடெயில்',business:'பிசினஸ்',secured:'செக்யூர்டு',cobrand:'கோ-பிராண்ட்',fd_linked:'FD இணைப்பு',home:'முகப்பு',see_all:'அனைத்தையும் பார்த்து வடிகட்டு →',partnered:'கூட்டாளி வங்கிகள்',elig_cta:'தகுதியைச் சரிபார்',rewards_band:'ரிவார்டுகள் & சலுகைகள்',search_ph:'கார்டுகள், வங்கிகள் அல்லது சலுகைகளைத் தேடுங்கள்…',browse_cat:'வகை வாரியாக உலாவு'},
+   filters:'வடிகட்டிகள்',type:'கார்டு வகை',retail:'ரீடெயில்',business:'பிசினஸ்',secured:'செக்யூர்டு',cobrand:'கோ-பிராண்ட்',fd_linked:'FD இணைப்பு',home:'முகப்பு',see_all:'அனைத்தையும் பார்த்து வடிகட்டு →',partnered:'கூட்டாளி வங்கிகள்',rewards_band:'ரிவார்டுகள் & சலுகைகள்',search_ph:'கார்டுகள், வங்கிகள் அல்லது சலுகைகளைத் தேடுங்கள்…',browse_cat:'வகை வாரியாக உலாவு'},
  te:{compare:'పోల్చండి',all_cards:'అన్ని కార్డులు',filter_cards:'కార్డులను ఫిల్టర్ చేయండి',category:'వర్గం',
    super_premium:'సూపర్ ప్రీమియం',premium:'ప్రీమియం',mid_tier:'మిడ్-టైర్',entry:'ఎంట్రీ',travel:'ట్రావెల్',fuel:'ఫ్యూయల్',
    annual_fee:'వార్షిక రుసుము',lifetime_free:'లైఫ్‌టైమ్ ఫ్రీ',u500:'₹500 లోపు',b1:'₹500–₹2,000',b2:'₹2,000–₹5,000',b3:'₹5,000+',
@@ -61,7 +61,7 @@ export const I18N = {
    reset:'రీసెట్',language:'భాష',pm:'నెలకు',pa:'సంవత్సరానికి',sort_high:'వార్షిక రుసుము: ఎక్కువ→తక్కువ',sort_low:'వార్షిక రుసుము: తక్కువ→ఎక్కువ',
    sort_rew:'రివార్డ్ రేటు',sort_name:'పేరు (అ–ఱ)',max4:'మీరు గరిష్టంగా 4 కార్డులను పోల్చవచ్చు',none_match:'ఈ ఫిల్టర్లకు కార్డులు సరిపోలలేదు',
    none_hint:'ఒకటి రెండు ఫిల్టర్లను తీసివేసి చూడండి.',empty_cmp:'పోల్చడానికి కార్డులు లేవు',empty_hint:'ప్రారంభించడానికి ఏదైనా కార్డుపై “పోల్చండి” ఎంచుకోండి.',
-   filters:'ఫిల్టర్లు',type:'కార్డు రకం',retail:'రిటైల్',business:'బిజినెస్',secured:'సెక్యూర్డ్',cobrand:'కో-బ్రాండ్',fd_linked:'FD-లింక్డ్',home:'హోమ్',see_all:'అన్నీ చూసి ఫిల్టర్ చేయండి →',partnered:'భాగస్వామ్య బ్యాంకులు',elig_cta:'అర్హత తనిఖీ',rewards_band:'రివార్డులు & ప్రయోజనాలు',search_ph:'కార్డులు, బ్యాంకులు లేదా ప్రయోజనాలను శోధించండి…',browse_cat:'వర్గం వారీగా బ్రౌజ్ చేయండి'},
+   filters:'ఫిల్టర్లు',type:'కార్డు రకం',retail:'రిటైల్',business:'బిజినెస్',secured:'సెక్యూర్డ్',cobrand:'కో-బ్రాండ్',fd_linked:'FD-లింక్డ్',home:'హోమ్',see_all:'అన్నీ చూసి ఫిల్టర్ చేయండి →',partnered:'భాగస్వామ్య బ్యాంకులు',rewards_band:'రివార్డులు & ప్రయోజనాలు',search_ph:'కార్డులు, బ్యాంకులు లేదా ప్రయోజనాలను శోధించండి…',browse_cat:'వర్గం వారీగా బ్రౌజ్ చేయండి'},
 };
 export const LANGS = {en:['English','EN'],hi:['हिन्दी','HI'],ta:['தமிழ்','TA'],te:['తెలుగు','TE']};
 
@@ -192,6 +192,18 @@ function bankBig(bank,logoUrl){
 }
 // name → logo_url, derived from the loaded cards (for the names-only trust strip)
 function bankLogoMap(){const m={};CARDS.forEach(c=>{if(c.bankLogo)m[c.bank]=c.bankLogo;});return m;}
+
+// Flagship cards with sourced art (PREVIEW: served from /card-images/<slug>.png;
+// moves to a card_image_url column on Supabase once approved).
+const CARD_IMG=new Set(['hdfc-infinia-metal-edition','axis-magnus-credit-card','amex-american-express-platinum-card','icici-times-black-icici-bank-credit-card','axis-axis-bank-atlas-credit-card','icici-emirates-skywards-icici-bank-sapphiro-credit-card','sbi-psb-sbi-card-elite','hdfc-regalia-gold','hdfc-tata-neu-infinity-hdfc-bank','amex-american-express-gold-card','sbi-cashback-sbi-card','hdfc-swiggy-hdfc-bank-credit-card','icici-amazon-pay-icici-bank-credit-card','sbi-simplyclick-sbi-card']);
+function cardImgSrc(c){return CARD_IMG.has(c.slug)?`/card-images/${c.slug}.png`:'';}
+// Card-art banner; falls back to the bank logo centered on the white stage.
+function cardStage(c){
+  const img=cardImgSrc(c);
+  if(img)return `<div class="tcard"><img src="${img}" alt="${esc(c.name)}" loading="lazy"></div>`;
+  if(c.bankLogo)return `<div class="tcard tcard-fb"><img src="${esc(c.bankLogo)}" alt="${esc(c.bank)}" loading="lazy"></div>`;
+  return `<div class="tcard tcard-fb"><span class="tcard-i">${esc((c.bank||'')[0]||'')}</span></div>`;
+}
 function catsPresent(){ return CAT_ORDER.filter(k=>CARDS.some(c=>c.cat===k)); }
 function applyLink(c, cls){
   const url = c.apply_url ? esc(c.apply_url) : '#';
@@ -405,10 +417,21 @@ function homeCats(){
    ['secured',t('fd_linked'),c=>c.type==='secured'],
   ];
 }
+function trendingCats(){
+  return [
+   ['premium',  t('premium'),       '👑', c=>c.cat==='premium'||c.cat==='super_premium'],
+   ['rewards',  t('rewards'),        '🎁', c=>/reward|points|\bpts\b|\brp\b|miles/i.test(c.reward||'')],
+   ['cashback', t('cashback'),       '💰', c=>/cashback|cash back/i.test((c.reward||'')+' '+(c.badge||''))],
+   ['ltf',      t('lifetime_free'),  '💳', c=>c.fee===0],
+   ['lounge',   t('lounge_access'),  '✈️', c=>c.ben.includes('lounge')],
+   ['lowforex', t('low_forex'),      '🌐', c=>c.forex<3],
+  ];
+}
 function cardTile(c){
   const picked=S.compare.includes(c.id);
   return `<div class="tile ${picked?'picked':''}" data-card="${c.id}">
-    <div class="tile-top">${bankTile(c.bank,48,c.bankLogo)}${c.badge?`<span class="badge">★ ${esc(c.badge)}</span>`:''}</div>
+    ${cardStage(c)}
+    <div class="tile-top">${bankTile(c.bank,40,c.bankLogo)}${c.badge?`<span class="badge">★ ${esc(c.badge)}</span>`:''}</div>
     <div class="tname">${esc(c.name)}</div>
     <div class="tissuer">by ${esc(c.bank)} · ${esc(c.network)}</div>
     ${c.type==='secured'?`<span class="tag fd" style="align-self:flex-start">🔒 ${t('fd_linked')}</span>`:''}
@@ -431,14 +454,14 @@ function catLinks(){
 }
 export function homeView(){
   const active=S.homeCat||'all';
-  const cats0=homeCats();
-  const meta=cats0.find(x=>x[0]===active)||cats0[0];
-  const cats=cats0.filter(([id,lab,fn])=>id==='all'||CARDS.some(fn));
+  const TREND=trendingCats().filter(x=>CARDS.some(x[3]));
+  const meta=active==='all'?null:trendingCats().find(x=>x[0]===active);
   const q=(S.homeQ||'').trim().toLowerCase();
-  let list=CARDS.filter(meta[2]);
-  if(q)list=list.filter(c=>(c.name+' '+c.bank+' '+(c.reward||'')+' '+(c.badge||'')).toLowerCase().includes(q));
+  let list=meta?CARDS.filter(meta[3]):CARDS.slice();
+  if(q){const toks=q.split(/\s+/).filter(Boolean);
+    list=list.filter(c=>{const tx=(c.name+' '+c.bank+' '+(c.reward||'')+' '+(c.badge||'')+' '+(c.network||'')).toLowerCase();return toks.every(tk=>tx.includes(tk));});}
+  const headLabel=q?('"'+esc(S.homeQ)+'"'):(meta?meta[1]:t('trending_now'));
   const banks=BANKS.length?BANKS:[...new Set(CARDS.map(c=>c.bank))];
-  const stats=[[t('approval_odds'),'92%'],[t('preapproved'),'6'],[t('lowest_apr'),'10.5%']];
   const BABA_SVG = `<svg class="cg-mark" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Gyani Baba mascot cycling through rupee, flight and rewards">
   <defs><filter id="cgSoft" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0e0f0c" flood-opacity="0.20"/></filter></defs>
   <ellipse cx="120" cy="126" rx="92" ry="92" fill="rgba(159,232,112,.40)" opacity="0.5" style="filter:blur(26px)"/>
@@ -457,28 +480,40 @@ export function homeView(){
             <input id="homeSearch" type="text" placeholder="${t('search_ph')}" value="${esc(S.homeQ)}" oninput="setHomeQ(this.value,this.selectionStart)">
             ${S.homeQ?`<button class="sx" onclick="setHomeQ('')">✕</button>`:''}
           </div>
-          <div class="pills">${cats.map(([id,lab])=>`<a class="pill ${active===id?'active':''}" href="/cards" onclick="setHomeCat('${id}');return false">${lab}</a>`).join('')}</div>
         </div>
         <div class="baba-stage">${BABA_SVG}</div>
       </div>
     </section>
+    <section class="catwrap">
+      <div class="cats-head"><h2>${t('cats_h')}</h2></div>
+      <p class="cats-sub">${t('cats_sub')}</p>
+      <div class="catrow">${TREND.map(([id,lab,ic,fn])=>`<a class="catitem ${active===id?'active':''}" href="/cards" onclick="setHomeCat('${id}');return false"><div class="cat-card">${ic}</div><span class="cat-l">${lab}</span></a>`).join('')}</div>
+    </section>
     <section class="hgrid-wrap">
       <div class="hgrid-head">
-        <h2>${meta[1]} <span>· ${list.length}</span></h2>
+        <h2>${headLabel} <span>· ${list.length}</span></h2>
         <a class="seeall" href="/cards">${t('see_all')}</a>
       </div>
-      ${list.length?`<div class="grid">${list.map(cardTile).join('')}</div>`:`<div class="empty" style="max-width:520px;margin:0 auto"><b>${t('none_match')}</b>${t('none_hint')}</div>`}
+      ${list.length?`<div class="grid">${list.slice(0,6).map(cardTile).join('')}</div>`:`<div class="empty" style="max-width:520px;margin:0 auto"><b>${t('none_match')}</b>${t('none_hint')}</div>`}
     </section>
   </div>
-  <section class="trust"><span class="trust-l">${t('partnered')}</span>${(()=>{const lm=bankLogoMap();return banks.map(b=>bankTile(b,34,lm[b])).join('');})()}</section>
-  <section class="promo-wrap"><div class="promo">
-    <div class="promo-l">
-      <h2>${t('elig_h1')}</h2>
-      <p>${t('elig_sub')}</p>
-      <a class="elig" href="/cards">${t('elig_cta')}</a>
+  <section class="whyband" id="statband">
+    <div class="why-head">
+      <span class="kpill">${t('why_k')}</span>
+      <h2>${t('conf_a')} <em>${t('conf_b')}</em> ${t('conf_c')}</h2>
+      <p>${t('conf_sub')}</p>
     </div>
-    <div class="promo-r">${stats.map(([l,v])=>`<div class="stat"><span>${l}</span><b>${v}</b></div>`).join('')}</div>
-  </div></section>
+    <div class="statband-in">
+      <div class="statcard"><div class="statnum" data-target="${CARDS.length}" data-suffix="+">${CARDS.length}+</div><div class="statlbl">${t('stat_cards')}</div></div>
+      <div class="statcard"><div class="statnum" data-target="${banks.length}" data-suffix="+">${banks.length}+</div><div class="statlbl">${t('stat_banks')}</div></div>
+      <div class="statcard"><div class="statnum" data-target="4" data-suffix="">4</div><div class="statlbl">${t('stat_langs')}</div></div>
+      <div class="statcard"><div class="statnum" data-target="100" data-suffix="%">100%</div><div class="statlbl">${t('stat_verified')}</div></div>
+    </div>
+  </section>
+  <section class="marquee">
+    <div class="marquee-head"><span class="k">${t('marquee_k')}</span><h2>${t('marquee_h')}</h2></div>
+    <div class="marquee-mask"><div class="marquee-track">${banks.map(b=>bankTile(b,40)).join('')}${banks.map(b=>bankTile(b,40)).join('')}</div></div>
+  </section>
   <footer class="site-footer"><div class="sf-in">
     <div class="brand">${LOGO}Card <b>Gyani</b></div>
     <span>${t('footer_note')}</span>
