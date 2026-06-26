@@ -412,16 +412,28 @@ export function homeView(){
   if(q)list=list.filter(c=>(c.name+' '+c.bank+' '+(c.reward||'')+' '+(c.badge||'')).toLowerCase().includes(q));
   const banks=BANKS.length?BANKS:[...new Set(CARDS.map(c=>c.bank))];
   const stats=[[t('approval_odds'),'92%'],[t('preapproved'),'6'],[t('lowest_apr'),'10.5%']];
+  const BABA_SVG = `<svg class="cg-mark" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Gyani Baba mascot cycling through rupee, flight and rewards">
+  <defs><filter id="cgSoft" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0e0f0c" flood-opacity="0.20"/></filter></defs>
+  <ellipse cx="120" cy="126" rx="92" ry="92" fill="rgba(159,232,112,.40)" opacity="0.5" style="filter:blur(26px)"/>
+  <g class="cg-float">
+    <path id="cgMorph" fill="#9fe870" filter="url(#cgSoft)"/>
+    <g id="cgBabaDetail"><path d='M73.3 81.7 Q 120.0 96.7 166.7 81.7' fill='none' stroke='#0e0f0c' stroke-width='5.8' stroke-linecap='round'/><rect x='117.5' y='97.1' width='5.0' height='12.5' rx='2.5' fill='#0e0f0c'/><path d='M120.0 115.0 L 120.0 125.0' fill='none' stroke='#0e0f0c' stroke-width='4.2' stroke-linecap='round'/><path d='M103.3 111.7 Q 108.3 117.5 113.3 111.7' fill='none' stroke='#0e0f0c' stroke-width='4.2' stroke-linecap='round'/><path d='M126.7 111.7 Q 131.7 117.5 136.7 111.7' fill='none' stroke='#0e0f0c' stroke-width='4.2' stroke-linecap='round'/><path d='M105.0 131.7 Q 120.0 140.0 135.0 131.7' fill='none' stroke='#0e0f0c' stroke-width='4.2' stroke-linecap='round'/></g>
+  </g></svg>`;
   return header()+`<div class="home">
     <section class="hero">
-      <h1>${t('hero_h1')}</h1>
-      <p>${t('hero_sub').replace('{n}',CARDS.length)}</p>
-      <div class="searchpill">
-        <span class="si">🔍</span>
-        <input id="homeSearch" type="text" placeholder="${t('search_ph')}" value="${esc(S.homeQ)}" oninput="setHomeQ(this.value,this.selectionStart)">
-        ${S.homeQ?`<button class="sx" onclick="setHomeQ('')">✕</button>`:''}
+      <div class="hero-in">
+        <div class="hero-copy">
+          <h1>${t('hero_h1')}</h1>
+          <p>${t('hero_sub').replace('{n}',CARDS.length)}</p>
+          <div class="searchpill">
+            <span class="si">🔍</span>
+            <input id="homeSearch" type="text" placeholder="${t('search_ph')}" value="${esc(S.homeQ)}" oninput="setHomeQ(this.value,this.selectionStart)">
+            ${S.homeQ?`<button class="sx" onclick="setHomeQ('')">✕</button>`:''}
+          </div>
+          <div class="pills">${cats.map(([id,lab])=>`<a class="pill ${active===id?'active':''}" href="/cards" onclick="setHomeCat('${id}');return false">${lab}</a>`).join('')}</div>
+        </div>
+        <div class="baba-panel">${BABA_SVG}</div>
       </div>
-      <div class="pills">${cats.map(([id,lab])=>`<a class="pill ${active===id?'active':''}" href="/cards" onclick="setHomeCat('${id}');return false">${lab}</a>`).join('')}</div>
     </section>
     <section class="hgrid-wrap">
       <div class="hgrid-head">

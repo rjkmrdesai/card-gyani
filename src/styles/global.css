@@ -191,7 +191,14 @@ aside.filters{position:sticky;top:80px;background:var(--surface);border:1px soli
 
 /* ---------- Landing / home ---------- */
 .home{max-width:1160px;margin:0 auto;padding:0 20px 40px}
-.hero{text-align:center;padding:48px 0 8px}
+.hero{padding:48px 0 8px}
+.hero-in{display:flex;align-items:center;gap:48px;justify-content:center}
+.hero-copy{flex:1;min-width:0;max-width:600px;text-align:center}
+.baba-panel{flex:none;width:min(300px,44vw);background:radial-gradient(120% 120% at 50% 28%,#15190f 0%,#0a0c07 78%);border-radius:28px;padding:26px;display:flex;align-items:center;justify-content:center}
+.cg-mark{width:100%;height:auto;display:block;overflow:visible}
+.cg-float{animation:cgbob 6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes cgbob{0%,100%{transform:translateY(-4px)}50%{transform:translateY(4px)}}
+@media(prefers-reduced-motion:reduce){.cg-float{animation:none!important}}
 .hero h1{font-size:54px;line-height:1.04;letter-spacing:-.03em;margin:0 auto 16px;max-width:760px;font-weight:800}
 .hero p{font-size:19px;color:var(--ink-soft);margin:0 auto 26px;max-width:560px}
 .pills{display:flex;justify-content:center;flex-wrap:wrap;gap:10px}
@@ -260,6 +267,9 @@ aside.filters{position:sticky;top:80px;background:var(--surface);border:1px soli
   .cright{flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:flex-start;min-width:0;margin-top:12px}
   .specs{grid-template-columns:repeat(2,1fr)}
   .dhero .acts{margin-left:0;width:100%}
+  .hero-in{flex-direction:column}
+  .baba-panel{width:min(240px,62vw)}
+  .hero-copy{max-width:100%}
   .hero h1{font-size:38px}
   .hero p{font-size:17px}
   .grid{grid-template-columns:1fr}
