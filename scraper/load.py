@@ -1,16 +1,18 @@
 #!/usr/bin/env python3
 """Stage 7 — upsert out/cards.json into the Supabase `cards` table.
 
-Keyed on card_id (stored in the `slug`/`card_id` columns, both unique) so
-re-runs UPDATE instead of duplicating. Every value is sanitized first.
+Keyed on card_id (stored in slug/card_id, both unique) so re-runs UPDATE
+instead of duplicating. The anon key is read-only, and piping ~1.3 MB of INSERTs
+through the MCP is impractical, so the load happens SERVER-SIDE: Postgres fetches
+the committed cards.json from the GitHub raw URL via the `http` extension and
+upserts it in one statement. Orphan rows (in the DB but not in cards.json) are
+deleted so the scraper stays the source of truth.
 
-The anon key is read-only (RLS), so this script does NOT write directly: it
-computes the insert-vs-update split (reading existing slugs with the anon key)
-and EMITS an idempotent upsert to out/upsert.sql. The SQL is then applied with
-elevated access (Supabase MCP / service role).
+  python load.py            # report insert/update split + (re)write out/upsert.sql
+  python load.py --report   # just the report
 
-  python load.py            # dry-run: report counts + write out/upsert.sql
-  python load.py --report   # just print the insert/update split
+Apply the emitted out/upsert.sql with elevated access (Supabase MCP / service
+role). NOTE: it loads from GitHub `main`, so commit + push cards.json first.
 """
 from __future__ import annotations
 import argparse
@@ -19,59 +21,92 @@ import sys
 
 import requests
 
-from common import ROOT, sanitize
+from common import ROOT
 
 OUT_DIR = ROOT / "out"
 CARDS_JSON = OUT_DIR / "cards.json"
 SQL_PATH = OUT_DIR / "upsert.sql"
 
+RAW_URL = "https://raw.githubusercontent.com/rjkmrdesai/card-gyani/main/scraper/out/cards.json"
 SUPABASE_URL = "https://ugpubzjcrhwlwgkfxgup.supabase.co"
 ANON_KEY = ("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVn"
             "cHViempjcmh3bHdna2Z4Z3VwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODIyNjM5NDAsImV4cCI6"
             "MjA5NzgzOTk0MH0.Z1mFomaJtw4mMnwu60-TPtxJW7n9LaNm0iOImN4o0vI")
 
-# scraper field -> table column
-COLMAP = {
-    "bank": "bank_name", "name": "card_name", "network": "network",
-    "network_confidence": "network_confidence", "category": "category",
-    "type": "card_type", "annual_fee": "annual_fee", "joining_fee": "joining_fee",
-    "fee_waiver": "fee_waiver", "forex": "forex_markup_pct",
-    "finance_pm": "finance_charge_monthly_pct", "finance_pa": "finance_charge_annual_pct",
-    "cash_advance": "cash_advance_fee", "cash_interest": "cash_interest",
-    "late_fee": "late_payment_fee", "rewards": "reward_summary", "lounge": "lounge_access",
-    "welcome_benefit": "welcome_benefit", "features": "features", "badge": "badge",
-    "apply_url": "apply_url", "source_url": "source_url", "source_section": "source_section",
-    "mitc_last_checked": "mitc_last_checked", "data_status": "data_status",
-    "match_status": "match_status",
-}
+# JSON key -> table column (jsonb_to_recordset does the heavy lifting in SQL)
+COLS = [  # (json_key, recordset_type, table_column, select_expr)
+    ("card_id", "text", "card_id", "card_id"),
+    ("card_id", None, "slug", "card_id"),
+    ("bank", "text", "bank_name", "bank"),
+    ("name", "text", "card_name", "coalesce(name, card_id)"),   # card_name is NOT NULL
+    ("network", "text", "network", "network"),
+    ("network_confidence", "text", "network_confidence", "network_confidence"),
+    ("category", "text", "category", "category"),
+    ("type", "text", "card_type", "type"),
+    ("annual_fee", "numeric", "annual_fee", "annual_fee"),
+    ("joining_fee", "numeric", "joining_fee", "joining_fee"),
+    ("fee_waiver", "text", "fee_waiver", "fee_waiver"),
+    ("forex", "numeric", "forex_markup_pct", "forex"),
+    ("finance_pm", "numeric", "finance_charge_monthly_pct", "finance_pm"),
+    ("finance_pa", "numeric", "finance_charge_annual_pct", "finance_pa"),
+    ("cash_advance", "text", "cash_advance_fee", "cash_advance"),
+    ("cash_interest", "text", "cash_interest", "cash_interest"),
+    ("late_fee", "text", "late_payment_fee", "late_fee"),
+    ("rewards", "text", "reward_summary", "rewards"),
+    ("lounge", "text", "lounge_access", "lounge"),
+    ("welcome_benefit", "text", "welcome_benefit", "welcome_benefit"),
+    ("features", "jsonb", "features",
+     "case when features is null then null else array(select jsonb_array_elements_text(features)) end"),
+    ("badge", "text", "badge", "badge"),
+    ("apply_url", "text", "apply_url", "apply_url"),
+    ("source_url", "text", "source_url", "source_url"),
+    ("source_section", "text", "source_section", "source_section"),
+    ("match_status", "text", "match_status", "match_status"),
+    ("mitc_last_checked", "date", "mitc_last_checked", "mitc_last_checked"),
+    ("data_status", "text", "data_status", "data_status"),
+    (None, None, "is_lifetime_free", "(coalesce(annual_fee,0)=0 and coalesce(joining_fee,0)=0)"),
+    (None, None, "updated_at", "now()"),
+]
 
 
-def sql_lit(v) -> str:
-    if v is None or v == "":
-        return "NULL"
-    if isinstance(v, bool):
-        return "true" if v else "false"
-    if isinstance(v, (int, float)):
-        return repr(v)
-    if isinstance(v, list):
-        if not v:
-            return "NULL"
-        inner = ",".join("'" + sanitize(str(x)).replace("'", "''") + "'" for x in v)
-        return f"ARRAY[{inner}]::text[]"
-    return "'" + sanitize(str(v)).replace("'", "''") + "'"
+def recordset_def():
+    seen, parts = set(), []
+    for key, typ, _, _ in COLS:
+        if key and typ and key not in seen:
+            seen.add(key); parts.append(f"{key} {typ}")
+    return ", ".join(parts)
 
 
-def build_rows():
-    cards = json.loads(CARDS_JSON.read_text(encoding="utf-8"))
-    rows = []
-    for c in cards:
-        rec = {"card_id": c["card_id"], "slug": c["card_id"]}
-        for sk, col in COLMAP.items():
-            rec[col] = c.get(sk)
-        af, jf = c.get("annual_fee"), c.get("joining_fee")
-        rec["is_lifetime_free"] = (af in (0, None)) and (jf in (0, None))
-        rows.append(rec)
-    return rows
+def emit_sql(orphans):
+    table_cols = [c[2] for c in COLS]
+    select_exprs = [c[3] for c in COLS]
+    set_cols = [c for c in table_cols if c not in ("card_id", "slug")]
+    orphan_clause = ("'" + "','".join(orphans) + "'") if orphans else "''"
+    sql = f"""-- Stage 7 load (idempotent on slug/card_id). Generated by load.py.
+-- Loads cards.json from GitHub server-side, so commit + push it first.
+create extension if not exists http with schema extensions;
+with j as (
+  select (extensions.http_get('{RAW_URL}')).content::jsonb as data
+),
+src as (
+  select x.* from j, jsonb_to_recordset(j.data) as x({recordset_def()})
+),
+del as (
+  delete from public.cards where slug in ({orphan_clause}) returning 1
+),
+up as (
+  insert into public.cards ({', '.join(table_cols)})
+  select {', '.join(select_exprs)} from src
+  on conflict (slug) do update set
+    {', '.join(f'{c}=excluded.{c}' for c in set_cols)}
+  returning (xmax = 0) as inserted
+)
+select (select count(*) from del) as deleted_orphans,
+       count(*) filter (where inserted) as inserted,
+       count(*) filter (where not inserted) as updated
+from up;
+"""
+    SQL_PATH.write_text(sql, encoding="utf-8")
 
 
 def existing_slugs():
@@ -82,51 +117,29 @@ def existing_slugs():
     return {row["slug"] for row in r.json() if row.get("slug")}
 
 
-def emit_sql(rows) -> None:
-    cols = ["card_id", "slug"] + list(COLMAP.values()) + ["is_lifetime_free", "updated_at"]
-    set_cols = [c for c in cols if c not in ("card_id", "slug")]
-    lines = ["-- Stage 7 upsert (idempotent on slug/card_id). Generated by load.py.",
-             "begin;"]
-    for rec in rows:
-        vals = []
-        for c in cols:
-            vals.append("now()" if c == "updated_at" else sql_lit(rec.get(c)))
-        lines.append(
-            f"insert into public.cards ({', '.join(cols)}) values ({', '.join(vals)})\n"
-            f"  on conflict (slug) do update set "
-            + ", ".join(f"{c}=excluded.{c}" for c in set_cols) + ";")
-    lines.append("commit;")
-    SQL_PATH.write_text("\n".join(lines), encoding="utf-8")
-
-
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--report", action="store_true", help="only print counts")
+    ap.add_argument("--report", action="store_true")
     args = ap.parse_args()
 
-    rows = build_rows()
-    ids = [r["card_id"] for r in rows]
+    ids = {c["card_id"] for c in json.loads(CARDS_JSON.read_text(encoding="utf-8"))}
     try:
         existing = existing_slugs()
     except Exception as e:
-        print(f"(could not read existing slugs: {e}); reporting totals only")
-        existing = set()
-    updates = [i for i in ids if i in existing]
-    inserts = [i for i in ids if i not in existing]
-    orphans = sorted(existing - set(ids))
+        print(f"(could not read existing slugs: {e})"); existing = set()
+    updates = sorted(ids & existing)
+    inserts = ids - existing
+    orphans = sorted(existing - ids)
 
-    print(f"cards.json rows : {len(rows)}")
+    print(f"cards.json rows : {len(ids)}")
     print(f"existing in DB  : {len(existing)}")
-    print(f"-> UPDATE (match): {len(updates)}  {updates if len(updates)<=12 else ''}")
-    print(f"-> INSERT (new)  : {len(inserts)}")
-    if orphans:
-        print(f"\n!! {len(orphans)} existing rows NOT in cards.json (would remain as duplicates):")
-        for o in orphans:
-            print(f"     {o}")
+    print(f"-> UPDATE (slug match): {len(updates)}")
+    print(f"-> INSERT (new)       : {len(inserts)}")
+    print(f"-> DELETE (orphans)   : {len(orphans)} {orphans if orphans else ''}")
 
     if not args.report:
-        emit_sql(rows)
-        print(f"\nWrote {SQL_PATH}  (apply via Supabase MCP / service role to perform the upsert)")
+        emit_sql(orphans)
+        print(f"\nWrote {SQL_PATH} (apply via Supabase MCP / service role).")
     return 0
 
 
