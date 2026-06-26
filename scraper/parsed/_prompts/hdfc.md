@@ -28,7 +28,8 @@ GOAL — return ONE JSON object exactly like this (no prose, no markdown fence):
     "finance_pa_unsecured": <number or null>,   // % per annum
     "finance_pm_secured": <number or null>,     // % per month, secured/FD-linked cards (null if none)
     "finance_pa_secured": <number or null>,
-    "cash_advance": "<exact text, e.g. '2.5%, min Rs.500'>" | null,
+    "cash_advance": "<cash/ATM withdrawal FEE, exact text e.g. '2.5%, min Rs.500'>" | null,
+    "cash_interest": "<interest on cash advances / revolver interest / 'charges after credit-free period', exact text>" | null,
     "late_fee_tiers": "<exact tiered text or value>" | null,
     "interest_free_days": "<e.g. '20-50 days' / 'up to 50 days'>" | null,
     "source_section": "<where the bank-wide charges are stated>"
