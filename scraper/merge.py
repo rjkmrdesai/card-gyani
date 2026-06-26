@@ -39,6 +39,11 @@ _CAT_NORM = {"super-premium": "super_premium", "super_premium": "super_premium",
              "entry": "entry", "travel": "travel", "fuel": "fuel"}
 
 
+_FD_KEYWORDS = re.compile(
+    r"\b(against\s+fd|fd[\s-]backed|fixed\s+deposit|secured|nri\s+secured)\b", re.I
+)
+
+
 def normalize_badge(badge, raw_category, name, forex):
     """Map any free-text badge + card attributes → one pre-verified canonical tag (or None)."""
     bl = (badge or "").lower()
@@ -48,6 +53,8 @@ def normalize_badge(badge, raw_category, name, forex):
         return "invite only"
     if "metal" in bl or "metal" in nl:
         return "metal card"
+    if _FD_KEYWORDS.search(name or ""):
+        return "FD-linked"
     if cat == "super_premium":
         return "super-premium"
     if cat == "premium":
