@@ -6,3 +6,14 @@ HDFC,BizBlack Metal Card,finance_charge,1.99% pm / 23.88% pa
 HDFC,Micro Enterprise card,finance_charge,1.5% pm / 18.0% pa
 HDFC,Micro Enterprise card,cash_advance,Not applicable — cash withdrawal not allowed on this card
 HDFC,Paytm HDFC Bank Digital Credit Card,cash_advance,Not applicable — cash withdrawal not allowed on this card
+ICICI,Times Black ICICI Bank Credit Card,cash_advance,Nil — no cash advance fee
+ICICI,ICICI Bank Emeralde Private Metal Credit Card,cash_advance,Nil — no cash advance fee
+ICICI,ICICI Bank Emeralde Private Credit Card,cash_advance,Nil — no cash advance fee
+ICICI,ICICI Bank Emeralde Credit Card,cash_advance,Nil — no cash advance fee
+Kotak,Kotak Solitaire Credit Card,cash_advance,1% of the advance amount
+Kotak,Kotak Cashback+ Credit Card,cash_advance,Cash advance facility not available on this card
+Kotak,Kotak Cashback+ Prime Credit Card,cash_advance,Cash advance facility not available on this card
+Kotak,Kotak UPI RuPay Virtual Credit Card,cash_advance,Cash advance facility not available on this card
+Kotak,Dream Different,cash_advance,₹100 per instance
+Kotak,Kotak811 Super Money Credit Card,cash_advance,₹100 per instance
+IDFC FIRST,FIRST Digital RuPay Credit Card,cash_advance,Not applicable — cash advance not available on this card
