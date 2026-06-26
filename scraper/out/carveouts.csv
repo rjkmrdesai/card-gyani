@@ -1,0 +1,8 @@
+bank,card,clause,resolved_value
+HDFC,Infinia (Metal Edition),finance_charge,1.99% pm / 23.88% pa
+HDFC,Infinia (Metal Edition),cash_advance,No cash advance transaction fee (excluded from the 2.5% levy; finance charges still accrue
+HDFC,Diners Black Metal Edition,finance_charge,1.99% pm / 23.88% pa
+HDFC,BizBlack Metal Card,finance_charge,1.99% pm / 23.88% pa
+HDFC,Micro Enterprise card,finance_charge,1.5% pm / 18.0% pa
+HDFC,Micro Enterprise card,cash_advance,Not applicable — cash withdrawal not allowed on this card
+HDFC,Paytm HDFC Bank Digital Credit Card,cash_advance,Not applicable — cash withdrawal not allowed on this card

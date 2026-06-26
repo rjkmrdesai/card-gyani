@@ -159,6 +159,13 @@ aside.filters{position:sticky;top:80px;background:var(--surface);border:1px soli
 .fee-table tr:nth-child(odd) td{background:var(--bg)}
 .fee-table td:first-child{color:var(--muted)}
 .fee-table td:last-child{font-weight:600;text-align:right}
+/* compact stacked tiers for the narrow compare-grid cell */
+.tiers{display:flex;flex-direction:column;gap:3px}
+.tier-hdr{font-size:11.5px;color:var(--muted);margin-bottom:3px}
+.tier{display:flex;justify-content:space-between;gap:10px;font-size:13px;line-height:1.3;padding:2px 0;border-bottom:1px solid var(--line)}
+.tier:last-child{border-bottom:0}
+.tier .tr{color:var(--muted)}
+.tier .tf{font-weight:600;white-space:nowrap}
 .flist{margin:0;padding-left:18px}
 .flist li{padding:5px 0;font-size:14.5px}
 .addrow{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}

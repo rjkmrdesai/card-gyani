@@ -124,23 +124,25 @@ export const bySlug = slug => CARDS.find(c=>c.slug===slug);
 function activeCount(){return [...Object.values(S.f)].reduce((a,s)=>a+s.size,0);}
 
 /* ---------- tiered fee formatter ---------- */
-function lateFeeTable(text){
+// Parse a semicolon-delimited tiered fee string into structured data:
+//   { header, tiers: [{range, val}] }  — or null if it isn't actually tiered.
+// One shared parser feeds both the detail-view table and the compact compare cell.
+function parseTiers(text){
   if(!text || typeof text !== 'string') return null;
   const parts = text.split(';').map(s=>s.trim()).filter(Boolean);
   if(parts.length < 3) return null;
-  // Require at least 3 segments after the first to confirm tiered structure
+  // Require at least 2 of the remaining segments to look like "range: value"
   if(parts.slice(1).filter(p=>p.includes(':')).length < 2) return null;
 
-  // First part may contain an embedded header + first tier range
-  // Pattern: "Header text: range: value" (two colons in first part)
-  let headerText = '';
-  let tiers = [];
+  let header = '';
+  const tiers = [];
   const first = parts[0];
+  // First segment may carry an embedded header: "Header: range: value" (2+ colons)
   const colonIdxs = [...first.matchAll(/:/g)].map(m=>m.index);
   if(colonIdxs.length >= 2){
     const hEnd = colonIdxs[colonIdxs.length - 2];
     const vStart = colonIdxs[colonIdxs.length - 1];
-    headerText = first.slice(0, hEnd).trim();
+    header = first.slice(0, hEnd).trim();
     tiers.push({range: first.slice(hEnd+1, vStart).trim(), val: first.slice(vStart+1).trim()});
   } else if(colonIdxs.length === 1){
     tiers.push({range: first.slice(0, colonIdxs[0]).trim(), val: first.slice(colonIdxs[0]+1).trim()});
@@ -151,13 +153,28 @@ function lateFeeTable(text){
     const ci = p.indexOf(':');
     tiers.push(ci >= 0 ? {range: p.slice(0,ci).trim(), val: p.slice(ci+1).trim()} : {range: p, val: ''});
   }
+  return {header, tiers};
+}
 
-  const rows = tiers.map(({range, val})=>
+// Full bordered table — used in the single-card detail view.
+function lateFeeTable(text){
+  const parsed = parseTiers(text);
+  if(!parsed) return null;
+  const rows = parsed.tiers.map(({range, val})=>
     `<tr><td>${esc(range)}</td><td>${esc(val)}</td></tr>`).join('');
-  const header = headerText
-    ? `<p class="fee-hdr">${esc(headerText)}</p>`
-    : '';
+  const header = parsed.header ? `<p class="fee-hdr">${esc(parsed.header)}</p>` : '';
   return `${header}<table class="fee-table"><tbody>${rows}</tbody></table>`;
+}
+
+// Compact stacked tiers — used inside the narrow compare-grid cell.
+// Renders one "range → ₹fee" line per tier instead of a run-on paragraph.
+function lateFeeMini(text){
+  const parsed = parseTiers(text);
+  if(!parsed) return null;
+  const rows = parsed.tiers.map(({range, val})=>
+    `<div class="tier"><span class="tr">${esc(range)}</span><span class="tf">${esc(val||'—')}</span></div>`).join('');
+  const header = parsed.header ? `<div class="tier-hdr">${esc(parsed.header)}</div>` : '';
+  return `<div class="tiers">${header}${rows}</div>`;
 }
 
 function bankTile(bank,size){
@@ -333,8 +350,8 @@ export function compareView(){
     [t('fee_waiver'),c=>c.waiver?`${t('waived_at')} ${lakh(c.waiver)}`:t('no_fee_waiver')],
     [t('forex_markup'),c=>`<span class="num">${c.forex}%</span>`],
     [t('finance_charge'),c=>`<span class="num">${c.finM}% ${t('pm')}</span> <span style="color:var(--muted)">(${c.finA}% ${t('pa')})</span>`],
-    [t('cash_advance'),c=>esc(c.cash)],
-    [t('late_payment'),c=>esc(c.late)],
+    [t('cash_advance'),c=>lateFeeMini(c.cash)||esc(c.cash)],
+    [t('late_payment'),c=>lateFeeMini(c.late)||esc(c.late)],
   ];
   const rewRows=[
     [t('rewards'),c=>esc(c.reward)],

@@ -8,7 +8,7 @@ src as (
   select x.* from j, jsonb_to_recordset(j.data) as x(card_id text, bank text, name text, network text, network_confidence text, category text, type text, annual_fee numeric, joining_fee numeric, fee_waiver text, forex numeric, finance_pm numeric, finance_pa numeric, cash_advance text, cash_interest text, late_fee text, rewards text, lounge text, welcome_benefit text, features jsonb, badge text, apply_url text, source_url text, source_section text, match_status text, mitc_last_checked date, data_status text)
 ),
 del as (
-  delete from public.cards where slug in ('') returning 1
+  delete from public.cards where slug in ('hdfc-diners-black','hdfc-infinia') returning 1
 ),
 up as (
   insert into public.cards (card_id, slug, bank_name, card_name, network, network_confidence, category, card_type, annual_fee, joining_fee, fee_waiver, forex_markup_pct, finance_charge_monthly_pct, finance_charge_annual_pct, cash_advance_fee, cash_interest, late_payment_fee, reward_summary, lounge_access, welcome_benefit, features, badge, apply_url, source_url, source_section, match_status, mitc_last_checked, data_status, is_lifetime_free, updated_at)

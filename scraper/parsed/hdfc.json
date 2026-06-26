@@ -11,32 +11,18 @@
       "source_section": "Fee table p.2, Infinia (Metal Edition) row"
     },
     {
-      "name": "Infinia",
+      "name": "Diners Black Metal Edition",
       "annual_fee": 10000,
       "renewal_fee": 10000,
       "fee_waiver": "₹8 Lakh / Annum",
-      "source_section": "Fee table p.2, Infinia row"
-    },
-    {
-      "name": "Diners Black Metal Edition",
-      "annual_fee": null,
-      "renewal_fee": null,
-      "fee_waiver": "₹8 Lakh / Annum",
-      "source_section": "Fee table p.2, Diners Black Metal Edition row"
-    },
-    {
-      "name": "Diners Black",
-      "annual_fee": null,
-      "renewal_fee": null,
-      "fee_waiver": "₹5 Lakh / Annum",
-      "source_section": "Fee table p.2, Diners Black row"
+      "source_section": "Fee table p.2 prints only the ₹8 Lakh/Annum waiver — joining/renewal fee cell blank in MITC; ₹10,000 + GST from HDFC product fees-and-charges page (needs_review)"
     },
     {
       "name": "BizBlack Metal Card",
-      "annual_fee": null,
-      "renewal_fee": null,
+      "annual_fee": 10000,
+      "renewal_fee": 10000,
       "fee_waiver": "₹7.5 Lakh / Annum",
-      "source_section": "Fee table p.2, BizBlack Metal Card row"
+      "source_section": "Fee table p.2 prints only the ₹7.5 Lakh/Annum waiver — joining/renewal fee cell blank in MITC; ₹10,000 + GST from HDFC business-card fees-and-charges page (needs_review)"
     },
     {
       "name": "Regalia Gold",
@@ -449,13 +435,16 @@
     "forex": null,
     "forex_exceptions": {
       "Infinia (Metal Edition)": 2,
+      "Infinia": 2,
+      "Diners Black Metal Edition": 2,
+      "Diners Black": 2,
+      "BizBlack Metal Card": 2,
       "6E Rewards Indigo XL": 2.5,
       "Regalia First, Business Regalia First": 3.5,
       "PhonePe HDFC Bank Ultimo Credit Card": 3.5,
       "PhonePe HDFC Bank Uno Credit Card": 3.5,
       "PIXEL Go": 3.5,
       "PIXEL Play": 3.5,
-      "Infinia": 2,
       "Diners Club Miles": 3.5,
       "TimesTitanium / Times Card Credit": 3.5
     },
@@ -463,10 +452,25 @@
     "finance_pa_unsecured": 45.0,
     "finance_pm_secured": 3.75,
     "finance_pa_secured": 45.0,
-    "cash_advance": "Transaction fee of 2.5% (Excluding Infinia, Infinia Metal Edition) or ₹500 whichever is higher (Not Applicable for Paytm HDFC Bank Digital Credit Card and Micro Enterprise Card as cash withdrawal is not allowed)",
+    "finance_exceptions": {
+      "Infinia": { "pm": 1.99, "pa": 23.88 },
+      "Infinia (Metal Edition)": { "pm": 1.99, "pa": 23.88 },
+      "Diners Black Metal Edition": { "pm": 1.99, "pa": 23.88 },
+      "Diners Black": { "pm": 1.99, "pa": 23.88 },
+      "BizBlack Metal Card": { "pm": 1.99, "pa": 23.88 },
+      "Micro Enterprise card": { "pm": 1.5, "pa": 18.0 }
+    },
+    "cash_advance": "2.5% of the amount withdrawn or ₹500, whichever is higher",
+    "cash_advance_raw": "A transaction fee of 2.5% (Excluding Infinia, Infinia Metal Edition) or ₹500 whichever is higher would be levied on the amount withdrawn (Not Applicable for Paytm HDFC Bank Digital Credit Card as cash withdrawal is not allowed) (Not Applicable for Micro Enterprise Card as cash withdrawal is not allowed)",
+    "cash_advance_exceptions": {
+      "Infinia": "No cash advance transaction fee (excluded from the 2.5% levy; finance charges still accrue from withdrawal date)",
+      "Infinia (Metal Edition)": "No cash advance transaction fee (excluded from the 2.5% levy; finance charges still accrue from withdrawal date)",
+      "Paytm HDFC Bank Digital Credit Card": "Not applicable — cash withdrawal not allowed on this card",
+      "Micro Enterprise card": "Not applicable — cash withdrawal not allowed on this card"
+    },
     "cash_interest": "All cash advances also carry a finance charge equal to charges on revolving credit (Refer schedule of charges) from the date of withdrawal until the date of full payment. Finance charges on cash advances are applicable from the date of transaction until the payment is made in full.",
     "late_fee_tiers": "<=₹100: Nil; ₹101 to ₹500: ₹100; ₹501 to ₹1,000: ₹500; ₹1,001 to ₹5,000: ₹600; ₹5,001 to ₹10,000: ₹750; ₹10,001 to ₹25,000: ₹900; ₹25,001 to ₹50,000: ₹1100; More than ₹50,000: ₹1300 (excl. GST, w.e.f 1st Oct 2025)",
     "interest_free_days": "The interest free credit period could range from 20 to 50 days (up to 50 days)",
-    "source_section": "Section: Fees and Charges - Cash advance fee (p.7), Finance charges for both revolving credit and cash advances (p.10), Interest free (grace Period) (p.10), Late Payment Charges table (p.13/p.38). Finance-charge variant table: Infinia, Infinia (Metal Edition), Diners Black Metal Edition, Diners Black, BizBlack Metal Card = 1.99% pm / 23.88% pa; All other variants = 3.75% pm / 45.0% pa; Micro Enterprise Card = 1.5% pm / 18% pa; FD-linked cards carry same rate as respective variant | forex for Infinia (2%), Diners Club Miles (3.5%), TimesTitanium (3.5%) restored from prior MITC parse — the 24-Jun-26 MITC left these cells blank."
+    "source_section": "Fees & Charges — Cash advance fee (p.7), Finance charges for revolving credit & cash advances (p.10), Late Payment Charges table (p.13/p.38). Finance-charge variant table (p.10): Infinia, Infinia (Metal Edition), Diners Black Metal Edition, Diners Black, BizBlack Metal Card = 1.99%pm/23.88%pa; Micro Enterprise Card = 1.5%pm/18%pa; all other variants = 3.75%pm/45.0%pa; FD-linked cards carry the same revolving rate as the respective variant. Cash advance 2.5%/₹500 excludes Infinia & Infinia (Metal Edition) per p.7 clause, and is N/A for Paytm Digital & Micro Enterprise. Forex 2% for Infinia/Infinia Metal/Diners Black Metal/Diners Black/BizBlack Metal (HDFC product fees pages; MITC fee table left these cells blank)."
   }
 }

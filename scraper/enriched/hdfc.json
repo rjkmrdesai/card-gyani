@@ -7,23 +7,10 @@
     {
       "name": "Infinia (Metal Edition)",
       "match_status": "matched",
-      "network": "Diners Club",
+      "network": "Visa",
       "category": "super_premium",
       "rewards": "5 Reward Points per Rs.150 spent; up to 10X via SmartBuy; flight/hotel redemption up to maximum booking value via Reward Points",
       "lounge": "Unlimited complimentary domestic airport lounge access in India; unlimited international airport lounge access outside India via Priority Pass (1,000+ lounges worldwide) for primary and add-on cardholders",
-      "welcome_benefit": "12,500 Reward Points on fee realisation and card activation",
-      "badge": "By Invite Only",
-      "apply_url": "https://www.hdfc.bank.in/credit-cards/infinia-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/credit-cards/infinia-credit-card",
-      "network_confidence": "high"
-    },
-    {
-      "name": "Infinia",
-      "match_status": "matched",
-      "network": "Diners Club",
-      "category": "super_premium",
-      "rewards": "5 Reward Points per Rs.150 spent; up to 10X via SmartBuy; flight/hotel redemption via Reward Points",
-      "lounge": "Unlimited complimentary domestic and international airport lounge access via Priority Pass for primary and add-on cardholders",
       "welcome_benefit": "12,500 Reward Points on fee realisation and card activation",
       "badge": "By Invite Only",
       "apply_url": "https://www.hdfc.bank.in/credit-cards/infinia-credit-card",
@@ -41,19 +28,6 @@
       "badge": "If the world is where you belong, Welcome to the Club",
       "apply_url": "https://www.hdfc.bank.in/credit-cards/diners-club-black-metal-edition-credit-card",
       "enrich_source": "https://www.hdfc.bank.in/credit-cards/diners-club-black-metal-edition-credit-card",
-      "network_confidence": "high"
-    },
-    {
-      "name": "Diners Black",
-      "match_status": "low_confidence",
-      "network": "Diners Club",
-      "category": "super_premium",
-      "rewards": null,
-      "lounge": null,
-      "welcome_benefit": null,
-      "badge": null,
-      "apply_url": "https://www.hdfc.bank.in/credit-cards/diners-club-black-credit-card",
-      "enrich_source": "https://www.hdfc.bank.in/credit-cards/diners-club-black-credit-card",
       "network_confidence": "high"
     },
     {

@@ -31,6 +31,10 @@ OUT_DIR = ROOT / "out"
 TODAY = datetime.date.today().isoformat()
 BIZ = re.compile(r"\b(business|biz|corporate|vyapaar|merchant|commercial|udyam|gst|empower)\b", re.I)
 
+# Every per-card carve-out applied during merge — written to out/carveouts.csv
+# so a human can see which shared clauses were resolved to card-specific values.
+CARVEOUTS: list[tuple] = []
+
 # Canonical badge tags — the ONLY values that may appear in the badge column.
 # One tag per card; pick the highest-priority match. All LLM-generated free text
 # is discarded so the site never shows marketing copy as a "feature badge".
@@ -105,20 +109,89 @@ def card_type(bank_id: str, name: str) -> str:
     return "retail"
 
 
+# ── Per-card carve-out parsing ──────────────────────────────────────────────
+# MITCs state most charges once for the whole portfolio, then carve out named
+# cards: "Transaction fee of 2.5% (Excluding Infinia, Infinia Metal Edition)…"
+# or "(Not Applicable for Micro Enterprise Card as cash withdrawal is not
+# allowed)". Pasting that bank-wide string onto every card is the bug we fix:
+# a card named in an exclusion must NOT inherit the generic value.
+_EXCL_RE = re.compile(r"\((?:excluding|not\s+applicable\s+for|except(?:\s+for)?|other\s+than)\s+([^)]+)\)", re.I)
+# a card-name segment ends where the explanatory clause ("as cash withdrawal…") begins
+_EXCL_TAIL_RE = re.compile(r"\b(as|where|since|because|due to)\b.*$", re.I)
+
+
+def parse_exclusions(clause: str) -> list[str]:
+    """Pull the card names named inside (Excluding …) / (Not Applicable for …)."""
+    if not clause:
+        return []
+    out = []
+    for m in _EXCL_RE.finditer(clause):
+        seg = _EXCL_TAIL_RE.sub("", m.group(1))
+        for part in re.split(r",|/|\band\b|&", seg):
+            p = part.strip(" .\t")
+            if len(p) >= 3:
+                out.append(p)
+    return out
+
+
+def strip_parentheticals(clause: str) -> str:
+    """Drop the (Excluding …)/(Not Applicable …) asides so the base reads clean."""
+    if not clause:
+        return clause
+    return re.sub(r"\s*" + _EXCL_RE.pattern, "", clause, flags=re.I).strip(" .,") or clause
+
+
+def _key_variants(key: str) -> list[str]:
+    """A (possibly grouped) exception key → its normalized name variants."""
+    return [norm(p) for p in re.split(r",|/", key or "") if norm(p)]
+
+
+def name_matches_key(name: str, key: str) -> bool:
+    """Exact (normalized) match of a card name against one variant of an
+    exception/exclusion key. Exact — so 'Infinia' never matches 'Infinia Metal
+    Edition' (norm() strips the parentheses, so both reduce cleanly)."""
+    nn = norm(name)
+    return bool(nn) and any(v == nn for v in _key_variants(key))
+
+
 def finance_for(bd: dict, ctype: str):
     if ctype == "secured" and bd.get("finance_pm_secured") is not None:
         return bd.get("finance_pm_secured"), bd.get("finance_pa_secured")
     return bd.get("finance_pm_unsecured"), bd.get("finance_pa_unsecured")
 
 
+def finance_for_card(bd: dict, name: str, ctype: str):
+    """(pm, pa, is_exception) — the finance-charge variant table wins over the
+    bank default when the MITC names this card (e.g. HDFC super-premium = 1.99%)."""
+    for k, v in (bd.get("finance_exceptions") or {}).items():
+        if name_matches_key(name, k):
+            return v.get("pm"), v.get("pa"), True
+    pm, pa = finance_for(bd, ctype)
+    return pm, pa, False
+
+
+def cash_advance_for(bd: dict, name: str):
+    """(resolved_text, is_exception) — a card named in an exclusion gets its real
+    value, never the generic 2.5% string."""
+    for k, v in (bd.get("cash_advance_exceptions") or {}).items():
+        if name_matches_key(name, k):
+            return v, True
+    base = bd.get("cash_advance")
+    raw = bd.get("cash_advance_raw") or base or ""
+    if base is None:
+        base = strip_parentheticals(raw) or None
+    for e in parse_exclusions(raw):
+        if name_matches_key(name, e):
+            # excluded by the MITC but no explicit per-card figure supplied
+            return "Excluded from the standard cash advance fee — see card-specific terms", True
+    return base, False
+
+
 def forex_for(bd: dict, name: str):
     """bank default forex, overridden by a per-card exception if the MITC named one."""
-    exc = bd.get("forex_exceptions") or {}
-    if exc:
-        want = norm(name)
-        for k, v in exc.items():
-            if norm(k) == want:
-                return v
+    for k, v in (bd.get("forex_exceptions") or {}).items():
+        if name_matches_key(name, k):
+            return v
     return bd.get("forex")
 
 
@@ -160,15 +233,24 @@ def merge_bank(bid: str, display_bank: str, parsed: dict, enriched: dict, seen: 
         enr = enr or {}
 
         ctype = card_type(bid, name)
-        # per-card charge overrides (pc.*) win over bank_defaults
+        # per-card overrides (pc.*) win; bank_defaults are then resolved PER CARD
+        # so a card named in a carve-out never inherits the generic clause.
         pm = pc.get("finance_pm")
         pa = pc.get("finance_pa")
+        fin_exc = False
         if pm is None and pa is None:
-            pm, pa = finance_for(bd, ctype)
+            pm, pa, fin_exc = finance_for_card(bd, name, ctype)
         forex = pc.get("forex") if pc.get("forex") is not None else forex_for(bd, name)
-        cash_adv = pc.get("cash_advance") or bd.get("cash_advance")
+        if pc.get("cash_advance"):
+            cash_adv, cash_exc = pc["cash_advance"], False
+        else:
+            cash_adv, cash_exc = cash_advance_for(bd, name)
         cash_int = pc.get("cash_interest") or bd.get("cash_interest")
         late = pc.get("late_fee") or bd.get("late_fee_tiers")
+        if fin_exc:
+            CARVEOUTS.append((display_bank, name, "finance_charge", f"{pm}% pm / {pa}% pa"))
+        if cash_exc:
+            CARVEOUTS.append((display_bank, name, "cash_advance", (cash_adv or "")[:90]))
 
         # stable card_id (dedupe key)
         base = f"{bid}-{kebab(name)}" if name else f"{bid}-unnamed-{orig_idx+1}"
@@ -250,6 +332,10 @@ def main() -> int:
     # write outputs
     write_json(OUT_DIR / "cards.json", all_rows)
     write_json(OUT_DIR / "bank_defaults.json", defaults)
+    with (OUT_DIR / "carveouts.csv").open("w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(["bank", "card", "clause", "resolved_value"])
+        w.writerows(CARVEOUTS)
     with (OUT_DIR / "review.csv").open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=REVIEW_COLS, extrasaction="ignore")
         w.writeheader()
@@ -259,6 +345,10 @@ def main() -> int:
     matched = sum(1 for r in all_rows if r["match_status"] == "matched")
     print("-" * 26)
     print(f"{'TOTAL':<10} {len(all_rows):>5} {matched:>7}")
+    print(f"\nPer-card carve-outs applied: {len(CARVEOUTS)} "
+          f"(finance: {sum(1 for c in CARVEOUTS if c[2]=='finance_charge')}, "
+          f"cash_advance: {sum(1 for c in CARVEOUTS if c[2]=='cash_advance')}) "
+          f"→ {OUT_DIR/'carveouts.csv'}")
     print(f"\nAll rows data_status='needs_review'. Wrote:")
     print(f"  {OUT_DIR/'cards.json'}  ({len(all_rows)} rows)")
     print(f"  {OUT_DIR/'review.csv'}")
