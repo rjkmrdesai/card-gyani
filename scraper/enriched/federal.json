@@ -1,0 +1,56 @@
+{
+  "id": "federal",
+  "bank": "Federal Bank",
+  "product_listing_url": "https://www.federal.bank.in/credit-cards",
+  "listing_url_status": "replaced",
+  "cards": [
+    {
+      "name": "Signet",
+      "match_status": "matched",
+      "network": "Visa",
+      "category": "entry",
+      "rewards": "3-2-1 structure: 3x rewards on Electronics & Apparel, 2x on Entertainment, 1x on other categories",
+      "lounge": "Complimentary domestic lounge access – spend INR 20,000+ in a quarter to get 1 domestic lounge visit the next quarter",
+      "welcome_benefit": "Amazon Pay e-Voucher worth ₹200 on minimum spend of ₹3,000 in first 30 days",
+      "badge": "Lifetime free card for young spenders",
+      "apply_url": "https://creditcards.federalbank.co.in",
+      "enrich_source": "https://www.federal.bank.in/visa-signet-credit-card"
+    },
+    {
+      "name": "Imperio",
+      "match_status": "matched",
+      "network": "Visa",
+      "category": "mid_tier",
+      "rewards": "3-2-1 structure: 3x rewards on Health Care & Grocery, 2x on Utility (bill payments), 1x on other categories",
+      "lounge": "Complimentary domestic lounge access – spend ₹40,000+ in a quarter to get 2 domestic lounge visits the next quarter",
+      "welcome_benefit": "Amazon Pay e-Voucher worth ₹400 on minimum spend of ₹5,000 in first 30 days",
+      "badge": "Lifetime free family lifestyle card",
+      "apply_url": "https://creditcards.federalbank.co.in",
+      "enrich_source": "https://www.federal.bank.in/visa-imperio-credit-card"
+    },
+    {
+      "name": "Celesta",
+      "match_status": "matched",
+      "network": "Visa",
+      "category": "premium",
+      "rewards": "3-2-1 structure: 3x rewards on Travel & International, 2x on Dining, 1x on other categories",
+      "lounge": "Complimentary international lounge access (2 visits annually, no spend requirement); domestic lounge access requires ₹60,000+ quarterly spend for 2 visits the next quarter",
+      "welcome_benefit": "Amazon Pay e-Voucher worth ₹600 on minimum spend of ₹10,000 in first 30 days",
+      "badge": "Premium travel & lifestyle card with 1% fuel surcharge waiver",
+      "apply_url": "https://creditcards.federalbank.co.in",
+      "enrich_source": "https://www.federal.bank.in/visa-celesta-credit-card"
+    },
+    {
+      "name": "Wave Card",
+      "match_status": "matched",
+      "network": "RuPay",
+      "category": "entry",
+      "rewards": "10% cashback on first 5 UPI transactions in first 30 days (capped at ₹200); 1 reward point per ₹200 spent; 1000 bonus reward points on ₹50,000 quarterly spend",
+      "lounge": null,
+      "welcome_benefit": "10% cashback on first 5 UPI transactions within first 30 days (capped at ₹200)",
+      "badge": "RuPay UPI floater card linked to primary card",
+      "apply_url": "https://creditcards.federalbank.co.in",
+      "enrich_source": "https://www.federal.bank.in/rupay-wave-credit-card"
+    }
+  ]
+}

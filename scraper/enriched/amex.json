@@ -1,0 +1,32 @@
+{
+  "id": "amex",
+  "bank": "American Express",
+  "product_listing_url": "https://www.americanexpress.com/in/credit-cards/all-cards/",
+  "listing_url_status": "replaced",
+  "cards": [
+    {
+      "name": "American Express® Platinum Card",
+      "match_status": "matched",
+      "network": "American Express",
+      "category": "super_premium",
+      "rewards": "1 Membership Rewards point for every INR 40 spent; 3X Membership Rewards points on all overseas spending",
+      "lounge": "Access to 1,550+ airport lounges across 500+ airports worldwide via the Global Lounge Collection, including The Centurion Lounge, Priority Pass lounges, Delta Sky Club lounges and domestic partner lounges in India",
+      "welcome_benefit": "Welcome gift worth up to INR 60,000 with option to choose from Taj Hotels, Luxe Gift Card, or The Postcard Hotels & Resorts",
+      "badge": "Global Lounge Collection",
+      "apply_url": "https://www.americanexpress.com/en-in/charge-cards/apply/personal/platinum",
+      "enrich_source": "https://www.americanexpress.com/in/charge-cards/platinum-card/"
+    },
+    {
+      "name": "American Express® Gold Card",
+      "match_status": "matched",
+      "network": "American Express",
+      "category": "mid_tier",
+      "rewards": "1 Membership Rewards Point for every INR 50 spent (including utilities); 1,000 bonus points on 6 transactions of INR 1,000 each every calendar month",
+      "lounge": null,
+      "welcome_benefit": "4,000 Bonus Membership Rewards Points as a welcome gift (first year, on fee payment and qualifying spend)",
+      "badge": "Up to 20% off dining at select restaurant partners",
+      "apply_url": "https://www.americanexpress.com/in/charge-cards/gold-card/",
+      "enrich_source": "https://www.americanexpress.com/in/charge-cards/gold-card/"
+    }
+  ]
+}

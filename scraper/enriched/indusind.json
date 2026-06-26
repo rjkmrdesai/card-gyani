@@ -1,0 +1,140 @@
+{
+  "id": "indusind",
+  "bank": "IndusInd",
+  "product_listing_url": "https://www.indusind.bank.in/in/en/personal/cards/credit-card.html",
+  "listing_url_status": "replaced",
+  "cards": [
+    {
+      "name": "Chelsea FC",
+      "match_status": "unmatched",
+      "network": null,
+      "category": null,
+      "rewards": null,
+      "lounge": null,
+      "welcome_benefit": null,
+      "badge": null,
+      "apply_url": null,
+      "enrich_source": null
+    },
+    {
+      "name": "Platinum Aura",
+      "match_status": "matched",
+      "network": "Visa/Mastercard",
+      "category": "entry",
+      "rewards": null,
+      "lounge": null,
+      "welcome_benefit": null,
+      "badge": "Lifetime-free lifestyle card (discontinued for new sourcing; reference page for existing cardholders)",
+      "apply_url": "https://www.indusind.bank.in/in/en/personal/cards/credit-card/platinum-aura-visa-and-mastercard-credit-card.html",
+      "enrich_source": "https://www.indusind.bank.in/in/en/personal/cards/credit-card/platinum-aura-visa-and-mastercard-credit-card.html"
+    },
+    {
+      "name": "Platinum Select",
+      "match_status": "matched",
+      "network": null,
+      "category": "mid_tier",
+      "rewards": null,
+      "lounge": null,
+      "welcome_benefit": null,
+      "badge": null,
+      "apply_url": "https://www.indusind.bank.in/in/en/personal/cards/credit-card/platinum-select-credit-card.html",
+      "enrich_source": "https://www.indusind.bank.in/in/en/personal/cards/credit-card/platinum-select-credit-card.html"
+    },
+    {
+      "name": "Platinum",
+      "match_status": "matched",
+      "network": "Visa",
+      "category": "entry",
+      "rewards": null,
+      "lounge": null,
+      "welcome_benefit": null,
+      "badge": "Lifetime-free Visa credit card",
+      "apply_url": "https://www.indusind.bank.in/in/en/personal/cards/credit-card/platinum-visa-credit-card.html",
+      "enrich_source": "https://www.indusind.bank.in/in/en/personal/cards/credit-card.html"
+    },
+    {
+      "name": "Iconia",
+      "match_status": "matched",
+      "network": "Visa",
+      "category": "premium",
+      "rewards": "1 Reward Point on weekends & 0.75 on weekdays per INR 100 spent (Visa variant)",
+      "lounge": null,
+      "welcome_benefit": null,
+      "badge": "Luxury lifestyle card with golf, lifestyle & travel privileges (discontinued for new sourcing; reference page for existing cardholders)",
+      "apply_url": "https://www.indusind.bank.in/in/en/personal/cards/credit-card/iconia-visa-credit-card.html",
+      "enrich_source": "https://www.indusind.bank.in/in/en/personal/cards/credit-card/iconia-visa-credit-card.html"
+    },
+    {
+      "name": "Signature",
+      "match_status": "unmatched",
+      "network": null,
+      "category": null,
+      "rewards": null,
+      "lounge": null,
+      "welcome_benefit": null,
+      "badge": null,
+      "apply_url": null,
+      "enrich_source": null
+    },
+    {
+      "name": "Pinnacle",
+      "match_status": "matched",
+      "network": "Mastercard",
+      "category": "super_premium",
+      "rewards": "2.5 reward points per INR 100 on online spends; 1.5 on online travel & airline bookings; 1 per INR 100 on PoS/MoTo/IVR",
+      "lounge": "1 complimentary domestic lounge visit per calendar quarter; 1 complimentary international Priority Pass lounge visit per calendar quarter",
+      "welcome_benefit": "Choice of one: Luxe gift card, complimentary night stay at Oberoi hotels, or gift vouchers (Hush Puppies, BATA, Titan, Pantaloons, Raymond, etc.)",
+      "badge": "Premium metal card; golf benefits (1 game + 1 lesson per month)",
+      "apply_url": "https://www.indusind.bank.in/in/en/personal/cards/credit-card/pinnacle-world-credit-card.html",
+      "enrich_source": "https://www.indusind.bank.in/in/en/personal/cards/credit-card/pinnacle-world-credit-card.html"
+    },
+    {
+      "name": "Worldmiles Platinum",
+      "match_status": "unmatched",
+      "network": null,
+      "category": null,
+      "rewards": null,
+      "lounge": null,
+      "welcome_benefit": null,
+      "badge": null,
+      "apply_url": null,
+      "enrich_source": null
+    },
+    {
+      "name": "Worldmiles Signature",
+      "match_status": "unmatched",
+      "network": null,
+      "category": null,
+      "rewards": null,
+      "lounge": null,
+      "welcome_benefit": null,
+      "badge": null,
+      "apply_url": null,
+      "enrich_source": null
+    },
+    {
+      "name": "Jet Airways IndusInd Bank Odyssey Credit Card",
+      "match_status": "unmatched",
+      "network": null,
+      "category": null,
+      "rewards": null,
+      "lounge": null,
+      "welcome_benefit": null,
+      "badge": null,
+      "apply_url": null,
+      "enrich_source": null
+    },
+    {
+      "name": "Jet Airways IndusInd Bank Voyage Credit Card",
+      "match_status": "unmatched",
+      "network": null,
+      "category": null,
+      "rewards": null,
+      "lounge": null,
+      "welcome_benefit": null,
+      "badge": null,
+      "apply_url": null,
+      "enrich_source": null
+    }
+  ]
+}
