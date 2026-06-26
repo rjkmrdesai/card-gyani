@@ -353,10 +353,11 @@ function cardStage(c){
   return `<div class="tcard tcard-fb"><span class="tcard-i">${esc((c.bank||'')[0]||'')}</span></div>`;
 }
 function catsPresent(){ return CAT_ORDER.filter(k=>CARDS.some(c=>c.cat===k)); }
-function applyLink(c, cls){
+function applyLink(c, cls, place){
   const href = c.affiliate_url || c.apply_url;   // affiliate link wins when present
   const url = href ? esc(href) : '#';
-  return `<a class="${cls}" href="${url}" target="_blank" rel="noopener noreferrer nofollow">${t('apply_now')} →</a>`;
+  const data = `data-ev="apply_click" data-card="${esc(c.slug)}" data-bank="${esc(c.bank)}" data-cat="${esc(c.cat)}" data-place="${place||''}" data-aff="${c.affiliate_url?'1':'0'}"`;
+  return `<a class="${cls}" href="${url}" target="_blank" rel="noopener noreferrer nofollow" ${data}>${t('apply_now')} →</a>`;
 }
 
 /* ---------- header ---------- */
@@ -413,8 +414,8 @@ function cardRow(c){
       </div>
       <div class="cright">
         ${c.badge?`<div class="badge">★ ${esc(c.badge)}</div>`:''}
-        ${applyLink(c,'apply')}
-        <a class="viewbtn" href="/cards/${esc(c.slug)}">${t('view_details')}</a>
+        ${applyLink(c,'apply','list')}
+        <a class="viewbtn" href="/cards/${esc(c.slug)}" data-ev="view_details" data-card="${esc(c.slug)}" data-place="list">${t('view_details')}</a>
         <label class="cmp"><input type="checkbox" ${picked?'checked':''}
           onchange="toggleCompare('${c.id}')"><span class="box"></span>${t('compare')}</label>
       </div>
@@ -469,7 +470,7 @@ export function detailView(slug){
         <div class="dtags">${cardTags(c).map(tagChip).join('')}</div>
       </div>
       <div class="acts">
-        ${applyLink(c,'apply')}
+        ${applyLink(c,'apply','detail')}
         <button class="viewbtn" onclick="toggleCompare('${c.id}')">${picked?'✓ '+t('selected'):'+ '+t('add_to_compare')}</button>
       </div>
     </div>
@@ -498,7 +499,7 @@ export function detailView(slug){
     </div>
     <div class="addrow">
       <a class="primary" href="/cards">+ ${t('add_another')}</a>
-      ${S.compare.length>=2?`<a class="ghost" href="/compare">${t('compare_now')} (${S.compare.length}) →</a>`:''}
+      ${S.compare.length>=2?`<a class="ghost" href="/compare" data-ev="compare_view" data-place="addrow" data-n="${S.compare.length}">${t('compare_now')} (${S.compare.length}) →</a>`:''}
     </div>
   </div>`;
 }
@@ -540,7 +541,7 @@ export function compareView(){
         ${bankTile(c.bank,40,c.bankLogo)}
         <div><div class="hissuer">${esc(c.bank)}</div><div class="hname">${esc(c.name)}</div></div>
         <div class="ctags">${cardTags(c).map(tagChip).join('')}</div>
-        ${applyLink(c,'apply')}
+        ${applyLink(c,'apply','compare')}
       </div>`).join('')}
       <div class="band">${t('fees_charges')}</div>
       ${rowsHtml(feeRows)}
@@ -586,8 +587,8 @@ function cardTile(c){
     </div>
     <div class="tfeat">${esc(c.reward||'')}</div>
     <div class="tacts">
-      ${applyLink(c,'apply')}
-      <a class="viewbtn" href="/cards/${esc(c.slug)}">${t('view_details')}</a>
+      ${applyLink(c,'apply','tile')}
+      <a class="viewbtn" href="/cards/${esc(c.slug)}" data-ev="view_details" data-card="${esc(c.slug)}" data-place="tile">${t('view_details')}</a>
     </div>
     <label class="cmp tcmp"><input type="checkbox" ${picked?'checked':''}
       onchange="toggleCompare('${c.id}')"><span class="box"></span>${t('compare')}</label>
@@ -716,7 +717,7 @@ export function trayHTML(){
     <div class="tray-actions">
       <span class="tray-count">${S.compare.length}/4 ${t('selected')}</span>
       <button class="clr" onclick="clearCompare()">${t('clear_all')}</button>
-      <a class="go ${S.compare.length<2?'disabled':''}" href="/compare">${t('compare_now')} →</a>
+      <a class="go ${S.compare.length<2?'disabled':''}" href="/compare" data-ev="compare_view" data-place="tray" data-n="${S.compare.length}">${t('compare_now')} →</a>
     </div>
   </div>`};
 }
