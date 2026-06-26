@@ -238,7 +238,9 @@ aside.filters{position:sticky;top:80px;background:var(--surface);border:1px soli
 .tstats span{font-size:11.5px;color:var(--muted)}
 .tstats b{font-size:15px}
 .tfeat{font-size:13px;color:var(--ink-soft);min-height:18px}
-.tacts{display:flex;gap:8px;margin-top:6px}
+/* push actions to the card's bottom edge; slack sits above the CTA
+   (between the fee/reward block and the buttons) so CTAs align across the row */
+.tacts{display:flex;gap:8px;margin-top:auto;padding-top:6px}
 .tacts .apply{flex:1;text-align:center;padding:10px 14px}
 .tacts .viewbtn{padding:10px 14px}
 .tcmp{margin-top:4px}
