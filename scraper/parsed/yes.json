@@ -1,0 +1,225 @@
+{
+  "id": "yes",
+  "bank": "YES Bank",
+  "source_url": "https://www.yes.bank.in/sites/web/content/published/api/v1.1/assets/CONTAA57595B2EF245259C4C623B1F7D33B3/native/ybl_mitc_pdf.pdf?download=false",
+  "cards": [
+    {
+      "name": "YES Private / YES Private for NRI",
+      "annual_fee": 50000,
+      "renewal_fee": 10000,
+      "fee_waiver": "Joining fee: Not applicable. Annual fee waived on minimum spend of INR 25,00,000 within 12 months prior to card anniversary date",
+      "source_section": "Section A.1 Joining and Annual membership fees table p.2, 'YES Private / YES Private for NRI' row"
+    },
+    {
+      "name": "YES Private Prime",
+      "annual_fee": 20000,
+      "renewal_fee": 10000,
+      "fee_waiver": "Joining fee: Not applicable. Annual fee waived on minimum spend of INR 20,00,000 within 12 months prior to card anniversary date",
+      "source_section": "Section A.1 Joining and Annual membership fees table p.2, 'YES Private Prime' row"
+    },
+    {
+      "name": "Marquee",
+      "annual_fee": 9999,
+      "renewal_fee": 4999,
+      "fee_waiver": "Joining fee: Not applicable. Annual fee waived on minimum spend of INR 10,00,000 within 12 months prior to card anniversary date",
+      "source_section": "Section A.1 Joining and Annual membership fees table p.2, 'Marquee' row"
+    },
+    {
+      "name": "Reserv / Reserv for NRI",
+      "annual_fee": 2499,
+      "renewal_fee": 2499,
+      "fee_waiver": "Joining fee waived on minimum spend of INR 40,000 within 1 month of card set up date. Annual fee waived on minimum spend of INR 3,00,000 within 12 months prior to card anniversary date",
+      "source_section": "Section A.1 Joining and Annual membership fees table p.2, 'Reserv / Reserv for NRI' row"
+    },
+    {
+      "name": "Wellness Plus",
+      "annual_fee": 1499,
+      "renewal_fee": 1499,
+      "fee_waiver": null,
+      "source_section": "Section A.1 Joining and Annual membership fees table p.2, 'Wellness Plus' row (Not Applicable for both waivers)"
+    },
+    {
+      "name": "YES Prosperity Cashback Plus",
+      "annual_fee": 1499,
+      "renewal_fee": 1499,
+      "fee_waiver": null,
+      "source_section": "Section A.1 Joining and Annual membership fees table p.2, 'YES Prosperity Cashback Plus' row (Not Applicable for both waivers)"
+    },
+    {
+      "name": "Elite+ / Elite+ issued against FD",
+      "annual_fee": 999,
+      "renewal_fee": 999,
+      "fee_waiver": "Joining fee waived on minimum spend of INR 20,000 within 1 month of card set up date. Annual fee waived on minimum spend of INR 2,00,000 within 12 months prior to card anniversary date",
+      "source_section": "Section A.1 Joining and Annual membership fees table p.2, 'Elite+ / Elite+ issued against FD' row"
+    },
+    {
+      "name": "YES First Business",
+      "annual_fee": 999,
+      "renewal_fee": 999,
+      "fee_waiver": "Joining fee waived on minimum spend of INR 20,000 within 1 month of card set up date. Annual fee waived on minimum spend of INR 3,00,000 within 12 months prior to card anniversary date",
+      "source_section": "Section A.1 Joining and Annual membership fees table p.2, 'YES First Business' row"
+    },
+    {
+      "name": "YES Prosperity Cashback",
+      "annual_fee": 999,
+      "renewal_fee": 999,
+      "fee_waiver": null,
+      "source_section": "Section A.1 Joining and Annual membership fees table p.2, 'YES Prosperity Cashback' row (Not Applicable for both waivers)"
+    },
+    {
+      "name": "YES First Preferred / Preferred for NRI / Preferred issued against FD",
+      "annual_fee": 999,
+      "renewal_fee": 999,
+      "fee_waiver": "Joining fee waived on minimum spend of INR 50,000 within three months of card set up date. Annual fee waived on minimum spend of INR 2,50,000 within 12 months prior to card anniversary date",
+      "source_section": "Section A.1 Joining and Annual membership fees table p.2, 'YES First Preferred** / Preferred for NRI** / Preferred issued against FD**' row"
+    },
+    {
+      "name": "YES Essence",
+      "annual_fee": 799,
+      "renewal_fee": 799,
+      "fee_waiver": "Joining fee waived on minimum spend of INR 20,000 within 1 month of card set up date. Annual fee waived on minimum spend of INR 1,00,000 within 12 months prior to card anniversary date",
+      "source_section": "Section A.1 Joining and Annual membership fees table p.3, 'YES Essence' row"
+    },
+    {
+      "name": "Select / Select for NRI / Select issued against FD",
+      "annual_fee": 599,
+      "renewal_fee": 599,
+      "fee_waiver": "Joining fee waived on minimum spend of INR 10,000 within 1 month of card set up date. Annual fee waived on minimum spend of INR 1,00,000 within 12 months prior to card anniversary date",
+      "source_section": "Section A.1 Joining and Annual membership fees table p.3, 'Select / Select for NRI / Select issued against FD' row"
+    },
+    {
+      "name": "Ace / Ace issued against FD",
+      "annual_fee": 499,
+      "renewal_fee": 499,
+      "fee_waiver": "Joining fee waived on minimum spend of INR 5,000 within 1 month of card set up date. Annual fee waived on minimum spend of INR 50,000 within 12 months prior to card anniversary date",
+      "source_section": "Section A.1 Joining and Annual membership fees table p.3, 'Ace / Ace issue against FD' row"
+    },
+    {
+      "name": "YES Prosperity Business",
+      "annual_fee": 499,
+      "renewal_fee": 499,
+      "fee_waiver": "Joining fee waived on minimum spend of INR 10,000 within 1 month of card set up date. Annual fee waived on minimum spend of INR 1,00,000 within 12 months prior to card anniversary date",
+      "source_section": "Section A.1 Joining and Annual membership fees table p.3, 'YES Prosperity Business' row"
+    },
+    {
+      "name": "Wellness",
+      "annual_fee": 499,
+      "renewal_fee": 499,
+      "fee_waiver": null,
+      "source_section": "Section A.1 Joining and Annual membership fees table p.3, 'Wellness' row (Not Applicable for both waivers)"
+    },
+    {
+      "name": "EMI Card",
+      "annual_fee": 499,
+      "renewal_fee": 499,
+      "fee_waiver": "Joining fee: Not Applicable. Annual fee waived on minimum spend of INR 1,20,000 within 12 months prior to card anniversary date",
+      "source_section": "Section A.1 Joining and Annual membership fees table p.3, 'EMI Card' row"
+    },
+    {
+      "name": "Anq Phi / Paisabazaar Paisasave",
+      "annual_fee": 0,
+      "renewal_fee": 499,
+      "fee_waiver": "Renewal/annual fee waived on minimum spend of INR 1,20,000 within 12 months prior to card anniversary date",
+      "source_section": "Section A.1 Joining and Annual membership fees table p.3, 'Anq Phi / Paisabazaar Paisasave' row (Joining NIL, Annual INR 499)"
+    },
+    {
+      "name": "Uni",
+      "annual_fee": 0,
+      "renewal_fee": 499,
+      "fee_waiver": "Joining fee: NIL. Renewal/annual fee waived on minimum spend of INR 50,000 within 12 months prior to card anniversary date (minimum spend for waiver of joining fee INR 5,000)",
+      "source_section": "Section A.1 Joining and Annual membership fees table p.3, 'Uni' row (Joining NIL, Annual INR 499)"
+    },
+    {
+      "name": "YES Prosperity Rewards",
+      "annual_fee": 399,
+      "renewal_fee": 399,
+      "fee_waiver": "Joining fee waived on minimum spend of INR 5,000 within three months of card set up date. Annual fee waived on minimum spend of INR 25,000 within 12 months prior to card anniversary date",
+      "source_section": "Section A.1 Joining and Annual membership fees table p.3, 'YES Prosperity Rewards**' row"
+    },
+    {
+      "name": "FREO",
+      "annual_fee": 399,
+      "renewal_fee": 399,
+      "fee_waiver": "Joining fee waived on minimum spend of INR 10,000 within 1 month of card set up date. Annual fee waived on minimum spend of INR 1,00,000 within 12 months prior to card anniversary date",
+      "source_section": "Section A.1 Joining and Annual membership fees table p.3, 'FREO' row"
+    },
+    {
+      "name": "POP-CLUB",
+      "annual_fee": 0,
+      "renewal_fee": 399,
+      "fee_waiver": "Joining fee: NIL. Renewal/annual fee waived on minimum spend of INR 1,50,000 within 12 months prior to card anniversary date",
+      "source_section": "Section A.1 Joining and Annual membership fees table p.3, 'POP-CLUB' row (Joining NIL, Annual INR 399)"
+    },
+    {
+      "name": "RuPay Virtual Card / Klick / Zagg / Finbooster / Uni RuPay Virtual / Paisabazaar Paisasave RuPay Virtual / AI Inside / AI Inside RuPay Virtual / NIYO / Novio",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "Section A.1 Joining and Annual membership fees table p.3, lifetime free row (Joining NIL, Annual NIL); footnote: Zagg issued prior to 10 Jan'25 has annual fee INR 399 waived on annual spends INR 1,80,000"
+    },
+    {
+      "name": "BYOC Cashback (Regular Card)",
+      "annual_fee": 0,
+      "renewal_fee": null,
+      "fee_waiver": null,
+      "source_section": "Section A.1 BYOC Cashback Membership fees table p.3, Regular Card column (One Time Card Fee NIL, Monthly Fee INR 99)"
+    },
+    {
+      "name": "BYOC Cashback (Eco Friendly Card)",
+      "annual_fee": 249,
+      "renewal_fee": null,
+      "fee_waiver": null,
+      "source_section": "Section A.1 BYOC Cashback Membership fees table p.3, Eco Friendly Card column (One Time Card Fee INR 249, Monthly Fee INR 99)"
+    },
+    {
+      "name": "BYOC Cashback (Metal Card)",
+      "annual_fee": 3499,
+      "renewal_fee": null,
+      "fee_waiver": null,
+      "source_section": "Section A.1 BYOC Cashback Membership fees table p.3, Metal Card column (One Time Card Fee INR 3499, Monthly Fee INR 99)"
+    },
+    {
+      "name": "BYOC Rewards (Regular Card)",
+      "annual_fee": 0,
+      "renewal_fee": null,
+      "fee_waiver": null,
+      "source_section": "Section A.1 BYOC Rewards Membership fees table p.3, Regular Card column (One Time Card Fee NIL, Monthly Fee INR 49)"
+    },
+    {
+      "name": "BYOC Rewards (Eco Friendly Card)",
+      "annual_fee": 249,
+      "renewal_fee": null,
+      "fee_waiver": null,
+      "source_section": "Section A.1 BYOC Rewards Membership fees table p.3, Eco Friendly Card column (One Time Card Fee INR 249, Monthly Fee INR 49)"
+    },
+    {
+      "name": "BYOC Rewards (Metal Card)",
+      "annual_fee": 3499,
+      "renewal_fee": null,
+      "fee_waiver": null,
+      "source_section": "Section A.1 BYOC Rewards Membership fees table p.3, Metal Card column (One Time Card Fee INR 3499, Monthly Fee INR 49)"
+    }
+  ],
+  "bank_defaults": {
+    "forex": null,
+    "forex_exceptions": {
+      "YES Private / YES Private Prime": 0.50,
+      "Marquee": 1.00,
+      "Reserv / Reserv (NRI) / Reserv (FD) / YES First Preferred / YES First Preferred (NRI) / YES First Preferred (FD) / YES First Business": 2.00,
+      "YES Prosperity Business": 3.00,
+      "Elite+ / Elite+ (FD) / YES Essence": 3.00,
+      "Select / Select (NRI) / Select (FD) / ACE / ACE (FD) / ACE (NRI) / Virtual RuPay Credit Card / Klick": 3.50,
+      "FREO": 3.40,
+      "YES Prosperity Rewards / YES Prosperity Cashback / YES Prosperity Cashback Plus / POP-CLUB / ANQ Phi / Finbooster / Paisabazaar Paisasave / Paisabazaar Paisasave RuPay Virtual": 3.50,
+      "BYOC / EMI Card / Wellness / Wellness Plus / Zagg / Novio / Novio RuPay Virtual": 3.50
+    },
+    "finance_pm_unsecured": 3.99,
+    "finance_pa_unsecured": 47.88,
+    "finance_pm_secured": 2.49,
+    "finance_pa_secured": 29.88,
+    "cash_advance": "Effective 15th June 2026: 2.5% or INR 650 whichever is higher (prior to 15th June 2026: 2.5% or INR 500 whichever is higher). Waived for YES Private and AI Inside Credit Card; not applicable for any Virtual Credit Card",
+    "late_fee_tiers": "Up to INR 500 current outstanding (statement balance + unbilled): No late payment charges. Above INR 500: 10% of statement balance or INR 1350 whichever is lower, per statement. Waived for YES Private credit card",
+    "interest_free_days": "up to 50 days",
+    "source_section": "Forex/DCC per-card table from Section A.3.q 'Charges pertaining to Foreign Currency' p.17 (Foreign currency conversion charges Effective 15th June 2026 column); finance charges from Section A.2 'Finance Charges (Interest)' p.4 (3.99%/47.88% Other cards, 2.49%/29.88% FD-linked & NRI variants, 2.99%/35.88% YES Private/Prime/Marquee/Reserv); cash advance from Section A.3.a p.6; late fee from Section A.3.b p.6; interest free period from Section A.2 'Interest Free period' p.5"
+  }
+}

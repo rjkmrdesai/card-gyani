@@ -1,0 +1,84 @@
+{
+  "id": "sbm",
+  "bank": "SBM Bank",
+  "source_url": "https://www.sbm.bank.in/pdf/terms-conditions/SBM-Secured-Credit-Card-T&C.pdf",
+  "cards": [
+    {
+      "name": "SBM Mobikwik First",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "Fee table p.4, 'Joining fees/Membership fees' & 'Annual Maintenance Fee', SBM Mobikwik First row (waiver criteria N/A)"
+    },
+    {
+      "name": "SBM ZET",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "Fee table p.4, SBM ZET row (Joining 0, AMC 0, waiver N/A)"
+    },
+    {
+      "name": "SBM Kredit.Pe",
+      "annual_fee": 0,
+      "renewal_fee": 199,
+      "fee_waiver": "Applicable for credit limit under ₹4,500",
+      "source_section": "Fee table p.4, SBM Kredit.Pe row (Joining 0, AMC 199 + GST, waiver 'Applicable for credit limit under ₹4,500')"
+    },
+    {
+      "name": "SBM novio",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "Fee table p.4, SBM novio row (Joining 0, AMC 0, waiver N/A)"
+    },
+    {
+      "name": "SBM Magnet",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "Fee table p.4, SBM Magnet row (Joining 0, AMC 0, waiver N/A)"
+    },
+    {
+      "name": "SBM Niyo Global",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "Fee table p.4, SBM Niyo Global row (Joining 0, AMC 0, waiver N/A)"
+    },
+    {
+      "name": "SBM Paisabazaar Step Up",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "source_section": "Fee table p.4, SBM Paisabazaar Step Up row (Joining 0, AMC 0, waiver N/A)"
+    },
+    {
+      "name": "SBM Paisabazaar Paisa +",
+      "annual_fee": 0,
+      "renewal_fee": 499,
+      "fee_waiver": "Spend ₹50,000 or more in a year before your Credit Card renewal date and get your AMC fee waived off.",
+      "source_section": "Fee table p.4, SBM Paisabazaar Paisa + row (Joining 0, AMC 499 + GST, with spend-based waiver)"
+    }
+  ],
+  "bank_defaults": {
+    "forex": null,
+    "forex_exceptions": {
+      "SBM Mobikwik First": 3,
+      "SBM ZET": 2.49,
+      "SBM Kredit.Pe": 3.5,
+      "SBM novio": 2.49,
+      "SBM Magnet": 2.49,
+      "SBM Niyo Global": 0,
+      "SBM Paisabazaar Step Up": 3.5,
+      "SBM Paisabazaar Paisa +": 0
+    },
+    "finance_pm_unsecured": null,
+    "finance_pa_unsecured": null,
+    "finance_pm_secured": null,
+    "finance_pa_secured": null,
+    "cash_advance": "Per card (ATM Withdrawal Fee), p.4: Mobikwik First 2.5% or INR 250 (higher); ZET 3.5% or INR 300 (higher); Kredit.Pe 2.5% or INR 100 (higher); novio 2.5% or INR 299 (higher); Magnet 2.5% or INR 300 (higher); Niyo Global 2.5% or INR 423+GST (higher); Paisabazaar Step Up 2.5% or INR 250 (higher); Paisabazaar Paisa + 2.5%",
+    "late_fee_tiers": "Per card (Late Payment Fees), p.8-9: Mobikwik First 2.5% of Total Outstanding or INR 200 (higher); ZET INR 299; Kredit.Pe 5% of outstanding (max Rs.1000); novio INR 499; Magnet INR 299; Niyo Global INR 150; Paisabazaar Step Up tiered (Upto 100=0, 100-1000=250, 1000-10000=500, >10000=750); Paisabazaar Paisa + tiered (<Rs100=None, Rs100-500=Rs100, Rs501-5000=Rs500, Rs5001-10000=Rs600, Rs10001-25000=Rs750, Rs25001-50000=Rs950, >50000=Rs1000)",
+    "interest_free_days": "20 to 50 days (free credit period can range up to 48 days depending on Payment Due Date, incl. 3 days grace)",
+    "source_section": "Finance/interest rates per card p.5 ('Interest Rate for POS/ECOM after credit free period' & 'Interest Rate for ATM Withdrawal'): Mobikwik First 3.5%pm/42%pa; ZET 3.5%pm/42%pa; Kredit.Pe 3.5%pm/42%pa; novio 3.5%pm/42%pa (ATM 2.99%pm/35.88%pa); Magnet 2.5%pm/30%pa (ATM 3.3%pm/40%pa); Niyo Global 3%pm/36%pa; Paisabazaar Step Up 3%pm/36%pa; Paisabazaar Paisa + 3.5%pm/42%pa. Forex/Surcharge table p.6-7. Cash advance fee table p.4. Late payment fee tables p.8-9. Grace period p.6 (sec. v Interest free / Grace Period)."
+  }
+}

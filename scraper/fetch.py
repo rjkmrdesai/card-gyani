@@ -35,6 +35,21 @@ def looks_like_pdf(content: bytes) -> bool:
     return content[:5].startswith(b"%PDF-")
 
 
+def curl_fallback(url: str, dest) -> bool:
+    """Some bank servers (e.g. SBM) fail the TLS handshake from LibreSSL/requests
+    but succeed with `curl --tlsv1.2`. Shell out as a last resort."""
+    import subprocess
+    SOURCES_DIR.mkdir(parents=True, exist_ok=True)
+    try:
+        r = subprocess.run(
+            ["curl", "-sSL", "--max-time", "45", "--tlsv1.2", "-A", BROWSER_UA,
+             "-o", str(dest), url],
+            capture_output=True, timeout=60)
+        return r.returncode == 0 and dest.exists() and dest.stat().st_size > 0
+    except Exception:
+        return False
+
+
 def fetch_one(session: requests.Session, bank: dict, refresh: bool) -> dict:
     bid = bank["id"]
     fmt = bank.get("format", "pdf")
@@ -74,6 +89,12 @@ def fetch_one(session: requests.Session, bank: dict, refresh: bool) -> dict:
         dest.write_bytes(content)
         rec.setdefault("ok", True)
         rec["cached"] = False
+    except requests.exceptions.SSLError as e:
+        if curl_fallback(url, dest):
+            rec.update(ok=True, cached=False, bytes=dest.stat().st_size,
+                       warning="requests SSLError -> fetched via curl --tlsv1.2 fallback")
+        else:
+            rec.update(ok=False, error=f"SSLError and curl fallback failed: {e}")
     except requests.RequestException as e:
         rec.update(ok=False, error=f"{type(e).__name__}: {e}")
     return rec

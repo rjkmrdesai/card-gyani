@@ -1,0 +1,104 @@
+{
+  "id": "sbm",
+  "bank": "SBM Bank",
+  "product_listing_url": "https://www.sbm.bank.in/personal-banking/cards/secured-credit-card",
+  "listing_url_status": "replaced",
+  "cards": [
+    {
+      "name": "SBM Mobikwik First",
+      "match_status": "matched",
+      "network": null,
+      "category": "entry",
+      "rewards": null,
+      "lounge": null,
+      "welcome_benefit": null,
+      "badge": "FD-backed secured card; no credit history or income proof needed",
+      "apply_url": "https://www.mobikwik.com/products/first-fd-credit-card",
+      "enrich_source": "https://www.mobikwik.com/products/first-fd-credit-card"
+    },
+    {
+      "name": "SBM ZET",
+      "match_status": "matched",
+      "network": "RuPay",
+      "category": "entry",
+      "rewards": "Flat 2% cashback with ZET UPI (ZET Plus); up to 20% off on Swiggy, Zomato, Instamart, BookMyShow; flat 5% cashback on Amazon Pay and Flipkart vouchers; up to 15% cashback on 80+ brand vouchers",
+      "lounge": null,
+      "welcome_benefit": null,
+      "badge": "FD-backed RuPay UPI credit card; build 750+ credit score",
+      "apply_url": "https://www.zetapp.in/sbm-zet-credit-card",
+      "enrich_source": "https://www.zetapp.in/sbm-zet-credit-card"
+    },
+    {
+      "name": "SBM Kredit.Pe",
+      "match_status": "matched",
+      "network": "RuPay",
+      "category": "entry",
+      "rewards": "3% cashback on Kredit.Pe UPI; redeemable as 5%/10%/15% off vouchers on popular platforms",
+      "lounge": null,
+      "welcome_benefit": "Rs.1000 cashback joining bonus",
+      "badge": "FD-backed lifetime-aspiring secured RuPay card; easy approval",
+      "apply_url": "https://www.kredit.pe/",
+      "enrich_source": "https://www.kredit.pe/"
+    },
+    {
+      "name": "SBM novio",
+      "match_status": "matched",
+      "network": "RuPay",
+      "category": "entry",
+      "rewards": "novio Coins: 10% on fuel, 5% on UPI, 5% at stores; redeemable for up to 20% off at partner merchants",
+      "lounge": null,
+      "welcome_benefit": "Welcome benefit worth Rs.5,000 (instant discounts up to Rs.23,000 across Amazon, BookMyShow, Zepto, Swiggy)",
+      "badge": "FD-backed lifetime-free UPI credit card",
+      "apply_url": "https://www.novio.in/fixed-deposit-credit-card/sbm-rupay/",
+      "enrich_source": "https://www.novio.in/fixed-deposit-credit-card/sbm-rupay/"
+    },
+    {
+      "name": "SBM Magnet",
+      "match_status": "matched",
+      "network": "RuPay",
+      "category": "entry",
+      "rewards": "Unlimited magnet coins; up to 10% rewards on purchases from leading brands (EMI and cash transactions excluded)",
+      "lounge": null,
+      "welcome_benefit": "Welcome benefits Rs.21,000+ on card approval (shopping vouchers, travel discounts, OTT subscriptions)",
+      "badge": "FD-backed secured card by SBM x ZET",
+      "apply_url": "https://sbm-zet-card.zetapp.in/magnet",
+      "enrich_source": "https://www.paisabazaar.com/sbm-bank/sbm-magnet-credit-card/"
+    },
+    {
+      "name": "SBM Niyo Global",
+      "match_status": "matched",
+      "network": "Visa",
+      "category": "entry",
+      "rewards": "1 reward point per Rs.100 spent across all purchases",
+      "lounge": "Complimentary Visa airport lounge access (domestic and international terminals in India)",
+      "welcome_benefit": null,
+      "badge": "Zero forex markup FD-backed card for travellers; pay only the Visa exchange rate",
+      "apply_url": "https://www.sbm.bank.in/personal-banking/cards/secured-credit-card",
+      "enrich_source": "https://goniyo.com/sbm-scc/niyo-sbm-scc-vs-others"
+    },
+    {
+      "name": "SBM Paisabazaar Step Up",
+      "match_status": "matched",
+      "network": "Mastercard",
+      "category": "entry",
+      "rewards": "1 point per Rs.100 spent across all categories, redeemable for cash at Rs.0.25 per point (excludes wallet loads, rent, fuel, utilities, insurance, cash advances, EMI)",
+      "lounge": null,
+      "welcome_benefit": null,
+      "badge": "FD-backed secured credit-builder card (new applications closed)",
+      "apply_url": "https://www.paisabazaar.com/sbm-bank/paisabazaar-stepup-secured-credit-card/",
+      "enrich_source": "https://www.paisabazaar.com/sbm-bank/paisabazaar-stepup-secured-credit-card/"
+    },
+    {
+      "name": "SBM Paisabazaar Paisa +",
+      "match_status": "matched",
+      "network": "RuPay",
+      "category": "entry",
+      "rewards": "Up to 1.5% cashback on online spends (FD above Rs.10,000); 1% cashback on offline spends and UPI transactions above Rs.2,000; credited as Cash Point (1 = Rs.1), capped 500/day and 3,000/month",
+      "lounge": null,
+      "welcome_benefit": null,
+      "badge": "FD-backed cashback credit-builder card; FD from Rs.2,000",
+      "apply_url": "https://www.sbm.bank.in/personal-banking/cards/secured-credit-card",
+      "enrich_source": "https://www.paisabazaar.com/sbm-bank/paisabazaar-paisa-plus-credit-card/"
+    }
+  ]
+}

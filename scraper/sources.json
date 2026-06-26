@@ -114,12 +114,12 @@
     {
       "id": "yes",
       "bank": "YES Bank",
-      "mitc_url": "https://www.yes.bank.in/pdf?name=ybl_mitc_pdf.pdf",
+      "mitc_url": "https://www.yes.bank.in/sites/web/content/published/api/v1.1/assets/CONTAA57595B2EF245259C4C623B1F7D33B3/native/ybl_mitc_pdf.pdf?download=false",
       "format": "pdf",
       "likely_scanned": false,
       "card_coverage": "fee_table_all",
       "product_listing_url": "https://www.yesbank.in/personal-banking/yes-individual/cards/credit-cards",
-      "notes": "PDF served via a query-string endpoint (?name=...). The fetcher must follow redirects and may need a browser-like User-Agent; save the response as a .pdf."
+      "notes": "The /pdf?name=ybl_mitc_pdf.pdf endpoint returns a JS interstitial (Oracle Sites), NOT the PDF. Use the direct published asset URL above (the v17 Retail/Business Card MITC). Resolved 2026-06-26."
     },
     {
       "id": "rbl",
@@ -139,7 +139,7 @@
       "likely_scanned": false,
       "card_coverage": "single_or_generic",
       "product_listing_url": "https://www.sbmbank.co.in/personal/cards/credit-cards.aspx",
-      "notes": "This is a T&C for SBM's SECURED (FD-linked) credit card - likely 1-2 cards only. Tag any card from here as type='secured' (FD-linked). URL contains an '&' that must be URL-encoded when fetching."
+      "notes": "This is a T&C for SBM's SECURED (FD-linked) credit card - likely 1-2 cards only. Tag any card from here as type='secured' (FD-linked). URL '&' must be %26-encoded. The server completes a TLS1.3 handshake with openssl/curl but FAILS from Python/LibreSSL requests; fetch with `curl --tlsv1.2`. Resolved 2026-06-26."
     }
   ]
 }
