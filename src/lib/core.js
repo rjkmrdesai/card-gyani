@@ -102,6 +102,82 @@ function isCobrand(c){return COBRAND_RE.test(c.name||'');}
 // robust to any card whose fee resolves to 0 by other means.
 function isLtf(c){return !!c.ltf || Number(c.fee)===0;}
 
+// Intent-search alias map. Keys are words a user might type; values are the
+// terms that actually appear in card reward/lounge/feature text. Used by
+// homeView search to expand plain-language queries into field matches.
+const KEYWORD_MAP = {
+  // Entertainment / movies
+  movies:['entertainment','cinema','pvr','inox','movie','bookmyshow'],
+  movie:['entertainment','cinema','pvr','inox','movie','bookmyshow'],
+  cinema:['cinema','pvr','inox','movie','entertainment'],
+  entertainment:['entertainment','cinema','movie','pvr','inox'],
+  ott:['ott','streaming','netflix','prime','disney','hotstar'],
+  netflix:['netflix','ott','streaming'],
+  streaming:['streaming','ott','netflix','prime','disney'],
+  // Dining / food
+  dining:['dining','restaurant','food','zomato','swiggy','eazydiner'],
+  restaurant:['restaurant','dining','food'],
+  food:['food','dining','restaurant','zomato','swiggy'],
+  zomato:['zomato','dining','food'],
+  swiggy:['swiggy','food','dining'],
+  // Travel
+  travel:['travel','airline','flight','hotel','miles','air india','indigo','vistara'],
+  flight:['flight','airline','travel','air india','indigo','vistara','6e'],
+  airline:['airline','flight','travel','miles'],
+  flying:['flight','airline','travel'],
+  hotel:['hotel','travel','marriott'],
+  miles:['miles','air miles','travel'],
+  // Lounge / airport
+  lounge:['lounge','airport lounge','priority pass','dreamfolks'],
+  airport:['lounge','airport'],
+  // Shopping
+  shopping:['shopping','amazon','flipkart','myntra','retail','online'],
+  online:['online','shopping','amazon','flipkart'],
+  amazon:['amazon'],
+  flipkart:['flipkart'],
+  ecommerce:['shopping','online','amazon','flipkart','myntra'],
+  // Fuel / petrol
+  fuel:['fuel','petrol','surcharge','bpcl','hpcl','indianoil','indian oil'],
+  petrol:['petrol','fuel','surcharge','bpcl','hpcl'],
+  gas:['fuel','petrol','surcharge'],
+  // Grocery / supermarket
+  grocery:['grocery','supermarket','bigbasket','grofer'],
+  supermarket:['supermarket','grocery'],
+  // Cashback
+  cashback:['cashback','cash back','cash-back'],
+  // Rewards / points
+  rewards:['reward','points','reward points','cashpoints'],
+  points:['points','reward points','cashpoints'],
+  // Forex / international
+  forex:['forex','foreign currency','international','markup'],
+  international:['international','forex','foreign','overseas'],
+  abroad:['abroad','international','forex','foreign','overseas'],
+  overseas:['overseas','international','forex'],
+  // Health / pharmacy
+  health:['health','medical','pharmacy','apollo','pharmeasy','wellness'],
+  medical:['medical','health','pharmacy'],
+  pharmacy:['pharmacy','medical','health','apollo'],
+  // Insurance
+  insurance:['insurance','accident','cover'],
+  // Utility / bills
+  utility:['utility','bill','electricity','mobile recharge'],
+  bills:['bill','utility','electricity','recharge'],
+  // LTF / free
+  free:['lifetime free','ltf','no annual fee'],
+  lifetime:['lifetime free','ltf'],
+  // Premium / luxury
+  luxury:['super premium','metal','invite','concierge'],
+  metal:['metal','metal card'],
+  // UPI / RuPay
+  upi:['upi','rupay'],
+  rupay:['rupay','upi'],
+  // Business
+  business:['business'],
+  // Secured / FD
+  secured:['secured','fd','fixed deposit'],
+  fd:['fd','fixed deposit','secured'],
+};
+
 function feeBucket(c){
   if(isLtf(c))return'ltf'; if(c.fee<500)return'u500';
   if(c.fee<=2000)return'b1'; if(c.fee<=5000)return'b2'; return'b3';
@@ -477,29 +553,46 @@ export function homeView(){
   const q=(S.homeQ||'').trim().toLowerCase();
   let list=meta?CARDS.filter(meta[3]):CARDS.slice();
   if(q){
-    const toks=q.split(/\s+/).filter(Boolean);
-    // Order-independent: a card matches only if EVERY token appears somewhere.
-    // Score by where each token hits (name 100 > bank 50 > reward/badge/network/cat 10),
-    // and lift exact / starts-with name matches to the top.
-    const scoreOf=c=>{
-      const name=(c.name||'').toLowerCase(), bank=(c.bank||'').toLowerCase();
-      // Expand desc with category keywords so "lifetime free", "lounge", "travel" etc. match.
-      const desc=[(c.reward||''),(c.badge||''),(c.network||''),(c.cat||'').replace(/_/g,' '),
-        isLtf(c)?'lifetime free ltf':'',hasLounge(c)?'lounge access lounge':'',
-        isUpi(c)?'upi rupay':'',isCobrand(c)?'cobrand co-brand':'',
-        c.type||'',
-      ].join(' ').toLowerCase();
-      let s=0;
-      for(const tk of toks){
-        if(name.includes(tk)) s+=100;
-        else if(bank.includes(tk)) s+=50;
-        else if(desc.includes(tk)) s+=10;
-        else return 0; // token not found anywhere → not a match
-      }
-      if(name===q) s+=1000; else if(name.startsWith(q)) s+=500;
-      return s;
-    };
-    list=list.map(c=>[c,scoreOf(c)]).filter(p=>p[1]>0).sort((a,b)=>b[1]-a[1]).map(p=>p[0]);
+    // Tokenise: split on whitespace + connectors (+, &, comma, slash, dash).
+    // Strip intent/filler words so "best card for movies" → ["movies"].
+    const FILLER=/^(best|good|top|card|cards|for|the|a|an|and|or|with|what|which|give|me|find|show|i|want|need|looking|my|in|india|indian|credit|debit)$/;
+    const toks=q.split(/[\s+&,;/()\-]+/).map(s=>s.trim()).filter(s=>s.length>=2 && !FILLER.test(s));
+    if(toks.length===0){
+      // Nothing left after stripping (e.g. user typed only filler) — show all
+    } else {
+      // Per-card scoring: order-independent, all tokens must match somewhere.
+      // Score tiers (per token): name 100 > bank 50 > badge/cat 40 > feat 20 > reward/lounge 10.
+      // KEYWORD_MAP expands intent words to the terms that actually appear in card text.
+      const scoreOf=c=>{
+        const name=(c.name||'').toLowerCase();
+        const bank=(c.bank||'').toLowerCase();
+        const badgeCat=[(c.badge||''),(c.cat||'').replace(/_/g,' ')].join(' ').toLowerCase();
+        const featText=(Array.isArray(c.feat)?c.feat.join(' '):'').toLowerCase();
+        const descText=[(c.reward||''),(c.lounge||''),(c.network||''),(c.welcome||''),(c.fuelWaiver||''),
+          isLtf(c)?'lifetime free ltf':'',isUpi(c)?'upi rupay':'',
+          isCobrand(c)?'cobrand co-brand':'',c.type||'',
+        ].join(' ').toLowerCase();
+        // matchIn: checks if the token OR any of its KEYWORD_MAP aliases appear in text
+        const matchIn=(tk,text)=>text.includes(tk)||(KEYWORD_MAP[tk]||[]).some(a=>text.includes(a));
+        let s=0;
+        for(const tk of toks){
+          if(name.includes(tk))       s+=100;
+          else if(bank.includes(tk))  s+=50;
+          else if(matchIn(tk,badgeCat)) s+=40;
+          else if(matchIn(tk,featText)) s+=20;
+          else if(matchIn(tk,descText)) s+=10;
+          else return 0; // token found nowhere → card doesn't match
+        }
+        // Lift exact / starts-with card name hits
+        if(name===q) s+=1000; else if(name.startsWith(q)) s+=500;
+        // Quality tiebreaker: better cards surface first among equal-relevance results
+        if(c.cat==='super_premium') s+=4;
+        else if(c.cat==='premium')  s+=2;
+        else if(c.cat==='mid_tier') s+=1;
+        return s;
+      };
+      list=list.map(c=>[c,scoreOf(c)]).filter(p=>p[1]>0).sort((a,b)=>b[1]-a[1]).map(p=>p[0]);
+    }
   }
   // Only show count when the user has filtered/searched (not on the default "Trending now" heading)
   const headLabel=q?('"'+esc(S.homeQ)+'"'):(meta?meta[1]:t('trending_now'));
