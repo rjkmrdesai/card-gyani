@@ -14,7 +14,8 @@ const {
 
 const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : Astro.url.pathname;
 // Absolute social-share image on the real domain (override per-page via the `ogImage` prop).
-const { ogImage = '/favicon.svg' } = Astro.props;
+// Social scrapers require an absolute https URL — Astro.site supplies the domain.
+const { ogImage = '/og-image.png' } = Astro.props;
 const ogImageUrl = Astro.site ? new URL(ogImage, Astro.site).href : ogImage;
 ---
 <!doctype html>
@@ -39,7 +40,10 @@ const ogImageUrl = Astro.site ? new URL(ogImage, Astro.site).href : ogImage;
   <meta property="og:description" content={description} />
   <meta property="og:url" content={canonical} />
   <meta property="og:image" content={ogImageUrl} />
-  <meta name="twitter:card" content="summary" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Card Gyani — compare Indian credit cards" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={ogImageUrl} />

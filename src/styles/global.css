@@ -201,7 +201,7 @@ aside.filters{position:sticky;top:80px;background:var(--surface);border:1px soli
 .hero{padding:48px 0 8px}
 .hero-in{display:flex;align-items:center;gap:48px;justify-content:center}
 .hero-copy{flex:1;min-width:0;max-width:600px;text-align:center}
-.baba-panel{flex:none;width:min(300px,44vw);background:radial-gradient(120% 120% at 50% 28%,#15190f 0%,#0a0c07 78%);border-radius:28px;padding:26px;display:flex;align-items:center;justify-content:center}
+.baba-stage{flex:none;width:min(360px,46vw);display:flex;align-items:center;justify-content:center}
 .cg-mark{width:100%;height:auto;display:block;overflow:visible}
 .cg-float{animation:cgbob 6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
 @keyframes cgbob{0%,100%{transform:translateY(-4px)}50%{transform:translateY(4px)}}
@@ -275,7 +275,7 @@ aside.filters{position:sticky;top:80px;background:var(--surface);border:1px soli
   .specs{grid-template-columns:repeat(2,1fr)}
   .dhero .acts{margin-left:0;width:100%}
   .hero-in{flex-direction:column}
-  .baba-panel{width:min(240px,62vw)}
+  .baba-stage{width:min(280px,68vw)}
   .hero-copy{max-width:100%}
   .hero h1{font-size:38px}
   .hero p{font-size:17px}

@@ -449,7 +449,7 @@ export function homeView(){
           </div>
           <div class="pills">${cats.map(([id,lab])=>`<a class="pill ${active===id?'active':''}" href="/cards" onclick="setHomeCat('${id}');return false">${lab}</a>`).join('')}</div>
         </div>
-        <div class="baba-panel">${BABA_SVG}</div>
+        <div class="baba-stage">${BABA_SVG}</div>
       </div>
     </section>
     <section class="hgrid-wrap">
