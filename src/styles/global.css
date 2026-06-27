@@ -323,7 +323,6 @@ aside.filters{position:sticky;top:80px;max-height:calc(100vh - 96px);overflow-y:
   .hero p{font-size:17px}
   .grid{grid-template-columns:1fr}
   .dgrid{grid-template-columns:1fr}
-  .catrow{grid-template-columns:repeat(3,1fr)}
   .statband-in{grid-template-columns:repeat(2,1fr)}
   .why-head h2{font-size:30px}
   .statnum{font-size:36px}
@@ -335,6 +334,12 @@ aside.filters{position:sticky;top:80px;max-height:calc(100vh - 96px);overflow-y:
   .cmpgrid .lcell{grid-column:1;font-size:12px;padding:12px 10px}
   .cmpgrid .vcell{font-size:13px;padding:12px 10px}
   .cmpgrid .band{font-size:13px;padding:10px 10px}
+  @media(max-width:480px){.catrow{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:600px){.grid{grid-template-columns:repeat(2,1fr)}}
+  .apply{min-height:44px}
+  .viewbtn{min-height:44px}
+  .seeall{display:inline-flex;align-items:center;min-height:44px}
+  .lang>button{min-height:44px}
 }
 .toast{position:fixed;left:50%;bottom:96px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;
   padding:12px 20px;border-radius:var(--radius-pill);font-weight:600;font-size:14px;z-index:1100;opacity:0;transition:.25s;box-shadow:var(--shadow-lg)}
@@ -344,6 +349,8 @@ aside.filters{position:sticky;top:80px;max-height:calc(100vh - 96px);overflow-y:
 .cats-head h2{font-size:30px;letter-spacing:-.02em;display:inline-block;padding-bottom:10px;border-bottom:3px solid var(--accent-bright)}
 .cats-sub{margin:14px auto 26px;color:var(--ink-soft);font-size:16px;max-width:660px}
 .catrow{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+@media(max-width:880px){.catrow{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:480px){.catrow{grid-template-columns:repeat(2,1fr)}}
 .catitem{display:flex;flex-direction:column;align-items:center;gap:12px}
 .cat-card{width:100%;aspect-ratio:4/3;background:var(--surface);border:1px solid var(--line);border-radius:16px;display:grid;place-items:center;font-size:42px;box-shadow:var(--shadow-sm);transition:.15s}
 .catitem:hover .cat-card{box-shadow:var(--shadow);transform:translateY(-3px);border-color:var(--cta)}
