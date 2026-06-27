@@ -10,7 +10,8 @@
   /* ---- Design system tokens ---- */
   --ink:#10131a; --ink-soft:#39414f; --muted:#6b7280; --line:#e6e8e3;
   --canvas:#eef0eb; --surface:#ffffff;
-  --accent:#4d7c0f;            /* lime-700, text-safe on light */
+  --accent:#4d7c0f;            /* lime-700, fill + icon colour */
+  --accent-text:#3f6212;       /* darker text-only; clears WCAG AA 4.5:1 on both #eaf7d4 and #eef0eb */
   --accent-bright:#a3e635;     /* wordmark + selected */
   --cta:#84cc16; --cta-ink:#14250a;
   --travel:#2563eb; --premium:#7c3aed; --superp:#b45309; --metal:#475569;
@@ -119,7 +120,7 @@ aside.filters{position:sticky;top:80px;max-height:calc(100vh - 96px);overflow-y:
 .spec .k{font-size:12px;color:var(--muted);margin-bottom:3px}
 .spec .v{font-size:15px;font-weight:600}
 .cright{display:flex;flex-direction:column;align-items:flex-end;gap:10px;min-width:168px}
-.badge{display:inline-flex;align-items:center;gap:5px;background:#eaf7d4;color:var(--accent);font-weight:700;font-size:12.5px;padding:7px 12px;border-radius:var(--radius-pill);max-width:200px}
+.badge{display:inline-flex;align-items:center;gap:5px;background:#eaf7d4;color:var(--accent-text);font-weight:700;font-size:12.5px;padding:7px 12px;border-radius:var(--radius-pill);max-width:200px}
 .apply{background:var(--cta);color:var(--cta-ink);font-weight:700;font-size:14px;padding:11px 20px;border-radius:var(--radius-pill);white-space:nowrap;box-shadow:var(--shadow-sm);display:inline-block}
 .apply:hover{filter:brightness(.96)}
 .viewbtn{border:1px solid var(--line);background:var(--surface);font-weight:600;font-size:13.5px;padding:9px 18px;border-radius:var(--radius-pill);display:inline-block}
@@ -355,7 +356,7 @@ aside.filters{position:sticky;top:80px;max-height:calc(100vh - 96px);overflow-y:
 /* bank logo marquee */
 .marquee{padding:42px 0 30px;overflow:hidden}
 .marquee-head{text-align:center;margin-bottom:22px}
-.marquee-head .k{font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.marquee-head .k{font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-text)}
 .marquee-head h2{margin:6px 0 0;font-size:26px;letter-spacing:-.02em}
 .marquee-mask{-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
 .marquee-track{display:flex;gap:40px;width:max-content;align-items:center;animation:cgscroll 30s linear infinite}
