@@ -249,12 +249,22 @@ function passes(c){
   }
   return true;
 }
+// ── Monetisation preference ──────────────────────────────────────────────
+// Cards with a live affiliate link are our recommended picks, so they lead the
+// DEFAULT ordering (home tiles + /cards default sort). Explicit user sorts
+// (fee/name/reward) are respected as chosen — affiliate status only breaks
+// exact ties there. In search, relevance wins and this is just a tiebreaker
+// among similar-relevance matches (see homeView scoreOf).
+function hasAff(c){return !!(c.affiliate_url && String(c.affiliate_url).trim());}
+const byAff=(x,y)=>(hasAff(y)?1:0)-(hasAff(x)?1:0);   // affiliate-linked first
+
 function sorted(list){
   const a=[...list];
-  if(S.sort==='fee_high')a.sort((x,y)=>y.fee-x.fee);
-  if(S.sort==='fee_low')a.sort((x,y)=>x.fee-y.fee);
-  if(S.sort==='rew')a.sort((x,y)=>y.rpct-x.rpct);
-  if(S.sort==='name')a.sort((x,y)=>x.name.localeCompare(y.name));
+  if(S.sort==='fee_low')      a.sort((x,y)=>(x.fee-y.fee) || byAff(x,y));
+  else if(S.sort==='rew')     a.sort((x,y)=>(y.rpct-x.rpct) || byAff(x,y));
+  else if(S.sort==='name')    a.sort((x,y)=>x.name.localeCompare(y.name));
+  // Default "recommended" order: affiliate cards first, then annual fee high→low.
+  else                        a.sort((x,y)=>byAff(x,y) || (y.fee-x.fee));
   return a;
 }
 export const bySlug = slug => CARDS.find(c=>c.slug===slug);
@@ -604,6 +614,8 @@ export function homeView(){
   const meta=active==='all'?null:trendingCats().find(x=>x[0]===active);
   const q=(S.homeQ||'').trim().toLowerCase();
   let list=meta?CARDS.filter(meta[3]):CARDS.slice();
+  // Default (non-search) recommendation leads with affiliate-linked cards.
+  list.sort((x,y)=>byAff(x,y) || (y.fee-x.fee));
   if(q){
     // Tokenise: split on whitespace + connectors (+, &, comma, slash, dash).
     // Strip intent/filler words so "best card for movies" → ["movies"].
@@ -641,6 +653,10 @@ export function homeView(){
         if(c.cat==='super_premium') s+=4;
         else if(c.cat==='premium')  s+=2;
         else if(c.cat==='mid_tier') s+=1;
+        // Monetisation lift: among similar-relevance matches, affiliate-linked cards
+        // lead. Kept smaller than a relevance tier (10) so a clearly more relevant
+        // non-affiliate card still ranks above (e.g. a name hit beats a reward hit).
+        if(hasAff(c)) s+=8;
         return s;
       };
       list=list.map(c=>[c,scoreOf(c)]).filter(p=>p[1]>0).sort((a,b)=>b[1]-a[1]).map(p=>p[0]);
