@@ -34,8 +34,25 @@ function loadCompare() {
 }
 function saveCompare() { try { localStorage.setItem(LS_CMP, JSON.stringify(S.compare)); } catch {} }
 function loadLang() {
-  const l = localStorage.getItem(LS_LANG);
-  return (l && core.LANGS[l]) ? l : (INIT.lang || 'en');
+  // 1. ?lang= URL param — ad campaigns set this explicitly per audience
+  try {
+    const p = new URLSearchParams(window.location.search).get('lang');
+    if (p && core.LANGS[p]) {
+      try { localStorage.setItem(LS_LANG, p); } catch {}
+      return p;
+    }
+  } catch {}
+  // 2. localStorage — returning user's saved choice
+  try {
+    const saved = localStorage.getItem(LS_LANG);
+    if (saved && core.LANGS[saved]) return saved;
+  } catch {}
+  // 3. Browser/OS language — auto-detect for first-time organic visitors
+  const nav = ((navigator.language || '').slice(0, 2)).toLowerCase();
+  const BROWSER_MAP = { hi: 'hi', ta: 'ta', te: 'te' };
+  if (BROWSER_MAP[nav]) return BROWSER_MAP[nav];
+  // 4. Fallback to English
+  return INIT.lang || 'en';
 }
 
 // ---- state ----
