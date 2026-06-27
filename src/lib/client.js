@@ -25,6 +25,11 @@ function trackSearch(q) {              // debounced so we log intent, not keystr
   clearTimeout(_searchT);
   _searchT = setTimeout(() => { const v = (q || '').trim(); if (v.length >= 2) track('search', { query: v.slice(0, 60) }); }, 800);
 }
+// Current UI language as a sticky GA4 user property. (GA's built-in "Language"
+// is the BROWSER language; this is the one the visitor actually selected here.)
+function setUserLang(l) {
+  try { if (typeof window.gtag === 'function') window.gtag('set', 'user_properties', { ui_language: l }); } catch {}
+}
 
 function loadCompare() {
   try {
@@ -61,6 +66,7 @@ if (INIT.route === 'detail') over.detailSlug = INIT.slug;
 const S = core.defaultState(over);
 S.compare = loadCompare();
 if (INIT.catPage) { S.catPage = INIT.catPage; S.f.cat.add(INIT.catPage); }
+setUserLang(S.lang);   // attribute every visitor to their current UI language
 
 // ---- render ----
 function render() {
@@ -118,7 +124,7 @@ function toggleFilter(name, val) {
 }
 function resetFilters() { Object.values(S.f).forEach(s => s.clear()); S.catPage = null; render(); }
 function setSort(k) { S.sort = k; S.sortOpen = false; track('sort_change', { sort: k }); render(); }
-function setLang(l) { S.lang = l; S.langOpen = false; track('lang_change', { lang: l }); render(); }
+function setLang(l) { S.lang = l; S.langOpen = false; setUserLang(l); track('lang_change', { lang: l }); render(); }
 function setHomeCat(id) { S.homeCat = id; track('category_select', { category: id, place: 'home' }); render(); }
 function setHomeQ(v, caret) {
   S.homeQ = v; trackSearch(v); render();
