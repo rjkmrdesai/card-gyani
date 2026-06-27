@@ -46,6 +46,11 @@ const GA_ID = import.meta.env.PUBLIC_GA_ID;   // set in .env / Vercel env to ena
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
   <meta name="theme-color" content="#0e0f0c" />
+  <!-- Preload Inter 800 (latin) — the weight used by .hero h1; font-display:swap
+       means the H1 renders in the system font immediately and swaps once this
+       file arrives. Hash is stable while @fontsource/inter version is pinned. -->
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="/_astro/inter-latin-800-normal.BYj_oED-.woff2" />
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Card Gyani" />
