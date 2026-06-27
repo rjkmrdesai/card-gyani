@@ -204,8 +204,8 @@ aside.filters{position:sticky;top:80px;max-height:calc(100vh - 96px);overflow-y:
 .cmppage{max-width:1280px;margin:0 auto;padding:24px 20px 120px}
 .cmppage h1{font-size:26px;margin:0 0 6px;letter-spacing:-.02em}
 .cmppage .csub{color:var(--muted);margin:0 0 18px;font-size:15px}
-.cmpwrap{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);overflow:hidden}
-.cmpx{overflow-x:auto}
+.cmpwrap{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);overflow:clip}
+.cmpx{overflow-x:auto;-webkit-overflow-scrolling:touch}
 .cmpgrid{display:grid;min-width:min-content}
 .cmpgrid>div{min-width:0}
 .cmpgrid .corner{position:sticky;left:0;background:var(--surface);z-index:3;border-bottom:1px solid var(--line)}
@@ -328,6 +328,13 @@ aside.filters{position:sticky;top:80px;max-height:calc(100vh - 96px);overflow-y:
   .why-head h2{font-size:30px}
   .statnum{font-size:36px}
   .cats-head h2,.marquee-head h2{font-size:22px}
+  .cmppage{padding:16px 0 100px}
+  .cmpgrid{grid-template-columns:110px repeat(4,155px)!important}
+  .cmpgrid .hcell{padding:14px 8px;gap:6px}
+  .cmpgrid .hname{font-size:14px}
+  .cmpgrid .lcell{grid-column:1;font-size:12px;padding:12px 10px}
+  .cmpgrid .vcell{font-size:13px;padding:12px 10px}
+  .cmpgrid .band{font-size:13px;padding:10px 10px}
 }
 .toast{position:fixed;left:50%;bottom:96px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;
   padding:12px 20px;border-radius:var(--radius-pill);font-weight:600;font-size:14px;z-index:1100;opacity:0;transition:.25s;box-shadow:var(--shadow-lg)}
