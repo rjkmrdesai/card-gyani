@@ -17,3 +17,11 @@ scraper/extracted/
 scraper/.venv/
 scraper/__pycache__/
 scraper/**/__pycache__/
+
+# local tooling + working files (not needed in the repo)
+# Claude Code dev config (launch.json etc.)
+.claude/
+# locally-generated webp card art; the live art is served from Supabase Storage
+brand-assets/card-images/optimized/
+# one-off helper scripts (e.g. the image optimizer)
+scripts/
