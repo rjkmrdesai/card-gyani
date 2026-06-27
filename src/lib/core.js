@@ -344,12 +344,11 @@ function rowStage(c){
   return `<div class="rcard rcard-fb">${fb}</div>`;
 }
 // Card-art banner; falls back to the bank logo centered on the white stage.
-function cardStage(c, eager){
+function cardStage(c){
   const img=cardImgSrc(c);
-  const lp=eager?'fetchpriority="high" loading="eager"':'loading="lazy"';
   // Card art when available; if the art 404s (e.g. not yet deployed) fall back
   // to the bank logo at runtime so the tile never shows a broken image.
-  if(img)return `<div class="tcard"><img src="${img}" alt="${esc(c.name)}" width="640" height="404" ${lp}${c.bankLogo?` onerror="this.onerror=null;this.src='${esc(c.bankLogo)}';this.closest('.tcard').classList.add('tcard-fb')"`:''}></div>`;
+  if(img)return `<div class="tcard"><img src="${img}" alt="${esc(c.name)}" width="640" height="404" loading="lazy"${c.bankLogo?` onerror="this.onerror=null;this.src='${esc(c.bankLogo)}';this.closest('.tcard').classList.add('tcard-fb')"`:''}></div>`;
   if(c.bankLogo)return `<div class="tcard tcard-fb"><img src="${esc(c.bankLogo)}" alt="${esc(c.bank)}" loading="lazy"></div>`;
   return `<div class="tcard tcard-fb"><span class="tcard-i">${esc((c.bank||'')[0]||'')}</span></div>`;
 }
@@ -574,10 +573,10 @@ function trendingCats(){
    ['lowforex', t('low_forex'),      '🌐', c=>c.forex<3],
   ];
 }
-function cardTile(c, i){
+function cardTile(c){
   const picked=S.compare.includes(c.id);
   return `<div class="tile ${picked?'picked':''}" data-card="${c.id}">
-    ${cardStage(c, i===0)}
+    ${cardStage(c)}
     <div class="tile-top">${bankTile(c.bank,40,c.bankLogo)}${c.badge?`<span class="badge">★ ${esc(c.badge)}</span>`:''}</div>
     <div class="tname">${esc(c.name)}</div>
     <div class="tissuer">by ${esc(c.bank)} · ${esc(c.network)}</div>
