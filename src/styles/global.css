@@ -358,7 +358,7 @@ aside.filters{position:sticky;top:80px;max-height:calc(100vh - 96px);overflow-y:
 .marquee-head{text-align:center;margin-bottom:22px}
 .marquee-head .k{font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-text)}
 .marquee-head h2{margin:6px 0 0;font-size:26px;letter-spacing:-.02em}
-.marquee-mask{-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.marquee-mask{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
 .marquee-track{display:flex;gap:40px;width:max-content;align-items:center;animation:cgscroll 30s linear infinite}
 .marquee:hover .marquee-track{animation-play-state:paused}
 .marquee-track .bmono{height:40px;font-size:13px}
