@@ -17,7 +17,7 @@ const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : As
 // Social scrapers require an absolute https URL — Astro.site supplies the domain.
 const { ogImage = '/og-image.png' } = Astro.props;
 const ogImageUrl = Astro.site ? new URL(ogImage, Astro.site).href : ogImage;
-const GA_ID = import.meta.env.PUBLIC_GA_ID;   // set in .env / Vercel env to enable GA4
+const GA_ID = import.meta.env.PUBLIC_GA_ID || 'G-DH2N1966Y2';   // GA4 Measurement ID (public); env var overrides
 ---
 <!doctype html>
 <html lang="en">
