@@ -608,6 +608,26 @@ function catLinks(){
   return `<div class="sf-cats"><span class="cat-l">${t('browse_cat')}</span>${
     catsPresent().map(k=>`<a href="/cards/category/${k.replace(/_/g,'-')}">${t(k)}</a>`).join('')}</div>`;
 }
+// Trending row — a fixed, hand-picked set of cards shown above the main grid.
+// Purely presentational: links straight to each card's detail page, no state.
+function trendingSection(){
+  const SLUGS=['sbi-irctc-sbi-card','axis-flipkart-axis-bank-credit-card','axis-magnus-credit-card','sbi-cashback-sbi-card','axis-my-zone-credit-card','sbi-bpcl-sbi-card'];
+  const cards=SLUGS.map(s=>bySlug(s)).filter(Boolean);
+  if(cards.length<2) return '';
+  const tiles=cards.map(c=>`<a class="trend-tile" href="/cards/${esc(c.slug)}">
+      <div class="trend-logo">${esc(c.bank[0])}</div>
+      <div class="trend-name">${esc(c.name)}</div>
+      <div class="trend-bank">${esc(c.bank)}</div>
+      ${c.badge?`<span class="trend-badge">${esc(c.badge)}</span>`:''}
+      <div class="trend-fee">${inr(c.fee)}/yr</div>
+    </a>`).join('');
+  return `<section class="trending-wrap">
+    <div class="trending-head">
+      <h2>Trending Now <span class="trend-flame">🔥</span></h2>
+    </div>
+    <div class="trending-row">${tiles}</div>
+  </section>`;
+}
 export function homeView(){
   const active=S.homeCat||'all';
   const TREND=trendingCats().filter(x=>CARDS.some(x[3]));
@@ -693,6 +713,7 @@ export function homeView(){
       <p class="cats-sub">${t('cats_sub')}</p>
       <div class="catrow">${TREND.map(([id,lab,ic])=>`<a class="catitem ${active===id?'active':''}" href="/cards" onclick="setHomeCat(S.homeCat==='${id}'?'all':'${id}');return false"><div class="cat-card">${ic}</div><span class="cat-l">${lab}</span></a>`).join('')}</div>
     </section>`)}
+    ${trendingSection()}
     <section class="hgrid-wrap">
       <div class="hgrid-head">
         <h2>${headLabel}${showCount?` <span>· ${list.length}</span>`:''}</h2>
