@@ -66,6 +66,12 @@ if (INIT.route === 'detail') over.detailSlug = INIT.slug;
 const S = core.defaultState(over);
 S.compare = loadCompare();
 if (INIT.catPage) { S.catPage = INIT.catPage; S.f.cat.add(INIT.catPage); }
+// Localized landing-page extras (e.g. /hi/cards/entry) — re-applied here so they
+// survive the client re-render of #app (build-time appHtml alone would be wiped).
+if (INIT.lpHero) S.lpHero = INIT.lpHero;
+if (INIT.lpDisclaimer) S.lpDisclaimer = INIT.lpDisclaimer;
+// ?card=<slug> (set by card-specific ads) → spotlight that card on arrival.
+try { const cp = new URLSearchParams(window.location.search).get('card'); if (cp && CARDS.some(c => c.id === cp)) S.spotlight = cp; } catch {}
 setUserLang(S.lang);   // attribute every visitor to their current UI language
 
 // ---- render ----
@@ -162,3 +168,9 @@ if (INIT && (INIT.route === 'detail' || INIT.route === 'card') && INIT.slug) {
 
 // initial hydrate
 render();
+
+// Scroll the spotlighted card into view after the first render (?card=<slug>).
+if (S.spotlight) {
+  const el = document.querySelector(`[data-card="${S.spotlight}"]`);
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}

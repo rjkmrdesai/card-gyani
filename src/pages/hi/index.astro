@@ -1,0 +1,32 @@
+---
+import Base from '../../layouts/Base.astro';
+import { loadData } from '../../data/cards.js';
+import * as core from '../../lib/core.js';
+
+const { cards, banks } = await loadData();
+core.configure(cards, banks);
+const appHtml = core.renderRoute({ route: 'home', lang: 'hi' });
+
+const title = 'भारत का सबसे अच्छा क्रेडिट कार्ड तुलना';
+const description = 'लाइफटाइम फ्री कार्ड से लेकर कैशबैक कार्ड तक — बिना किसी पक्षपात के तुलना करें। अभी देखें।';
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Card Gyani',
+  description,
+  url: Astro.site ? new URL('/hi', Astro.site).href : undefined,
+};
+---
+<Base {title} {description} {appHtml} {cards} {banks} init={{ route: 'home', lang: 'hi' }} {jsonLd} />
+<script is:inline>
+  /* Hindi ad arrival without an explicit ?lang= → persist Hindi before client.js
+     hydrates (it reads cg_lang in loadLang). Belt-and-suspenders to ?lang=hi. */
+  (function () {
+    try {
+      var p = new URLSearchParams(location.search);
+      if (!p.get('lang') && p.get('utm_source') === 'google' && /hindi/i.test(p.get('utm_campaign') || '')) {
+        localStorage.setItem('cg_lang', 'hi');
+      }
+    } catch (e) {}
+  })();
+</script>

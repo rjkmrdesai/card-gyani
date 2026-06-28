@@ -1,0 +1,54 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { loadData } from '../../../data/cards.js';
+import * as core from '../../../lib/core.js';
+
+const { cards, banks } = await loadData();
+core.configure(cards, banks);
+
+// Hindi LTF/entry landing page. We reuse the list view filtered to the `entry`
+// CATEGORY (c.cat === 'entry' — same as /cards/category/entry), and pass a
+// localized hero + compliance disclaimer through the core LP hooks so they are
+// server-rendered AND survive the client re-render of #app. Inline styles only
+// (global.css must not be touched); --muted/--accent/--line have fallbacks.
+const lpHero = `<section class="lp-hero" style="max-width:1180px;margin:24px auto 0;padding:0 20px">
+  <h1 style="font-size:28px;letter-spacing:-.02em;margin:0 0 6px">लाइफटाइम फ्री क्रेडिट कार्ड — ज़ीरो फीस, असली फायदे</h1>
+  <p style="color:var(--muted);margin:0;font-size:16px">SBI, BOB, IDFC और अन्य बैंकों के बेस्ट फ्री कार्ड</p>
+</section>`;
+const lpDisclaimer = `<section class="lp-disc" style="max-width:1180px;margin:8px auto 40px;padding:16px 20px;color:var(--muted);font-size:13px;line-height:1.6;border-top:1px solid var(--line,#222)">
+  Card Gyani एक तुलना प्लेटफॉर्म है। अंतिम शर्तें जारीकर्ता बैंक द्वारा निर्धारित की जाती हैं। अधिक जानकारी के लिए बैंक की MITC देखें।
+</section>`;
+
+const S = core.defaultState({ route: 'list', catPage: 'entry', lang: 'hi', lpHero, lpDisclaimer });
+S.f.cat.add('entry');
+core.setState(S);
+const appHtml = core.viewFor();
+
+const count = cards.filter(c => c.cat === 'entry').length;
+const title = 'लाइफटाइम फ्री क्रेडिट कार्ड — ज़ीरो फीस | Card Gyani';
+const description = 'SBI, BOB, IDFC के बेस्ट लाइफटाइम फ्री कार्ड बिना पक्षपात तुलना करें। कोई फॉर्म नहीं, कोई स्पैम कॉल नहीं।';
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'लाइफटाइम फ्री क्रेडिट कार्ड',
+  numberOfItems: count,
+  itemListElement: cards.filter(c => c.cat === 'entry').map((c, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: `${c.name} by ${c.bank}`,
+    url: Astro.site ? new URL(`/cards/${c.slug}`, Astro.site).href : `/cards/${c.slug}`,
+  })),
+};
+---
+<Base {title} {description} {appHtml} {cards} {banks} init={{ route: 'list', catPage: 'entry', lang: 'hi', lpHero, lpDisclaimer }} {jsonLd} />
+<script is:inline>
+  /* Hindi ad arrival without an explicit ?lang= → persist Hindi before hydrate. */
+  (function () {
+    try {
+      var p = new URLSearchParams(location.search);
+      if (!p.get('lang') && p.get('utm_source') === 'google' && /hindi/i.test(p.get('utm_campaign') || '')) {
+        localStorage.setItem('cg_lang', 'hi');
+      }
+    } catch (e) {}
+  })();
+</script>
