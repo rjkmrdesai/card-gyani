@@ -80,7 +80,11 @@ export function defaultState(over){
     lang:'en', route:'home', detailSlug:null, catPage:null,
     homeCat:'all', homeQ:'',
     f:{cat:new Set(),fee:new Set(),ben:new Set(),net:new Set(),type:new Set()},
-    sort:'fee_high', compare:[], langOpen:false, sortOpen:false
+    sort:'fee_high', compare:[], langOpen:false, sortOpen:false,
+    // Landing-page extras (used by localized LP pages, e.g. /hi/cards/entry).
+    // Empty by default → existing pages render unchanged. lpHero/lpDisclaimer are
+    // raw HTML strings injected into the list view; spotlight is a card id to outline.
+    lpHero:'', lpDisclaimer:'', spotlight:null
   }, over||{});
 }
 
@@ -406,10 +410,11 @@ function filterBody(){
 /* ---------- card row (list) ---------- */
 function cardRow(c){
   const picked=S.compare.includes(c.id);
+  const spot=S.spotlight===c.id;   // ?card=<slug> arrival → outline this row
   const tags=cardTags(c).map(tagChip);
   tags.push(`<span class="tag net">${esc(c.network)}</span>`);
   const waiver=c.waiver?`${t('waived_at')} ${lakh(c.waiver)} ${t('spend')}`:t('no_fee_waiver');
-  return `<div class="card ${picked?'picked':''}" data-card="${c.id}">
+  return `<div class="card ${picked?'picked':''}${spot?' spot':''}" data-card="${c.id}"${spot?' style="outline:2px solid var(--accent,#a3e635);outline-offset:3px;border-radius:14px"':''}>
     <div class="crow">
       ${rowStage(c)}
       <div class="cmid">
@@ -440,7 +445,7 @@ export function listView(){
   const sortLabels={fee_high:t('sort_high'),fee_low:t('sort_low'),rew:t('sort_rew'),name:t('sort_name')};
   const catHead = S.catPage ? `<h1 style="font-size:26px;letter-spacing:-.02em;margin:0 0 4px">${t(S.catPage)} ${t('cards_word')}</h1>
       <p style="color:var(--muted);margin:0 0 16px;font-size:15px">${t('comparing')==='Comparing'?'Compare':''}${t(S.catPage)} ${t('cards_word')} — ${t('cmp_sub')}</p>` : '';
-  return header()+`<div class="shell">
+  return header()+(S.lpHero||'')+`<div class="shell">
     <aside class="filters">
       <div class="fhead"><h2>${t('filter_cards')}</h2><button onclick="resetFilters()">${t('reset')}</button></div>
       ${filterBody()}
@@ -460,7 +465,7 @@ export function listView(){
       </div>
       <div class="list">${body}</div>
     </div>
-  </div>`;
+  </div>`+(S.lpDisclaimer||'');
 }
 
 /* ---------- detail view ---------- */
@@ -608,26 +613,6 @@ function catLinks(){
   return `<div class="sf-cats"><span class="cat-l">${t('browse_cat')}</span>${
     catsPresent().map(k=>`<a href="/cards/category/${k.replace(/_/g,'-')}">${t(k)}</a>`).join('')}</div>`;
 }
-// Trending row — a fixed, hand-picked set of cards shown above the main grid.
-// Purely presentational: links straight to each card's detail page, no state.
-function trendingSection(){
-  const SLUGS=['sbi-irctc-sbi-card','axis-flipkart-axis-bank-credit-card','axis-magnus-credit-card','sbi-cashback-sbi-card','axis-my-zone-credit-card','sbi-bpcl-sbi-card'];
-  const cards=SLUGS.map(s=>bySlug(s)).filter(Boolean);
-  if(cards.length<2) return '';
-  const tiles=cards.map(c=>`<a class="trend-tile" href="/cards/${esc(c.slug)}">
-      <div class="trend-logo">${esc(c.bank[0])}</div>
-      <div class="trend-name">${esc(c.name)}</div>
-      <div class="trend-bank">${esc(c.bank)}</div>
-      ${c.badge?`<span class="trend-badge">${esc(c.badge)}</span>`:''}
-      <div class="trend-fee">${inr(c.fee)}/yr</div>
-    </a>`).join('');
-  return `<section class="trending-wrap">
-    <div class="trending-head">
-      <h2>Trending Now <span class="trend-flame">🔥</span></h2>
-    </div>
-    <div class="trending-row">${tiles}</div>
-  </section>`;
-}
 export function homeView(){
   const active=S.homeCat||'all';
   const TREND=trendingCats().filter(x=>CARDS.some(x[3]));
@@ -713,7 +698,6 @@ export function homeView(){
       <p class="cats-sub">${t('cats_sub')}</p>
       <div class="catrow">${TREND.map(([id,lab,ic])=>`<a class="catitem ${active===id?'active':''}" href="/cards" onclick="setHomeCat(S.homeCat==='${id}'?'all':'${id}');return false"><div class="cat-card">${ic}</div><span class="cat-l">${lab}</span></a>`).join('')}</div>
     </section>`)}
-    ${trendingSection()}
     <section class="hgrid-wrap">
       <div class="hgrid-head">
         <h2>${headLabel}${showCount?` <span>· ${list.length}</span>`:''}</h2>
