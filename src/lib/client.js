@@ -74,6 +74,69 @@ if (INIT.lpDisclaimer) S.lpDisclaimer = INIT.lpDisclaimer;
 try { const cp = new URLSearchParams(window.location.search).get('card'); if (cp && CARDS.some(c => c.id === cp)) S.spotlight = cp; } catch {}
 setUserLang(S.lang);   // attribute every visitor to their current UI language
 
+// ---- UTM attribution + ad-click logging ----------------------------------
+// Internal links are real <a href> full loads, so utm_* on the landing URL is
+// lost on the next page. Capture once into sessionStorage on first arrival;
+// reuse for affiliate-click logging and re-append to outbound Apply Now links.
+const UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term'];
+const SS_UTM = 'cg_utm';
+function getUTMs() {
+  try { return JSON.parse(sessionStorage.getItem(SS_UTM) || '{}') || {}; } catch { return {}; }
+}
+function captureUTMs() {
+  try {
+    const q = new URLSearchParams(window.location.search);
+    const present = {};
+    for (const k of UTM_KEYS) { const v = q.get(k); if (v) present[k] = v; }
+    // Only overwrite when THIS page carries UTMs — keeps original landing
+    // attribution intact as the user navigates deeper into the site.
+    if (Object.keys(present).length) sessionStorage.setItem(SS_UTM, JSON.stringify(present));
+  } catch {}
+}
+function appendUTMs(url) {
+  const utms = getUTMs(); const keys = Object.keys(utms);
+  if (!keys.length || !url || url === '#') return url;
+  try {
+    const u = new URL(url, window.location.origin);
+    for (const k of keys) if (!u.searchParams.has(k)) u.searchParams.set(k, utms[k]);
+    return u.toString();
+  } catch { return url; }
+}
+captureUTMs();
+
+// Affiliate-click logging → Supabase ad_click_log (anon insert, RLS-protected).
+const SUPA_URL = import.meta.env.PUBLIC_SUPABASE_URL;
+const SUPA_ANON = import.meta.env.PUBLIC_SUPABASE_ANON_KEY;
+function logApplyClick(el) {
+  if (!SUPA_URL || !SUPA_ANON || !el) return;
+  const u = getUTMs();
+  const card = CARDS.find(c => c.id === el.dataset.card);
+  const body = {
+    card_slug: el.dataset.card || null,
+    card_name: card ? card.name : null,
+    bank: el.dataset.bank || null,
+    utm_source: u.utm_source || null,
+    utm_medium: u.utm_medium || null,
+    utm_campaign: u.utm_campaign || null,
+    utm_term: u.utm_term || null,
+    page_url: window.location.href,
+    lang: S.lang,
+    user_agent: navigator.userAgent,
+  };
+  try {
+    fetch(`${SUPA_URL}/rest/v1/ad_click_log`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        apikey: SUPA_ANON, Authorization: `Bearer ${SUPA_ANON}`,
+        Prefer: 'return=minimal',
+      },
+      body: JSON.stringify(body),
+      keepalive: true,   // survive the new-tab open / page unload
+    }).catch(() => {});
+  } catch {}
+}
+
 // ---- render ----
 function render() {
   core.setState(S);
@@ -155,7 +218,16 @@ Object.assign(window, {
 // ---- global wiring ----
 document.addEventListener('click', e => {
   const evEl = e.target.closest('[data-ev]');   // apply_click / view_details / compare_view
-  if (evEl) { const p = { ...evEl.dataset }; const name = p.ev; delete p.ev; track(name, p); }
+  if (evEl) {
+    const p = { ...evEl.dataset }; const name = p.ev; delete p.ev; track(name, p);
+    if (name === 'apply_click') {
+      // Re-append ad UTMs to the outbound affiliate URL, then log the click.
+      if (evEl.tagName === 'A' && /^https?:/i.test(evEl.getAttribute('href') || '')) {
+        evEl.href = appendUTMs(evEl.href);
+      }
+      logApplyClick(evEl);
+    }
+  }
   if (!e.target.closest('.lang') && S.langOpen) { S.langOpen = false; render(); }
   if (!e.target.closest('.sortsel') && S.sortOpen) { S.sortOpen = false; render(); }
 });
