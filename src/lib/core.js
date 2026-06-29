@@ -618,9 +618,12 @@ export function homeView(){
   const TREND=trendingCats().filter(x=>CARDS.some(x[3]));
   const meta=active==='all'?null:trendingCats().find(x=>x[0]===active);
   const q=(S.homeQ||'').trim().toLowerCase();
-  let list=meta?CARDS.filter(meta[3]):CARDS.slice();
-  // Default (non-search) recommendation leads with affiliate-linked cards.
-  list.sort((x,y)=>byAff(x,y) || (y.fee-x.fee));
+  const TRENDING_SLUGS = ['sbi-irctc-sbi-card','axis-flipkart-axis-bank-credit-card','axis-magnus-credit-card','sbi-cashback-sbi-card','axis-my-zone-credit-card','sbi-bpcl-sbi-card'];
+  const isTrending = active === 'all' && !q;
+  let list = isTrending ? CARDS.filter(c => TRENDING_SLUGS.includes(c.id)) : (meta ? CARDS.filter(meta[3]) : CARDS.slice());
+  // Trending row: order by annual fee (low → high). Otherwise the default
+  // recommendation leads with affiliate-linked cards, then fee high → low.
+  list.sort(isTrending ? (x,y)=>x.fee-y.fee : (x,y)=>byAff(x,y) || (y.fee-x.fee));
   if(q){
     // Tokenise: split on whitespace + connectors (+, &, comma, slash, dash).
     // Strip intent/filler words so "best card for movies" → ["movies"].
