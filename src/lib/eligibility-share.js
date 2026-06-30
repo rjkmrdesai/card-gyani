@@ -43,8 +43,14 @@ export function encodeState(state, activeTab) {
 /* ---------- decode → { inputs (internal), contract, activeTab } or null ---------- */
 export function decodeState(s) {
   if (!s) return null;
+  // Be tolerant of links where extra text got appended to the param — e.g. a
+  // chat app / share target that serialised the share message next to the URL
+  // ("?s=<payload> I'm likely eligible for …"). The payload is base64url, so
+  // keep only the leading run of base64url chars and ignore any trailing junk.
+  const m = String(s).trim().match(/^[A-Za-z0-9\-_]+/);
+  if (!m) return null;
   try {
-    const json = JSON.parse(b64decode(s));
+    const json = JSON.parse(b64decode(m[0]));
     if (!json || json.v !== 1 || !json.inputs) return null;
     const i = json.inputs;
     const inputs = {
