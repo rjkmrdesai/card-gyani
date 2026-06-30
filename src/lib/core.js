@@ -10,7 +10,7 @@
 
 /* ---------- i18n (EN / HI / TA / TE) ---------- */
 export const I18N = {
- en:{compare:'Compare',all_cards:'All cards',filter_cards:'Filter cards',category:'Category',
+ en:{compare:'Compare',all_cards:'All cards',eligibility:'Eligibility',filter_cards:'Filter cards',category:'Category',
    super_premium:'Super Premium',premium:'Premium',mid_tier:'Mid-tier',entry:'Entry',travel:'Travel',fuel:'Fuel',
    annual_fee:'Annual fee',lifetime_free:'Lifetime free',u500:'Under ₹500',b1:'₹500–₹2,000',b2:'₹2,000–₹5,000',b3:'₹5,000+',
    benefits:'Benefits',lounge_access:'Lounge access',low_forex:'Low forex (<3%)',upi_card:'UPI credit card',   network:'Network',showing:'Showing',cards_word:'cards',fee_waiver:'Fee waiver',forex_markup:'Forex markup',finance_charge:'Finance charge',
@@ -45,7 +45,7 @@ export const I18N = {
    elig_view:'View card details',elig_apply:'Apply now',
    elig_fallback_title:'No unsecured cards match your profile',elig_fallback_body:'Based on your details, we\'re showing the best FD-backed secured card — no income proof or CIBIL score needed. Your FD earns interest while you build credit history.',
    elig_secured_badge:'Secured · Recommended for you',elig_secured_guaranteed:'Guaranteed approval',elig_secured_fd:'FD from ₹2,000',elig_secured_noproof:'No income proof',elig_secured_builds:'Builds CIBIL score'},
- hi:{compare:'तुलना करें',all_cards:'सभी कार्ड',filter_cards:'कार्ड फ़िल्टर करें',category:'श्रेणी',
+ hi:{compare:'तुलना करें',all_cards:'सभी कार्ड',eligibility:'पात्रता',filter_cards:'कार्ड फ़िल्टर करें',category:'श्रेणी',
    super_premium:'सुपर प्रीमियम',premium:'प्रीमियम',mid_tier:'मिड-टियर',entry:'एंट्री',travel:'ट्रैवल',fuel:'फ्यूल',
    annual_fee:'वार्षिक शुल्क',lifetime_free:'लाइफटाइम फ्री',u500:'₹500 से कम',b1:'₹500–₹2,000',b2:'₹2,000–₹5,000',b3:'₹5,000+',
    benefits:'लाभ',lounge_access:'लाउंज एक्सेस',low_forex:'कम फॉरेक्स (<3%)',upi_card:'UPI क्रेडिट कार्ड',   network:'नेटवर्क',showing:'दिखा रहे हैं',cards_word:'कार्ड',fee_waiver:'शुल्क छूट',forex_markup:'फॉरेक्स मार्कअप',finance_charge:'वित्त शुल्क',
@@ -106,6 +106,34 @@ export const I18N = {
    filters:'ఫిల్టర్లు',type:'కార్డు రకం',retail:'రిటైల్',business:'బిజినెస్',secured:'సెక్యూర్డ్',cobrand:'కో-బ్రాండ్',fd_linked:'FD-లింక్డ్',home:'హోమ్',see_all:'అన్నీ చూసి ఫిల్టర్ చేయండి →',partnered:'భాగస్వామ్య బ్యాంకులు',rewards_band:'రివార్డులు & ప్రయోజనాలు',search_ph:'కార్డులు, బ్యాంకులు లేదా ప్రయోజనాలను శోధించండి…',browse_cat:'వర్గం వారీగా బ్రౌజ్ చేయండి'},
 };
 export const LANGS = {en:['English','EN'],hi:['हिन्दी','HI'],ta:['தமிழ்','TA'],te:['తెలుగు','TE']};
+
+/* ---------- header nav: single source of truth ----------
+   One definition for the whole site (SPA pages via header() below AND the
+   standalone EligibilityBase.astro layout). [href, i18n-label-key]. */
+export const NAV = [
+  ['/', 'home'],
+  ['/cards', 'all_cards'],
+  ['/eligibility', 'eligibility'],
+];
+// Given a URL path, return the NAV href that should show the active pill.
+// '/' is exact; others match the path segment (so /cards/<slug> and
+// /eligibility/results both light up their parent item).
+export function navActive(path){
+  const p = (path || '/').replace(/\/+$/,'') || '/';
+  if(p === '/') return '/';
+  let best = '';
+  for(const [href] of NAV){
+    if(href === '/') continue;
+    if((p === href || p.startsWith(href + '/')) && href.length > best.length) best = href;
+  }
+  return best;
+}
+// Render the shared <nav>. `active` is the href to highlight; `lang` picks labels.
+export function navHtml(active, lang){
+  const tr = k => (I18N[lang] && I18N[lang][k]) ?? I18N.en[k] ?? k;
+  return `<nav class="nav">${NAV.map(([href,key]) =>
+    `<a class="${active===href?'active':''}" href="${href}">${tr(key)}</a>`).join('')}</nav>`;
+}
 
 const BANKMETA = {
  'HDFC':['HDFC','#004C8F'],'Axis':['AXIS','#97144D'],'SBI':['SBI','#22409A'],'ICICI':['ICICI','#AE282E'],
@@ -424,14 +452,12 @@ function applyLink(c, cls, place){
 const LOGO = `<svg class="logomark" viewBox="0 0 120 90" width="27" height="20" aria-hidden="true"><rect x="6" y="10" width="108" height="70" rx="14" fill="#a3e635"/><rect x="18" y="24" width="28" height="18" rx="5" fill="#10131a"/><rect x="18" y="52" width="64" height="8" rx="4" fill="#10131a" opacity="0.5"/><rect x="18" y="64" width="44" height="8" rx="4" fill="#10131a" opacity="0.35"/><circle cx="96" cy="60" r="13" fill="#10131a"/></svg>`;
 
 function header(){
-  const onList = S.route==='list';
+  // Active pill by current route (home → /, list/detail → /cards). Compare and
+  // other routes light up nothing. Uses the shared NAV via navHtml().
+  const active = S.route==='home' ? '/' : (S.route==='list'||S.route==='detail') ? '/cards' : '';
   return `<header class="app"><div class="hwrap">
     <a class="brand" href="/">${LOGO}Card <b>Gyani</b></a>
-    <nav class="nav">
-      <a class="${S.route==='home'?'active':''}" href="/">${t('home')}</a>
-      <a class="${onList?'active':''}" href="/cards">${t('all_cards')}</a>
-      <a class="${S.route==='compare'?'active':''}" href="/compare">${t('compare')}<span data-cmp-count>${S.compare.length?` (${S.compare.length})`:''}</span></a>
-    </nav>
+    ${navHtml(active, S.lang)}
     <div class="spacer"></div>
     <div class="lang">
       <button onclick="S.langOpen=!S.langOpen;S.sortOpen=false;render()">🌐 ${LANGS[S.lang][1]} ▾</button>
