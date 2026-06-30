@@ -18,6 +18,8 @@ side‑by‑side compare) with three production changes:
 | `/cards/<slug>/` | Card detail (one per card, e.g. `/cards/hdfc-infinia-metal-edition/`) |
 | `/cards/category/<category>/` | Category landing (e.g. `/cards/category/super-premium/`) |
 | `/compare/` | Side‑by‑side compare (reads selection from the visitor's browser) |
+| `/eligibility/` | Eligibility checker — 5-question form, scores cards client-side against a static eligibility map, shows results filtered by Likely/Possible/Unlikely approval odds |
+| `/eligibility/results/` | Shareable full results page — reads a base64-encoded `?s=` query param, fully stateless and reconstructable from the URL alone, includes social share (Facebook/WhatsApp/X/native share sheet) |
 | `/sitemap-index.xml`, `/robots.txt` | SEO |
 
 ## Data flow
@@ -31,6 +33,20 @@ side‑by‑side compare) with three production changes:
 - Interactivity (filter, sort, search, language EN/HI/TA/TE, compare) runs client‑side.
   Compare selection + language preference persist in `localStorage`. Cross‑page navigation
   uses real links.
+
+## Eligibility checker
+
+Unlike the rest of the site, card eligibility data (`elig_min_cibil`, `elig_min_age`, 
+`elig_secured_available`, etc.) is **not** stored in Supabase yet — it lives as a static 
+hardcoded map in `src/lib/eligibility.js`, keyed by card slug. The 5-question form on 
+`/eligibility/` scores all cards client-side against this map (no server round-trip), 
+and the results page (`/eligibility/results/`) is fully stateless — it reconstructs the 
+user's inputs and re-runs scoring from a base64-encoded payload in the `?s=` URL param, 
+so results pages are shareable links rather than session-based.
+
+> Eligibility data should eventually move into Supabase as real columns once the 
+> backend research (see project Excel) is migrated — this is intentionally deferred 
+> for now to ship the feature faster.
 
 ## Supabase
 
