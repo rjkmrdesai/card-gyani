@@ -1,0 +1,104 @@
+---
+/* Standalone layout for the eligibility checker. Mirrors the site header +
+   footer chrome (logo, nav, footer note + category links) exactly as core.js
+   renders them, imports the same global.css, and exposes a <slot/> so the page
+   renders its own content. Deliberately does NOT boot client.js — this page is
+   self-contained and must not be overwritten by the SPA hydrate. */
+import '../styles/global.css';
+
+const {
+  title = 'Eligibility Checker — Card Gyani',
+  description = 'Check your real approval odds across Indian credit cards. Soft check only — no impact on your CIBIL score, no forms, no spam calls.',
+} = Astro.props;
+
+const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : Astro.url.pathname;
+
+// Logo mark — copied verbatim from core.js so the brand matches the rest of the site.
+const LOGO = `<svg class="logomark" viewBox="0 0 120 90" width="27" height="20" aria-hidden="true"><rect x="6" y="10" width="108" height="70" rx="14" fill="#a3e635"/><rect x="18" y="24" width="28" height="18" rx="5" fill="#10131a"/><rect x="18" y="52" width="64" height="8" rx="4" fill="#10131a" opacity="0.5"/><rect x="18" y="64" width="44" height="8" rx="4" fill="#10131a" opacity="0.35"/><circle cx="96" cy="60" r="13" fill="#10131a"/></svg>`;
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="theme-color" content="#0e0f0c" />
+  <!-- Tabler outline icon webfont (ti-*) — used by the eligibility UI. -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.31.0/dist/tabler-icons.min.css" />
+</head>
+<body>
+  <header class="app"><div class="hwrap">
+    <a class="brand" href="/" set:html={`${LOGO}Card <b>Gyani</b>`}></a>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/cards">All cards</a>
+      <a class="active" href="/eligibility">Eligibility</a>
+    </nav>
+    <div class="spacer"></div>
+    <div class="lang">
+      <button id="langBtn">🌐 EN ▾</button>
+      <div class="lang-menu" id="langMenu" style="display:none">
+        <button data-lang="en"><span>English</span><small>EN</small></button>
+        <button data-lang="hi"><span>हिन्दी</span><small>HI</small></button>
+        <button data-lang="ta"><span>தமிழ்</span><small>TA</small></button>
+        <button data-lang="te"><span>తెలుగు</span><small>TE</small></button>
+      </div>
+    </div>
+  </div></header>
+
+  <script is:inline>
+    (function () {
+      // Self-contained language switcher. Reads ?lang then localStorage cg_lang,
+      // persists the choice to both (so it carries to every other page), and —
+      // instead of a full reload — dispatches 'cg:lang' so the page re-renders in
+      // place (the eligibility script listens for it), matching /cards behaviour.
+      var LS = 'cg_lang';
+      var CODE = { en: 'EN', hi: 'HI', ta: 'TA', te: 'TE' };
+      function current() {
+        try { var p = new URLSearchParams(location.search).get('lang'); if (p && CODE[p]) return p; } catch (e) {}
+        try { var s = localStorage.getItem(LS); if (s && CODE[s]) return s; } catch (e) {}
+        return 'en';
+      }
+      var lang = current();
+      var btn = document.getElementById('langBtn');
+      var menu = document.getElementById('langMenu');
+      function paint(l) {
+        if (btn) btn.textContent = '🌐 ' + CODE[l] + ' ▾';
+        document.documentElement.lang = l;
+        if (menu) menu.querySelectorAll('[data-lang]').forEach(function (b) { b.classList.toggle('sel', b.dataset.lang === l); });
+      }
+      paint(lang);
+      function close() { if (menu) menu.style.display = 'none'; }
+      if (btn) btn.addEventListener('click', function (e) { e.stopPropagation(); menu.style.display = menu.style.display === 'block' ? 'none' : 'block'; });
+      if (menu) menu.addEventListener('click', function (e) {
+        var b = e.target.closest('[data-lang]'); if (!b) return;
+        var l = b.dataset.lang;
+        lang = l;
+        try { localStorage.setItem(LS, l); } catch (e) {}
+        try { var u = new URL(location.href); u.searchParams.set('lang', l); history.replaceState(null, '', u); } catch (e) {}
+        paint(l);
+        close();
+        document.dispatchEvent(new CustomEvent('cg:lang', { detail: l }));
+      });
+      document.addEventListener('click', close);
+    })();
+  </script>
+
+  <slot />
+
+  <footer class="site-footer"><div class="sf-in">
+    <div class="brand" set:html={`${LOGO}Card <b>Gyani</b>`}></div>
+    <span>Indicative figures from issuer MITC documents. Verify on the bank site before applying.</span>
+  </div><div class="sf-cats">
+    <span class="cat-l">Browse by category</span>
+    <a href="/cards/category/super-premium">Super Premium</a>
+    <a href="/cards/category/premium">Premium</a>
+    <a href="/cards/category/mid-tier">Mid-tier</a>
+    <a href="/cards/category/entry">Entry</a>
+  </div></footer>
+</body>
+</html>

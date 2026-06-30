@@ -1,0 +1,518 @@
+---
+import EligibilityBase from '../layouts/EligibilityBase.astro';
+import { loadData } from '../data/cards.js';
+import { ELIG, EMPLOYMENT, INCOME_BANDS, CIBIL_BANDS, CITIES, BANK_OPTIONS, t } from '../lib/eligibility.js';
+
+const { cards } = await loadData();
+const totalCards = cards.length;                       // real catalogue size (450)
+const totalBanks = new Set(cards.map(c => c.bank)).size;
+
+// Only the curated cards (those present in the static ELIG map) are scored.
+// Pass the minimal fields the client scorer + renderer need.
+const eligCards = cards
+  .filter(c => ELIG[c.slug])
+  .map(c => ({
+    slug: c.slug, name: c.name, bank: c.bank, cat: c.cat, type: c.type,
+    fee: c.fee, forex: c.forex, lounge: c.lounge, badge: c.badge, ltf: c.ltf,
+    apply_url: c.apply_url, affiliate_url: c.affiliate_url,
+  }));
+
+const L = 'en';   // build language; client re-applies the user's choice on switch
+const title = 'Credit card eligibility checker — Card Gyani';
+const description = `Answer 5 quick questions and see your real approval odds across ${totalCards} credit cards. Soft check only — no impact on your CIBIL score.`;
+---
+<EligibilityBase {title} {description}>
+  <div class="elig-page">
+
+    <!-- ───────── hero ───────── -->
+    <section class="elig-hero">
+      <div class="elig-hero-in">
+        <div class="elig-hero-copy">
+          <span class="elig-eyebrow" data-i18n="elig_eyebrow">{t(L, 'elig_eyebrow')}</span>
+          <h1><span data-i18n="elig_h1_pre">{t(L, 'elig_h1_pre')}</span><em data-i18n="elig_h1_em">{t(L, 'elig_h1_em')}</em><span data-i18n="elig_h1_post">{t(L, 'elig_h1_post')}</span></h1>
+          <p class="elig-sub" data-i18n="elig_sub" data-n={totalCards}>{t(L, 'elig_sub').replace('{n}', totalCards)}</p>
+          <div class="elig-trust">
+            <span><i class="dot"></i><span data-i18n="elig_trust_soft">{t(L, 'elig_trust_soft')}</span></span>
+            <span><i class="dot"></i><span data-i18n="elig_trust_nodata">{t(L, 'elig_trust_nodata')}</span></span>
+            <span><i class="dot"></i><span data-i18n="elig_trust_free">{t(L, 'elig_trust_free')}</span></span>
+            <span><i class="dot"></i><span data-i18n="elig_trust_checked" data-n={totalCards}>{t(L, 'elig_trust_checked').replace('{n}', totalCards)}</span></span>
+          </div>
+        </div>
+        <div class="elig-stats">
+          <div class="elig-stat"><b>{totalCards}</b><span data-i18n="elig_stat_cards">{t(L, 'elig_stat_cards')}</span></div>
+          <div class="elig-stat"><b>{totalBanks}</b><span data-i18n="elig_stat_banks">{t(L, 'elig_stat_banks')}</span></div>
+          <div class="elig-stat"><b>0</b><span data-i18n="elig_stat_impact">{t(L, 'elig_stat_impact')}</span></div>
+          <div class="elig-stat"><b data-i18n="elig_stat_time_val">{t(L, 'elig_stat_time_val')}</b><span data-i18n="elig_stat_time">{t(L, 'elig_stat_time')}</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────── form + results ───────── -->
+    <div class="elig-shell">
+      <form class="elig-form" id="eligForm" autocomplete="off">
+
+        <div class="elig-q" data-block="details">
+          <div class="elig-q-meta"><span class="elig-q-count">01 of 05 — <span data-i18n="elig_q4_label">{t(L, 'elig_q4_label')}</span></span><span class="elig-q-sel"><i class="ti ti-circle-check"></i> <span data-i18n="elig_selected">{t(L, 'elig_selected')}</span></span></div>
+          <div class="q4-row">
+            <div class="field">
+              <label for="eligAge" data-i18n="elig_age_label">{t(L, 'elig_age_label')}</label>
+              <input type="number" id="eligAge" min="18" max="75" placeholder={t(L, 'elig_age_ph')} data-i18n-ph="elig_age_ph" data-q="age" />
+            </div>
+            <div class="field">
+              <label for="eligCity" data-i18n="elig_city_label">{t(L, 'elig_city_label')}</label>
+              <select id="eligCity" data-q="city">
+                <option value="" disabled selected data-i18n="elig_city_ph">{t(L, 'elig_city_ph')}</option>
+                {CITIES.map(([label]) => <option value={label}>{label}</option>)}
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="elig-q" data-block="employment">
+          <div class="elig-q-meta"><span class="elig-q-count">02 of 05 — <span data-i18n="elig_q1_label">{t(L, 'elig_q1_label')}</span></span><span class="elig-q-sel"><i class="ti ti-circle-check"></i> <span data-i18n="elig_selected">{t(L, 'elig_selected')}</span></span></div>
+          <div class="elig-pills">
+            {EMPLOYMENT.map(([val, tkey]) => <button type="button" class="pill-opt" data-q="employment" data-val={val} data-i18n={tkey}>{t(L, tkey)}</button>)}
+          </div>
+        </div>
+
+        <div class="elig-q" data-block="income">
+          <div class="elig-q-meta"><span class="elig-q-count">03 of 05 — <span data-i18n="elig_q2_label">{t(L, 'elig_q2_label')}</span></span><span class="elig-q-sel"><i class="ti ti-circle-check"></i> <span data-i18n="elig_selected">{t(L, 'elig_selected')}</span></span></div>
+          <div class="tile-grid income-grid">
+            {INCOME_BANDS.map(([val, _mid, tkey]) => <button type="button" class="tile-opt" data-q="income" data-val={val} data-i18n={tkey}>{t(L, tkey)}</button>)}
+          </div>
+        </div>
+
+        <div class="elig-q" data-block="cibil">
+          <div class="elig-q-meta"><span class="elig-q-count">04 of 05 — <span data-i18n="elig_q3_label">{t(L, 'elig_q3_label')}</span></span><span class="elig-q-sel"><i class="ti ti-circle-check"></i> <span data-i18n="elig_selected">{t(L, 'elig_selected')}</span></span></div>
+          <div class="cibil-grid">
+            {CIBIL_BANDS.map(([key, b]) => (
+              <button type="button" class={`cibil-opt${b.ntc ? ' cibil-ntc' : ''}`} data-q="cibil" data-val={key}>
+                <span class="band" style={`color:${b.color}`} data-i18n={b.labelKey}>{t(L, b.labelKey)}</span>
+                <span class="range" data-i18n={b.rangeKey}>{t(L, b.rangeKey)}</span>
+                <span class="desc" data-i18n={b.descKey}>{t(L, b.descKey)}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div class="elig-q" data-block="bank">
+          <div class="elig-q-meta"><span class="elig-q-count">05 of 05 — <span data-i18n="elig_q5_label">{t(L, 'elig_q5_label')}</span></span><span class="elig-q-sel"><i class="ti ti-circle-check"></i> <span data-i18n="elig_selected">{t(L, 'elig_selected')}</span></span></div>
+          <div class="elig-pills">
+            {BANK_OPTIONS.map(([val, label]) => val === 'none'
+              ? <button type="button" class="pill-opt" data-q="bank" data-val={val} data-i18n="elig_bank_none">{t(L, 'elig_bank_none')}</button>
+              : <button type="button" class="pill-opt" data-q="bank" data-val={val}>{label}</button>)}
+          </div>
+        </div>
+
+        <button type="button" class="elig-cta" id="eligCheck"><i class="ti ti-sparkles"></i> <span data-i18n="elig_cta">{t(L, 'elig_cta')}</span></button>
+        <p class="elig-note"><i class="ti ti-shield-check"></i> <span data-i18n="elig_note">{t(L, 'elig_note')}</span></p>
+      </form>
+
+      <section class="elig-results" id="eligResults" aria-live="polite">
+        <div class="res-head">
+          <div class="res-count" id="resCount">{t(L, 'elig_results_title')}</div>
+          <div class="res-meta" id="resMeta">{t(L, 'elig_results_prompt')}</div>
+        </div>
+        <div id="resTabs"></div>
+        <div id="resList"></div>
+        <div id="resMore"></div>
+      </section>
+    </div>
+  </div>
+
+  <script is:inline define:vars={{ eligCards, totalCards }}>
+    window.__ELIG__ = { cards: eligCards, total: totalCards };
+  </script>
+
+  <script>
+    import { rankCards, INCOME_BANDS, CIBIL_BANDS, CITIES, EMPLOYMENT, bankMeta, t } from '../lib/eligibility.js';
+    import { tabsHtml } from '../lib/eligibility-render.js';
+    import { encodeState, bandOf, bandCounts } from '../lib/eligibility-share.js';
+
+    const data = window.__ELIG__ || { cards: [], total: 0 };
+    const CARDS = data.cards;
+    const $ = s => document.querySelector(s);
+    const LANGS = ['en', 'hi', 'ta', 'te'];
+
+    // Active language: <html lang> (set by the header script) → localStorage → en.
+    let currentLang = (() => {
+      const d = document.documentElement.lang;
+      if (LANGS.includes(d)) return d;
+      try { const s = localStorage.getItem('cg_lang'); if (LANGS.includes(s)) return s; } catch (e) {}
+      return 'en';
+    })();
+    const tr = key => t(currentLang, key);
+
+    const INCOME_MID = Object.fromEntries(INCOME_BANDS.map(([v, mid]) => [v, mid]));
+    const INCOME_TKEY = Object.fromEntries(INCOME_BANDS.map(([v, , k]) => [v, k]));
+    const CIBIL_MAP = Object.fromEntries(CIBIL_BANDS);
+    const CITY_TIER = Object.fromEntries(CITIES);
+    const EMP_TKEY = Object.fromEntries(EMPLOYMENT);
+    const RING_R = 22;
+    const C = 2 * Math.PI * RING_R;   // ring circumference
+
+    const state = { employment: null, income: null, cibil: null, age: '', city: '', bank: null };
+
+    const ready = () => state.employment && state.income && state.cibil;
+
+    function profile() {
+      const cb = state.cibil ? CIBIL_MAP[state.cibil] : null;
+      return {
+        employment: state.employment,
+        income: state.income ? INCOME_MID[state.income] : 0,
+        cibil: cb ? cb.mid : 0,
+        ntc: !!(cb && cb.ntc),
+        age: state.age ? Number(state.age) : 0,
+        cityTier: state.city ? CITY_TIER[state.city] : null,
+        bank: state.bank,
+      };
+    }
+
+    const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+    const inr = n => '₹' + Number(n).toLocaleString('en-IN');
+    const hasLounge = l => { const v = (l || '').trim(); return !!v && !/^(not applicable|n\/?a|none|—|-)$/i.test(v); };
+
+    function ringColors(pct) {
+      if (pct >= 50) return { arc: '#84cc16', text: '#4d7c0f' };
+      if (pct >= 25) return { arc: '#f59e0b', text: '#b45309' };
+      return { arc: '#ef4444', text: '#b91c1c' };
+    }
+    function ringHtml(pct) {
+      const { arc, text } = ringColors(pct);
+      const off = C * (1 - pct / 100);
+      return `<div class="res-ring">
+        <svg width="52" height="52" viewBox="0 0 52 52" style="transform:rotate(-90deg)">
+          <circle cx="26" cy="26" r="${RING_R}" fill="none" stroke="#e6e8e3" stroke-width="4"></circle>
+          <circle cx="26" cy="26" r="${RING_R}" fill="none" stroke="${arc}" stroke-width="4" stroke-linecap="round"
+            stroke-dasharray="${C.toFixed(2)}" stroke-dashoffset="${off.toFixed(2)}"></circle>
+        </svg>
+        <span class="ring-pct" style="color:${text}">${pct}%</span>
+      </div>`;
+    }
+
+    function logoHtml(bank) {
+      const [mono, color] = bankMeta(bank);
+      return `<span class="res-logo" style="background:${color}">${esc(mono)}</span>`;
+    }
+    function applyHref(c) { return c.affiliate_url || c.apply_url || '#'; }
+
+    function featureTags(c) {
+      const out = [];
+      out.push(`<span class="rt rt-feat">${c.ltf || c.fee === 0 ? esc(tr('elig_feat_ltf')) : esc(inr(c.fee) + ' ' + tr('pa'))}</span>`);
+      if (hasLounge(c.lounge)) out.push(`<span class="rt rt-feat">${esc(tr('elig_feat_lounge'))}</span>`);
+      if (/cashback|cash back/i.test((c.badge || '') + ' ' + (c.name || ''))) out.push(`<span class="rt rt-feat">${esc(tr('elig_feat_cashback'))}</span>`);
+      if (typeof c.forex === 'number' && c.forex > 0 && c.forex < 3) out.push(`<span class="rt rt-feat">${esc(tr('elig_feat_lowforex'))}</span>`);
+      return out.join('');
+    }
+    function oddsTag(score) {
+      if (score >= 50) return `<span class="rt rt-high">${esc(tr('elig_tag_high'))}</span>`;
+      if (score >= 25) return `<span class="rt rt-med">${esc(tr('elig_tag_med'))}</span>`;
+      return `<span class="rt rt-low">${esc(tr('elig_tag_low'))}</span>`;
+    }
+
+    // Card category sub-line reuses core.js's existing category keys (premium, …).
+    function catLabel(cat) { return tr(cat); }
+
+    function cardHtml(r) {
+      const c = r.card;
+      const sub = `${esc(c.bank)} · ${esc(catLabel(c.cat))}`;
+      const apply = `<a class="res-btn res-apply" href="${esc(applyHref(c))}" target="_blank" rel="noopener noreferrer nofollow" data-ev="apply_click" data-card="${esc(c.slug)}" data-bank="${esc(c.bank)}">${esc(tr('elig_apply'))} <i class="ti ti-external-link"></i></a>`;
+      const view = `<a class="res-btn res-view" href="/cards/${esc(c.slug)}">${esc(tr('elig_view'))}</a>`;
+
+      if (r.forcedSecured) {
+        const tags = [`<span class="rt rt-high">${esc(tr('elig_secured_guaranteed'))}</span>`,
+          `<span class="rt rt-med">${esc(tr('elig_secured_fd'))}</span>`,
+          `<span class="rt rt-feat">${esc(tr('elig_secured_noproof'))}</span>`,
+          `<span class="rt rt-feat">${esc(tr('elig_secured_builds'))}</span>`,
+          `<span class="rt rt-feat">${esc(tr('elig_feat_ltf'))}</span>`].join('');
+        return `<article class="res-card secured">
+          <div class="res-badge secured-badge"><i class="ti ti-lock"></i> ${esc(tr('elig_secured_badge'))}</div>
+          <div class="res-top">
+            ${logoHtml(c.bank)}
+            <div class="res-id"><div class="res-name"><a href="/cards/${esc(c.slug)}">${esc(c.name)}</a></div><div class="res-sub">${sub}</div></div>
+            ${ringHtml(100)}
+          </div>
+          <div class="res-tags">${tags}</div>
+          <div class="res-actions">${view}${apply}</div>
+        </article>`;
+      }
+
+      return `<article class="res-card${r.best ? ' best' : ''}">
+        ${r.best ? `<div class="res-badge"><i class="ti ti-star"></i> ${esc(tr('elig_best_match'))}</div>` : ''}
+        <div class="res-top">
+          ${logoHtml(c.bank)}
+          <div class="res-id"><div class="res-name"><a href="/cards/${esc(c.slug)}">${esc(c.name)}</a></div><div class="res-sub">${sub}</div></div>
+          ${ringHtml(r.score)}
+        </div>
+        <div class="res-tags">${oddsTag(r.score)}${featureTags(c)}</div>
+        <div class="res-actions">${view}${apply}</div>
+      </article>`;
+    }
+
+    function noticeHtml() {
+      return `<div class="res-notice"><b>${esc(tr('elig_fallback_title'))}</b>${esc(tr('elig_fallback_body'))}</div>`;
+    }
+
+    function metaLine() {
+      const dash = '—';
+      const inc = state.income ? tr(INCOME_TKEY[state.income]) : dash;
+      const cb = state.cibil ? tr(CIBIL_MAP[state.cibil].labelKey) : dash;
+      const emp = state.employment ? tr(EMP_TKEY[state.employment]) : dash;
+      const city = state.city || dash;
+      return `${tr('elig_meta_ranked')} · ${inc} · ${tr('elig_meta_cibil')} ${cb} · ${emp} · ${city}`;
+    }
+
+    let lastScored = null, activeTab = 'likely', userPickedTab = false;
+
+    function emptyPrompt() {
+      return `<div class="res-empty"><i class="ti ti-list-search"></i><p><span>${esc(tr('elig_empty_pre'))}</span><b>${esc(tr('elig_cta'))}</b><span>${esc(tr('elig_empty_post'))}</span></p></div>`;
+    }
+
+    function renderResults() {
+      if (!ready()) {
+        lastScored = null;
+        $('#resTabs').innerHTML = '';
+        $('#resMore').innerHTML = '';
+        $('#resCount').textContent = tr('elig_results_title');
+        $('#resMeta').textContent = tr('elig_results_prompt');
+        $('#resList').innerHTML = emptyPrompt();
+        return;
+      }
+      $('#resMeta').textContent = metaLine();
+      lastScored = rankCards(CARDS, profile());   // score once; tabs just filter this
+      paintResults();
+    }
+
+    // Filter the already-scored set to the active band + render tabs/pill. No re-scoring.
+    function paintResults() {
+      if (!lastScored) return;
+      const { fallback, results } = lastScored;
+      const n = results.length;
+      $('#resCount').textContent = fallback ? tr('elig_count_secured') : tr('elig_count_match').replace('{n}', n);
+
+      // Fallback (homemaker / no-unsecured): skip tabs + pill, show the secured card as today.
+      if (fallback) {
+        $('#resTabs').innerHTML = '';
+        $('#resMore').innerHTML = '';
+        $('#resList').innerHTML = (noticeHtml() + results.map(cardHtml).join('')) || emptyPrompt();
+        return;
+      }
+
+      const counts = bandCounts(results);
+      // Default = Likely, else first non-empty band — until the user picks a tab.
+      if (!userPickedTab) activeTab = counts.likely ? 'likely' : counts.possible ? 'possible' : counts.unlikely ? 'unlikely' : 'likely';
+      $('#resTabs').innerHTML = tabsHtml(counts, activeTab);
+
+      const banded = results.filter(r => bandOf(r.score) === activeTab);
+      $('#resList').innerHTML = banded.length
+        ? banded.map(cardHtml).join('')
+        : `<div class="res-empty"><i class="ti ti-mood-empty"></i><p>${esc(tr('elig_none_match'))}</p></div>`;
+
+      const href = `/eligibility/results?s=${encodeState(state, activeTab)}`;
+      $('#resMore').innerHTML = `<div class="res-more"><a class="viewbtn elig-more-pill" href="${href}">View full eligibility list (${n}) →</a></div>`;
+    }
+
+    // Apply translations to every static [data-i18n] node (hero + form).
+    function applyI18n(lang) {
+      currentLang = lang;
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        let v = t(lang, el.dataset.i18n);
+        if (el.dataset.n != null) v = v.replace('{n}', el.dataset.n);
+        el.textContent = v;
+      });
+      document.querySelectorAll('[data-i18n-ph]').forEach(el => { el.setAttribute('placeholder', t(lang, el.dataset.i18nPh)); });
+    }
+
+    function setSelected(q, val) {
+      state[q] = val;
+      document.querySelectorAll(`[data-q="${q}"]`).forEach(el => {
+        if (el.tagName === 'BUTTON') el.classList.toggle('sel', el.dataset.val === val);
+      });
+      markAnswered();
+      renderResults();
+    }
+
+    function markAnswered() {
+      document.querySelectorAll('.elig-q').forEach(b => {
+        const key = b.dataset.block;
+        let answered = false;
+        if (key === 'employment') answered = !!state.employment;
+        else if (key === 'income') answered = !!state.income;
+        else if (key === 'cibil') answered = !!state.cibil;
+        else if (key === 'bank') answered = !!state.bank;
+        else if (key === 'details') answered = !!state.age && !!state.city;
+        b.classList.toggle('answered', answered);
+      });
+    }
+
+    // ── wiring ──
+    $('#eligForm').addEventListener('click', e => {
+      const btn = e.target.closest('button[data-q]');
+      if (!btn) return;
+      setSelected(btn.dataset.q, btn.dataset.val);
+    });
+    $('#eligAge').addEventListener('input', e => { state.age = e.target.value; markAnswered(); renderResults(); });
+    $('#eligCity').addEventListener('change', e => { state.city = e.target.value; markAnswered(); renderResults(); });
+
+    // Odds tab filter — re-render the visible band only (no re-scoring).
+    $('#resTabs').addEventListener('click', e => {
+      const b = e.target.closest('[data-tab]');
+      if (!b) return;
+      activeTab = b.dataset.tab;
+      userPickedTab = true;
+      paintResults();
+    });
+
+    $('#eligCheck').addEventListener('click', () => {
+      renderResults();
+      if (!ready()) {
+        const first = document.querySelector('.elig-q:not(.answered)');
+        first?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } else {
+        $('#eligResults').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+
+    // Language switch (no reload): the header dropdown dispatches 'cg:lang'.
+    document.addEventListener('cg:lang', e => {
+      const l = e.detail;
+      if (!LANGS.includes(l)) return;
+      applyI18n(l);
+      renderResults();
+    });
+
+    // initial paint in the active language
+    applyI18n(currentLang);
+    markAnswered();
+    renderResults();
+  </script>
+
+  <style is:global>
+    /* ─── eligibility page (scoped under .elig-page; uses global.css tokens) ─── */
+    .elig-page { color: var(--ink); }
+
+    /* hero */
+    .elig-hero { background: var(--ink); color: #fff; padding: 44px 20px 40px; }
+    .elig-hero-in { max-width: 1100px; margin: 0 auto; display: flex; gap: 40px; align-items: center; flex-wrap: wrap; }
+    .elig-hero-copy { flex: 1 1 460px; min-width: 0; }
+    .elig-eyebrow { display: block; color: #a3e635; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 12px; }
+    .elig-hero h1 { font-size: 34px; font-weight: 800; letter-spacing: -.025em; line-height: 1.1; margin: 0 0 14px; color: #fff; }
+    .elig-hero h1 em { color: #a3e635; font-style: normal; }
+    .elig-sub { font-size: 14px; color: #6b7a7e; margin: 0 0 18px; max-width: 540px; line-height: 1.55; }
+    .elig-trust { display: flex; flex-wrap: wrap; gap: 16px; }
+    .elig-trust span { display: inline-flex; align-items: center; gap: 7px; font-size: 12px; color: #c9d2cf; }
+    .elig-trust .dot { width: 6px; height: 6px; border-radius: 50%; background: #a3e635; flex: none; }
+    .elig-stats { flex: 0 0 320px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .elig-stat { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1); border-radius: 14px; padding: 16px; }
+    .elig-stat b { display: block; color: #a3e635; font-size: 26px; font-weight: 800; line-height: 1; margin-bottom: 6px; }
+    .elig-stat span { font-size: 11px; color: #6b7a7e; line-height: 1.35; }
+
+    /* shell */
+    .elig-shell { max-width: 1100px; margin: 0 auto; padding: 24px 20px 8px; display: grid; grid-template-columns: 1fr; gap: 24px; }
+    @media (min-width: 1024px) { .elig-shell { grid-template-columns: 520px 1fr; align-items: start; } }
+
+    /* question blocks */
+    .elig-q { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px 20px; margin-bottom: 14px; transition: border-color .15s, box-shadow .15s; }
+    .elig-q:focus-within { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+    .elig-q-meta { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+    .elig-q-count { font-size: 10px; text-transform: uppercase; letter-spacing: .08em; color: var(--accent); font-weight: 700; }
+    .elig-q-sel { display: none; align-items: center; gap: 5px; font-size: 11px; font-weight: 700; color: #16a34a; }
+    .elig-q-sel .ti { font-size: 14px; }
+    .elig-q.answered .elig-q-sel { display: inline-flex; }
+
+    .elig-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+    .pill-opt { border: 1.5px solid var(--line); background: var(--surface); color: var(--ink-soft); font-size: 13px; font-weight: 600; padding: 9px 16px; border-radius: var(--radius-pill); cursor: pointer; transition: .12s; }
+    .pill-opt:hover { border-color: #c9cec2; }
+    .pill-opt.sel { border-color: var(--accent); background: #eaf5d4; color: #2d5208; }
+
+    .tile-grid { display: grid; gap: 8px; }
+    .income-grid { grid-template-columns: repeat(2, 1fr); }
+    @media (min-width: 1024px) { .income-grid { grid-template-columns: repeat(4, 1fr); } }
+    .tile-opt { border: 1.5px solid var(--line); background: var(--surface); color: var(--ink-soft); border-radius: 10px; padding: 12px 6px; text-align: center; font-size: 12px; font-weight: 700; cursor: pointer; transition: .12s; }
+    .tile-opt:hover { border-color: #c9cec2; }
+    .tile-opt.sel { border-color: var(--accent); background: #eaf5d4; color: #2d5208; }
+
+    .cibil-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+    .cibil-opt { display: flex; flex-direction: column; gap: 3px; border: 1.5px solid var(--line); background: var(--surface); border-radius: 10px; padding: 12px 12px; text-align: left; cursor: pointer; transition: .12s; }
+    .cibil-opt:hover { border-color: #c9cec2; }
+    .cibil-opt.sel { border-color: var(--accent); background: #eaf5d4; }
+    .cibil-opt .band { font-size: 14px; font-weight: 800; }
+    .cibil-opt .range { font-size: 10px; color: var(--muted); }
+    .cibil-opt .desc { font-size: 11px; color: var(--ink-soft); }
+    .cibil-ntc { grid-column: 1 / -1; }
+
+    .q4-row { display: flex; gap: 12px; }
+    .q4-row .field { flex: 1; min-width: 0; }
+    .q4-row label { display: block; font-size: 11px; text-transform: uppercase; color: var(--muted); letter-spacing: .07em; font-weight: 700; margin-bottom: 7px; }
+    .q4-row input, .q4-row select { width: 100%; height: 42px; border: 1.5px solid var(--line); border-radius: 10px; padding: 0 12px; font-family: inherit; font-size: 14px; color: var(--ink); background: var(--surface); }
+    .q4-row input:focus, .q4-row select:focus { outline: none; border-color: var(--accent); }
+
+    .elig-cta { width: 100%; background: var(--cta); color: var(--cta-ink); font-size: 15px; font-weight: 800; border: 0; border-radius: var(--radius-pill); padding: 16px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 9px; transition: filter .12s; }
+    .elig-cta:hover { filter: brightness(.96); }
+    .elig-cta .ti { font-size: 18px; }
+    .elig-note { text-align: center; font-size: 11px; color: var(--muted); margin: 12px 0 0; display: flex; align-items: center; justify-content: center; gap: 6px; }
+    .elig-note .ti { color: #4d7c0f; font-size: 14px; }
+
+    /* results */
+    .elig-results { min-width: 0; }
+    .res-head { margin-bottom: 16px; }
+    .res-count { font-size: 18px; font-weight: 800; letter-spacing: -.01em; }
+    .res-meta { font-size: 12px; color: var(--muted); margin-top: 3px; }
+
+    /* odds filter tabs (elig_2.0) */
+    .res-tabs { display: flex; gap: 6px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 6px; margin-bottom: 14px; }
+    .res-tab { flex: 1; background: transparent; border-radius: 10px; padding: 10px 8px; font-size: 12.5px; font-weight: 700; color: var(--ink-soft); opacity: .55; transition: .12s; }
+    .res-tab:hover { opacity: .85; }
+    .res-tab.sel { opacity: 1; }
+    .res-tab.sel.likely { background: #eaf5d4; color: #4d7c0f; }
+    .res-tab.sel.possible { background: #fef3c7; color: #b45309; }
+    .res-tab.sel.unlikely { background: #fee2e2; color: #b91c1c; }
+
+    /* "View full eligibility list" pill — built off the existing .viewbtn */
+    .res-more { display: flex; justify-content: center; margin-top: 18px; }
+    .elig-more-pill { box-shadow: var(--shadow-sm); transition: .12s; }
+    .elig-more-pill:hover { border-color: var(--accent); color: var(--accent); background: var(--surface); }
+
+    .res-empty { text-align: center; color: var(--muted); border: 1px dashed var(--line); border-radius: var(--radius); padding: 40px 24px; }
+    .res-empty .ti { font-size: 30px; color: #c9cec2; }
+    .res-empty p { font-size: 13.5px; margin: 10px auto 0; max-width: 320px; line-height: 1.5; }
+    .res-empty b { color: var(--ink-soft); }
+
+    .res-notice { background: #fffbf0; border: 1px solid #fcd34d; border-radius: 10px; padding: 12px 14px; font-size: 12px; color: #78350f; margin-bottom: 12px; line-height: 1.5; }
+    .res-notice b { display: block; font-size: 13px; margin-bottom: 4px; }
+
+    .res-card { position: relative; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 16px; margin-bottom: 12px; }
+    .res-card.best { border-color: var(--accent); background: #f6fded; }
+    .res-card.secured { border-color: #d97706; background: #fffbf0; }
+    .res-badge { display: inline-flex; align-items: center; gap: 5px; background: #4d7c0f; color: #fff; font-size: 10px; font-weight: 700; border-radius: var(--radius-pill); padding: 4px 10px; margin-bottom: 12px; }
+    .res-badge .ti { font-size: 12px; }
+    .res-badge.secured-badge { background: #d97706; }
+
+    .res-top { display: flex; align-items: center; gap: 12px; }
+    .res-logo { width: 44px; height: 44px; border-radius: 10px; display: grid; place-items: center; color: #fff; font-weight: 800; font-size: 11px; letter-spacing: .02em; flex: none; }
+    .res-id { flex: 1; min-width: 0; }
+    .res-name { font-size: 15px; font-weight: 700; line-height: 1.25; }
+    .res-name a { color: var(--ink); border-bottom: 1px solid var(--line); transition: .12s; }
+    .res-name a:hover { color: var(--accent); border-color: var(--accent); }
+    .res-sub { font-size: 12px; color: var(--muted); margin-top: 2px; }
+
+    .res-ring { position: relative; width: 52px; height: 52px; flex: none; }
+    .res-ring svg { position: absolute; inset: 0; display: block; }
+    .res-ring .ring-pct { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 800; line-height: 1; letter-spacing: -.02em; }
+
+    .res-tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0; }
+    .rt { font-size: 11px; font-weight: 600; padding: 3px 9px; border-radius: var(--radius-pill); }
+    .rt-high { background: #eaf5d4; color: #2d5208; }
+    .rt-med { background: #fef3c7; color: #92400e; }
+    .rt-low { background: #fee2e2; color: #991b1b; }
+    .rt-feat { background: #f1f3ec; color: var(--ink-soft); }
+
+    .res-actions { display: flex; gap: 8px; }
+    .res-btn { flex: 1; text-align: center; border-radius: var(--radius-pill); font-size: 12px; font-weight: 700; padding: 9px; transition: filter .12s; display: inline-flex; align-items: center; justify-content: center; gap: 5px; }
+    .res-view { background: #f1f3ec; color: var(--ink); }
+    .res-view:hover { background: #e7eadf; }
+    .res-apply { background: var(--cta); color: var(--cta-ink); }
+    .res-apply:hover { filter: brightness(.96); }
+    .res-apply .ti { font-size: 13px; }
+  </style>
+</EligibilityBase>
