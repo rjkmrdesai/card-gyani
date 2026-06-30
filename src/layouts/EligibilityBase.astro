@@ -1,10 +1,15 @@
 ---
-/* Standalone layout for the eligibility checker. Mirrors the site header +
-   footer chrome (logo, nav, footer note + category links) exactly as core.js
-   renders them, imports the same global.css, and exposes a <slot/> so the page
-   renders its own content. Deliberately does NOT boot client.js — this page is
-   self-contained and must not be overwritten by the SPA hydrate. */
+/* Standalone layout for the eligibility checker. Reuses the SAME header nav as
+   the rest of the site via core.js's shared navHtml() (single source of truth —
+   no separate copy), imports the same global.css, and exposes a <slot/> so the
+   page renders its own content. Deliberately does NOT boot client.js — this page
+   is self-contained and must not be overwritten by the SPA hydrate. */
 import '../styles/global.css';
+import { navHtml, navActive } from '../lib/core.js';
+
+// Active pill derived from the current path — not hardcoded — so /eligibility and
+// /eligibility/results both light up Eligibility automatically.
+const navMarkup = navHtml(navActive(Astro.url.pathname), 'en');
 
 const {
   title = 'Eligibility Checker — Card Gyani',
@@ -33,11 +38,7 @@ const LOGO = `<svg class="logomark" viewBox="0 0 120 90" width="27" height="20" 
 <body>
   <header class="app"><div class="hwrap">
     <a class="brand" href="/" set:html={`${LOGO}Card <b>Gyani</b>`}></a>
-    <nav class="nav">
-      <a href="/">Home</a>
-      <a href="/cards">All cards</a>
-      <a class="active" href="/eligibility">Eligibility</a>
-    </nav>
+    <Fragment set:html={navMarkup} />
     <div class="spacer"></div>
     <div class="lang">
       <button id="langBtn">🌐 EN ▾</button>
@@ -86,6 +87,27 @@ const LOGO = `<svg class="logomark" viewBox="0 0 120 90" width="27" height="20" 
       });
       document.addEventListener('click', close);
     })();
+  </script>
+
+  <script>
+    // Translate the (shared) header nav on this standalone layout: render it in
+    // the active language on load and re-render on the cg:lang switch — matching
+    // how the SPA pages re-render their nav. Reuses core.js navHtml (one source).
+    import { navHtml, navActive } from '../lib/core.js';
+    const VALID = ['en', 'hi', 'ta', 'te'];
+    const lang = () => {
+      const d = document.documentElement.lang;
+      if (VALID.includes(d)) return d;
+      try { const s = localStorage.getItem('cg_lang'); if (VALID.includes(s)) return s; } catch (e) {}
+      return 'en';
+    };
+    const active = navActive(location.pathname);
+    function paintNav(l) {
+      const el = document.querySelector('header.app nav.nav');
+      if (el) el.outerHTML = navHtml(active, l);
+    }
+    paintNav(lang());
+    document.addEventListener('cg:lang', e => { if (VALID.includes(e.detail)) paintNav(e.detail); });
   </script>
 
   <slot />

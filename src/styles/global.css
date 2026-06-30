@@ -311,7 +311,12 @@ aside.filters{position:sticky;top:80px;max-height:calc(100vh - 96px);overflow-y:
   .tray .go{padding:10px 16px;font-size:13px;white-space:nowrap}
   .mfilter{display:inline-flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--line);
     border-radius:var(--radius-pill);padding:9px 16px;font-weight:700;font-size:13.5px;box-shadow:var(--shadow-sm)}
-  .nav{display:none}
+  /* Header nav on mobile: wrap to a full-width second row of pills (the brand +
+     language control stay on the top row). Replaces the old display:none, which
+     left mobile with no header nav at all. */
+  .hwrap{flex-wrap:wrap;justify-content:space-between;row-gap:10px}
+  .spacer{display:none}
+  .nav{order:3;flex-basis:100%;justify-content:center;margin-left:0}
   .crow{grid-template-columns:1fr}
   .cright{flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:flex-start;min-width:0;margin-top:12px}
   .specs{grid-template-columns:repeat(2,1fr)}
