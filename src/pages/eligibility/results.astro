@@ -135,7 +135,7 @@ const description = 'See the full list of credit cards you are likely eligible f
         if (!b) return;
         const u = location.href;
         if (b.dataset.share === 'fb') window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(u), '_blank', 'noopener');
-        else if (b.dataset.share === 'wa') window.open('https://wa.me/?text=' + encodeURIComponent(text + ' ' + u), '_blank', 'noopener');
+        else if (b.dataset.share === 'wa') window.open('https://wa.me/?text=' + encodeURIComponent(text + '\n\n' + u), '_blank', 'noopener');  // URL on its own line — keeps it cleanly separable
         else if (b.dataset.share === 'x') window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(u) + '&text=' + encodeURIComponent(text), '_blank', 'noopener');
         else if (b.dataset.share === 'copy') {
           (navigator.clipboard ? navigator.clipboard.writeText(u) : Promise.reject()).then(() => showToast('Link copied')).catch(() => showToast('Copy failed'));
