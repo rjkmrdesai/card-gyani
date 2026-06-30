@@ -1,0 +1,275 @@
+---
+import EligibilityBase from '../../layouts/EligibilityBase.astro';
+import { loadData } from '../../data/cards.js';
+import { ELIG } from '../../lib/eligibility.js';
+
+// Same curated catalogue the main page scores against (rebuilt at build time).
+const { cards } = await loadData();
+const eligCards = cards
+  .filter(c => ELIG[c.slug])
+  .map(c => ({
+    slug: c.slug, name: c.name, bank: c.bank, cat: c.cat, type: c.type,
+    fee: c.fee, forex: c.forex, lounge: c.lounge, badge: c.badge, ltf: c.ltf,
+    apply_url: c.apply_url, affiliate_url: c.affiliate_url,
+  }));
+
+const title = 'My eligibility results — Card Gyani';
+const description = 'See the full list of credit cards you are likely eligible for, ranked by your real approval odds. Soft check only — no impact on your CIBIL score.';
+---
+<EligibilityBase {title} {description}>
+  <div class="elig-results-page">
+    <div class="erp-wrap">
+      <a class="erp-back" href="/eligibility"><i class="ti ti-arrow-left"></i> Back to eligibility checker</a>
+      <h1 class="erp-title">Eligibility results</h1>
+      <p class="erp-sub">Full list for your profile · Indicative only — issuers may decide differently.</p>
+      <div id="erpBody"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script is:inline define:vars={{ eligCards }}>
+    window.__ELIG_RESULTS__ = { cards: eligCards };
+  </script>
+
+  <script>
+    import { rankCards, EMPLOYMENT, INCOME_BANDS, CIBIL_BANDS, BANK_OPTIONS, t } from '../../lib/eligibility.js';
+    import { decodeState, recodeTab, buildProfile, bandOf, bandCounts, isReady } from '../../lib/eligibility-share.js';
+    import { tabsHtml, rowHtml } from '../../lib/eligibility-render.js';
+
+    const CARDS = (window.__ELIG_RESULTS__ || { cards: [] }).cards;
+    const $ = s => document.querySelector(s);
+    const LANGS = ['en', 'hi', 'ta', 'te'];
+    let currentLang = (() => {
+      const d = document.documentElement.lang;
+      if (LANGS.includes(d)) return d;
+      try { const s = localStorage.getItem('cg_lang'); if (LANGS.includes(s)) return s; } catch (e) {}
+      return 'en';
+    })();
+    const tr = k => t(currentLang, k);
+    const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+    const INCOME_TKEY = Object.fromEntries(INCOME_BANDS.map(([v, , k]) => [v, k]));
+    const EMP_TKEY = Object.fromEntries(EMPLOYMENT);
+    const CIBIL_MAP = Object.fromEntries(CIBIL_BANDS);
+    const BANK_LABEL = Object.fromEntries(BANK_OPTIONS);
+
+    const decoded = decodeState(new URLSearchParams(location.search).get('s'));
+    let activeTab = decoded ? decoded.activeTab : 'likely';
+    let scored = null, inputs = null;
+
+    function emptyState() {
+      $('#erpBody').innerHTML = `<div class="erp-empty"><i class="ti ti-link-off"></i><h2>No results to show</h2><p>This link is missing or incomplete. Start a fresh check to see your eligibility.</p><a class="viewbtn" href="/eligibility">Go to eligibility checker →</a></div>`;
+    }
+
+    function summaryPanel(counts) {
+      const total = counts.likely + counts.possible + counts.unlikely || 1;
+      const pct = n => (n / total * 100).toFixed(2);
+      const rows = [
+        ['ti-cake', 'Age', inputs.age || '—'],
+        ['ti-wallet', 'Income', inputs.income ? tr(INCOME_TKEY[inputs.income]) : '—'],
+        ['ti-briefcase', 'Employment', inputs.employment ? tr(EMP_TKEY[inputs.employment]) : '—'],
+        ['ti-gauge', 'CIBIL', inputs.cibil ? tr(CIBIL_MAP[inputs.cibil].labelKey) : '—'],
+        ['ti-map-pin', 'City', inputs.city || '—'],
+        ['ti-building-bank', 'Existing bank', inputs.bank ? (BANK_LABEL[inputs.bank] || inputs.bank) : '—'],
+      ];
+      return `<div class="erp-card">
+        <div class="erp-bd-counts">
+          <span class="bd likely">${counts.likely} Likely</span>
+          <span class="bd possible">${counts.possible} Possible</span>
+          <span class="bd unlikely">${counts.unlikely} Unlikely</span>
+        </div>
+        <div class="erp-bar">
+          <span style="width:${pct(counts.likely)}%;background:#84cc16"></span>
+          <span style="width:${pct(counts.possible)}%;background:#f59e0b"></span>
+          <span style="width:${pct(counts.unlikely)}%;background:#ef4444"></span>
+        </div>
+        <div class="erp-inputs">
+          ${rows.map(([icon, label, val]) => `<div class="erp-inrow"><i class="ti ${icon}"></i><span class="erp-in-l">${esc(label)}</span><span class="erp-in-v">${esc(String(val))}</span></div>`).join('')}
+        </div>
+        <p class="erp-note"><b>Note</b> · Planning aid, not approval. Issuers run their own checks.</p>
+      </div>`;
+    }
+
+    function shareText(counts) {
+      const n = counts.likely || (counts.likely + counts.possible + counts.unlikely);
+      return `I'm likely eligible for ${n} credit cards on Card Gyani — check yours`;
+    }
+
+    function sharePanel() {
+      const head = `<div class="erp-share-head">Share this result</div>`;
+      if (navigator.share) {
+        return `<div class="erp-card erp-share">${head}<button type="button" class="share-native" id="shareNative"><i class="ti ti-share"></i><span class="share-label">Share your results</span></button></div>`;
+      }
+      const rows = [
+        ['fb', '#1877F2', 'ti-brand-facebook', 'Facebook'],
+        ['wa', '#25D366', 'ti-brand-whatsapp', 'WhatsApp'],
+        ['x', '#000000', 'ti-brand-x', 'X'],
+        ['copy', 'var(--cta)', 'ti-link', 'Copy link'],
+      ];
+      return `<div class="erp-card erp-share">${head}<div class="share-rows">${rows.map(([id, bg, icon, label]) =>
+        `<button type="button" class="share-btn" data-share="${id}"><span class="share-chip" style="background:${bg}"><i class="ti ${icon}"></i></span><span class="share-label">${label}</span></button>`
+      ).join('')}</div></div>`;
+    }
+
+    function paintList() {
+      const list = scored.fallback ? scored.results : scored.results.filter(r => bandOf(r.score) === activeTab);
+      $('#erpList').innerHTML = list.length
+        ? list.map(r => rowHtml(currentLang, r)).join('')
+        : `<div class="res-empty"><i class="ti ti-mood-empty"></i><p>No cards in this band.</p></div>`;
+    }
+
+    function wireShare(counts) {
+      const text = shareText(counts);
+      const native = $('#shareNative');
+      if (native) {
+        native.addEventListener('click', async () => {
+          try { await navigator.share({ title: 'Card Gyani eligibility', text, url: location.href }); } catch (e) { /* user cancelled — no-op */ }
+        });
+        return;
+      }
+      const rows = $('.share-rows');
+      if (!rows) return;
+      rows.addEventListener('click', e => {
+        const b = e.target.closest('[data-share]');
+        if (!b) return;
+        const u = location.href;
+        if (b.dataset.share === 'fb') window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(u), '_blank', 'noopener');
+        else if (b.dataset.share === 'wa') window.open('https://wa.me/?text=' + encodeURIComponent(text + ' ' + u), '_blank', 'noopener');
+        else if (b.dataset.share === 'x') window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(u) + '&text=' + encodeURIComponent(text), '_blank', 'noopener');
+        else if (b.dataset.share === 'copy') {
+          (navigator.clipboard ? navigator.clipboard.writeText(u) : Promise.reject()).then(() => showToast('Link copied')).catch(() => showToast('Copy failed'));
+        }
+      });
+    }
+
+    let toastTimer;
+    function showToast(msg) {
+      const el = $('#toast'); if (!el) return;
+      el.textContent = msg; el.classList.add('show');
+      clearTimeout(toastTimer); toastTimer = setTimeout(() => el.classList.remove('show'), 1900);
+    }
+
+    function wireTabs() {
+      const bar = $('.res-tabs');
+      if (!bar) return;
+      bar.addEventListener('click', e => {
+        const b = e.target.closest('[data-tab]');
+        if (!b) return;
+        activeTab = b.dataset.tab;
+        bar.querySelectorAll('.res-tab').forEach(x => {
+          const on = x.dataset.tab === activeTab;
+          x.classList.toggle('sel', on);
+          x.setAttribute('aria-selected', on);
+        });
+        // keep the shareable URL in sync with the visible band
+        try { const u = new URL(location.href); u.searchParams.set('s', recodeTab(decoded, activeTab)); history.replaceState(null, '', u); } catch (e) {}
+        paintList();
+      });
+    }
+
+    function render() {
+      const counts = bandCounts(scored.results);
+      if (!scored.fallback && !counts[activeTab]) {
+        activeTab = counts.likely ? 'likely' : counts.possible ? 'possible' : counts.unlikely ? 'unlikely' : activeTab;
+      }
+      const left = `<div class="erp-left">${scored.fallback ? '' : tabsHtml(counts, activeTab)}<div id="erpList" class="erp-list"></div></div>`;
+      const side = `<aside class="erp-side">${summaryPanel(counts)}${sharePanel()}</aside>`;
+      $('#erpBody').className = 'erp-grid';
+      $('#erpBody').innerHTML = left + side;
+      paintList();
+      wireTabs();
+      wireShare(counts);
+    }
+
+    if (!decoded || !isReady(decoded.inputs)) {
+      emptyState();
+    } else {
+      inputs = decoded.inputs;
+      scored = rankCards(CARDS, buildProfile(inputs));
+      render();
+      // re-render on language switch (header dropdown dispatches cg:lang)
+      document.addEventListener('cg:lang', e => { if (!LANGS.includes(e.detail)) return; currentLang = e.detail; render(); });
+    }
+  </script>
+
+  <style is:global>
+    .elig-results-page { color: var(--ink); }
+    .erp-wrap { max-width: 1100px; margin: 0 auto; padding: 24px 20px 40px; }
+    .erp-back { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: var(--ink-soft); margin-bottom: 14px; }
+    .erp-back:hover { color: var(--accent); }
+    .erp-back .ti { font-size: 16px; }
+    .erp-title { font-size: 26px; font-weight: 800; letter-spacing: -.02em; margin: 0 0 4px; }
+    .erp-sub { font-size: 13.5px; color: var(--muted); margin: 0 0 20px; }
+    .erp-grid { display: grid; grid-template-columns: 1fr; gap: 24px; }
+    @media (min-width: 1024px) { .erp-grid { grid-template-columns: minmax(0, 1fr) 320px; align-items: start; } .erp-side { position: sticky; top: 80px; } }
+
+    /* odds tabs (shared look with the main page) */
+    .res-tabs { display: flex; gap: 6px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 6px; margin-bottom: 14px; }
+    .res-tab { flex: 1; background: transparent; border-radius: 10px; padding: 10px 8px; font-size: 12.5px; font-weight: 700; color: var(--ink-soft); opacity: .55; transition: .12s; }
+    .res-tab:hover { opacity: .85; }
+    .res-tab.sel { opacity: 1; }
+    .res-tab.sel.likely { background: #eaf5d4; color: #4d7c0f; }
+    .res-tab.sel.possible { background: #fef3c7; color: #b45309; }
+    .res-tab.sel.unlikely { background: #fee2e2; color: #b91c1c; }
+
+    /* result rows */
+    .res-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; margin-bottom: 10px; }
+    .res-logo { width: 44px; height: 44px; border-radius: 10px; display: grid; place-items: center; color: #fff; font-weight: 800; font-size: 11px; letter-spacing: .02em; flex: none; }
+    .res-id { flex: 1 1 160px; min-width: 0; }
+    .res-name { font-size: 15px; font-weight: 700; line-height: 1.25; }
+    .res-name a { color: var(--ink); border-bottom: 1px solid var(--line); transition: .12s; }
+    .res-name a:hover { color: var(--accent); border-color: var(--accent); }
+    .res-sub { font-size: 12px; color: var(--muted); margin-top: 2px; }
+    .res-ring { position: relative; width: 52px; height: 52px; flex: none; }
+    .res-ring svg { position: absolute; inset: 0; display: block; }
+    .res-ring .ring-pct { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 800; line-height: 1; letter-spacing: -.02em; }
+    .res-row-actions { display: flex; gap: 8px; flex: none; margin-left: auto; }
+    .res-btn { border-radius: var(--radius-pill); font-size: 12px; font-weight: 700; padding: 8px 14px; display: inline-flex; align-items: center; justify-content: center; gap: 5px; transition: filter .12s; }
+    .res-view { background: #f1f3ec; color: var(--ink); }
+    .res-view:hover { background: #e7eadf; }
+    .res-apply { background: var(--cta); color: var(--cta-ink); }
+    .res-apply:hover { filter: brightness(.96); }
+    .res-apply .ti { font-size: 13px; }
+    .res-empty { text-align: center; color: var(--muted); border: 1px dashed var(--line); border-radius: var(--radius); padding: 30px 20px; }
+    .res-empty .ti { font-size: 28px; color: #c9cec2; }
+    .res-empty p { font-size: 13px; margin: 8px auto 0; max-width: 300px; }
+
+    /* sidebar cards */
+    .erp-card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px; margin-bottom: 14px; }
+    .erp-bd-counts { display: flex; justify-content: space-between; gap: 8px; font-size: 12px; font-weight: 700; margin-bottom: 8px; }
+    .bd.likely { color: #4d7c0f; }
+    .bd.possible { color: #b45309; }
+    .bd.unlikely { color: #b91c1c; }
+    .erp-bar { display: flex; height: 8px; border-radius: 99px; overflow: hidden; background: var(--canvas); }
+    .erp-bar span { display: block; height: 100%; }
+    .erp-inputs { margin-top: 14px; }
+    .erp-inrow { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-top: 1px solid var(--line); font-size: 13px; }
+    .erp-inrow:first-child { border-top: 0; }
+    .erp-inrow .ti { color: var(--accent); font-size: 16px; width: 18px; text-align: center; flex: none; }
+    .erp-in-l { color: var(--muted); flex: 1; }
+    .erp-in-v { font-weight: 700; color: var(--ink); text-align: right; }
+    .erp-note { margin-top: 12px; font-size: 11px; color: var(--muted); line-height: 1.5; }
+    .erp-note b { color: var(--ink-soft); }
+
+    /* share panel (dark) */
+    .erp-share { background: var(--ink); border-color: rgba(255,255,255,.1); }
+    .erp-share-head { color: #fff; font-weight: 800; font-size: 14px; margin-bottom: 12px; }
+    .share-rows { display: flex; flex-direction: column; gap: 8px; }
+    .share-btn { display: flex; align-items: center; gap: 12px; width: 100%; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.14); border-radius: 12px; padding: 10px 12px; transition: .12s; }
+    .share-btn:hover { background: rgba(255,255,255,.13); border-color: rgba(255,255,255,.26); }
+    .share-chip { width: 32px; height: 32px; border-radius: 9px; display: grid; place-items: center; flex: none; }
+    .share-chip .ti { color: #fff; font-size: 18px; }
+    .erp-share .share-btn[data-share="copy"] .share-chip .ti { color: var(--cta-ink); }
+    .share-btn .share-label { color: #fff; font-weight: 700; font-size: 14px; }
+    .share-native { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; background: var(--cta); border-radius: 12px; padding: 13px; }
+    .share-native .ti { color: var(--cta-ink); font-size: 18px; }
+    .share-native .share-label { color: var(--cta-ink); font-weight: 800; font-size: 14px; }
+
+    /* empty / invalid-link state */
+    .erp-empty { text-align: center; padding: 56px 24px; max-width: 420px; margin: 0 auto; }
+    .erp-empty .ti { font-size: 36px; color: #c9cec2; }
+    .erp-empty h2 { font-size: 18px; margin: 12px 0 6px; }
+    .erp-empty p { font-size: 13.5px; color: var(--muted); margin: 0 0 18px; }
+  </style>
+</EligibilityBase>
