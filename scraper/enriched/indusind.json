@@ -146,6 +146,32 @@
       "badge": null,
       "apply_url": null,
       "enrich_source": null
+    },
+    {
+      "name": "Tiger",
+      "match_status": "matched",
+      "network": null,
+      "network_confidence": "unknown",
+      "category": "mid_tier",
+      "rewards": "1 reward point per Rs.100 base; anniversary spend multiplier up to 6X (1x up to Rs.1L, 2x Rs.1-2.5L, 4x Rs.2.5-5L, 6x above Rs.5L); 1 RP = Rs.0.40 cash / 1.2 airmiles via Indusmoments",
+      "lounge": "2 complimentary domestic lounge visits per quarter + 2 international visits per year (Priority Pass)",
+      "welcome_benefit": null,
+      "badge": "Lifetime free with reward multiplier",
+      "apply_url": "https://www.indusind.bank.in/in/en/personal/cards/credit-card/tiger-credit-card.html",
+      "enrich_source": "https://www.indusind.bank.in/content/dam/indusind-corporate/Other/welcomekit/credit-card-benefits/Bajaj-Tiger-CC-Benefit-Guide.pdf"
+    },
+    {
+      "name": "Legend",
+      "match_status": "matched",
+      "network": "Visa",
+      "network_confidence": "high",
+      "category": "premium",
+      "rewards": "1 reward point per Rs.100 on weekdays, 2 per Rs.100 on weekends; 1 RP = Rs.0.50 cash credit; no expiry, no earning cap",
+      "lounge": "Priority Pass membership (1,400+ lounges worldwide); a usage fee of USD 35 per person per visit applies each visit",
+      "welcome_benefit": null,
+      "badge": "Premium Visa Signature with BookMyShow buy-1-get-1 movie",
+      "apply_url": "https://www.indusind.bank.in/in/en/personal/cards/credit-card/legend-credit-card.html",
+      "enrich_source": "https://www.indusind.bank.in/content/dam/indusind-corporate/Other/welcomekit/credit-card-benefits/Legend_Benefit_Guide_19-12-2025.pdf"
     }
   ]
 }

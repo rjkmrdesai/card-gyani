@@ -255,6 +255,21 @@
     "interest_free_days": "Up to 48 days",
     "source_section": "SCHEDULE OF CHARGES/TAXES table (Foreign Currency Markup Fee, Cash Advance Fee, Interest free period rows) + 'Other Charges (Common on all Cards)' Interest on Revolving Credit (APR) table and Late Payment Charges table"
   },
+  "au": {
+    "forex": 3.49,
+    "forex_exceptions": {},
+    "finance_pm_unsecured": 3.75,
+    "finance_pa_unsecured": 45.0,
+    "finance_pm_secured": null,
+    "finance_pa_secured": null,
+    "finance_exceptions": {},
+    "cash_advance": "2.5% of amount withdrawn, minimum Rs.500 (plus finance charges from withdrawal date)",
+    "cash_interest": null,
+    "late_fee_tiers": null,
+    "over_limit": "2.5% of over-limit amount, minimum Rs.500",
+    "interest_free_period": "20-50 days depending on card scheme",
+    "notes": "Per-card forex is set on each card (merge reads pc.forex directly). Finance default 3.75%/mo (45% p.a.) unsecured; Zenith+ carries its own 1.99%/mo per-card. forex_exceptions/finance_exceptions intentionally EMPTY to avoid the norm() collision where 'Zenith' and 'Zenith+' both reduce to 'zenith'. Late-fee tiers not cleanly extracted -> needs_review."
+  },
   "yes": {
     "forex": 3.5,
     "forex_exceptions": {

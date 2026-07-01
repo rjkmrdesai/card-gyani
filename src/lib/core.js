@@ -139,7 +139,8 @@ const BANKMETA = {
  'HDFC':['HDFC','#004C8F'],'Axis':['AXIS','#97144D'],'SBI':['SBI','#22409A'],'ICICI':['ICICI','#AE282E'],
  'American Express':['AMEX','#1F6FB2'],'Kotak':['KOTAK','#C8102E'],'IndusInd':['INDUS','#9B1B30'],
  'RBL Bank':['RBL','#C20E2A'],'IDFC':['IDFC','#9B1B30'],'Bank of Baroda':['BOB','#F26A21'],
- 'Federal Bank':['FEDERAL','#003D7A'],'Yes':['YES','#00518F'],'SBM':['SBM','#1A7A5E']
+ 'Federal Bank':['FEDERAL','#003D7A'],'Yes':['YES','#00518F'],'SBM':['SBM','#1A7A5E'],
+ 'AU Small Finance Bank':['AU','#6C246C']
 };
 
 export const CAT_ORDER = ['super_premium','premium','mid_tier','entry','travel','fuel'];

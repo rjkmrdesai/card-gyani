@@ -30,6 +30,22 @@
       "renewal_fee": 199,
       "fee_waiver": null,
       "source_section": "SCHEDULE OF CHARGES/TAXES table, Joining Fee 'NIL (for virtual cards) Rs 199/- (if opted for physical card)' / Annual Membership fee '199/-', Wave Card column"
+    },
+    {
+      "name": "Scapia",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "forex": 0,
+      "source_section": "Federal x Scapia co-brand MITC (mitc-scapia-federal-credit-card): Joining Nil / Annual Nil; Foreign Currency Mark-up 0% (Nil); interest 45% p.a. (3.75%/mo). type=cobrand. Source-specific MITC differs from the file-level Federal MITC landing URL; see sources.json id 'federal-scapia'."
+    },
+    {
+      "name": "OneCard",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "forex": 1,
+      "source_section": "Federal x OneCard co-brand MITC (OneCard MITC.pdf): issued by Federal Bank in partnership with FPL Technologies (NOT the CSB variant); annual/joining Nil (getonecard.app); forex 1% (getonecard.app blog). Finance inherits Federal issuer default (3.75%/mo, 45% p.a.) - OneCard's own rate is app/profile-determined and not published -> needs_review. type=cobrand. See sources.json id 'federal-onecard'."
     }
   ],
   "bank_defaults": {
