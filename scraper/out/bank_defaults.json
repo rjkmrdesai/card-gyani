@@ -257,7 +257,9 @@
   },
   "au": {
     "forex": 3.49,
-    "forex_exceptions": {},
+    "forex_exceptions": {
+      "ixigo": 0
+    },
     "finance_pm_unsecured": 3.75,
     "finance_pa_unsecured": 45.0,
     "finance_pm_secured": null,

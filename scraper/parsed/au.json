@@ -3,10 +3,10 @@
   "bank": "AU Small Finance Bank",
   "source_url": "https://www.aubank.in/SOC_CC-MITC(with-Schedule-of-Charges).pdf",
   "data_status": "needs_review",
-  "notes": "Fees from the Annual/Renewal fee table (p1). Forex from the Cross-Currency Markup table (p12). Finance from the Charges-on-Revolving-Credit table (p10). Enrichment (network/category/rewards/lounge/welcome/badge/apply_url) deferred to a follow-up pass and flagged needs_review on every card. Three fee rows (Zenith+, Lakshya, AU SPONT) came from a jumbled two-column extraction and are flagged fee_needs_review for a re-parse against the PDF; Traverse (NRI) and the monthly Business fee likewise. AU CA / AU CS were EXCLUDED (2026-07-01): no consumer product page on aubank.in; they appear only in the MITC fee/charge exception tables (internal/account-linked, not marketed retail cards).",
+  "notes": "Fees from the Annual/Renewal fee table (p1). Forex from the Cross-Currency Markup table (p12). Finance from the Charges-on-Revolving-Credit table (p10). Enrichment completed 2026-07-01 for 22/23 cards from aubank.in/au.bank.in product pages + official co-brand partner domains (Paytm unmatched - no product page exists). Zenith+/Lakshya/Business Cashback fee-jumble rows CONFIRMED correct via AU's own pages during enrichment; AU SPONT's renewal fee CORRECTED (Rs.299 -> Rs.199) per AU's Schedule of Charges; ixigo forex CORRECTED (3.49% -> 0%, zero-forex co-brand benefit) - see forex_exceptions. Traverse (NRI)'s exact annual/joining fee remains unstated on any AU page (only a spend-based renewal waiver condition is documented) -> needs_review. AU CA / AU CS were EXCLUDED (2026-07-01): no consumer product page on aubank.in; they appear only in the MITC fee/charge exception tables (internal/account-linked, not marketed retail cards). AU NOMO is FD-backed/secured (card_type corrected directly in Supabase, not derivable by merge.py's automatic classifier).",
   "bank_defaults": {
     "forex": 3.49,
-    "forex_exceptions": {},
+    "forex_exceptions": { "ixigo": 0 },
     "finance_pm_unsecured": 3.75,
     "finance_pa_unsecured": 45.0,
     "finance_pm_secured": null,
@@ -55,11 +55,10 @@
     {
       "name": "SPONT",
       "annual_fee": 299,
-      "renewal_fee": 299,
+      "renewal_fee": 199,
       "fee_waiver": null,
       "forex": 3.49,
-      "fee_needs_review": true,
-      "source_section": "Fee table p1 (AU Spont Rs.299 - from jumbled two-column extraction, verify); forex p12 (3.49%)"
+      "source_section": "Fee table p1 (AU Spont Joining Rs.299 - from jumbled two-column extraction) CORRECTED via AU's own Schedule of Charges page during enrichment: Joining Rs.299 / Renewal Rs.199 (confirmed 2026-07-01); forex p12 (3.49%)"
     },
     {
       "name": "Altura Plus",
@@ -99,8 +98,7 @@
       "renewal_fee": 1000,
       "fee_waiver": null,
       "forex": 3.49,
-      "fee_needs_review": true,
-      "source_section": "Fee table p1 (Lakshya Rs.1,000 - from jumbled two-column extraction, verify); forex p12 (Laksya 3.49%)"
+      "source_section": "Fee table p1 (Lakshya Rs.1,000 - from jumbled two-column extraction) CONFIRMED via AU's own product page during enrichment (AU spells it 'Laksya'; annual Rs.1,000 matches, 2026-07-01); forex p12 (Laksya 3.49%)"
     },
     {
       "name": "Ananta",
@@ -126,8 +124,7 @@
       "forex": 0.99,
       "finance_pm": 1.99,
       "finance_pa": 23.88,
-      "fee_needs_review": true,
-      "source_section": "Fee table p1 (Zenith+ Rs.4,999 - from jumbled two-column extraction, verify); forex p12 (0.99%); finance p10 (1.99%/mo)"
+      "source_section": "Fee table p1 (Zenith+ Rs.4,999 - from jumbled two-column extraction) CONFIRMED via AU's own product page during enrichment (fee Rs.4,999, 2026-07-01); forex p12 (0.99%); finance p10 (1.99%/mo)"
     },
     {
       "name": "Zenith",
@@ -143,8 +140,7 @@
       "renewal_fee": null,
       "fee_waiver": "Waiver on Rs.10,000 spend within statement cycle",
       "forex": 3.49,
-      "fee_needs_review": true,
-      "source_section": "Fee table p1 (Business Rs.99/month - monthly fee, normalize/verify); forex p12 (Business Cashback 3.49%)"
+      "source_section": "Fee table p1 (Business Rs.99/month) CONFIRMED via AU's own product page during enrichment (Rs.99/month, waived on Rs.10,000 retail spend/cycle, 2026-07-01); forex p12 (Business Cashback 3.49%)"
     },
     {
       "name": "CheQ",
@@ -204,8 +200,8 @@
       "renewal_fee": 0,
       "is_lifetime_free": true,
       "fee_waiver": null,
-      "forex": 3.49,
-      "source_section": "Fee table p1 LTF list (ixigo AU - Lifetime Free); forex NOT enumerated in p12 table -> needs_review"
+      "forex": 0,
+      "source_section": "Fee table p1 LTF list (ixigo AU - Lifetime Free); forex NOT enumerated in MITC p12 table, CORRECTED to 0% via ixigo.com partner page (confirmed 2026-07-01) - zero forex markup is a named co-brand benefit"
     },
     {
       "name": "Paytm",
