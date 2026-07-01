@@ -79,6 +79,26 @@
       "renewal_fee": 2000,
       "fee_waiver": null,
       "source_section": "FEES AND CHARGES, Schedule of Charges table p.2, 'Jet Airways IndusInd Bank Voyage Credit Card' row (Joining Fee 4000, Annual Fee 2000)"
+    },
+    {
+      "name": "Tiger",
+      "annual_fee": 0,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "forex": 1.5,
+      "finance_pm": 3.50,
+      "finance_pa": 42.00,
+      "source_section": "Current MITC (MITC_Premium.pdf) Schedule of Fees p.1 (Tiger: Joining NIL / Annual NIL) + Other Financial Charges p.2 (interest 3.50%/mo, 42%/pa; forex 1.5% at preferred intl POS). NOTE: file-level source_url is the legacy 2016 MITC; Tiger fees were extracted from the current MITC_Premium.pdf (https://www.indusind.bank.in/content/dam/indusind-corporate/credit-cards/MITC_Premium.pdf)."
+    },
+    {
+      "name": "Legend",
+      "annual_fee": 5000,
+      "renewal_fee": 0,
+      "fee_waiver": null,
+      "forex": 1.8,
+      "finance_pm": 3.95,
+      "finance_pa": 47.40,
+      "source_section": "Current MITC (MITC_Premium.pdf) Schedule of Fees p.1 (Legend: Joining Rs.5,000 / Annual NIL) + Other Financial Charges p.2 (interest 3.95%/mo, 47.40%/pa; forex 1.8%). Enrichment from Legend_Benefit_Guide_19-12-2025.pdf. NOTE: file-level source_url is the legacy 2016 MITC; Legend fees from the current MITC_Premium.pdf."
     }
   ],
   "bank_defaults": {

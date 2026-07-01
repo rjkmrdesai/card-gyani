@@ -74,12 +74,12 @@
     {
       "id": "indusind",
       "bank": "IndusInd",
-      "mitc_url": "https://www.indusind.bank.in/content/dam/indusind-platform-images/home/pdf/MITC-Premium-15-6-2016.pdf",
+      "mitc_url": "https://www.indusind.bank.in/content/dam/indusind-corporate/credit-cards/MITC_Premium.pdf",
       "format": "pdf",
-      "likely_scanned": true,
-      "card_coverage": "segment",
+      "likely_scanned": false,
+      "card_coverage": "fee_table_all",
       "product_listing_url": "https://www.indusind.com/in/en/personal/cards/credit-card.html",
-      "notes": "Dated 2016 ('Premium' segment) - OLD and may be image-based/scanned. AUTO-DETECT and OCR if text extraction is sparse. Also flag for review: this MITC may be stale; check the bank site for a newer consolidated MITC during enrichment."
+      "notes": "Current consolidated MITC (text PDF, ~20 cards incl. Tiger, Legend, Avios, Nexxt, EazyDiner, Samman, etc.). Confirmed resolves 2026-06-30 (HTTP 200, application/pdf). Replaces the stale 2016 MITC-Premium-15-6-2016.pdf. Per-card forex/finance exceptions are stated in the Other Financial Charges table (e.g. Tiger 1.5% forex / 3.50% pm, Legend 1.8% forex / 3.95% pm)."
     },
     {
       "id": "bob",
@@ -109,7 +109,37 @@
       "likely_scanned": false,
       "card_coverage": "single_or_generic",
       "product_listing_url": "https://www.federalbank.co.in/credit-card",
-      "notes": "HTML landing page. It may link out to per-card MITC PDFs rather than holding the data inline - if so, follow those links and add them as child sources."
+      "notes": "HTML landing page. It may link out to per-card MITC PDFs rather than holding the data inline - if so, follow those links and add them as child sources. Child sources added: federal-scapia, federal-onecard."
+    },
+    {
+      "id": "federal-scapia",
+      "bank": "Federal Bank",
+      "mitc_url": "https://www.federal.bank.in/documents/d/guest/mitc-scapia-federal-credit-card",
+      "format": "pdf",
+      "likely_scanned": false,
+      "card_coverage": "single_or_generic",
+      "product_listing_url": "https://www.scapia.cards/",
+      "notes": "Federal x Scapia co-brand MITC (text PDF, confirmed HTTP 200 on 2026-06-30). Lifetime free; 0% (Nil) forex markup; interest 45% p.a. (3.75%/mo). type=cobrand. Apply/product page scapia.cards (verified)."
+    },
+    {
+      "id": "federal-onecard",
+      "bank": "Federal Bank",
+      "mitc_url": "https://www.federal.bank.in/documents/10180/58403423/OneCard+Credit+Card+Most+Important+Terms+and+Conditions+(MITC).pdf",
+      "format": "pdf",
+      "likely_scanned": false,
+      "card_coverage": "single_or_generic",
+      "product_listing_url": "https://www.getonecard.app/",
+      "notes": "Federal-ISSUED OneCard (in partnership with FPL Technologies) - confirmed Federal issuer in the MITC, NOT the CSB-issued variant. Narrative/app-driven MITC. Sourced: annual/joining Nil (LTF) + forex 1% from getonecard.app; finance/interest rate is app/profile-determined and not stated officially -> needs_review. Confirmed HTTP 200 on 2026-06-30. type=cobrand."
+    },
+    {
+      "id": "au",
+      "bank": "AU Small Finance Bank",
+      "mitc_url": "https://www.aubank.in/SOC_CC-MITC(with-Schedule-of-Charges).pdf",
+      "format": "pdf",
+      "likely_scanned": false,
+      "card_coverage": "fee_table_all",
+      "product_listing_url": "https://www.aubank.in/cards/credit-card",
+      "notes": "MITC incl. Schedule of Charges (text PDF, confirmed HTTP 200 on 2026-07-01). ~24 cards. Bank-wide: cash advance 2.5% min Rs.500; over-limit 2.5% min Rs.500. Forex (Cross-Currency Markup table p12): default 3.49%, exceptions Vetta 2.99 / Zenith,AU CA,AU CS 1.99 / Zenith+,NOMO,Traverse(NRI) 0.99. Finance (Revolving table p10): default 3.75%/mo (45% p.a.), exceptions Zenith+ 1.99%/mo, AU CA/CS 2.99%/mo. Per-card fee table + forex/finance tables only recover via pdfplumber.extract_tables (page text is two-column jumbled). Late-fee tiers not cleanly extracted -> needs_review."
     },
     {
       "id": "yes",

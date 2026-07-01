@@ -55,6 +55,32 @@
       "badge": "RuPay UPI floater card linked to primary card",
       "apply_url": "https://creditcards.federalbank.co.in",
       "enrich_source": "https://www.federal.bank.in/rupay-wave-credit-card"
+    },
+    {
+      "name": "Scapia",
+      "match_status": "matched",
+      "network": "Visa",
+      "network_confidence": "high",
+      "category": "mid_tier",
+      "rewards": "Scapia coins on all spends (redeemable for flights & hotels); 5% rewards on UPI & Google Pay spends of Rs.500+ (RuPay variant)",
+      "lounge": "Unlimited domestic airport lounge access (unlocks with Rs.20,000 combined monthly spend across cards)",
+      "welcome_benefit": null,
+      "badge": "Zero forex travel card",
+      "apply_url": "https://www.scapia.cards/",
+      "enrich_source": "https://www.scapia.cards/"
+    },
+    {
+      "name": "OneCard",
+      "match_status": "matched",
+      "network": "Visa",
+      "network_confidence": "high",
+      "category": "mid_tier",
+      "rewards": "5X reward points on the top-2 monthly spend categories; points credited instantly and never expire",
+      "lounge": null,
+      "welcome_benefit": null,
+      "badge": "Metal card",
+      "apply_url": "https://www.getonecard.app/",
+      "enrich_source": "https://www.getonecard.app/"
     }
   ]
 }
